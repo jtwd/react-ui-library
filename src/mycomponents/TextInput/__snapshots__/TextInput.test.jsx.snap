@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextInput renders correctly 1`] = `
+<div
+  className="sc-bxivhb drCDLH"
+>
+  <label
+    className="sc-bdVaJa etThJd"
+    htmlFor="test"
+  >
+    Test
+     
+  </label>
+  <input
+    className="sc-ifAKCX hfcidG"
+    id="test"
+    name="test"
+    onChange={[Function]}
+    placeholder=""
+    type="text"
+    value=""
+  />
+</div>
+`;
+
+exports[`TextInput renders correctly when passed an error prop 1`] = `
+<div
+  className="sc-bxivhb drCDLH"
+>
+  <label
+    className="sc-bdVaJa etThJd"
+    htmlFor="test"
+  >
+    Test
+     
+    <span
+      className="sc-bwzfXH hEsmVW"
+      title="Required field"
+    />
+  </label>
+  <input
+    className="sc-ifAKCX krolRN"
+    id="test"
+    name="test"
+    onChange={[Function]}
+    placeholder=""
+    type="text"
+    value=""
+  />
+  <div
+    className="sc-htpNat chuRVz"
+  >
+    This is a required field
+  </div>
+</div>
+`;
+
+exports[`TextInput renders correctly when passed required prop 1`] = `
+<div
+  className="sc-bxivhb drCDLH"
+>
+  <label
+    className="sc-bdVaJa etThJd"
+    htmlFor="test"
+  >
+    Test
+     
+    <span
+      className="sc-bwzfXH hEsmVW"
+      title="Required field"
+    />
+  </label>
+  <input
+    className="sc-ifAKCX hfcidG"
+    id="test"
+    name="test"
+    onChange={[Function]}
+    placeholder=""
+    type="text"
+    value=""
+  />
+</div>
+`;
+
+exports[`TextInput renders correctly when passed type of email 1`] = `
+<div
+  className="sc-bxivhb drCDLH"
+>
+  <label
+    className="sc-bdVaJa etThJd"
+    htmlFor="test"
+  >
+    Test
+     
+  </label>
+  <input
+    className="sc-ifAKCX hfcidG"
+    id="test"
+    name="test"
+    onChange={[Function]}
+    placeholder=""
+    type="email"
+    value=""
+  />
+</div>
+`;
+
+exports[`TextInput renders correctly when passed type of number 1`] = `
+<div
+  className="sc-bxivhb drCDLH"
+>
+  <label
+    className="sc-bdVaJa etThJd"
+    htmlFor="test"
+  >
+    Test
+     
+  </label>
+  <input
+    className="sc-ifAKCX hfcidG"
+    id="test"
+    name="test"
+    onChange={[Function]}
+    placeholder=""
+    type="number"
+    value=""
+  />
+</div>
+`;
+
+exports[`TextInput renders correctly when passed type of password 1`] = `
+<div
+  className="sc-bxivhb drCDLH"
+>
+  <label
+    className="sc-bdVaJa etThJd"
+    htmlFor="test"
+  >
+    Test
+     
+  </label>
+  <input
+    className="sc-ifAKCX hfcidG"
+    id="test"
+    name="test"
+    onChange={[Function]}
+    placeholder=""
+    type="password"
+    value=""
+  />
+</div>
+`;
+
+exports[`TextInput renders correctly when passed type of tel 1`] = `
+<div
+  className="sc-bxivhb drCDLH"
+>
+  <label
+    className="sc-bdVaJa etThJd"
+    htmlFor="test"
+  >
+    Test
+     
+  </label>
+  <input
+    className="sc-ifAKCX hfcidG"
+    id="test"
+    name="test"
+    onChange={[Function]}
+    placeholder=""
+    type="tel"
+    value=""
+  />
+</div>
+`;

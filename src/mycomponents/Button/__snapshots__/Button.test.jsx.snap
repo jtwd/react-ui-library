@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a default button by default 1`] = `
+<button
+  className="sc-bdVaJa dCIXkS"
+>
+  Default
+</button>
+`;
+
+exports[`renders a large button when passed prop 1`] = `
+<button
+  className="sc-bdVaJa djWSPQ"
+>
+  Primary
+</button>
+`;
+
+exports[`renders a large, primary button when passed prop 1`] = `
+<button
+  className="sc-bdVaJa fzCybi"
+>
+  Primary
+</button>
+`;
+
+exports[`renders a primary button when passed prop 1`] = `
+<button
+  className="sc-bdVaJa hPyaLq"
+>
+  Primary
+</button>
+`;
+
+exports[`renders a secondary button when passed prop 1`] = `
+<button
+  className="sc-bdVaJa dAByeQ"
+>
+  Primary
+</button>
+`;
+
+exports[`renders a small button when passed prop 1`] = `
+<button
+  className="sc-bdVaJa hOSrsn"
+>
+  Primary
+</button>
+`;
+
+exports[`renders a small, secondary button when passed prop 1`] = `
+<button
+  className="sc-bdVaJa cxXrhV"
+>
+  Primary
+</button>
+`;

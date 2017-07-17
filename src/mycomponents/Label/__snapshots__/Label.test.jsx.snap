@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Label renders correctly 1`] = `
+<label
+  className="sc-bdVaJa etThJd"
+  htmlFor="test"
+>
+  test
+   
+</label>
+`;
+
+exports[`Label renders required field when passed required prop 1`] = `
+<label
+  className="sc-bdVaJa etThJd"
+  htmlFor="text"
+>
+  test
+   
+  <span
+    className="sc-bwzfXH hEsmVW"
+    title="Required field"
+  />
+</label>
+`;

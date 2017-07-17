@@ -1,0 +1,8 @@
+export const fsXs = '.8rem'
+export const fsSm = '.9rem'
+export const fsMd = '1rem'
+export const fsLg = '1.2rem'
+export const fsXl = '1.3rem'
+export const fsXxl = '1.5rem'
+export const fsHuge = '2rem'
+export const fsMega = '3rem'

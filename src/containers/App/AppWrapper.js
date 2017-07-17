@@ -1,0 +1,11 @@
+import styled from 'styled-components'
+import Wrapper from '../../mycomponents/Wrapper'
+import { siteMaxWidth } from '../../theme/units'
+
+const AppWrapper = styled(Wrapper)`
+  max-width: ${siteMaxWidth};
+  min-height: 100vh;
+  margin: 0 auto;
+`
+
+export default AppWrapper

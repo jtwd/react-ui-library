@@ -236,7 +236,7 @@ module.exports = {
     }),
     // Add module names to factory functions so they appear in browser profiler.
     new webpack.NamedModulesPlugin(),
-    // Makes some environment variables available to the JS code, for example:
+    // Makes some environment variables available to the JS code, for examples:
     // if (process.env.NODE_ENV === 'development') { ... }. See `./env.js`.
     new webpack.DefinePlugin(env.stringified),
     // This is necessary to emit hot updates (currently CSS only):

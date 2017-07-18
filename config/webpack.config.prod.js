@@ -253,7 +253,7 @@ module.exports = {
         minifyURLs: true,
       },
     }),
-    // Makes some environment variables available to the JS code, for example:
+    // Makes some environment variables available to the JS code, for examples:
     // if (process.env.NODE_ENV === 'production') { ... }. See `./env.js`.
     // It is absolutely essential that NODE_ENV was set to production here.
     // Otherwise React will be compiled in the very slow development mode.

@@ -16,6 +16,15 @@ const sizes = {
     margin: 0 ${sm} ${lg};
     padding: ${lg} ${xl};
     font-size: ${fsLg};
+  `,
+  iconOnly: `
+    padding: ${md};
+  `,
+  iconOnlySm: `
+    padding: ${sm};
+  `,
+  iconOnlyLg: `
+    padding: ${lg}
   `
 }
 

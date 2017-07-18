@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from './mycomponents/Button'
 import IconButton from './mycomponents/IconButton'
-import Label from './mycomponents/Label'
+import Label from './components/Label'
 import TextInput from './mycomponents/TextInput'
 import { IconMenu, IconClose, IconEye, IconEdit, IconLock } from './theme/icons'
 import Wrapper from './mycomponents/Wrapper'

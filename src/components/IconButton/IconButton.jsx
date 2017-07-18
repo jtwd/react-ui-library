@@ -22,7 +22,9 @@ const IconButton = props => {
 }
 
 IconButton.propTypes = {
+  /** Name of icon */
   icon: string.isRequired,
+  /** Contents of button */
   children: node
 }
 

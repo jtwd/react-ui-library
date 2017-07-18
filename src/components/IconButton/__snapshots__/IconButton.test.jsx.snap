@@ -6,8 +6,7 @@ exports[`IconButton renders correctly when passed a invalid icon with text 1`] =
 
 exports[`IconButton renders correctly when passed a large prop and no text 1`] = `
 <button
-  className="sc-htpNat lcTMQP sc-bwzfXH cuRlFT"
-  icon="close"
+  className="sc-bwzfXH cuRlFT"
 >
   <span
     className="sc-bdVaJa ierbaJ"
@@ -38,8 +37,7 @@ exports[`IconButton renders correctly when passed a large prop and no text 1`] =
 
 exports[`IconButton renders correctly when passed a large prop with text 1`] = `
 <button
-  className="sc-htpNat hiMvxy sc-bwzfXH cuRlFT"
-  icon="close"
+  className="sc-bwzfXH cuRlFT"
 >
   <span
     className="sc-bdVaJa lcImzs"
@@ -71,8 +69,7 @@ exports[`IconButton renders correctly when passed a large prop with text 1`] = `
 
 exports[`IconButton renders correctly when passed a small prop and no text 1`] = `
 <button
-  className="sc-htpNat hiMvxy sc-bwzfXH kJpNTW"
-  icon="close"
+  className="sc-bwzfXH kJpNTW"
 >
   <span
     className="sc-bdVaJa hRBQrc"
@@ -103,8 +100,7 @@ exports[`IconButton renders correctly when passed a small prop and no text 1`] =
 
 exports[`IconButton renders correctly when passed a small prop with text 1`] = `
 <button
-  className="sc-htpNat bwTeSF sc-bwzfXH kJpNTW"
-  icon="close"
+  className="sc-bwzfXH kJpNTW"
 >
   <span
     className="sc-bdVaJa kmXJKP"
@@ -136,8 +132,7 @@ exports[`IconButton renders correctly when passed a small prop with text 1`] = `
 
 exports[`IconButton renders correctly when passed a valid icon with text 1`] = `
 <button
-  className="sc-htpNat hiMvxy sc-bwzfXH bIHypO"
-  icon="close"
+  className="sc-bwzfXH bIHypO"
 >
   <span
     className="sc-bdVaJa fgaEcE"
@@ -169,8 +164,7 @@ exports[`IconButton renders correctly when passed a valid icon with text 1`] = `
 
 exports[`IconButton renders correctly when passed a valid icon without text 1`] = `
 <button
-  className="sc-htpNat cBnnWn sc-bwzfXH bIHypO"
-  icon="close"
+  className="sc-bwzfXH bIHypO"
 >
   <span
     className="sc-bdVaJa gHARXq"

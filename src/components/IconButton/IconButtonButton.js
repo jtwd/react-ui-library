@@ -14,7 +14,7 @@ const tm = {
 
 const IconButtonButton = styled(Button)`
   vertical-align: middle;
-  ${props => props.iconOnly && !props.large && !props.small && getPropStylesFromTheme(tm, 'iconOnly')}
+  ${props => props.iconOnly && (!props.large && !props.small) && getPropStylesFromTheme(tm, 'iconOnly')}
   ${props => props.iconOnly && props.large && getPropStylesFromTheme(tm, 'iconOnly', 'lg')}
   ${props => !props.iconOnly && props.small && getPropStylesFromTheme(tm, 'iconOnly', 'sm')}
 `

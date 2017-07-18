@@ -36,7 +36,6 @@ const StyledButton = styled.button`
       props.secondary && getPropStylesFromTheme(tm, 'types', 'secondary')} ${trimChildrenHorizontal};
 `
 
-/** Button */
 function Button ({primary, secondary, large, small, children}) {
   return (
     <StyledButton
@@ -51,10 +50,15 @@ function Button ({primary, secondary, large, small, children}) {
 }
 
 Button.propTypes = {
+  /** Type of button */
   primary: bool,
+  /** Type of button */
   secondary: bool,
+  /** Size of button */
   large: bool,
+  /** Size of button */
   small: bool,
+  /** Contents of button */
   children: node
 }
 

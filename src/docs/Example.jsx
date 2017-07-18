@@ -11,7 +11,7 @@ class Example extends React.Component {
   toggleCode(event) {
     event.preventDefault();
     // eslint-disable-next-line no-restricted-syntax, no-labels, no-unused-labels, no-unused-expressions
-    this.setState(prevState => {showCode: !prevState.showCode});
+    this.setState(prevState => ({ showCode: !prevState.showCode }));
   }
 
   render() {
@@ -28,12 +28,11 @@ class Example extends React.Component {
           <ExampleComponent />
         </div>
 
-        <p>
-          <a href="" onClick={() => this.toggleCode}>
+        <div className="example__toggler">
+          <a href="" onClick={(e) => {this.toggleCode(e)}}>
             {showCode ? "Hide" : "Show"} Code
           </a>
-        </p>
-
+        </div>
         {showCode && <CodeExample>{code}</CodeExample>}
       </div>
     )

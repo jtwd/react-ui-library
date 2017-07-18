@@ -4,6 +4,7 @@ import getIcon from '../../theme/utils/utils.icons'
 import IconButtonIcon from './IconButtonIcon'
 import IconButtonButton from './IconButtonButton'
 
+/** Inherit styles and props from the <Button/> component */
 const IconButton = props => {
   const iconOnly = !props.children // no children means its an icon only button
   const icon = getIcon(props.icon)

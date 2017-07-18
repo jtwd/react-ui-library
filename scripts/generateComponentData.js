@@ -47,20 +47,20 @@ function getComponentData(paths, componentName) {
     description: info.description,
     props: info.props,
     code: content,
-    examples: getExampleData(paths.examples, componentName)
+    examples: getExampleData(paths.components, componentName)
   }
 }
 
 function getExampleData(examplesPath, componentName) {
   var examples = getExampleFiles(examplesPath, componentName);
   return examples.map(function(file) {
-    var filePath = path.join(examplesPath, componentName, file)
+    var filePath = path.join(examplesPath, componentName, 'examples', file)
     var content = readFile(filePath)
     var info = parse(content);
     return {
       // By convention, component name should match the filename.
       // So remove the .js extension to get the component name.
-      name: file.slice(0, -3),
+      name: file.slice(0, -4),
       description: info.description,
       code: content
     };
@@ -68,9 +68,12 @@ function getExampleData(examplesPath, componentName) {
 }
 
 function getExampleFiles(examplesPath, componentName) {
+  var examplesDir = 'examples'
   var exampleFiles = [];
+
+  // console.log(path.join(examplesPath, componentName, examplesDir))
   try {
-    exampleFiles = getFiles(path.join(examplesPath, componentName));
+    exampleFiles = getFiles(path.join(examplesPath, componentName, examplesDir));
   } catch(error) {
     console.log(chalk.red(`No examples found for ${componentName}.`));
   }

@@ -19,12 +19,14 @@ class Example extends React.Component {
     const {code, description, name} = this.props.example;
     // Must use CommonJS require to dynamically require because ES Modules must be statically analyzable.
     // eslint-disable-next-line global-require, import/no-dynamic-require
-    const ExampleComponent = require(`./examples/${this.props.componentName}/${name}`).default;
+    const ExampleComponent = require(`../components/${this.props.componentName}/examples/${name}.jsx`).default;
     return (
       <div className="example">
         {description && <h4>{description}</h4> }
 
-        <ExampleComponent />
+        <div>
+          <ExampleComponent />
+        </div>
 
         <p>
           <a href="" onClick={() => this.toggleCode}>

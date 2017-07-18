@@ -18,9 +18,9 @@ render(
 
 // Hot Module Replacement API
 if (module.hot) {
-  module.hot.accept('./mycomponents/App', () => {
-    // eslint-disable-next-line global-require
-    const NextApp = require('./mycomponents/App').default
+  module.hot.accept('./containers/App', () => {
+    // eslint-disable-next-line global-require, import/no-dynamic-require
+    const NextApp = require('./containers/App').default
     render(
       <AppContainer>
         <NextApp />

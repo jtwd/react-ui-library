@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Wrapper from '../../mycomponents/Wrapper'
+import Wrapper from '../../components/Wrapper'
 import { siteMaxWidth } from '../../theme/units'
 
 const AppWrapper = styled(Wrapper)`

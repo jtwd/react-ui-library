@@ -1,6 +1,6 @@
 import React from 'react'
 import { string, oneOf, bool, func, node } from 'prop-types'
-import Label from '../../components/Label'
+import Label from '../Label/index'
 import { Field, Input, Error } from './TextInput.styles'
 
 function TextInput({ htmlId, name, label, type, required, onChange, placeholder, value, error, children, ...props }) {

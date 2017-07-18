@@ -1,10 +1,10 @@
 import React from 'react'
-import Button from './mycomponents/Button'
-import IconButton from './mycomponents/IconButton'
+import Button from './components/Button'
+import IconButton from './components/IconButton'
 import Label from './components/Label'
-import TextInput from './mycomponents/TextInput'
+import TextInput from './components/TextInput'
 import { IconMenu, IconClose, IconEye, IconEdit, IconLock } from './theme/icons'
-import Wrapper from './mycomponents/Wrapper'
+import Wrapper from './components/Wrapper'
 
 const Landing = () =>
   <Wrapper>

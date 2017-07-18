@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { bool } from 'prop-types'
-import Button from '../Button'
+import Button from '../Button/index'
 import { sm, md, lg } from '../../theme/spacers'
 import getPropStylesFromTheme from '../../theme/utils/getPropStylesFromTheme'
 

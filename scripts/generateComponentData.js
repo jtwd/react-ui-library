@@ -34,7 +34,13 @@ function generate(paths) {
 }
 
 function getComponentData(paths, componentName) {
-  var content = readFile(path.join(paths.components, componentName, componentName + '.js'));
+  var content;
+  try {
+    content = readFile(path.join(paths.components, componentName, componentName + '.js'));
+  }
+  catch(err) {
+    content = readFile(path.join(paths.components, componentName, componentName + '.jsx'));
+  }
   var info = parse(content);
   return {
     name: componentName,

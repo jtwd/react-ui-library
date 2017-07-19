@@ -28,10 +28,8 @@ const tm = {
 const IconButtonIcon = styled.span`
   display: inline-block;
   position: relative;
-  ${props => !props.large && !props.small && getPropStylesFromTheme(tm, 'sizes', 'default')} ${props =>
-      props.small && getPropStylesFromTheme(tm, 'sizes', 'sm')} ${props =>
-      props.large && getPropStylesFromTheme(tm, 'sizes', 'lg')} ${props =>
-      props.iconOnly && getPropStylesFromTheme(tm, 'iconOnly')};
+  ${props => !props.large && !props.small && getPropStylesFromTheme(tm, 'sizes', 'default')} ${props => props.small && getPropStylesFromTheme(tm, 'sizes', 'sm')} ${props =>
+      props.large && getPropStylesFromTheme(tm, 'sizes', 'lg')} ${props => props.iconOnly && getPropStylesFromTheme(tm, 'iconOnly')};
 `
 
 IconButtonIcon.propTypes = {

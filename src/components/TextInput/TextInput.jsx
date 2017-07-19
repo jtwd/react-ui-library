@@ -7,16 +7,7 @@ function TextInput({ htmlId, name, label, type, required, onChange, placeholder,
   return (
     <Field>
       <Label htmlFor={htmlId} label={label} required={required} />
-      <Input
-        id={htmlId}
-        type={type}
-        name={name}
-        placeholder={placeholder}
-        value={value}
-        onChange={onChange}
-        error={error}
-        {...props}
-      />
+      <Input id={htmlId} type={type} name={name} placeholder={placeholder} value={value} onChange={onChange} error={error} {...props} />
       {children}
       {error &&
         <Error>

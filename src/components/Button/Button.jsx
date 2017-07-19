@@ -28,22 +28,15 @@ const StyledButton = styled.button`
   min-width: 3rem;
   vertical-align: baseline;
 
-  ${props => !props.large && !props.small && getPropStylesFromTheme(tm, 'sizes', 'default')} ${props =>
-      props.small && getPropStylesFromTheme(tm, 'sizes', 'sm')} ${props =>
-      props.large && getPropStylesFromTheme(tm, 'sizes', 'lg')} ${props =>
-      !props.primary && !props.secondary && getPropStylesFromTheme(tm, 'types', 'default')} ${props =>
-      props.primary && getPropStylesFromTheme(tm, 'types', 'primary')} ${props =>
-      props.secondary && getPropStylesFromTheme(tm, 'types', 'secondary')} ${trimChildrenHorizontal};
+  ${props => !props.large && !props.small && getPropStylesFromTheme(tm, 'sizes', 'default')} ${props => props.small && getPropStylesFromTheme(tm, 'sizes', 'sm')} ${props =>
+      props.large && getPropStylesFromTheme(tm, 'sizes', 'lg')} ${props => !props.primary && !props.secondary && getPropStylesFromTheme(tm, 'types', 'default')} ${props =>
+      props.primary && getPropStylesFromTheme(tm, 'types', 'primary')} ${props => props.secondary && getPropStylesFromTheme(tm, 'types', 'secondary')} ${trimChildrenHorizontal};
 `
 
-function Button ({primary, secondary, large, small, children}) {
+/** Buttons are for clicking */
+function Button({ primary, secondary, large, small, children }) {
   return (
-    <StyledButton
-      primary={primary}
-      secondary={secondary}
-      large={large}
-      small={small}
-    >
+    <StyledButton primary={primary} secondary={secondary} large={large} small={small}>
       {children}
     </StyledButton>
   )

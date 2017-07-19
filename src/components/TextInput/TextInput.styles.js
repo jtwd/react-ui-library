@@ -6,8 +6,8 @@ import { xs, md } from '../../theme/spacers'
 export const Error = styled.div`color: ${red};`
 
 export const Field = styled.div`
-    margin-bottom: ${md};
-    max-width: 480px;
+  margin-bottom: ${md};
+  max-width: 480px;
 `
 
 export const Input = styled.input`

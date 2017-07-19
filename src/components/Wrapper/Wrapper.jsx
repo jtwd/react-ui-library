@@ -3,12 +3,14 @@ import { node } from 'prop-types'
 import styled from 'styled-components'
 import { md } from '../../theme/spacers'
 
-const StyledDiv = styled.div`
-  padding: ${md};
-`
+const StyledDiv = styled.div`padding: ${md};`
 
-function Wrapper (props) {
-  return <StyledDiv>{props.children}</StyledDiv>
+function Wrapper(props) {
+  return (
+    <StyledDiv>
+      {props.children}
+    </StyledDiv>
+  )
 }
 
 Wrapper.propTypes = {

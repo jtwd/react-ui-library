@@ -5,9 +5,15 @@ import IconButton from '../IconButton'
 export default function IconButtonWithText() {
   return (
     <div>
-      <IconButton small icon="lock">Login</IconButton>
-      <IconButton primary icon="lock">Login</IconButton>
-      <IconButton large secondary icon="lock">Login</IconButton>
+      <IconButton small icon="lock">
+        Login
+      </IconButton>
+      <IconButton primary icon="lock">
+        Login
+      </IconButton>
+      <IconButton large secondary icon="lock">
+        Login
+      </IconButton>
     </div>
   )
 }

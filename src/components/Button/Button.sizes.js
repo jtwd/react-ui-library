@@ -18,13 +18,13 @@ const sizes = {
     font-size: ${fsLg};
   `,
   iconOnly: `
-    padding: ${md};
+    padding: ${md} ${lg}; 
   `,
   iconOnlySm: `
     padding: ${sm};
   `,
   iconOnlyLg: `
-    padding: ${lg}
+    padding: ${md} ${lg};
   `
 }
 

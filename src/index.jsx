@@ -6,6 +6,7 @@ import App from './containers/App'
 // import registerServiceWorker from './registerServiceWorker'
 
 import './theme/globals'
+import '../node_modules/highlight.js/styles/paraiso-dark.css'
 
 const root = document.getElementById('root')
 

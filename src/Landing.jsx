@@ -1,6 +1,5 @@
 import React from 'react'
 import Button from './components/Button'
-import IconButton from './components/IconButton'
 import Label from './components/Label'
 import TextInput from './components/TextInput'
 import { IconMenu, IconClose, IconEye, IconEdit, IconLock } from './theme/icons'
@@ -37,22 +36,20 @@ const Landing = () =>
       </Button>
     </div>
     <div>
-      <IconButton icon="lock" small>
+      <Button icon="lock" small>
         Login
-      </IconButton>
-      <IconButton icon="lock" primary>
+      </Button>
+      <Button icon="lock" primary>
         Login
-      </IconButton>
-      <IconButton icon="lock" secondary large>
+      </Button>
+      <Button icon="lock" secondary large>
         Login
-      </IconButton>
+      </Button>
     </div>
     <div>
-      <IconButton icon="menu" small />
-      <IconButton icon="close" primary />
-      <IconButton icon="edit" secondary large />
-      <IconButton icon="not-valid">Invalid Icon</IconButton>
-      <IconButton icon="not-valid" />
+      <Button icon="menu" small />
+      <Button icon="close" primary />
+      <Button icon="edit" secondary large />
     </div>
     <div>
       <IconMenu />

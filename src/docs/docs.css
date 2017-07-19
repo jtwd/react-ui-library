@@ -87,3 +87,7 @@
 .docs table th {
   padding-left: 0;
 }
+
+.docs .componentpage {
+  padding-bottom: 5rem;
+}

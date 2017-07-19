@@ -5,8 +5,8 @@ import Button from '../Button'
 export default function ButtonSizes() {
   return (
     <div>
-      <Button small>Small buttons</Button>
-      <Button>Default button</Button>
+      <Button primary small>Small button</Button>
+      <Button secondary>Default button</Button>
       <Button large>Large button</Button>
     </div>
   )

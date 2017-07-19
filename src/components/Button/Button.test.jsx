@@ -28,23 +28,11 @@ test('renders a small button when passed prop', () => {
 })
 
 test('renders a large, primary button when passed prop', () => {
-  const tree = renderer
-    .create(
-      <Button primary large>
-        Primary
-      </Button>
-    )
-    .toJSON()
+  const tree = renderer.create(<Button primary large>Primary</Button>).toJSON()
   expect(tree).toMatchSnapshot()
 })
 
 test('renders a small, secondary button when passed prop', () => {
-  const tree = renderer
-    .create(
-      <Button small secondary>
-        Primary
-      </Button>
-    )
-    .toJSON()
+  const tree = renderer.create(<Button small secondary>Primary</Button>).toJSON()
   expect(tree).toMatchSnapshot()
 })

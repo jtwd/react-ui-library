@@ -22,3 +22,6 @@ yarn-error.log*
 
 # webstorm
 .idea
+
+# generated files
+/config/componentData.js

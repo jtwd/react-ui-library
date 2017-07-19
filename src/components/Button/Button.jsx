@@ -1,11 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import { bool, node } from 'prop-types'
+import { bool, node, string } from 'prop-types'
 import { radiusRound, transTextHover, primaryNormal, lineHeightTight } from '../../theme/units'
 import { trimChildrenHorizontal } from '../../theme/utils/utils.mixins'
 import getPropStylesFromTheme from '../../theme/utils/getPropStylesFromTheme'
 import types from './Button.types'
 import sizes from './Button.sizes'
+import ButtonIcon from './ButtonIcon'
 
 const tm = {
   borderRadius: radiusRound,
@@ -26,17 +27,27 @@ const StyledButton = styled.button`
   display: inline-block;
   min-height: 1rem;
   min-width: 3rem;
-  vertical-align: baseline;
+  vertical-align: middle;
 
-  ${props => !props.large && !props.small && getPropStylesFromTheme(tm, 'sizes', 'default')} ${props => props.small && getPropStylesFromTheme(tm, 'sizes', 'sm')} ${props =>
-      props.large && getPropStylesFromTheme(tm, 'sizes', 'lg')} ${props => !props.primary && !props.secondary && getPropStylesFromTheme(tm, 'types', 'default')} ${props =>
-      props.primary && getPropStylesFromTheme(tm, 'types', 'primary')} ${props => props.secondary && getPropStylesFromTheme(tm, 'types', 'secondary')} ${trimChildrenHorizontal};
+  ${props => !props.large && !props.small && getPropStylesFromTheme(tm, 'sizes')} 
+  ${props => props.small && getPropStylesFromTheme(tm, 'sizes', 'sm')} 
+  ${props => props.large && getPropStylesFromTheme(tm, 'sizes', 'lg')}
+  ${props => !props.large && !props.small && props.iconOnly && getPropStylesFromTheme(tm, 'sizes', 'iconOnly')}
+  ${props => props.small && props.iconOnly && getPropStylesFromTheme(tm, 'sizes', 'iconOnlySm')} 
+  ${props => props.large && props.iconOnly && getPropStylesFromTheme(tm, 'sizes', 'iconOnlyLg')}
+   
+  ${props => !props.primary && !props.secondary && getPropStylesFromTheme(tm, 'types', 'default')} 
+  ${props => props.primary && getPropStylesFromTheme(tm, 'types', 'primary')} 
+  ${props => props.secondary && getPropStylesFromTheme(tm, 'types', 'secondary')} 
+  
+  ${trimChildrenHorizontal};
 `
 
-/** Buttons are for clicking */
-function Button({ primary, secondary, large, small, children }) {
+function Button({ primary, secondary, large, small, icon, children }) {
+  const iconOnly = (children === null)
   return (
-    <StyledButton primary={primary} secondary={secondary} large={large} small={small}>
+    <StyledButton primary={primary} secondary={secondary} large={large} small={small} iconOnly={iconOnly}>
+      {icon && <ButtonIcon iconOnly={iconOnly} icon={icon} large={large} small={small} />}
       {children}
     </StyledButton>
   )
@@ -51,6 +62,8 @@ Button.propTypes = {
   large: bool,
   /** Size of button */
   small: bool,
+  /** Name of Icon */
+  icon: string,
   /** Contents of button */
   children: node
 }
@@ -60,6 +73,7 @@ Button.defaultProps = {
   secondary: false,
   large: false,
   small: false,
+  icon: '',
   children: null
 }
 

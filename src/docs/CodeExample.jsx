@@ -14,11 +14,7 @@ class CodeExample extends React.Component {
 
   render() {
     return (
-      <pre
-        ref={ref => {
-          this.element = ref
-        }}
-      >
+      <pre ref={ref => { this.element = ref }}>
         <code>
           {this.props.children}
         </code>

@@ -1,5 +1,5 @@
-import React from 'react'
-import Button from '../Button'
+import React from 'react';
+import Button from '../Button';
 
 /** Types */
 export default function ButtonTypes() {
@@ -10,4 +10,4 @@ export default function ButtonTypes() {
       <Button secondary>Secondary button</Button>
     </div>
   )
-}
+};

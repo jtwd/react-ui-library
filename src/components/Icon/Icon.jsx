@@ -27,23 +27,20 @@ const StyledIcon = styled.i`
 
 function Icon({icon, large, small}) {
   const myIcon = getIcon(icon)
-
   return <StyledIcon large={large} small={small}>{myIcon}</StyledIcon>
 }
 
 Icon.propTypes = {
   /** Name of icon to be displayed */
   icon: string.isRequired,
-
   /** Icon size */
   large: bool,
-
   /** Icon size */
   small: bool
 }
 
 Icon.defaultProps = {
-  icon: 'question',
+  icon: '',
   large: false,
   small: false
 }

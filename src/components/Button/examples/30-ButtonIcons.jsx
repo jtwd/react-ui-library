@@ -6,8 +6,8 @@ export default function ButtonIconText() {
   return (
     <div>
       <div>
-        <Button icon="close" small>Small icon</Button>
-        <Button icon="lock" primary>Large icon</Button>
+        <Button icon="close" small>Small button</Button>
+        <Button icon="lock" primary>Default button</Button>
         <Button icon="menu" secondary large>Large button</Button>
       </div>
       <div>

@@ -331,4 +331,9 @@ module.exports = {
     net: 'empty',
     tls: 'empty',
   },
+  externals: {
+    'react/addons': true, // important!!
+    'react/lib/ExecutionEnvironment': true,
+    'react/lib/ReactContext': true,
+  },
 };

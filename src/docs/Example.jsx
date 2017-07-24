@@ -28,7 +28,7 @@ class Example extends React.Component {
           </h4>}
 
         <div>
-          <ExampleComponent />
+          <ExampleComponent/>
         </div>
 
         <div className="example__toggler">
@@ -42,9 +42,11 @@ class Example extends React.Component {
           </a>
         </div>
         {showCode &&
-          <CodeExample>
-            {code}
-          </CodeExample>}
+          <div className="codeExample">
+            <CodeExample>
+              {code}
+            </CodeExample>
+          </div>}
       </div>
     )
   }

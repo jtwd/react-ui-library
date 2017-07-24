@@ -4,6 +4,7 @@ import { bool, node, string } from 'prop-types'
 import { radiusRound, transTextHover, primaryNormal, lineHeightTight } from '../../theme/units'
 import { trimChildrenHorizontal } from '../../theme/utils/utils.mixins'
 import getPropStylesFromTheme from '../../theme/utils/getPropStylesFromTheme'
+import getIcon from '../../theme/utils/utils.icons'
 import types from './Button.types'
 import sizes from './Button.sizes'
 import ButtonIcon from './ButtonIcon'
@@ -45,6 +46,9 @@ const StyledButton = styled.button`
 
 function Button({ primary, secondary, large, small, icon, children }) {
   const iconOnly = (children === null)
+  const validIcon = (getIcon(icon) !== null)
+
+  if(iconOnly && !validIcon) return null; // don't show if there is no valid contents
   return (
     <StyledButton primary={primary} secondary={secondary} large={large} small={small} iconOnly={iconOnly}>
       {icon && <ButtonIcon iconOnly={iconOnly} icon={icon} large={large} small={small} />}

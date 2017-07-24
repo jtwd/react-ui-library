@@ -2,7 +2,7 @@
 
 exports[`TextInput renders correctly 1`] = `
 <div
-  className="sc-bxivhb drCDLH"
+  className="sc-bxivhb iKYOHs"
 >
   <label
     className="sc-bdVaJa etThJd"
@@ -12,7 +12,7 @@ exports[`TextInput renders correctly 1`] = `
      
   </label>
   <input
-    className="sc-ifAKCX hfcidG"
+    className="sc-ifAKCX bUdiIg"
     id="test"
     name="test"
     onChange={[Function]}
@@ -25,7 +25,7 @@ exports[`TextInput renders correctly 1`] = `
 
 exports[`TextInput renders correctly when passed an error prop 1`] = `
 <div
-  className="sc-bxivhb drCDLH"
+  className="sc-bxivhb iKYOHs"
 >
   <label
     className="sc-bdVaJa etThJd"
@@ -39,7 +39,7 @@ exports[`TextInput renders correctly when passed an error prop 1`] = `
     />
   </label>
   <input
-    className="sc-ifAKCX krolRN"
+    className="sc-ifAKCX kAvzK"
     id="test"
     name="test"
     onChange={[Function]}
@@ -57,7 +57,7 @@ exports[`TextInput renders correctly when passed an error prop 1`] = `
 
 exports[`TextInput renders correctly when passed required prop 1`] = `
 <div
-  className="sc-bxivhb drCDLH"
+  className="sc-bxivhb iKYOHs"
 >
   <label
     className="sc-bdVaJa etThJd"
@@ -71,7 +71,7 @@ exports[`TextInput renders correctly when passed required prop 1`] = `
     />
   </label>
   <input
-    className="sc-ifAKCX hfcidG"
+    className="sc-ifAKCX bUdiIg"
     id="test"
     name="test"
     onChange={[Function]}
@@ -84,7 +84,7 @@ exports[`TextInput renders correctly when passed required prop 1`] = `
 
 exports[`TextInput renders correctly when passed type of email 1`] = `
 <div
-  className="sc-bxivhb drCDLH"
+  className="sc-bxivhb iKYOHs"
 >
   <label
     className="sc-bdVaJa etThJd"
@@ -94,7 +94,7 @@ exports[`TextInput renders correctly when passed type of email 1`] = `
      
   </label>
   <input
-    className="sc-ifAKCX hfcidG"
+    className="sc-ifAKCX bUdiIg"
     id="test"
     name="test"
     onChange={[Function]}
@@ -107,7 +107,7 @@ exports[`TextInput renders correctly when passed type of email 1`] = `
 
 exports[`TextInput renders correctly when passed type of number 1`] = `
 <div
-  className="sc-bxivhb drCDLH"
+  className="sc-bxivhb iKYOHs"
 >
   <label
     className="sc-bdVaJa etThJd"
@@ -117,7 +117,7 @@ exports[`TextInput renders correctly when passed type of number 1`] = `
      
   </label>
   <input
-    className="sc-ifAKCX hfcidG"
+    className="sc-ifAKCX bUdiIg"
     id="test"
     name="test"
     onChange={[Function]}
@@ -130,7 +130,7 @@ exports[`TextInput renders correctly when passed type of number 1`] = `
 
 exports[`TextInput renders correctly when passed type of password 1`] = `
 <div
-  className="sc-bxivhb drCDLH"
+  className="sc-bxivhb iKYOHs"
 >
   <label
     className="sc-bdVaJa etThJd"
@@ -140,7 +140,7 @@ exports[`TextInput renders correctly when passed type of password 1`] = `
      
   </label>
   <input
-    className="sc-ifAKCX hfcidG"
+    className="sc-ifAKCX bUdiIg"
     id="test"
     name="test"
     onChange={[Function]}
@@ -153,7 +153,7 @@ exports[`TextInput renders correctly when passed type of password 1`] = `
 
 exports[`TextInput renders correctly when passed type of tel 1`] = `
 <div
-  className="sc-bxivhb drCDLH"
+  className="sc-bxivhb iKYOHs"
 >
   <label
     className="sc-bdVaJa etThJd"
@@ -163,7 +163,7 @@ exports[`TextInput renders correctly when passed type of tel 1`] = `
      
   </label>
   <input
-    className="sc-ifAKCX hfcidG"
+    className="sc-ifAKCX bUdiIg"
     id="test"
     name="test"
     onChange={[Function]}

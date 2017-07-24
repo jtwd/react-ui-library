@@ -34,13 +34,14 @@
     "promise": "7.1.1",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
+    "react-addons-test-utils": "15.5.1",
     "react-dev-utils": "^3.0.2",
     "react-dom": "^15.6.1",
     "react-error-overlay": "^1.0.9",
     "react-hot-loader": "next",
     "react-icons": "^2.2.5",
     "react-router-dom": "^4.1.1",
-    "react-test-renderer": "^15.6.1",
+    "react-test-renderer": "15.5.4",
     "style-loader": "0.18.2",
     "styled-components": "^2.1.1",
     "sw-precache-webpack-plugin": "0.11.3",
@@ -64,7 +65,7 @@
   },
   "devDependencies": {
     "chokidar": "1.6.1",
-    "enzyme": "^2.9.1",
+    "enzyme": "2.8.2",
     "eslint-config-airbnb": "^15.0.2",
     "eslint-config-prettier": "^2.3.0",
     "node-sass": "^4.5.3",
@@ -76,7 +77,9 @@
   },
   "jest": {
     "collectCoverageFrom": [
-      "src/**/*.{js,jsx}"
+      "src/**/*.{js,jsx}",
+      "!src/docs/*.{js,jsx}",
+      "!src/components/**/examples/*.js?(x)"
     ],
     "setupFiles": [
       "<rootDir>/config/polyfills.js"

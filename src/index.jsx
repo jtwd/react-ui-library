@@ -14,7 +14,7 @@ render(
   <AppContainer>
     <App />
   </AppContainer>,
-  root
+  root || document.createElement('div')
 )
 
 // Hot Module Replacement API

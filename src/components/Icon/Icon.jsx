@@ -19,7 +19,9 @@ const StyledIcon = styled.i`
   }
   
   ${props => !props.large && !props.small && getPropStylesFromTheme(tm, 'sizes', 'default')}
+
   ${props => props.small && getPropStylesFromTheme(tm, 'sizes', 'sm')}
+
   ${props => props.large && getPropStylesFromTheme(tm, 'sizes', 'lg')}
 `
 
@@ -32,8 +34,10 @@ function Icon({icon, large, small}) {
 Icon.propTypes = {
   /** Name of icon to be displayed */
   icon: string.isRequired,
+
   /** Icon size */
   large: bool,
+
   /** Icon size */
   small: bool
 }

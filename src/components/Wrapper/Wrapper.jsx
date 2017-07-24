@@ -10,25 +10,35 @@ const StyledDiv = styled.div`
   ${props => props.text && css`
     max-width: ${textMaxWidth};
   `}
+  
+  ${props => props.centered && css`
+    margin-left: auto;
+    margin-right: auto;
+  `}
 `
 
 function Wrapper(props) {
-  const { text } = props
+  const { text, centered } = props
   return (
-    <StyledDiv text={text}>
+    <StyledDiv text={text} centered={centered}>
       {props.children}
     </StyledDiv>
   )
 }
 
 Wrapper.propTypes = {
-  children: node,
-  text: bool
+  /** Sized appropriately for text */
+  text: bool,
+  /** Centered wrapper */
+  centered: bool,
+  /** Contents of wrapper */
+  children: node
 }
 
 Wrapper.defaultProps = {
-  children: null,
-  text: false
+  text: false,
+  centered: false,
+  children: null
 }
 
 export default Wrapper

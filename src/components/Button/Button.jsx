@@ -30,17 +30,24 @@ const StyledButton = styled.button`
   min-width: 3rem;
   vertical-align: middle;
 
-  ${props => !props.large && !props.small && getPropStylesFromTheme(tm, 'sizes')} 
-  ${props => props.small && getPropStylesFromTheme(tm, 'sizes', 'sm')} 
+  ${props => !props.large && !props.small && getPropStylesFromTheme(tm, 'sizes')}
+  
+  ${props => props.small && getPropStylesFromTheme(tm, 'sizes', 'sm')}
+   
   ${props => props.large && getPropStylesFromTheme(tm, 'sizes', 'lg')}
+  
   ${props => !props.large && !props.small && props.iconOnly && getPropStylesFromTheme(tm, 'sizes', 'iconOnly')}
-  ${props => props.small && props.iconOnly && getPropStylesFromTheme(tm, 'sizes', 'iconOnlySm')} 
+  
+  ${props => props.small && props.iconOnly && getPropStylesFromTheme(tm, 'sizes', 'iconOnlySm')}
+   
   ${props => props.large && props.iconOnly && getPropStylesFromTheme(tm, 'sizes', 'iconOnlyLg')}
    
-  ${props => !props.primary && !props.secondary && getPropStylesFromTheme(tm, 'types', 'default')} 
-  ${props => props.primary && getPropStylesFromTheme(tm, 'types', 'primary')} 
-  ${props => props.secondary && getPropStylesFromTheme(tm, 'types', 'secondary')} 
-  
+  ${props => !props.primary && !props.secondary && getPropStylesFromTheme(tm, 'types', 'default')}
+   
+  ${props => props.primary && getPropStylesFromTheme(tm, 'types', 'primary')}
+   
+  ${props => props.secondary && getPropStylesFromTheme(tm, 'types', 'secondary')}
+    
   ${trimChildrenHorizontal};
 `
 
@@ -48,7 +55,7 @@ function Button({ primary, secondary, large, small, icon, children }) {
   const iconOnly = (children === null)
   const validIcon = (getIcon(icon) !== null)
 
-  if(iconOnly && !validIcon) return null; // don't show if there is no valid contents
+  if(iconOnly && !validIcon) return null // don't show if there is no valid contents
   return (
     <StyledButton primary={primary} secondary={secondary} large={large} small={small} iconOnly={iconOnly}>
       {icon && <ButtonIcon iconOnly={iconOnly} icon={icon} large={large} small={small} />}

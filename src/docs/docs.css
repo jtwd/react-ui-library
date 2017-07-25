@@ -26,6 +26,12 @@
   bottom: 0;
 }
 
+.docs .docs-item {
+  display: inline-block;
+  padding: 0.5rem;
+  text-align: center;
+}
+
 .docs .example__toggler a {
   font-size: 0.8rem;
   display: inline-block;

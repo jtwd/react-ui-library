@@ -9,6 +9,7 @@ export default function PasswordInputNoToggle() {
       label="Password"
       name="password2"
       showVisibilityToggle={false}
+      required
       onChange={() => {}}
     />
   )

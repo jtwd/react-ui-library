@@ -53,7 +53,7 @@ class PasswordInput extends Component {
       >
         {
           showVisibilityToggle &&
-          <A href="" className="togglePassword" onClick={(e) => { this.toggleShowPassword(e) }}>
+          <A href="" title="Toggle password visibility"  className="togglePassword" onClick={(e) => { this.toggleShowPassword(e) }}>
             <Icon icon="eye" />
           </A>
         }

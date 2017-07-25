@@ -2,7 +2,7 @@
 
 exports[`TextInput renders correctly 1`] = `
 <div
-  className="sc-bxivhb iKYOHs"
+  className="sc-ifAKCX gjzoEf"
 >
   <label
     className="sc-bdVaJa etThJd"
@@ -12,7 +12,7 @@ exports[`TextInput renders correctly 1`] = `
      
   </label>
   <input
-    className="sc-ifAKCX imHOfK"
+    className="sc-EHOje bwRyEY"
     id="test"
     name="test"
     onChange={[Function]}
@@ -25,7 +25,7 @@ exports[`TextInput renders correctly 1`] = `
 
 exports[`TextInput renders correctly when passed an error prop 1`] = `
 <div
-  className="sc-bxivhb iKYOHs"
+  className="sc-ifAKCX gjzoEf"
 >
   <label
     className="sc-bdVaJa etThJd"
@@ -39,7 +39,7 @@ exports[`TextInput renders correctly when passed an error prop 1`] = `
     />
   </label>
   <input
-    className="sc-ifAKCX eWmInO"
+    className="sc-EHOje ezRsZe"
     id="test"
     name="test"
     onChange={[Function]}
@@ -48,8 +48,31 @@ exports[`TextInput renders correctly when passed an error prop 1`] = `
     value={undefined}
   />
   <div
-    className="sc-htpNat chuRVz"
+    className="sc-bxivhb bVSnEB"
   >
+    <i
+      className="sc-htpNat giXiHP"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        preserveAspectRatio="xMidYMid meet"
+        style={
+          Object {
+            "color": undefined,
+            "verticalAlign": "middle",
+          }
+        }
+        viewBox="0 0 40 40"
+        width="1em"
+      >
+        <g>
+          <path
+            d="m24.4 27.9v5q0 0.5-0.4 1t-1 0.4h-5.7q-0.6 0-1-0.4t-0.4-1v-5q0-0.6 0.4-1t1-0.5h5.7q0.6 0 1 0.5t0.4 1z m0.7-23.6l-0.6 17.1q0 0.6-0.5 1t-1 0.5h-5.7q-0.6 0-1-0.5t-0.5-1l-0.6-17.1q0-0.6 0.4-1t1-0.4h7.1q0.6 0 1 0.4t0.4 1z"
+          />
+        </g>
+      </svg>
+    </i>
     This is a required field
   </div>
 </div>
@@ -57,7 +80,7 @@ exports[`TextInput renders correctly when passed an error prop 1`] = `
 
 exports[`TextInput renders correctly when passed required prop 1`] = `
 <div
-  className="sc-bxivhb iKYOHs"
+  className="sc-ifAKCX gjzoEf"
 >
   <label
     className="sc-bdVaJa etThJd"
@@ -71,7 +94,7 @@ exports[`TextInput renders correctly when passed required prop 1`] = `
     />
   </label>
   <input
-    className="sc-ifAKCX imHOfK"
+    className="sc-EHOje bwRyEY"
     id="test"
     name="test"
     onChange={[Function]}
@@ -84,7 +107,7 @@ exports[`TextInput renders correctly when passed required prop 1`] = `
 
 exports[`TextInput renders correctly when passed type of email 1`] = `
 <div
-  className="sc-bxivhb iKYOHs"
+  className="sc-ifAKCX gjzoEf"
 >
   <label
     className="sc-bdVaJa etThJd"
@@ -94,7 +117,7 @@ exports[`TextInput renders correctly when passed type of email 1`] = `
      
   </label>
   <input
-    className="sc-ifAKCX imHOfK"
+    className="sc-EHOje bwRyEY"
     id="test"
     name="test"
     onChange={[Function]}
@@ -107,7 +130,7 @@ exports[`TextInput renders correctly when passed type of email 1`] = `
 
 exports[`TextInput renders correctly when passed type of number 1`] = `
 <div
-  className="sc-bxivhb iKYOHs"
+  className="sc-ifAKCX gjzoEf"
 >
   <label
     className="sc-bdVaJa etThJd"
@@ -117,7 +140,7 @@ exports[`TextInput renders correctly when passed type of number 1`] = `
      
   </label>
   <input
-    className="sc-ifAKCX imHOfK"
+    className="sc-EHOje bwRyEY"
     id="test"
     name="test"
     onChange={[Function]}
@@ -130,7 +153,7 @@ exports[`TextInput renders correctly when passed type of number 1`] = `
 
 exports[`TextInput renders correctly when passed type of password 1`] = `
 <div
-  className="sc-bxivhb iKYOHs"
+  className="sc-ifAKCX gjzoEf"
 >
   <label
     className="sc-bdVaJa etThJd"
@@ -140,7 +163,7 @@ exports[`TextInput renders correctly when passed type of password 1`] = `
      
   </label>
   <input
-    className="sc-ifAKCX imHOfK"
+    className="sc-EHOje bwRyEY"
     id="test"
     name="test"
     onChange={[Function]}
@@ -153,7 +176,7 @@ exports[`TextInput renders correctly when passed type of password 1`] = `
 
 exports[`TextInput renders correctly when passed type of tel 1`] = `
 <div
-  className="sc-bxivhb iKYOHs"
+  className="sc-ifAKCX gjzoEf"
 >
   <label
     className="sc-bdVaJa etThJd"
@@ -163,7 +186,7 @@ exports[`TextInput renders correctly when passed type of tel 1`] = `
      
   </label>
   <input
-    className="sc-ifAKCX imHOfK"
+    className="sc-EHOje bwRyEY"
     id="test"
     name="test"
     onChange={[Function]}

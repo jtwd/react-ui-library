@@ -9,7 +9,7 @@ export default function IconCollection () {
       {Object.keys(icons).map(key =>
         <div className="docs-item">
           <Icon icon={key} />
-          <div>{key}</div>
+          <div className="docs-item-title">{key}</div>
         </div>
       )}
     </div>

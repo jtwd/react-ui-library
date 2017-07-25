@@ -2,6 +2,7 @@ import { xs } from './spacers'
 
 export const siteMaxWidth = '100%'
 export const textMaxWidth = '750px'
+export const shortMaxWidth = '550px'
 export const baseLineHeight = 1.5
 
 export const lineHeightTight = 1.25

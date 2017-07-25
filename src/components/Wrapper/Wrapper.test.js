@@ -13,6 +13,11 @@ describe('Wrapper component', () => {
     expect(component).toMatchSnapshot()
   })
 
+  it('renders a short wrapper', () => {
+    const component = shallow(<Wrapper short>Text</Wrapper>)
+    expect(component).toMatchSnapshot()
+  })
+
   it('renders a centered wrapper', () => {
     const component = shallow(<Wrapper centered>Centered</Wrapper>)
     expect(component).toMatchSnapshot()

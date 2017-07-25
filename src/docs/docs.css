@@ -32,6 +32,10 @@
   text-align: center;
 }
 
+.docs .docs-item .docs-item-title {
+  font-size: 0.8rem;
+}
+
 .docs .example__toggler a {
   font-size: 0.8rem;
   display: inline-block;

@@ -11,8 +11,11 @@ function Label({ htmlFor, label, required }) {
 }
 
 Label.propTypes = {
+  /** To link to an input */
   htmlFor: string.isRequired,
+  /** Label contents */
   label: string.isRequired,
+  /** Required field */
   required: bool
 }
 

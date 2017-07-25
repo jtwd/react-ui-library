@@ -2,7 +2,7 @@
 
 exports[`TextInput renders correctly 1`] = `
 <div
-  className="sc-ifAKCX gjzoEf"
+  className="sc-ifAKCX ffCDom"
 >
   <label
     className="sc-bdVaJa etThJd"
@@ -25,7 +25,7 @@ exports[`TextInput renders correctly 1`] = `
 
 exports[`TextInput renders correctly when passed an error prop 1`] = `
 <div
-  className="sc-ifAKCX gjzoEf"
+  className="sc-ifAKCX ffCDom"
 >
   <label
     className="sc-bdVaJa etThJd"
@@ -80,7 +80,7 @@ exports[`TextInput renders correctly when passed an error prop 1`] = `
 
 exports[`TextInput renders correctly when passed required prop 1`] = `
 <div
-  className="sc-ifAKCX gjzoEf"
+  className="sc-ifAKCX ffCDom"
 >
   <label
     className="sc-bdVaJa etThJd"
@@ -107,7 +107,7 @@ exports[`TextInput renders correctly when passed required prop 1`] = `
 
 exports[`TextInput renders correctly when passed type of email 1`] = `
 <div
-  className="sc-ifAKCX gjzoEf"
+  className="sc-ifAKCX ffCDom"
 >
   <label
     className="sc-bdVaJa etThJd"
@@ -130,7 +130,7 @@ exports[`TextInput renders correctly when passed type of email 1`] = `
 
 exports[`TextInput renders correctly when passed type of number 1`] = `
 <div
-  className="sc-ifAKCX gjzoEf"
+  className="sc-ifAKCX ffCDom"
 >
   <label
     className="sc-bdVaJa etThJd"
@@ -153,7 +153,7 @@ exports[`TextInput renders correctly when passed type of number 1`] = `
 
 exports[`TextInput renders correctly when passed type of password 1`] = `
 <div
-  className="sc-ifAKCX gjzoEf"
+  className="sc-ifAKCX ffCDom"
 >
   <label
     className="sc-bdVaJa etThJd"
@@ -176,7 +176,7 @@ exports[`TextInput renders correctly when passed type of password 1`] = `
 
 exports[`TextInput renders correctly when passed type of tel 1`] = `
 <div
-  className="sc-ifAKCX gjzoEf"
+  className="sc-ifAKCX ffCDom"
 >
   <label
     className="sc-bdVaJa etThJd"

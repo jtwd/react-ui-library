@@ -13,6 +13,7 @@ export const Error = styled.div`
 `
 
 export const Field = styled.div`
+  position: relative;
   margin-bottom: ${md};
 `
 

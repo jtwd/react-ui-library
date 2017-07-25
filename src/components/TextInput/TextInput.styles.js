@@ -1,21 +1,27 @@
 import styled, { css } from 'styled-components'
-import { red, yellow, lightYellow, darkGrey, black } from '../../theme/colors'
+import { red, yellow, white, transBlackDark, transBlackLight } from '../../theme/colors'
 import { transTextHover, radiusRound } from '../../theme/units'
 import { xs, md } from '../../theme/spacers'
 
-export const Error = styled.div`color: ${red};`
+export const Error = styled.div`
+  color: ${red};
+  
+  > i {
+    position: relative;
+    top: 3px;
+  }
+`
 
 export const Field = styled.div`
   margin-bottom: ${md};
-  max-width: 480px;
 `
 
 export const Input = styled.input`
-  border: 2px solid ${yellow};
-  background: ${darkGrey};
-  color: ${yellow};
+  border: 2px solid ${white};
+  background: ${transBlackLight};
+  color: ${white};
   padding: ${xs};
-  transform: ${transTextHover};
+  transition: ${transTextHover};
   border-radius: ${radiusRound};
   display: block;
   width: 100%;
@@ -24,9 +30,11 @@ export const Input = styled.input`
     props.error &&
     css`
     border-color: ${red};
-  `} &:focus {
-    border-color: ${props => (props.error ? red : lightYellow)};
-    background: ${black};
+  `} 
+  
+  &:focus {
+    border-color: ${props => (props.error ? red : yellow)};
+    background: ${transBlackDark};
     outline: 0;
   }
 `

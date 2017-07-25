@@ -1,4 +1,4 @@
-import { lighten, darken } from './utils.colors'
+import { lighten, darken, rgba } from './utils.colors'
 
 const percent = 20
 
@@ -55,5 +55,20 @@ describe('darken - color utility', () => {
     const color = '#000'
     const expected = '#000'
     expect(darken(color)).toBe(expected)
+  })
+})
+
+describe('rgba - color utility', () => {
+  it('returns a rgba value ', () => {
+    const color = '#000000'
+    const alpha = 0.5
+    const expected = 'rgba(0, 0, 0, 0.5)'
+    expect(rgba(color, alpha)).toBe(expected)
+  })
+
+  it('returns a solid rgba color if no alpha value is passed', () => {
+    const color = '#ffffff'
+    const expected = 'rgba(255, 255, 255, 1)'
+    expect(rgba(color)).toBe(expected)
   })
 })

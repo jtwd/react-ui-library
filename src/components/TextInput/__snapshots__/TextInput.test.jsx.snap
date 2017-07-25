@@ -12,13 +12,13 @@ exports[`TextInput renders correctly 1`] = `
      
   </label>
   <input
-    className="sc-ifAKCX bUdiIg"
+    className="sc-ifAKCX imHOfK"
     id="test"
     name="test"
     onChange={[Function]}
     placeholder=""
     type="text"
-    value=""
+    value={undefined}
   />
 </div>
 `;
@@ -34,18 +34,18 @@ exports[`TextInput renders correctly when passed an error prop 1`] = `
     Test
      
     <span
-      className="sc-bwzfXH hEsmVW"
+      className="sc-bwzfXH dfGNqQ"
       title="Required field"
     />
   </label>
   <input
-    className="sc-ifAKCX kAvzK"
+    className="sc-ifAKCX eWmInO"
     id="test"
     name="test"
     onChange={[Function]}
     placeholder=""
     type="text"
-    value=""
+    value={undefined}
   />
   <div
     className="sc-htpNat chuRVz"
@@ -66,18 +66,18 @@ exports[`TextInput renders correctly when passed required prop 1`] = `
     Test
      
     <span
-      className="sc-bwzfXH hEsmVW"
+      className="sc-bwzfXH dfGNqQ"
       title="Required field"
     />
   </label>
   <input
-    className="sc-ifAKCX bUdiIg"
+    className="sc-ifAKCX imHOfK"
     id="test"
     name="test"
     onChange={[Function]}
     placeholder=""
     type="text"
-    value=""
+    value={undefined}
   />
 </div>
 `;
@@ -94,13 +94,13 @@ exports[`TextInput renders correctly when passed type of email 1`] = `
      
   </label>
   <input
-    className="sc-ifAKCX bUdiIg"
+    className="sc-ifAKCX imHOfK"
     id="test"
     name="test"
     onChange={[Function]}
     placeholder=""
     type="email"
-    value=""
+    value={undefined}
   />
 </div>
 `;
@@ -117,13 +117,13 @@ exports[`TextInput renders correctly when passed type of number 1`] = `
      
   </label>
   <input
-    className="sc-ifAKCX bUdiIg"
+    className="sc-ifAKCX imHOfK"
     id="test"
     name="test"
     onChange={[Function]}
     placeholder=""
     type="number"
-    value=""
+    value={undefined}
   />
 </div>
 `;
@@ -140,13 +140,13 @@ exports[`TextInput renders correctly when passed type of password 1`] = `
      
   </label>
   <input
-    className="sc-ifAKCX bUdiIg"
+    className="sc-ifAKCX imHOfK"
     id="test"
     name="test"
     onChange={[Function]}
     placeholder=""
     type="password"
-    value=""
+    value={undefined}
   />
 </div>
 `;
@@ -163,13 +163,13 @@ exports[`TextInput renders correctly when passed type of tel 1`] = `
      
   </label>
   <input
-    className="sc-ifAKCX bUdiIg"
+    className="sc-ifAKCX imHOfK"
     id="test"
     name="test"
     onChange={[Function]}
     placeholder=""
     type="tel"
-    value=""
+    value={undefined}
   />
 </div>
 `;

@@ -1,17 +1,17 @@
 import React from 'react'
 import { node, bool } from 'prop-types'
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import { md } from '../../theme/spacers'
 import { textMaxWidth } from '../../theme/units'
 
 const StyledDiv = styled.div`
   padding: ${md};
   
-  ${props => props.text && css`
+  ${props => props.text && `
     max-width: ${textMaxWidth};
   `}
   
-  ${props => props.centered && css`
+  ${props => props.centered && `
     margin-left: auto;
     margin-right: auto;
   `}

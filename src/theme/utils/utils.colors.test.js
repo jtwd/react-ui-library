@@ -18,6 +18,16 @@ describe('lighten - color utility', () => {
     const expected = 'rgb(51, 51, 51)'
     expect(lighten(color, percent)).toBe(expected)
   })
+  it('returns the original color if given an invalid amount', () => {
+    const color = '#000'
+    const expected = '#000'
+    expect(lighten(color, 110)).toBe(expected)
+  })
+  it('returns the original color if not given an amount', () => {
+    const color = '#000'
+    const expected = '#000'
+    expect(lighten(color)).toBe(expected)
+  })
 })
 
 describe('darken - color utility', () => {
@@ -35,5 +45,15 @@ describe('darken - color utility', () => {
     const color = 'rgb(255, 255, 255)'
     const expected = 'rgb(204, 204, 204)'
     expect(darken(color, percent)).toBe(expected)
+  })
+  it('returns the original color if given an invalid amount', () => {
+    const color = '#000'
+    const expected = '#000'
+    expect(darken(color, 110)).toBe(expected)
+  })
+  it('returns the original color if not given an amount', () => {
+    const color = '#000'
+    const expected = '#000'
+    expect(darken(color)).toBe(expected)
   })
 })

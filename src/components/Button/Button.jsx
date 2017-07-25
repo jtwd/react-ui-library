@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { bool, node, string } from 'prop-types'
 import { radiusRound, transTextHover, primaryNormal, lineHeightTight } from '../../theme/units'
-import trimChildrenHorizontal from '../../theme/mixins/trimChildrenHorizontal'
+import trimChildren from '../../theme/mixins/trimChildren'
 import getPropStylesFromTheme from '../../theme/utils/getPropStylesFromTheme'
 import getIcon from '../../theme/utils/utils.icons'
 import types from './Button.types'
@@ -48,7 +48,7 @@ const StyledButton = styled.button`
    
   ${props => props.secondary && getPropStylesFromTheme(tm, 'types', 'secondary')}
     
-  ${trimChildrenHorizontal};
+  ${trimChildren('hor')};
 `
 
 function Button({ primary, secondary, large, small, icon, children }) {

@@ -47,17 +47,19 @@ const StyledButton = styled.button`
   ${props => props.primary && getPropStylesFromTheme(tm, 'types', 'primary')}
    
   ${props => props.secondary && getPropStylesFromTheme(tm, 'types', 'secondary')}
+  
+  ${props => props.danger && getPropStylesFromTheme(tm, 'types', 'danger')}
     
   ${trimChildren('hor')};
 `
 
-function Button({ primary, secondary, large, small, icon, children }) {
+function Button({ primary, secondary, danger, large, small, icon, children }) {
   const iconOnly = (children === null)
   const validIcon = (getIcon(icon) !== null)
 
   if(iconOnly && !validIcon) return null // don't show if there is no valid contents
   return (
-    <StyledButton primary={primary} secondary={secondary} large={large} small={small} iconOnly={iconOnly}>
+    <StyledButton primary={primary} secondary={secondary} danger={danger} large={large} small={small} iconOnly={iconOnly}>
       {icon && <ButtonIcon iconOnly={iconOnly} icon={icon} large={large} small={small} />}
       {children}
     </StyledButton>
@@ -69,6 +71,8 @@ Button.propTypes = {
   primary: bool,
   /** Type of button */
   secondary: bool,
+  /** Type of button */
+  danger: bool,
   /** Size of button */
   large: bool,
   /** Size of button */
@@ -82,6 +86,7 @@ Button.propTypes = {
 Button.defaultProps = {
   primary: false,
   secondary: false,
+  danger: false,
   large: false,
   small: false,
   icon: '',

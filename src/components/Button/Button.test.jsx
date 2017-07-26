@@ -18,6 +18,11 @@ describe('Button component', () => {
     expect(component).toMatchSnapshot()
   })
 
+  it('renders a danger button when passed prop', () => {
+    const component = shallow(<Button danger>Danger</Button>)
+    expect(component).toMatchSnapshot()
+  })
+
   it('renders a large button when passed prop', () => {
     const component = shallow(<Button large>Primary</Button>)
     expect(component).toMatchSnapshot()

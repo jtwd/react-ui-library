@@ -34,12 +34,12 @@ exports[`TextInput renders correctly when passed an error prop 1`] = `
     Test
      
     <span
-      className="sc-bwzfXH dfGNqQ"
+      className="sc-bwzfXH dYARQs"
       title="Required field"
     />
   </label>
   <input
-    className="sc-EHOje ezRsZe"
+    className="sc-EHOje dPlKdc"
     id="test"
     name="test"
     onChange={[Function]}
@@ -48,7 +48,7 @@ exports[`TextInput renders correctly when passed an error prop 1`] = `
     value={undefined}
   />
   <div
-    className="sc-bxivhb bVSnEB"
+    className="sc-bxivhb krvqla"
   >
     <i
       className="sc-htpNat giXiHP"
@@ -89,7 +89,7 @@ exports[`TextInput renders correctly when passed required prop 1`] = `
     Test
      
     <span
-      className="sc-bwzfXH dfGNqQ"
+      className="sc-bwzfXH dYARQs"
       title="Required field"
     />
   </label>

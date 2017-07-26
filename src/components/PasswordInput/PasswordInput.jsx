@@ -5,7 +5,7 @@ import { yellow } from '../../theme/colors'
 import TextInput from '../TextInput'
 import Icon from '../Icon'
 
-const A = styled.a`
+const Toggle = styled.label`
   position: absolute;
   bottom: 0.1rem;
   right: 0.5rem;
@@ -26,12 +26,11 @@ class PasswordInput extends Component {
     }
   }
 
-  toggleShowPassword(evt) {
+  toggleShowPassword() {
     this.setState(prevState => {
       const newState = { showPassword: !prevState.showPassword }
       return newState
     })
-    if (evt) evt.preventDefault()
   }
 
   render() {
@@ -53,9 +52,9 @@ class PasswordInput extends Component {
       >
         {
           showVisibilityToggle &&
-          <A href="" title="Toggle password visibility"  className="togglePassword" onClick={(e) => { this.toggleShowPassword(e) }}>
+          <Toggle htmlFor={htmlId} title="Toggle password visibility"  className="togglePassword" onClick={() => { this.toggleShowPassword() }}>
             <Icon icon="eye" />
-          </A>
+          </Toggle>
         }
       </TextInput>
     )

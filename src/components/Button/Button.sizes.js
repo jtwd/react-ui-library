@@ -4,24 +4,24 @@ import { fsSm, fsLg, fsMd } from '../../theme/fontSizes'
 const sizes = {
   default: `
     margin: 0 ${xs} ${md};
-    padding: ${md} ${xl};
+    padding: ${sm} ${lg};
     font-size: ${fsMd};
   `,
   sm: `
     margin: 0 ${xxs} ${md};
-    padding: ${sm} ${md};
+    padding: ${xs} ${md};
     font-size: ${fsSm};
   `,
   lg: `
     margin: 0 ${sm} ${lg};
-    padding: ${lg} ${xl};
+    padding: ${md} ${xl};
     font-size: ${fsLg};
   `,
   iconOnly: `
-    padding: ${md} ${lg}; 
+    padding: ${sm} ${md}; 
   `,
   iconOnlySm: `
-    padding: ${sm};
+    padding: ${xs} ${xxs};
   `,
   iconOnlyLg: `
     padding: ${md} ${lg};

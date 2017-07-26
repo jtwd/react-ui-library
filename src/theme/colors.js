@@ -3,9 +3,11 @@ import { lighten, darken, rgba } from './utils/utils.colors'
 const shadeFactor = 8 // (0 - 100) percentage to shade alternative colors
 
 export const black = '#272727'
+export const transBlack = rgba('#000000', 0.5)
 export const transBlackLight = rgba('#000000', 0.2)
 export const transBlackDark = rgba('#000000', 0.8)
 export const white = '#eff1f3'
+export const transWhite = rgba('#ffffff', 0.5)
 export const transWhiteLight = rgba('#ffffff', 0.2)
 export const transWhiteDark = rgba('#ffffff', 0.8)
 

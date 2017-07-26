@@ -59,7 +59,7 @@ const Landing = () =>
     <TextInput htmlId="firstName" label="First name" name="firstName" onChange={() => {}} />
     <TextInput htmlId="lastName" label="Last name" name="lastName" required onChange={() => {}} />
     <TextInput htmlId="email" label="Email address" name="email" type="email" required placeholder="joe@bloggs.com" error="Email is required" onChange={() => {}} />
-    <Wrapper text>
+    <Wrapper text collapse>
       <Heading>Top level heading</Heading>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci aliquid aspernatur consequuntur doloribus, eos excepturi magni molestias nam natus perspiciatis

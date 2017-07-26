@@ -27,4 +27,9 @@ describe('Wrapper component', () => {
     const component = shallow(<Wrapper text centered>Centered</Wrapper>)
     expect(component).toMatchSnapshot()
   })
+
+  it('renders a collapsed wrapper', () => {
+    const component = shallow(<Wrapper collapse>Collapsed</Wrapper>)
+    expect(component).toMatchSnapshot()
+  })
 })

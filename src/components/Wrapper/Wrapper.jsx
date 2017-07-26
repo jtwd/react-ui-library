@@ -5,7 +5,9 @@ import { md } from '../../theme/spacers'
 import { textMaxWidth, shortMaxWidth } from '../../theme/units'
 
 const StyledDiv = styled.div`
-  padding: ${md};
+  ${props => !props.collapse && `
+    padding: ${md};`
+  }
   
   ${props => props.text && `
     max-width: ${textMaxWidth};
@@ -21,11 +23,10 @@ const StyledDiv = styled.div`
   `}
 `
 
-function Wrapper(props) {
-  const { text, centered, short } = props
+function Wrapper({ text, centered, short, collapse, children }) {
   return (
-    <StyledDiv text={text} centered={centered} short={short}>
-      {props.children}
+    <StyledDiv text={text} centered={centered} short={short} collapse={collapse}>
+      {children}
     </StyledDiv>
   )
 }
@@ -37,6 +38,8 @@ Wrapper.propTypes = {
   short: bool,
   /** Centered wrapper */
   centered: bool,
+  /** Collapsed wrapper (no padding) */
+  collapse: bool,
   /** Contents of wrapper */
   children: node
 }
@@ -45,6 +48,7 @@ Wrapper.defaultProps = {
   text: false,
   short: false,
   centered: false,
+  collapse: false,
   children: null
 }
 

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { md, sm, xs, xxs } from '../../theme/spacers'
 import { transWhiteLight, transBlackLight } from '../../theme/colors'
 import { radiusRound, borderLine, primaryBold } from '../../theme/units'
-import boxShadowHover from '../../theme/mixins/boxShadowHover'
+import boxShadowAnimation from '../../theme/mixins/boxShadowAnimation'
 
 const headFootStyles = `
   padding: ${xs} ${xs} ${xs} ${md};
@@ -24,7 +24,7 @@ export const PanelWrapper = styled.div`
   background: ${transWhiteLight};
   position: relative;
   border: ${borderLine};
-  ${boxShadowHover}
+  ${boxShadowAnimation('hover')}
 `
 
 export const Body = styled.div`

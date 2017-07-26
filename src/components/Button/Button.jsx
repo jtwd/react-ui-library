@@ -8,7 +8,7 @@ import getIcon from '../../theme/utils/utils.icons'
 import types from './Button.types'
 import sizes from './Button.sizes'
 import ButtonIcon from './ButtonIcon'
-import boxShadowHover from '../../theme/mixins/boxShadowHover'
+import boxShadowAnimation from '../../theme/mixins/boxShadowAnimation'
 
 const tm = {
   borderRadius: radiusRound,
@@ -30,7 +30,7 @@ const StyledButton = styled.button`
   min-height: 1rem;
   min-width: 3rem;
   vertical-align: middle;
-  ${boxShadowHover}
+  ${boxShadowAnimation('all')}
 
   ${props => !props.large && !props.small && getPropStylesFromTheme(tm, 'sizes')}
   

@@ -111,7 +111,7 @@
 }
 
 .docs .navigation .docs-active {
-  background: rgba(0,0,0,.85);
+  background: rgba(0,0,0,.65);
 }
 .docs .navigation .docs-active a {
   color: rgba(255,255,255,.85);

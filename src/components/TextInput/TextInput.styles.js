@@ -26,6 +26,10 @@ export const Input = styled.input`
   border-radius: ${radiusRound};
   display: block;
   width: 100%;
+  
+  &:focus {
+    outline-color: ${yellow}
+  }
 
   ${props =>
     props.error &&

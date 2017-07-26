@@ -8,6 +8,7 @@ export default function ButtonTypes() {
       <Button>Default button</Button>
       <Button primary>Primary button</Button>
       <Button secondary>Secondary button</Button>
+      <Button danger>Danger button</Button>
     </div>
   )
 };

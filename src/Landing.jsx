@@ -5,10 +5,11 @@ import TextInput from './components/TextInput'
 import { IconMenu, IconClose, IconEye, IconEdit, IconLock } from './theme/icons'
 import Wrapper from './components/Wrapper'
 import Heading from './components/Heading'
+import PageHeader from './components/PageHeader'
 
 const Landing = () =>
-  <Wrapper>
-    <h1>Landing page</h1>
+  <div>
+    <PageHeader title="Landing Page" />
     <div>
       <Button>Default Button</Button>
       <Button primary>Primary Button</Button>
@@ -81,6 +82,6 @@ const Landing = () =>
         quo repudiandae suscipit, veniam veritatis. Dolor id nisi perferendis?
       </p>
     </Wrapper>
-  </Wrapper>
+  </div>
 
 export default Landing

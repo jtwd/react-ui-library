@@ -9,6 +9,7 @@ export default function TextInputError() {
       name="email"
       onChange={() => {}}
       required
+      placeholder="user@domain.com"
       error="This is a required field"
     />
   )

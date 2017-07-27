@@ -1,16 +1,16 @@
 import React from 'react'
-import PageTitle from '../PageTitle'
+import PageHeader from '../PageHeader'
 import Icon from '../../Icon'
 
-export default function PageTitleStandard() {
+export default function PageHeaderStandard() {
   const IconTitle = <span><Icon icon="lock" large /> A icon page title <small>with some sub-title text</small></span>
   return (
     <div>
-      <PageTitle title="A standard page title" />
-      <PageTitle title={IconTitle} />
-      <PageTitle title="Page title with some extra content">
+      <PageHeader title="A standard page header" />
+      <PageHeader title={IconTitle} />
+      <PageHeader title="Page header with some extra content">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, delectus dolor dolore dolorem doloribus expedita id.</p>
-      </PageTitle>
+      </PageHeader>
     </div>
   )
 }

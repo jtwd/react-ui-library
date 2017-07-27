@@ -1,25 +1,25 @@
 import React from 'react'
 import { node } from 'prop-types'
-import { PageHeader, Title } from './PageTitle.styles'
+import { Header, Title } from './PageHeader.styles'
 
-function PageTitle({title, children}) {
+function PageHeader({title, children}) {
   return (
-    <PageHeader>
+    <Header>
       <Title>{title}</Title>
       {children}
-    </PageHeader>
+    </Header>
   )
 }
 
-PageTitle.propTypes = {
+PageHeader.propTypes = {
   /** Title content */
   title: node.isRequired,
   /** Any extra content - eg. meta data etc */
   children: node
 }
 
-PageTitle.defaultProps = {
+PageHeader.defaultProps = {
   children: null
 }
 
-export default PageTitle
+export default PageHeader

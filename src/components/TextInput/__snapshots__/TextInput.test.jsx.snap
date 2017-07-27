@@ -12,7 +12,7 @@ exports[`TextInput renders correctly 1`] = `
      
   </label>
   <input
-    className="sc-EHOje bwRyEY"
+    className="sc-EHOje cUJljk"
     id="test"
     name="test"
     onChange={[Function]}
@@ -39,7 +39,7 @@ exports[`TextInput renders correctly when passed an error prop 1`] = `
     />
   </label>
   <input
-    className="sc-EHOje dPlKdc"
+    className="sc-EHOje cQrQFB"
     id="test"
     name="test"
     onChange={[Function]}
@@ -94,7 +94,7 @@ exports[`TextInput renders correctly when passed required prop 1`] = `
     />
   </label>
   <input
-    className="sc-EHOje bwRyEY"
+    className="sc-EHOje cUJljk"
     id="test"
     name="test"
     onChange={[Function]}
@@ -117,7 +117,7 @@ exports[`TextInput renders correctly when passed type of email 1`] = `
      
   </label>
   <input
-    className="sc-EHOje bwRyEY"
+    className="sc-EHOje cUJljk"
     id="test"
     name="test"
     onChange={[Function]}
@@ -140,7 +140,7 @@ exports[`TextInput renders correctly when passed type of number 1`] = `
      
   </label>
   <input
-    className="sc-EHOje bwRyEY"
+    className="sc-EHOje cUJljk"
     id="test"
     name="test"
     onChange={[Function]}
@@ -163,7 +163,7 @@ exports[`TextInput renders correctly when passed type of password 1`] = `
      
   </label>
   <input
-    className="sc-EHOje bwRyEY"
+    className="sc-EHOje cUJljk"
     id="test"
     name="test"
     onChange={[Function]}
@@ -186,7 +186,7 @@ exports[`TextInput renders correctly when passed type of tel 1`] = `
      
   </label>
   <input
-    className="sc-EHOje bwRyEY"
+    className="sc-EHOje cUJljk"
     id="test"
     name="test"
     onChange={[Function]}

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { bool, node, string } from 'prop-types'
-import { radiusRound, transTextHover, primaryNormal, lineHeightTight } from '../_theme/units'
+import { radiusRound, transTextHover, primaryBold, lineHeightTight } from '../_theme/units'
 import trimChildren from '../_theme/mixins/trimChildren'
 import getPropStylesFromTheme from '../_theme/utils/getPropStylesFromTheme'
 import getIcon from '../_theme/utils/utils.icons'
@@ -13,7 +13,7 @@ import boxShadowAnimation from '../_theme/mixins/boxShadowAnimation'
 const tm = {
   borderRadius: radiusRound,
   transition: transTextHover,
-  weight: primaryNormal,
+  weight: primaryBold,
   lineHeight: lineHeightTight,
   types,
   sizes

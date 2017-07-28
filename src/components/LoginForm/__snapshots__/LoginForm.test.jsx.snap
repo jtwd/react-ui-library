@@ -1,53 +1,269 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`LoginForm renders correctly 1`] = `
-<Wrapper
-  centered={false}
-  collapse={true}
-  short={true}
-  text={false}
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <Wrapper
+    centered={false}
+    collapse={true}
+    short={true}
+    text={false}
 >
-  <Panel
-    footer={
-      <Button
-        danger={false}
-        icon="lock"
-        large={false}
-        onClick={[Function]}
-        primary={false}
-        secondary={true}
-        small={true}
-        type="submit"
+    <Panel
+        footer={
+            <Button
+                danger={false}
+                icon="lock"
+                large={false}
+                onClick={[Function]}
+                primary={false}
+                secondary={true}
+                small={true}
+            >
+                Login
+            </Button>
+        }
+        footerRight={true}
+        header="Login"
+    >
+        <TextInput
+            error={null}
+            htmlId="login-email"
+            label="Email address"
+            name="email"
+            onChange={[Function]}
+            placeholder="user@domain.com"
+            required={true}
+            type="email"
+            value=""
+        />
+        <PasswordInput
+            error=""
+            htmlId="login-password"
+            label="Password"
+            maxLength={50}
+            name="password"
+            onChange={[Function]}
+            placeholder=""
+            required={true}
+            showVisibilityToggle={true}
+            value=""
+        />
+    </Panel>
+</Wrapper>,
+  "nodes": Array [
+    <Wrapper
+      centered={false}
+      collapse={true}
+      short={true}
+      text={false}
+>
+      <Panel
+            footer={
+                  <Button
+                        danger={false}
+                        icon="lock"
+                        large={false}
+                        onClick={[Function]}
+                        primary={false}
+                        secondary={true}
+                        small={true}
+                  >
+                        Login
+                  </Button>
+            }
+            footerRight={true}
+            header="Login"
       >
-        Login
-      </Button>
-    }
-    footerRight={true}
-    header="Login"
-  >
-    <TextInput
-      error={null}
-      htmlId="login-email"
-      label="Email address"
-      name="email"
-      onChange={[Function]}
-      placeholder="user@domain.com"
-      required={true}
-      type="email"
-      value=""
-    />
-    <PasswordInput
-      error=""
-      htmlId="login-password"
-      label="Password"
-      maxLength={50}
-      name="password"
-      onChange={[Function]}
-      placeholder=""
-      required={true}
-      showVisibilityToggle={true}
-      value=""
-    />
-  </Panel>
-</Wrapper>
+            <TextInput
+                  error={null}
+                  htmlId="login-email"
+                  label="Email address"
+                  name="email"
+                  onChange={[Function]}
+                  placeholder="user@domain.com"
+                  required={true}
+                  type="email"
+                  value=""
+            />
+            <PasswordInput
+                  error=""
+                  htmlId="login-password"
+                  label="Password"
+                  maxLength={50}
+                  name="password"
+                  onChange={[Function]}
+                  placeholder=""
+                  required={true}
+                  showVisibilityToggle={true}
+                  value=""
+            />
+      </Panel>
+</Wrapper>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 0,
+      "_context": Object {},
+      "_currentElement": <LoginForm
+        onSubmit={[Function]}
+        title="Login"
+/>,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": LoginForm {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "onSubmit": [Function],
+          "title": "Login",
+        },
+        "refs": Object {},
+        "state": Object {
+          "credentials": Object {
+            "email": "",
+            "password": "",
+          },
+          "errors": Object {},
+          "submitted": false,
+        },
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <Wrapper
+          centered={false}
+          collapse={true}
+          short={true}
+          text={false}
+>
+          <Panel
+                    footer={
+                              <Button
+                                        danger={false}
+                                        icon="lock"
+                                        large={false}
+                                        onClick={[Function]}
+                                        primary={false}
+                                        secondary={true}
+                                        small={true}
+                              >
+                                        Login
+                              </Button>
+                    }
+                    footerRight={true}
+                    header="Login"
+          >
+                    <TextInput
+                              error={null}
+                              htmlId="login-email"
+                              label="Email address"
+                              name="email"
+                              onChange={[Function]}
+                              placeholder="user@domain.com"
+                              required={true}
+                              type="email"
+                              value=""
+                    />
+                    <PasswordInput
+                              error=""
+                              htmlId="login-password"
+                              label="Password"
+                              maxLength={50}
+                              name="password"
+                              onChange={[Function]}
+                              placeholder=""
+                              required={true}
+                              showVisibilityToggle={true}
+                              value=""
+                    />
+          </Panel>
+</Wrapper>,
+        "_debugID": 2,
+        "_renderedOutput": <Wrapper
+          centered={false}
+          collapse={true}
+          short={true}
+          text={false}
+>
+          <Panel
+                    footer={
+                              <Button
+                                        danger={false}
+                                        icon="lock"
+                                        large={false}
+                                        onClick={[Function]}
+                                        primary={false}
+                                        secondary={true}
+                                        small={true}
+                              >
+                                        Login
+                              </Button>
+                    }
+                    footerRight={true}
+                    header="Login"
+          >
+                    <TextInput
+                              error={null}
+                              htmlId="login-email"
+                              label="Email address"
+                              name="email"
+                              onChange={[Function]}
+                              placeholder="user@domain.com"
+                              required={true}
+                              type="email"
+                              value=""
+                    />
+                    <PasswordInput
+                              error=""
+                              htmlId="login-password"
+                              label="Password"
+                              maxLength={50}
+                              name="password"
+                              onChange={[Function]}
+                              placeholder=""
+                              required={true}
+                              showVisibilityToggle={true}
+                              value=""
+                    />
+          </Panel>
+</Wrapper>,
+      },
+      "_renderedNodeType": 1,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <LoginForm
+    onSubmit={[Function]}
+    title="Login"
+/>,
+}
 `;

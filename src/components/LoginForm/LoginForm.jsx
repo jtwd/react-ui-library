@@ -57,7 +57,7 @@ class LoginForm extends Component {
     const { email, password } = this.state.credentials
     const { title } = this.props
 
-    const SubmitButton = <Button secondary small onClick={() => this.handleSubmitClick()}>Login</Button>
+    const SubmitButton = <Button secondary small icon="lock" onClick={() => this.handleSubmitClick()}>Login</Button>
 
     return (
       <Wrapper short collapse>

@@ -1,6 +1,6 @@
 import isEmailAddress from './isEmailAddress'
 
-describe('isEmailAddress - utility', () => {
+describe('isEmailAddress - validation', () => {
   it('it returns the true for user@domain.com', () => {
     const value = 'user@domain.com'
     expect(isEmailAddress(value)).toBe(true)

@@ -48,7 +48,7 @@ exports[`TextInput renders correctly when passed an error prop 1`] = `
     value={undefined}
   />
   <div
-    className="sc-bxivhb krvqla"
+    className="sc-bxivhb ifNZaQ"
   >
     <i
       className="sc-htpNat giXiHP"

@@ -55,13 +55,13 @@ const StyledButton = styled.button`
   ${trimChildren('hor')};
 `
 
-function Button({ primary, secondary, danger, large, small, icon, children }) {
+function Button({ primary, secondary, danger, large, small, icon, children, ...props }) {
   const iconOnly = (children === null)
   const validIcon = (getIcon(icon) !== null)
 
   if(iconOnly && !validIcon) return null // don't show if there is no valid contents
   return (
-    <StyledButton primary={primary} secondary={secondary} danger={danger} large={large} small={small} iconOnly={iconOnly}>
+    <StyledButton primary={primary} secondary={secondary} danger={danger} large={large} small={small} iconOnly={iconOnly} {...props}>
       {icon && <ButtonIcon iconOnly={iconOnly} icon={icon} large={large} small={small} />}
       {children}
     </StyledButton>

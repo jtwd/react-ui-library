@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import { string, bool, func, number } from 'prop-types'
-import { yellow } from '../../theme/colors'
+import { yellow } from '../_theme/colors'
 import TextInput from '../TextInput'
 import Icon from '../Icon'
 
 const Toggle = styled.label`
   position: absolute;
-  bottom: 0.1rem;
-  right: 0.5rem;
+  top: 2.4rem;
+  right: 0.75rem;
   z-index: 10;
   
   &:hover,
@@ -53,7 +53,7 @@ class PasswordInput extends Component {
         {
           showVisibilityToggle &&
           <Toggle htmlFor={htmlId} title="Toggle password visibility"  className="togglePassword" onClick={() => { this.toggleShowPassword() }}>
-            <Icon icon="eye" />
+            { showPassword ? <Icon icon="eyeSlash" /> : <Icon icon="eye" /> }
           </Toggle>
         }
       </TextInput>

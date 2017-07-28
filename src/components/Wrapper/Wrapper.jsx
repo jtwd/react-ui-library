@@ -1,8 +1,8 @@
 import React from 'react'
 import { node, bool } from 'prop-types'
 import styled from 'styled-components'
-import { md } from '../../theme/spacers'
-import { textMaxWidth, shortMaxWidth } from '../../theme/units'
+import { md } from '../_theme/spacers'
+import { textMaxWidth, shortMaxWidth } from '../_theme/units'
 
 const StyledDiv = styled.div`
   ${props => !props.collapse && `

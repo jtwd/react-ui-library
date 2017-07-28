@@ -1,23 +1,26 @@
 import React from 'react'
 import { string, bool } from 'prop-types'
 import styled from 'styled-components'
-import { xxs, sm, md } from '../../theme/spacers'
-import getPropStylesFromTheme from '../../theme/utils/getPropStylesFromTheme'
+import { xxs, xs, sm } from '../_theme/spacers'
+import getPropStylesFromTheme from '../_theme/utils/getPropStylesFromTheme'
 import Icon from '../Icon'
 
 const tm = {
   iconOnly: {
-    default: `left: 0`
+    default: `
+      left: 0;
+    `
   },
   sizes: {
     default: `
-      left: -${sm};
+      left: -${xs};
     `,
     sm: `
       left: -${xxs};
     `,
     lg: `
-      left: -${md};
+      left: -${sm};
+      top: 0.1rem;
     `
   }
 }

@@ -5,13 +5,16 @@ const Navigation = ({ currentRoute, components }) =>
   <div className="navigation">
     <h3>Components</h3>
     <ul className="navigation-list">
-      {components.map(name =>
-        <li key={name} className={currentRoute === name && 'docs-active' }>
-          <a href={`#${name}`}>
-            {name}
-          </a>
-        </li>
-      )}
+      {components.map(name => {
+        if (name === '') return null
+        return (
+          <li key={`docs-${name}`} className={currentRoute === name && 'docs-active' }>
+            <a href={`#${name}`}>
+              {name}
+            </a>
+          </li>
+        )
+      })}
     </ul>
   </div>
 

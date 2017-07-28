@@ -1,4 +1,4 @@
-import { white, grey, darkGrey, blue, darkBlue, yellow, lightYellow, darkYellow, red, darkRed } from '../../theme/colors'
+import { white, grey, darkGrey, blue, darkBlue, yellow, lightYellow, darkYellow, red, darkRed } from '../_theme/colors'
 
 const types = {
   default: `

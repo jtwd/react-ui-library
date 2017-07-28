@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import {string, bool } from 'prop-types'
-import getIcon from '../../theme/utils/utils.icons'
-import getPropStylesFromTheme from '../../theme/utils/getPropStylesFromTheme'
+import getIcon from '../_theme/utils/utils.icons'
+import getPropStylesFromTheme from '../_theme/utils/getPropStylesFromTheme'
 import sizes from './Icon.sizes'
 
 const tm = {

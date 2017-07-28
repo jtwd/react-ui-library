@@ -38,7 +38,7 @@ describe('getPropStylesFromTheme - utility', () => {
     expect(getPropStylesFromTheme(theme, param)).toBe(expected)
   })
 
-  it('it returns null when passed an invalid theme', () => {
+  it('it returns null when passed an invalid _theme', () => {
     const invalidTheme = undefined
     const expected = null
     const param = 'param1'
@@ -50,7 +50,7 @@ describe('getPropStylesFromTheme - utility', () => {
     expect(getPropStylesFromTheme()).toBe(expected)
   })
 
-  it('it returns null when passed only a theme', () => {
+  it('it returns null when passed only a _theme', () => {
     const expected = null
     expect(getPropStylesFromTheme(theme)).toBe(expected)
   })

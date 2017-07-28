@@ -8,7 +8,7 @@ export const transBlackLight = rgba('#000000', 0.2)
 export const transBlackDark = rgba('#000000', 0.8)
 export const white = '#eff1f3'
 export const transWhite = rgba('#ffffff', 0.5)
-export const transWhiteLight = rgba('#ffffff', 0.2)
+export const transWhiteLight = rgba('#ffffff', 0.075)
 export const transWhiteDark = rgba('#ffffff', 0.8)
 
 export const grey = '#696773'

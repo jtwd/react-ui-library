@@ -1,5 +1,5 @@
-import { xxs, xs, sm, md, lg, xl } from '../../theme/spacers'
-import { fsSm, fsLg, fsMd } from '../../theme/fontSizes'
+import { xxs, xs, sm, md, lg, xl } from '../_theme/spacers'
+import { fsSm, fsLg, fsMd } from '../_theme/fontSizes'
 
 const sizes = {
   default: `

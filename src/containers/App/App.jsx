@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { BrowserRouter, Route } from 'react-router-dom'
 import Landing from '../../Landing'
 import Search from '../../Search'
-import Docs from '../../docs/Docs'
+import Docs from '../../components/_docs/Docs'
 import AppWrapper from './AppWrapper'
 
 // eslint-disable-next-line react/prefer-stateless-function

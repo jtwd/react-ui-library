@@ -1,4 +1,4 @@
-import { md, lg, xl } from '../../theme/spacers'
+import { md, lg, xl } from '../_theme/spacers'
 
 const sizes = {
   default: `width: ${lg};`,

@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginForm renders correctly 1`] = `
+<Wrapper
+  centered={false}
+  collapse={true}
+  short={true}
+  text={false}
+>
+  <Panel
+    footer={
+      <Button
+        danger={false}
+        icon="lock"
+        large={false}
+        onClick={[Function]}
+        primary={false}
+        secondary={true}
+        small={true}
+        type="submit"
+      >
+        Login
+      </Button>
+    }
+    footerRight={true}
+    header="Login"
+  >
+    <TextInput
+      error={null}
+      htmlId="login-email"
+      label="Email address"
+      name="email"
+      onChange={[Function]}
+      placeholder="user@domain.com"
+      required={true}
+      type="email"
+      value=""
+    />
+    <PasswordInput
+      error=""
+      htmlId="login-password"
+      label="Password"
+      maxLength={50}
+      name="password"
+      onChange={[Function]}
+      placeholder=""
+      required={true}
+      showVisibilityToggle={true}
+      value=""
+    />
+  </Panel>
+</Wrapper>
+`;

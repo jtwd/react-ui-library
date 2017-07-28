@@ -1,8 +1,8 @@
 import styled from 'styled-components'
-import { white } from '../../theme/colors'
-import { fsMd, fsLg, fsXl, fsXxl } from '../../theme/fontSizes'
-import { md, sm, xs } from '../../theme/spacers'
-import trimChildren from '../../theme/mixins/trimChildren'
+import { white } from '../_theme/colors'
+import { fsMd, fsLg, fsXl, fsXxl } from '../_theme/fontSizes'
+import { md, sm, xs } from '../_theme/spacers'
+import trimChildren from '../_theme/mixins/trimChildren'
 
 const commonStyles = `
   color: ${white};

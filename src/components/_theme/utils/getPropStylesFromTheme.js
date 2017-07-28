@@ -1,6 +1,6 @@
 /**
- * Returns a style string from a theme object based on props passed into a react component
- * @param {object} themeVars - A React Components theme object
+ * Returns a style string from a _theme object based on props passed into a react component
+ * @param {object} themeVars - A React Components _theme object
  * @param {string} param - The prop identifier
  * @param {string} val - Value of the prop identifier - 'default'
  * @returns {string} - A style string for styled-components

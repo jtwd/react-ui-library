@@ -24,6 +24,7 @@ if (enableWatchMode) {
 function generate(paths) {
   var errors = [];
   var componentData = getDirectories(paths.components).map(function(componentName) {
+    if (componentName.charAt(0) === '_') return { name: '' };
     try {
       return getComponentData(paths, componentName)
     } catch(error) {

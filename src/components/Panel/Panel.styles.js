@@ -1,11 +1,11 @@
 import styled from 'styled-components'
-import { md, sm, xs, xxs } from '../../theme/spacers'
-import { transWhiteLight, transBlackLight } from '../../theme/colors'
-import { radiusRound, borderLine, primaryBold } from '../../theme/units'
-import boxShadowAnimation from '../../theme/mixins/boxShadowAnimation'
+import { md, sm, xs, xxs } from '../_theme/spacers'
+import { transWhiteLight, transBlackLight } from '../_theme/colors'
+import { radiusRound, borderLine, primaryBold } from '../_theme/units'
+import boxShadowAnimation from '../_theme/mixins/boxShadowAnimation'
 
 const headFootStyles = `
-  padding: ${xs} ${xs} ${xs} ${md};
+  padding: ${xs} ${md};
   background: ${transBlackLight};
   
   > * {

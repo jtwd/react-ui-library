@@ -9,6 +9,7 @@ ShallowWrapper {
   },
   "length": 1,
   "node": <Wrapper
+    app={false}
     centered={false}
     collapse={true}
     short={true}
@@ -58,6 +59,7 @@ ShallowWrapper {
 </Wrapper>,
   "nodes": Array [
     <Wrapper
+      app={false}
       centered={false}
       collapse={true}
       short={true}
@@ -154,6 +156,7 @@ ShallowWrapper {
       "_pendingStateQueue": null,
       "_renderedComponent": NoopInternalComponent {
         "_currentElement": <Wrapper
+          app={false}
           centered={false}
           collapse={true}
           short={true}
@@ -203,6 +206,7 @@ ShallowWrapper {
 </Wrapper>,
         "_debugID": 2,
         "_renderedOutput": <Wrapper
+          app={false}
           centered={false}
           collapse={true}
           short={true}

@@ -9,7 +9,13 @@ ShallowWrapper {
   },
   "length": 1,
   "node": <BrowserRouter>
-    <Styled(Wrapper)>
+    <Wrapper
+        app={true}
+        centered={true}
+        collapse={false}
+        short={false}
+        text={false}
+    >
         <Route
             component={[Function]}
             exact={true}
@@ -23,11 +29,17 @@ ShallowWrapper {
             component={[Function]}
             path="/docs"
         />
-    </Styled(Wrapper)>
+    </Wrapper>
 </BrowserRouter>,
   "nodes": Array [
     <BrowserRouter>
-      <Styled(Wrapper)>
+      <Wrapper
+            app={true}
+            centered={true}
+            collapse={false}
+            short={false}
+            text={false}
+      >
             <Route
                   component={[Function]}
                   exact={true}
@@ -41,7 +53,7 @@ ShallowWrapper {
                   component={[Function]}
                   path="/docs"
             />
-      </Styled(Wrapper)>
+      </Wrapper>
 </BrowserRouter>,
   ],
   "options": Object {},
@@ -79,7 +91,13 @@ ShallowWrapper {
       "_pendingStateQueue": null,
       "_renderedComponent": NoopInternalComponent {
         "_currentElement": <BrowserRouter>
-          <Styled(Wrapper)>
+          <Wrapper
+                    app={true}
+                    centered={true}
+                    collapse={false}
+                    short={false}
+                    text={false}
+          >
                     <Route
                               component={[Function]}
                               exact={true}
@@ -93,11 +111,17 @@ ShallowWrapper {
                               component={[Function]}
                               path="/docs"
                     />
-          </Styled(Wrapper)>
+          </Wrapper>
 </BrowserRouter>,
         "_debugID": 2,
         "_renderedOutput": <BrowserRouter>
-          <Styled(Wrapper)>
+          <Wrapper
+                    app={true}
+                    centered={true}
+                    collapse={false}
+                    short={false}
+                    text={false}
+          >
                     <Route
                               component={[Function]}
                               exact={true}
@@ -111,7 +135,7 @@ ShallowWrapper {
                               component={[Function]}
                               path="/docs"
                     />
-          </Styled(Wrapper)>
+          </Wrapper>
 </BrowserRouter>,
       },
       "_renderedNodeType": 1,

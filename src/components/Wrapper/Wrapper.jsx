@@ -2,12 +2,17 @@ import React from 'react'
 import { node, bool } from 'prop-types'
 import styled from 'styled-components'
 import { md } from '../_theme/spacers'
-import { textMaxWidth, shortMaxWidth } from '../_theme/units'
+import { textMaxWidth, shortMaxWidth, siteMaxWidth } from '../_theme/units'
 
 const StyledDiv = styled.div`
   ${props => !props.collapse && `
     padding: ${md};`
   }
+  
+  ${props => !props.app && `
+    max-width: ${siteMaxWidth}
+    min-height: 100vh;
+  `}
   
   ${props => props.text && `
     max-width: ${textMaxWidth};
@@ -23,15 +28,17 @@ const StyledDiv = styled.div`
   `}
 `
 
-function Wrapper({ text, centered, short, collapse, children }) {
+function Wrapper({ app, text, centered, short, collapse, children }) {
   return (
-    <StyledDiv text={text} centered={centered} short={short} collapse={collapse}>
+    <StyledDiv text={text} centered={centered} short={short} collapse={collapse} app={app}>
       {children}
     </StyledDiv>
   )
 }
 
 Wrapper.propTypes = {
+  /** Sized appropriately for App */
+  app: bool,
   /** Sized appropriately for text */
   text: bool,
   /** Short Sized  */
@@ -45,6 +52,7 @@ Wrapper.propTypes = {
 }
 
 Wrapper.defaultProps = {
+  app: false,
   text: false,
   short: false,
   centered: false,

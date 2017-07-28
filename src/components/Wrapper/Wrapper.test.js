@@ -32,4 +32,9 @@ describe('Wrapper component', () => {
     const component = shallow(<Wrapper collapse>Collapsed</Wrapper>)
     expect(component).toMatchSnapshot()
   })
+
+  it('renders an app wrapper', () => {
+    const component = shallow(<Wrapper app>App</Wrapper>)
+    expect(component).toMatchSnapshot()
+  })
 })

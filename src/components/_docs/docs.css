@@ -11,6 +11,7 @@
 
 .docs .docs-example {
   text-align: center;
+  line-height: 1.8;
 }
 
 .docs .docs-eg1 {
@@ -36,7 +37,7 @@
 }
 
 .docs .docs-eg-height3 {
-  height: 200px;
+  height: 250px;
   border: 1px solid rgba(255,255,255,.2);
   margin-bottom: 15px;
 }

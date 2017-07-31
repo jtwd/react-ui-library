@@ -4,7 +4,7 @@ import HBox from '../HBox'
 import Wrapper from '../../Wrapper'
 
 /** Pack (start, center, end, space-between, space-around) */
-function HBoxAlign () {
+function HBoxPack () {
   return (
     <div>
       <HBox pack="start" className="docs-eg-height">
@@ -36,4 +36,4 @@ function HBoxAlign () {
   )
 }
 
-export default HBoxAlign
+export default HBoxPack

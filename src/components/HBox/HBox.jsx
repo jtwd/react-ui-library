@@ -39,7 +39,7 @@ function HBox({ children, align, pack, ...props}) {
 
 HBox.propTypes = {
   align: oneOf(['stretch', 'top', 'bottom']),
-  pack: oneOf(['start', 'center', 'end', 'space-between', 'spacer-around', null]),
+  pack: oneOf(['start', 'center', 'end', 'space-between', 'space-around', null]),
   children: node.isRequired
 }
 

@@ -12,6 +12,8 @@ ShallowWrapper {
     app={false}
     centered={false}
     collapse={true}
+    flex={null}
+    middle={false}
     short={true}
     text={false}
 >
@@ -62,6 +64,8 @@ ShallowWrapper {
       app={false}
       centered={false}
       collapse={true}
+      flex={null}
+      middle={false}
       short={true}
       text={false}
 >
@@ -159,6 +163,8 @@ ShallowWrapper {
           app={false}
           centered={false}
           collapse={true}
+          flex={null}
+          middle={false}
           short={true}
           text={false}
 >
@@ -209,6 +215,8 @@ ShallowWrapper {
           app={false}
           centered={false}
           collapse={true}
+          flex={null}
+          middle={false}
           short={true}
           text={false}
 >

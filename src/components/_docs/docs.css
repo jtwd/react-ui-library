@@ -9,6 +9,38 @@
   color: white;
 }
 
+.docs .docs-example {
+  text-align: center;
+}
+
+.docs .docs-eg1 {
+  background: rgba(0,0,0,.2);
+}
+.docs .docs-eg2 {
+  background: rgba(0,0,0,.4);
+}
+.docs .docs-eg3 {
+  background: rgba(0,0,0,.6);
+}
+
+.docs .docs-eg-height {
+  height: 80px;
+  border: 1px solid rgba(255,255,255,.2);
+  margin-bottom: 15px;
+}
+
+.docs .docs-eg-height2 {
+  height: 120px;
+  border: 1px solid rgba(255,255,255,.2);
+  margin-bottom: 15px;
+}
+
+.docs .docs-eg-height3 {
+  height: 200px;
+  border: 1px solid rgba(255,255,255,.2);
+  margin-bottom: 15px;
+}
+
 .docs .componentpage > h2 {
   border-bottom: 3px solid rgba(255,255,255,.6);
   color: rgba(255,255,255,.6);

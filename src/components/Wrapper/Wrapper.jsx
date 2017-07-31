@@ -1,5 +1,5 @@
 import React from 'react'
-import { node, bool } from 'prop-types'
+import { node, bool, number } from 'prop-types'
 import styled from 'styled-components'
 
 import { md } from '../_theme/spacers'
@@ -27,11 +27,21 @@ const StyledDiv = styled.div`
     margin-left: auto;
     margin-right: auto;
   `}
+  
+  ${props => props.flex && `
+    flex: ${props.flex};
+  `}
+  
+  ${props => props.middle && `
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  `}
 `
 
-function Wrapper({ app, text, centered, short, collapse, children }) {
+function Wrapper({ app, text, centered, middle, short, collapse, flex, children, ...props }) {
   return (
-    <StyledDiv text={text} centered={centered} short={short} collapse={collapse} app={app}>
+    <StyledDiv text={text} centered={centered} middle={middle} short={short} collapse={collapse} app={app} flex={flex} {...props}>
       {children}
     </StyledDiv>
   )
@@ -46,8 +56,12 @@ Wrapper.propTypes = {
   short: bool,
   /** Centered wrapper */
   centered: bool,
+  /** Middle aligned (vertically) wrapper */
+  middle: bool,
   /** Collapsed wrapper (no padding) */
   collapse: bool,
+  /** For use with HBox and VBox */
+  flex: number,
   /** Contents of wrapper */
   children: node
 }
@@ -57,7 +71,9 @@ Wrapper.defaultProps = {
   text: false,
   short: false,
   centered: false,
+  middle: false,
   collapse: false,
+  flex: null,
   children: null
 }
 

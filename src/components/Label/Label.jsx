@@ -1,5 +1,6 @@
 import React from 'react'
 import { string, bool } from 'prop-types'
+
 import { Label as StyledLabel, RequiredSymbol } from './Label.styles'
 
 function Label({ htmlFor, label, required }) {

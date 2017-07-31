@@ -1,14 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 import { bool, node, string } from 'prop-types'
+
 import { radiusRound, transTextHover, primaryBold, lineHeightTight } from '../_theme/units'
 import trimChildren from '../_theme/mixins/trimChildren'
 import getPropStylesFromTheme from '../_theme/utils/getPropStylesFromTheme'
 import getIcon from '../_theme/utils/utils.icons'
+import boxShadowAnimation from '../_theme/mixins/boxShadowAnimation'
 import types from './Button.types'
 import sizes from './Button.sizes'
 import ButtonIcon from './ButtonIcon'
-import boxShadowAnimation from '../_theme/mixins/boxShadowAnimation'
 
 const tm = {
   borderRadius: radiusRound,

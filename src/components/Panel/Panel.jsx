@@ -1,5 +1,6 @@
 import React from 'react'
 import { node, bool } from 'prop-types'
+
 import { PanelWrapper, Body, Header, Footer } from "./Panel.styles"
 
 function Panel ({header, footer, footerRight, children,  ...props}) {

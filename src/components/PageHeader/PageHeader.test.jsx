@@ -1,5 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
+
 import PageHeader from './PageHeader'
 
 test('PageHeader renders correctly when passed a title string', () => {

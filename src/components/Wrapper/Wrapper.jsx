@@ -1,6 +1,7 @@
 import React from 'react'
 import { node, bool } from 'prop-types'
 import styled from 'styled-components'
+
 import { md } from '../_theme/spacers'
 import { textMaxWidth, shortMaxWidth, siteMaxWidth } from '../_theme/units'
 

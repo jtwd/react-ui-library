@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import { string, bool, func, number } from 'prop-types'
+
 import { yellow } from '../_theme/colors'
 import TextInput from '../TextInput'
 import Icon from '../Icon'

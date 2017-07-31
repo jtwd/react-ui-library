@@ -1,5 +1,6 @@
 import React from 'react'
 import { oneOf, node } from 'prop-types'
+
 import { H2, H3, H4, H5 } from './Heading.styles'
 
 /** Simple shell for using headings. Level 1 is a H2, level 2 a H3 and so on. H1 is reserved for the PageHeader component */

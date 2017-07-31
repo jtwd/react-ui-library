@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { node, func } from 'prop-types'
+
 import isEmailAddress from '../../services/validation/isEmailAddress'
 import { validationMessages } from '../../config/systemMessages'
 import Wrapper from '../Wrapper'

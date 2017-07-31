@@ -1,6 +1,7 @@
 import React from 'react'
 import { string, bool } from 'prop-types'
 import styled from 'styled-components'
+
 import { xxs, xs, sm } from '../_theme/spacers'
 import getPropStylesFromTheme from '../_theme/utils/getPropStylesFromTheme'
 import Icon from '../Icon'

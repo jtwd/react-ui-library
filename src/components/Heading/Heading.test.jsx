@@ -1,5 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
+
 import Heading from './Heading'
 
 test('Heading renders top level correctly', () => {

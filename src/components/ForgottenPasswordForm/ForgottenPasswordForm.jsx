@@ -7,6 +7,7 @@ import Wrapper from '../Wrapper'
 import Panel from '../Panel'
 import TextInput from '../TextInput'
 import Button from '../Button'
+import HBox from '../HBox'
 
 class ForgottenPasswordForm extends Component {
   constructor (props) {
@@ -52,10 +53,13 @@ class ForgottenPasswordForm extends Component {
 
   render() {
     const { email, errors} = this.state
-    const SubmitButton = <Button small secondary onClick={() => this.handleFormSubmit()}>Reset password</Button>
+    const FormControls =
+      <HBox pack="end">
+        <Button secondary small onClick={() => this.handleFormSubmit()}>Reset password</Button>
+      </HBox>
     return (
       <Wrapper short collapse>
-        <Panel header="Forgotten Password?" footer={SubmitButton} footerRight>
+        <Panel header="Forgotten Password?" footer={FormControls} footerRight>
           <TextInput
             htmlId="password-email"
             name="email"

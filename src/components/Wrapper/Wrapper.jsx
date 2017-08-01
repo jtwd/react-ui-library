@@ -1,5 +1,5 @@
 import React from 'react'
-import { node, bool, number, oneOf } from 'prop-types'
+import { node, bool, number } from 'prop-types'
 import styled, { css } from 'styled-components'
 
 import { md } from '../_theme/spacers'
@@ -58,8 +58,8 @@ function getStyledElement(ele) {
   }
 }
 
-function Wrapper({ type, app, text, centered, middle, short, collapse, flex, children, ...props }) {
-  const StyledEle = getStyledElement(type)
+function Wrapper({ app, text, centered, middle, short, collapse, flex, children, ...props }) {
+  const StyledEle = getStyledElement('')
   return (
     <StyledEle text={text} centered={centered} middle={middle} short={short} collapse={collapse} app={app} flex={flex} {...props}>
       {children}
@@ -68,8 +68,6 @@ function Wrapper({ type, app, text, centered, middle, short, collapse, flex, chi
 }
 
 Wrapper.propTypes = {
-  /** Element type of wrapper (div, form) */
-  type: oneOf('div', 'form', 'main', 'header', 'footer', 'section', 'article'),
   /** Sized appropriately for App */
   app: bool,
   /** Sized appropriately for text */
@@ -89,7 +87,6 @@ Wrapper.propTypes = {
 }
 
 Wrapper.defaultProps = {
-  type: 'div',
   app: false,
   text: false,
   short: false,

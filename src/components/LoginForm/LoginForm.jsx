@@ -8,6 +8,7 @@ import Panel from '../Panel'
 import TextInput from '../TextInput'
 import PasswordInput from '../PasswordInput'
 import Button from '../Button'
+import HBox from '../HBox'
 
 class LoginForm extends Component {
   constructor (props) {
@@ -24,6 +25,7 @@ class LoginForm extends Component {
   }
 
   handleInputChange (evt) {
+    console.log(evt.target)
     const fields = this.state.fields;
     fields[evt.target.name] = evt.target.value;
     this.setState({fields});
@@ -59,20 +61,23 @@ class LoginForm extends Component {
     const { email, password } = this.state.fields
     const { title } = this.props
 
-    const SubmitButton = <Button secondary small icon="lock" onClick={() => this.handleFormSubmit()}>Login</Button>
+    const FormControls =
+      <HBox pack="end">
+        <Button secondary small icon="lock" onClick={() => this.handleFormSubmit()}>Login</Button>
+      </HBox>
 
     return (
       <Wrapper short collapse>
-        <Panel header={title} footer={SubmitButton} footerRight>
+        <Panel header={title} footer={FormControls}>
           <TextInput
             htmlId="login-email"
             name="email"
             label="Email address"
             type="email"
             placeholder="user@domain.com"
-            value={email}
             onChange={(e) => this.handleInputChange(e)}
             required
+            value={email}
             error={errors.email}
           />
 
@@ -80,10 +85,10 @@ class LoginForm extends Component {
             htmlId="login-password"
             name="password"
             label="Password"
-            value={password}
             onChange={(e) => this.handleInputChange(e)}
             maxLength={50}
             required
+            value={password}
             error={errors.password} />
         </Panel>
       </Wrapper>

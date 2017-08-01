@@ -1,22 +1,19 @@
 import React, { Component } from 'react'
-import { node, func } from 'prop-types'
+import { func } from 'prop-types'
 
 import isEmailAddress from '../../services/validation/isEmailAddress'
 import { validationMessages } from '../../config/systemMessages'
 import Wrapper from '../Wrapper'
 import Panel from '../Panel'
 import TextInput from '../TextInput'
-import PasswordInput from '../PasswordInput'
 import Button from '../Button'
 
-class LoginForm extends Component {
+class ForgottenPasswordForm extends Component {
   constructor (props) {
     super(props)
-
     this.state = {
       fields: {
-        email: '',
-        password: ''
+        email: ''
       },
       errors: {},
       submitted: false
@@ -39,7 +36,7 @@ class LoginForm extends Component {
     }
   }
 
-  validate ({email, password}) {
+  validate ({email}) {
     const errors = {}
 
     if (!email) {
@@ -47,25 +44,20 @@ class LoginForm extends Component {
     } else if (!isEmailAddress(email)) {
       errors.email = validationMessages.email.invalid
     }
-    if (!password) errors.password = validationMessages.password.required
 
     this.setState({errors})
     const formIsValid = Object.getOwnPropertyNames(errors).length === 0
     return formIsValid
   }
 
-  render () {
-    const { errors } = this.state
-    const { email, password } = this.state.fields
-    const { title } = this.props
-
-    const SubmitButton = <Button secondary small icon="lock" onClick={() => this.handleFormSubmit()}>Login</Button>
-
+  render() {
+    const { email, errors} = this.state
+    const SubmitButton = <Button small secondary onClick={() => this.handleFormSubmit()}>Reset password</Button>
     return (
       <Wrapper short collapse>
-        <Panel header={title} footer={SubmitButton} footerRight>
+        <Panel header="Forgotten Password?" footer={SubmitButton} footerRight>
           <TextInput
-            htmlId="login-email"
+            htmlId="password-email"
             name="email"
             label="Email address"
             type="email"
@@ -75,31 +67,14 @@ class LoginForm extends Component {
             required
             error={errors.email}
           />
-
-          <PasswordInput
-            htmlId="login-password"
-            name="password"
-            label="Password"
-            value={password}
-            onChange={(e) => this.handleInputChange(e)}
-            maxLength={50}
-            required
-            error={errors.password} />
         </Panel>
       </Wrapper>
     )
   }
 }
 
-LoginForm.propTypes = {
-  /** Form title - goes in the panel header */
-  title: node,
-  /** Function to call when validation is passed */
+ForgottenPasswordForm.propTypes = {
   onSubmit: func.isRequired
 }
 
-LoginForm.defaultProps = {
-  title: 'Login'
-}
-
-export default LoginForm
+export default ForgottenPasswordForm

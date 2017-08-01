@@ -134,11 +134,11 @@ ShallowWrapper {
         },
         "refs": Object {},
         "state": Object {
-          "credentials": Object {
+          "errors": Object {},
+          "fields": Object {
             "email": "",
             "password": "",
           },
-          "errors": Object {},
           "submitted": false,
         },
         "updater": Object {

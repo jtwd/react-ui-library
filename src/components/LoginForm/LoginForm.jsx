@@ -93,6 +93,7 @@ class LoginForm extends Component {
 LoginForm.propTypes = {
   /** Form title - goes in the panel header */
   title: node,
+  /** Function to call when validation is passed */
   onSubmit: func.isRequired
 }
 

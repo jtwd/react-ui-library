@@ -17,7 +17,6 @@ ShallowWrapper {
         middle={false}
         short={false}
         text={false}
-        type="div"
     >
         <Route
             component={[Function]}
@@ -44,7 +43,6 @@ ShallowWrapper {
             middle={false}
             short={false}
             text={false}
-            type="div"
       >
             <Route
                   component={[Function]}
@@ -105,7 +103,6 @@ ShallowWrapper {
                     middle={false}
                     short={false}
                     text={false}
-                    type="div"
           >
                     <Route
                               component={[Function]}
@@ -132,7 +129,6 @@ ShallowWrapper {
                     middle={false}
                     short={false}
                     text={false}
-                    type="div"
           >
                     <Route
                               component={[Function]}

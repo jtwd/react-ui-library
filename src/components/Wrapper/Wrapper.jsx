@@ -1,11 +1,11 @@
 import React from 'react'
 import { node, bool, number } from 'prop-types'
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 import { md } from '../_theme/spacers'
 import { textMaxWidth, shortMaxWidth, siteMaxWidth } from '../_theme/units'
 
-const styles = css`
+const StyledDiv = styled.div`
   ${props => !props.collapse && `
     padding: ${md};`
   }
@@ -39,31 +39,11 @@ const styles = css`
   `}
 `
 
-function getStyledElement(ele) {
-  switch(ele) {
-    case 'form':
-      return styled.form`${styles}`
-    case 'main':
-      return styled.main`${styles}`
-    case 'header':
-      return styled.header`${styles}`
-    case 'footer':
-      return styled.footer`${styles}`
-    case 'section':
-      return styled.section`${styles}`
-    case 'article':
-      return styled.article`${styles}`
-    default:
-      return styled.div`${styles}`
-  }
-}
-
 function Wrapper({ app, text, centered, middle, short, collapse, flex, children, ...props }) {
-  const StyledEle = getStyledElement('')
   return (
-    <StyledEle text={text} centered={centered} middle={middle} short={short} collapse={collapse} app={app} flex={flex} {...props}>
+    <StyledDiv text={text} centered={centered} middle={middle} short={short} collapse={collapse} app={app} flex={flex} {...props}>
       {children}
-    </StyledEle>
+    </StyledDiv>
   )
 }
 

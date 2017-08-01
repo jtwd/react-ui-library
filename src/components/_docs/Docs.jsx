@@ -20,14 +20,11 @@ export default class Docs extends Component {
   }
 
   render() {
-    const { route } = this.state
+    let { route } = this.state
     const myComponent = route ? componentData.filter(component => component.name === route)[0] : componentData[0]
-    /*
     if (!route) {
       route = componentData[0].name
     }
-    */
-
 
     return (
       <div className="docs">

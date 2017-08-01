@@ -9,6 +9,36 @@ describe('Wrapper component', () => {
     expect(component).toMatchSnapshot()
   })
 
+  it('renders as a type of form', () => {
+    const component = shallow(<Wrapper type="form">Form</Wrapper>)
+    expect(component).toMatchSnapshot()
+  })
+
+  it('renders as a type of main', () => {
+    const component = shallow(<Wrapper type="main">Main</Wrapper>)
+    expect(component).toMatchSnapshot()
+  })
+
+  it('renders as a type of header', () => {
+    const component = shallow(<Wrapper type="header">Header</Wrapper>)
+    expect(component).toMatchSnapshot()
+  })
+
+  it('renders as a type of footer', () => {
+    const component = shallow(<Wrapper type="footer">Footer</Wrapper>)
+    expect(component).toMatchSnapshot()
+  })
+
+  it('renders as a type of section', () => {
+    const component = shallow(<Wrapper type="section">Section</Wrapper>)
+    expect(component).toMatchSnapshot()
+  })
+
+  it('renders as a type of article', () => {
+    const component = shallow(<Wrapper type="article">Article</Wrapper>)
+    expect(component).toMatchSnapshot()
+  })
+
   it('renders a text wrapper', () => {
     const component = shallow(<Wrapper text>Text</Wrapper>)
     expect(component).toMatchSnapshot()

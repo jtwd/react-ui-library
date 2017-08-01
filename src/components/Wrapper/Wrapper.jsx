@@ -1,11 +1,11 @@
 import React from 'react'
-import { node, bool, number } from 'prop-types'
-import styled from 'styled-components'
+import { node, bool, number, oneOf } from 'prop-types'
+import styled, { css } from 'styled-components'
 
 import { md } from '../_theme/spacers'
 import { textMaxWidth, shortMaxWidth, siteMaxWidth } from '../_theme/units'
 
-const StyledDiv = styled.div`
+const styles = css`
   ${props => !props.collapse && `
     padding: ${md};`
   }
@@ -39,15 +39,37 @@ const StyledDiv = styled.div`
   `}
 `
 
-function Wrapper({ app, text, centered, middle, short, collapse, flex, children, ...props }) {
+function getStyledElement(ele) {
+  switch(ele) {
+    case 'form':
+      return styled.form`${styles}`
+    case 'main':
+      return styled.main`${styles}`
+    case 'header':
+      return styled.header`${styles}`
+    case 'footer':
+      return styled.footer`${styles}`
+    case 'section':
+      return styled.section`${styles}`
+    case 'article':
+      return styled.article`${styles}`
+    default:
+      return styled.div`${styles}`
+  }
+}
+
+function Wrapper({ type, app, text, centered, middle, short, collapse, flex, children, ...props }) {
+  const StyledEle = getStyledElement(type)
   return (
-    <StyledDiv text={text} centered={centered} middle={middle} short={short} collapse={collapse} app={app} flex={flex} {...props}>
+    <StyledEle text={text} centered={centered} middle={middle} short={short} collapse={collapse} app={app} flex={flex} {...props}>
       {children}
-    </StyledDiv>
+    </StyledEle>
   )
 }
 
 Wrapper.propTypes = {
+  /** Element type of wrapper (div, form) */
+  type: oneOf('div', 'form', 'main', 'header', 'footer', 'section', 'article'),
   /** Sized appropriately for App */
   app: bool,
   /** Sized appropriately for text */
@@ -67,6 +89,7 @@ Wrapper.propTypes = {
 }
 
 Wrapper.defaultProps = {
+  type: 'div',
   app: false,
   text: false,
   short: false,

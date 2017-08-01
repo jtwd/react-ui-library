@@ -62,7 +62,7 @@ class LoginForm extends Component {
     const SubmitButton = <Button secondary small icon="lock" onClick={() => this.handleFormSubmit()}>Login</Button>
 
     return (
-      <Wrapper short collapse>
+      <Wrapper type="form" short collapse>
         <Panel header={title} footer={SubmitButton} footerRight>
           <TextInput
             htmlId="login-email"

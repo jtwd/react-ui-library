@@ -4,7 +4,7 @@ import ForgottenPasswordForm from '../ForgottenPasswordForm'
 
 function ForgottenPasswordStandard() {
   return (
-    <ForgottenPasswordForm />
+    <ForgottenPasswordForm onSubmit={() => {}} />
   )
 }
 

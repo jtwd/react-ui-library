@@ -14,7 +14,7 @@ class LoginForm extends Component {
     super(props)
 
     this.state = {
-      credentials: {
+      fields: {
         email: '',
         password: ''
       },
@@ -23,18 +23,19 @@ class LoginForm extends Component {
     }
   }
 
-  onChange (evt) {
-    const credentials = this.state.credentials;
-    credentials[evt.target.name] = evt.target.value;
-    this.setState({credentials});
+  handleInputChange (evt) {
+    const fields = this.state.fields;
+    fields[evt.target.name] = evt.target.value;
+    this.setState({fields});
   }
 
-  handleSubmitClick () {
-    const {credentials} = this.state
-    const formIsValid = this.validate(credentials)
+  handleFormSubmit () {
+    const {fields} = this.state
+    const formIsValid = this.validate(fields)
 
     if(formIsValid) {
-      this.props.onSubmit(credentials)
+      this.props.onSubmit(fields)
+      this.setState({submitted: true})
     }
   }
 
@@ -55,10 +56,10 @@ class LoginForm extends Component {
 
   render () {
     const { errors } = this.state
-    const { email, password } = this.state.credentials
+    const { email, password } = this.state.fields
     const { title } = this.props
 
-    const SubmitButton = <Button secondary small icon="lock" onClick={() => this.handleSubmitClick()}>Login</Button>
+    const SubmitButton = <Button secondary small icon="lock" onClick={() => this.handleFormSubmit()}>Login</Button>
 
     return (
       <Wrapper short collapse>
@@ -70,7 +71,7 @@ class LoginForm extends Component {
             type="email"
             placeholder="user@domain.com"
             value={email}
-            onChange={(e) => this.onChange(e)}
+            onChange={(e) => this.handleInputChange(e)}
             required
             error={errors.email}
           />
@@ -80,7 +81,7 @@ class LoginForm extends Component {
             name="password"
             label="Password"
             value={password}
-            onChange={(e) => this.onChange(e)}
+            onChange={(e) => this.handleInputChange(e)}
             maxLength={50}
             required
             error={errors.password} />

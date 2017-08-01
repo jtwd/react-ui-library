@@ -16,6 +16,7 @@ ShallowWrapper {
     middle={false}
     short={true}
     text={false}
+    type="div"
 >
     <Panel
         footer={
@@ -68,6 +69,7 @@ ShallowWrapper {
       middle={false}
       short={true}
       text={false}
+      type="div"
 >
       <Panel
             footer={
@@ -167,6 +169,7 @@ ShallowWrapper {
           middle={false}
           short={true}
           text={false}
+          type="div"
 >
           <Panel
                     footer={
@@ -219,6 +222,7 @@ ShallowWrapper {
           middle={false}
           short={true}
           text={false}
+          type="div"
 >
           <Panel
                     footer={

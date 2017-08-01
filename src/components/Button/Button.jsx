@@ -53,7 +53,7 @@ const StyledButton = styled.button`
   
   ${props => props.danger && getPropStylesFromTheme(tm, 'types', 'danger')}
     
-  ${trimChildren('hor')};
+  ${trimChildren('both')};
 `
 
 function Button({ primary, secondary, danger, large, small, icon, children, ...props }) {

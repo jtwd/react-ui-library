@@ -6,8 +6,17 @@ import HBox from '../../HBox'
 
 function FormEg() {
   const Controls = <HBox pack="end"><Button secondary small type="submit">Submit</Button></HBox>
+  const fields = [
+    {
+      htmlId: 'example-email',
+      name: 'email',
+      type: 'email',
+      label: 'Email address',
+      required: true
+    }
+  ]
   return (
-    <Form title="Example form" controls={Controls} onSubmit={() => console.log('submit')} />
+    <Form title="Example form" fields={fields} controls={Controls} onSubmit={() => {}} />
   )
 }
 

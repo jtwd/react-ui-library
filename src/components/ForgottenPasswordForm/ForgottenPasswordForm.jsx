@@ -71,6 +71,7 @@ class ForgottenPasswordForm extends Component {
           onChange={(e) => this.handleInputChange(e)}
           required
           error={errors.email}
+          autoFocus
         />
 
       </Form>

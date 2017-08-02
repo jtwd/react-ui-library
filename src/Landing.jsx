@@ -1,17 +1,16 @@
 import React from 'react'
+
 import Button from './components/Button'
 import Label from './components/Label'
 import TextInput from './components/TextInput'
-import { IconMenu, IconClose, IconEye, IconEdit, IconLock } from './theme/icons'
+import { IconMenu, IconClose, IconEye, IconEdit, IconLock } from './components/_theme/icons'
 import Wrapper from './components/Wrapper'
+import Heading from './components/Heading'
+import PageHeader from './components/PageHeader'
 
 const Landing = () =>
-  <Wrapper>
-    <h1>Landing page</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci aliquid aspernatur consequuntur doloribus, eos excepturi magni molestias nam natus perspiciatis
-      quo repudiandae suscipit, veniam veritatis. Dolor id nisi perferendis?
-    </p>
+  <div>
+    <PageHeader title="Landing Page" />
     <div>
       <Button>Default Button</Button>
       <Button primary>Primary Button</Button>
@@ -62,6 +61,28 @@ const Landing = () =>
     <TextInput htmlId="firstName" label="First name" name="firstName" onChange={() => {}} />
     <TextInput htmlId="lastName" label="Last name" name="lastName" required onChange={() => {}} />
     <TextInput htmlId="email" label="Email address" name="email" type="email" required placeholder="joe@bloggs.com" error="Email is required" onChange={() => {}} />
-  </Wrapper>
+    <Wrapper text collapse>
+      <Heading>Top level heading</Heading>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci aliquid aspernatur consequuntur doloribus, eos excepturi magni molestias nam natus perspiciatis
+        quo repudiandae suscipit, veniam veritatis. Dolor id nisi perferendis?
+      </p>
+      <Heading level={2}>Second level heading</Heading>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci aliquid aspernatur consequuntur doloribus, eos excepturi magni molestias nam natus perspiciatis
+        quo repudiandae suscipit, veniam veritatis. Dolor id nisi perferendis?
+      </p>
+      <Heading level={3}>Third level heading</Heading>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci aliquid aspernatur consequuntur doloribus, eos excepturi magni molestias nam natus perspiciatis
+        quo repudiandae suscipit, veniam veritatis. Dolor id nisi perferendis?
+      </p>
+      <Heading level={4}>Forth level heading</Heading>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci aliquid aspernatur consequuntur doloribus, eos excepturi magni molestias nam natus perspiciatis
+        quo repudiandae suscipit, veniam veritatis. Dolor id nisi perferendis?
+      </p>
+    </Wrapper>
+  </div>
 
 export default Landing

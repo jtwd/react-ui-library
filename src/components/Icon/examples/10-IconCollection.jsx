@@ -1,5 +1,6 @@
 import React from 'react'
-import icons from '../../../theme/icons'
+
+import icons from '../../_theme/icons'
 import Icon from '../Icon'
 
 /** Collection */

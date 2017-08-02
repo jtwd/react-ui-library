@@ -1,5 +1,6 @@
 import React from 'react'
 import { string, oneOf, bool, func, node } from 'prop-types'
+
 import Label from '../Label'
 import Icon from '../Icon'
 import { Field, Input, Error } from './TextInput.styles'

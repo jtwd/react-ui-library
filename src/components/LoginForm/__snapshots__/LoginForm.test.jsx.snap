@@ -1,0 +1,273 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginForm renders correctly 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <Form
+    centered={false}
+    collapse={true}
+    controls={
+        <FormControls
+            align="right"
+        >
+            <Button
+                danger={false}
+                icon="lock"
+                large={false}
+                primary={true}
+                secondary={false}
+                small={false}
+                type="submit"
+            >
+                Login
+            </Button>
+        </FormControls>
+    }
+    onSubmit={[Function]}
+    short={true}
+    text={false}
+    title="Login"
+>
+    <TextInput
+        error={null}
+        htmlId="login-email"
+        label="Email address"
+        name="email"
+        onChange={[Function]}
+        placeholder="user@domain.com"
+        required={true}
+        type="email"
+        value=""
+    />
+    <PasswordInput
+        error=""
+        htmlId="login-password"
+        label="Password"
+        maxLength={50}
+        name="password"
+        onChange={[Function]}
+        placeholder=""
+        required={true}
+        showVisibilityToggle={true}
+        value=""
+    />
+</Form>,
+  "nodes": Array [
+    <Form
+      centered={false}
+      collapse={true}
+      controls={
+            <FormControls
+                  align="right"
+            >
+                  <Button
+                        danger={false}
+                        icon="lock"
+                        large={false}
+                        primary={true}
+                        secondary={false}
+                        small={false}
+                        type="submit"
+                  >
+                        Login
+                  </Button>
+            </FormControls>
+      }
+      onSubmit={[Function]}
+      short={true}
+      text={false}
+      title="Login"
+>
+      <TextInput
+            error={null}
+            htmlId="login-email"
+            label="Email address"
+            name="email"
+            onChange={[Function]}
+            placeholder="user@domain.com"
+            required={true}
+            type="email"
+            value=""
+      />
+      <PasswordInput
+            error=""
+            htmlId="login-password"
+            label="Password"
+            maxLength={50}
+            name="password"
+            onChange={[Function]}
+            placeholder=""
+            required={true}
+            showVisibilityToggle={true}
+            value=""
+      />
+</Form>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 0,
+      "_context": Object {},
+      "_currentElement": <LoginForm
+        onSubmit={[Function]}
+        title="Login"
+/>,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": LoginForm {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "onSubmit": [Function],
+          "title": "Login",
+        },
+        "refs": Object {},
+        "state": Object {
+          "errors": Object {},
+          "fields": Object {
+            "email": "",
+            "password": "",
+          },
+          "submitted": false,
+        },
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <Form
+          centered={false}
+          collapse={true}
+          controls={
+                    <FormControls
+                              align="right"
+                    >
+                              <Button
+                                        danger={false}
+                                        icon="lock"
+                                        large={false}
+                                        primary={true}
+                                        secondary={false}
+                                        small={false}
+                                        type="submit"
+                              >
+                                        Login
+                              </Button>
+                    </FormControls>
+          }
+          onSubmit={[Function]}
+          short={true}
+          text={false}
+          title="Login"
+>
+          <TextInput
+                    error={null}
+                    htmlId="login-email"
+                    label="Email address"
+                    name="email"
+                    onChange={[Function]}
+                    placeholder="user@domain.com"
+                    required={true}
+                    type="email"
+                    value=""
+          />
+          <PasswordInput
+                    error=""
+                    htmlId="login-password"
+                    label="Password"
+                    maxLength={50}
+                    name="password"
+                    onChange={[Function]}
+                    placeholder=""
+                    required={true}
+                    showVisibilityToggle={true}
+                    value=""
+          />
+</Form>,
+        "_debugID": 2,
+        "_renderedOutput": <Form
+          centered={false}
+          collapse={true}
+          controls={
+                    <FormControls
+                              align="right"
+                    >
+                              <Button
+                                        danger={false}
+                                        icon="lock"
+                                        large={false}
+                                        primary={true}
+                                        secondary={false}
+                                        small={false}
+                                        type="submit"
+                              >
+                                        Login
+                              </Button>
+                    </FormControls>
+          }
+          onSubmit={[Function]}
+          short={true}
+          text={false}
+          title="Login"
+>
+          <TextInput
+                    error={null}
+                    htmlId="login-email"
+                    label="Email address"
+                    name="email"
+                    onChange={[Function]}
+                    placeholder="user@domain.com"
+                    required={true}
+                    type="email"
+                    value=""
+          />
+          <PasswordInput
+                    error=""
+                    htmlId="login-password"
+                    label="Password"
+                    maxLength={50}
+                    name="password"
+                    onChange={[Function]}
+                    placeholder=""
+                    required={true}
+                    showVisibilityToggle={true}
+                    value=""
+          />
+</Form>,
+      },
+      "_renderedNodeType": 1,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <LoginForm
+    onSubmit={[Function]}
+    title="Login"
+/>,
+}
+`;

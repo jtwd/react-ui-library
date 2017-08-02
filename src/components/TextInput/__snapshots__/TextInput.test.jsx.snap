@@ -12,7 +12,7 @@ exports[`TextInput renders correctly 1`] = `
      
   </label>
   <input
-    className="sc-EHOje bwRyEY"
+    className="sc-EHOje cUJljk"
     id="test"
     name="test"
     onChange={[Function]}
@@ -34,12 +34,12 @@ exports[`TextInput renders correctly when passed an error prop 1`] = `
     Test
      
     <span
-      className="sc-bwzfXH dfGNqQ"
+      className="sc-bwzfXH dYARQs"
       title="Required field"
     />
   </label>
   <input
-    className="sc-EHOje ezRsZe"
+    className="sc-EHOje cQrQFB"
     id="test"
     name="test"
     onChange={[Function]}
@@ -48,7 +48,7 @@ exports[`TextInput renders correctly when passed an error prop 1`] = `
     value={undefined}
   />
   <div
-    className="sc-bxivhb bVSnEB"
+    className="sc-bxivhb ifNZaQ"
   >
     <i
       className="sc-htpNat giXiHP"
@@ -89,12 +89,12 @@ exports[`TextInput renders correctly when passed required prop 1`] = `
     Test
      
     <span
-      className="sc-bwzfXH dfGNqQ"
+      className="sc-bwzfXH dYARQs"
       title="Required field"
     />
   </label>
   <input
-    className="sc-EHOje bwRyEY"
+    className="sc-EHOje cUJljk"
     id="test"
     name="test"
     onChange={[Function]}
@@ -117,7 +117,7 @@ exports[`TextInput renders correctly when passed type of email 1`] = `
      
   </label>
   <input
-    className="sc-EHOje bwRyEY"
+    className="sc-EHOje cUJljk"
     id="test"
     name="test"
     onChange={[Function]}
@@ -140,7 +140,7 @@ exports[`TextInput renders correctly when passed type of number 1`] = `
      
   </label>
   <input
-    className="sc-EHOje bwRyEY"
+    className="sc-EHOje cUJljk"
     id="test"
     name="test"
     onChange={[Function]}
@@ -163,7 +163,7 @@ exports[`TextInput renders correctly when passed type of password 1`] = `
      
   </label>
   <input
-    className="sc-EHOje bwRyEY"
+    className="sc-EHOje cUJljk"
     id="test"
     name="test"
     onChange={[Function]}
@@ -186,7 +186,7 @@ exports[`TextInput renders correctly when passed type of tel 1`] = `
      
   </label>
   <input
-    className="sc-EHOje bwRyEY"
+    className="sc-EHOje cUJljk"
     id="test"
     name="test"
     onChange={[Function]}

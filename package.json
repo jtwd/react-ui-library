@@ -62,7 +62,7 @@
     "format": "prettier --write --no-semi --single-quote --print-width=180 --tab-width=2 \"src/**/*.{js,jsx}\"",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "test:coverage": "npm run test -- --coverage"
+    "coverage": "npm run test -- --coverage"
   },
   "devDependencies": {
     "chokidar": "1.6.1",
@@ -78,7 +78,7 @@
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}",
-      "!src/docs/*.{js,jsx}",
+      "!src/components/_docs/*.{js,jsx}",
       "!src/components/**/examples/*.js?(x)",
       "!src/registerServiceWorker.js"
     ],

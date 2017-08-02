@@ -1,30 +1,30 @@
-import { xxs, xs, sm, md, lg, xl } from '../../theme/spacers'
-import { fsSm, fsLg, fsMd } from '../../theme/fontSizes'
+import { xxs, xs, sm, md, xl } from '../_theme/spacers'
+import { fsSm, fsLg, fsMd } from '../_theme/fontSizes'
 
 const sizes = {
   default: `
-    margin: 0 ${xs} ${md};
-    padding: ${md} ${xl};
+    margin: 0 ${xxs} ${md};
+    padding: 0.66rem ${md};
     font-size: ${fsMd};
   `,
-  sm: `
-    margin: 0 ${xxs} ${md};
-    padding: ${sm} ${md};
-    font-size: ${fsSm};
-  `,
   lg: `
-    margin: 0 ${sm} ${lg};
-    padding: ${lg} ${xl};
+    margin: 0 ${xs} ${md};
+    padding: 1.25rem ${xl};
     font-size: ${fsLg};
   `,
+  sm: `
+    margin: 0 ${xxs} ${sm};
+    padding: .33rem ${sm};
+    font-size: ${fsSm};
+  `,
   iconOnly: `
-    padding: ${md} ${lg}; 
+    padding: 0.38rem ${sm}; 
   `,
   iconOnlySm: `
-    padding: ${sm};
+    padding: ${xxs} ${xxs};
   `,
   iconOnlyLg: `
-    padding: ${md} ${lg};
+    padding: ${sm} ${md};
   `
 }
 

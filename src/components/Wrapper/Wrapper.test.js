@@ -1,5 +1,6 @@
 import React from 'react'
 import {shallow} from 'enzyme'
+
 import Wrapper from './Wrapper'
 
 describe('Wrapper component', () => {
@@ -25,6 +26,16 @@ describe('Wrapper component', () => {
 
   it('renders a centered text wrapper', () => {
     const component = shallow(<Wrapper text centered>Centered</Wrapper>)
+    expect(component).toMatchSnapshot()
+  })
+
+  it('renders a collapsed wrapper', () => {
+    const component = shallow(<Wrapper collapse>Collapsed</Wrapper>)
+    expect(component).toMatchSnapshot()
+  })
+
+  it('renders an app wrapper', () => {
+    const component = shallow(<Wrapper app>App</Wrapper>)
     expect(component).toMatchSnapshot()
   })
 })

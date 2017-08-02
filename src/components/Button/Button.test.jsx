@@ -1,5 +1,6 @@
 import React from 'react'
 import {shallow} from 'enzyme'
+
 import Button from './Button'
 
 describe('Button component', () => {
@@ -15,6 +16,11 @@ describe('Button component', () => {
 
   it('renders a secondary button when passed prop', () => {
     const component = shallow(<Button secondary>Primary</Button>)
+    expect(component).toMatchSnapshot()
+  })
+
+  it('renders a danger button when passed prop', () => {
+    const component = shallow(<Button danger>Danger</Button>)
     expect(component).toMatchSnapshot()
   })
 

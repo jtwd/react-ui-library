@@ -1,10 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 import { bool, node, string } from 'prop-types'
-import { radiusRound, transTextHover, primaryNormal, lineHeightTight } from '../../theme/units'
-import trimChildren from '../../theme/mixins/trimChildren'
-import getPropStylesFromTheme from '../../theme/utils/getPropStylesFromTheme'
-import getIcon from '../../theme/utils/utils.icons'
+
+import { radiusRound, transTextHover, primaryBold, lineHeightTight } from '../_theme/units'
+import trimChildren from '../_theme/mixins/trimChildren'
+import getPropStylesFromTheme from '../_theme/utils/getPropStylesFromTheme'
+import getIcon from '../_theme/utils/utils.icons'
+import boxShadowAnimation from '../_theme/mixins/boxShadowAnimation'
 import types from './Button.types'
 import sizes from './Button.sizes'
 import ButtonIcon from './ButtonIcon'
@@ -12,7 +14,7 @@ import ButtonIcon from './ButtonIcon'
 const tm = {
   borderRadius: radiusRound,
   transition: transTextHover,
-  weight: primaryNormal,
+  weight: primaryBold,
   lineHeight: lineHeightTight,
   types,
   sizes
@@ -27,8 +29,9 @@ const StyledButton = styled.button`
   cursor: pointer;
   display: inline-block;
   min-height: 1rem;
-  min-width: 3rem;
+  min-width: 2rem;
   vertical-align: middle;
+  ${boxShadowAnimation('all')}
 
   ${props => !props.large && !props.small && getPropStylesFromTheme(tm, 'sizes')}
   
@@ -47,17 +50,19 @@ const StyledButton = styled.button`
   ${props => props.primary && getPropStylesFromTheme(tm, 'types', 'primary')}
    
   ${props => props.secondary && getPropStylesFromTheme(tm, 'types', 'secondary')}
+  
+  ${props => props.danger && getPropStylesFromTheme(tm, 'types', 'danger')}
     
   ${trimChildren('hor')};
 `
 
-function Button({ primary, secondary, large, small, icon, children }) {
+function Button({ primary, secondary, danger, large, small, icon, children, ...props }) {
   const iconOnly = (children === null)
   const validIcon = (getIcon(icon) !== null)
 
   if(iconOnly && !validIcon) return null // don't show if there is no valid contents
   return (
-    <StyledButton primary={primary} secondary={secondary} large={large} small={small} iconOnly={iconOnly}>
+    <StyledButton primary={primary} secondary={secondary} danger={danger} large={large} small={small} iconOnly={iconOnly} {...props}>
       {icon && <ButtonIcon iconOnly={iconOnly} icon={icon} large={large} small={small} />}
       {children}
     </StyledButton>
@@ -69,6 +74,8 @@ Button.propTypes = {
   primary: bool,
   /** Type of button */
   secondary: bool,
+  /** Type of button */
+  danger: bool,
   /** Size of button */
   large: bool,
   /** Size of button */
@@ -82,6 +89,7 @@ Button.propTypes = {
 Button.defaultProps = {
   primary: false,
   secondary: false,
+  danger: false,
   large: false,
   small: false,
   icon: '',

@@ -1,5 +1,6 @@
 import React from 'react';
 import {shallow} from 'enzyme';
+
 import PasswordInput from './PasswordInput';
 
 test('hide toggle control when prop is false', () => {

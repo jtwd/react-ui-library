@@ -24,7 +24,7 @@ const sizes = {
     padding: ${xxs} ${xxs};
   `,
   iconOnlyLg: `
-    padding: ${sm} ${md};
+    padding: .85rem ${md};
   `
 }
 

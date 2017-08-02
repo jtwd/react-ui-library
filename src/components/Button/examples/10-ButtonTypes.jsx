@@ -10,6 +10,7 @@ export default function ButtonTypes() {
       <Button primary>Primary button</Button>
       <Button secondary>Secondary button</Button>
       <Button danger>Danger button</Button>
+      <Button link>Link button</Button>
     </div>
   )
 };

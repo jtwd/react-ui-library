@@ -6,7 +6,6 @@ import { radiusRound, transTextHover, primaryBold, lineHeightTight } from '../_t
 import trimChildren from '../_theme/mixins/trimChildren'
 import getPropStylesFromTheme from '../_theme/utils/getPropStylesFromTheme'
 import getIcon from '../_theme/utils/utils.icons'
-import boxShadowAnimation from '../_theme/mixins/boxShadowAnimation'
 import types from './Button.types'
 import sizes from './Button.sizes'
 import ButtonIcon from './ButtonIcon'
@@ -31,7 +30,6 @@ const StyledButton = styled.button`
   min-height: 1rem;
   min-width: 2rem;
   vertical-align: middle;
-  ${boxShadowAnimation('all')}
 
   ${props => !props.large && !props.small && getPropStylesFromTheme(tm, 'sizes')}
   
@@ -45,24 +43,26 @@ const StyledButton = styled.button`
    
   ${props => props.large && props.iconOnly && getPropStylesFromTheme(tm, 'sizes', 'iconOnlyLg')}
    
-  ${props => !props.primary && !props.secondary && getPropStylesFromTheme(tm, 'types', 'default')}
+  ${props => !props.primary && !props.secondary && !props.danger &&!props.link && getPropStylesFromTheme(tm, 'types', 'default')}
    
   ${props => props.primary && getPropStylesFromTheme(tm, 'types', 'primary')}
    
   ${props => props.secondary && getPropStylesFromTheme(tm, 'types', 'secondary')}
   
   ${props => props.danger && getPropStylesFromTheme(tm, 'types', 'danger')}
+  
+  ${props => props.link && getPropStylesFromTheme(tm, 'types', 'link')}
     
   ${trimChildren('hor')};
 `
 
-function Button({ primary, secondary, danger, large, small, icon, children, ...props }) {
+function Button({ primary, secondary, danger, link, large, small, icon, children, ...props }) {
   const iconOnly = (children === null)
   const validIcon = (getIcon(icon) !== null)
 
   if(iconOnly && !validIcon) return null // don't show if there is no valid contents
   return (
-    <StyledButton primary={primary} secondary={secondary} danger={danger} large={large} small={small} iconOnly={iconOnly} {...props}>
+    <StyledButton primary={primary} secondary={secondary} danger={danger} link={link} large={large} small={small} iconOnly={iconOnly} {...props}>
       {icon && <ButtonIcon iconOnly={iconOnly} icon={icon} large={large} small={small} />}
       {children}
     </StyledButton>
@@ -76,6 +76,8 @@ Button.propTypes = {
   secondary: bool,
   /** Type of button */
   danger: bool,
+  /** Type of button */
+  link: bool,
   /** Size of button */
   large: bool,
   /** Size of button */
@@ -90,6 +92,7 @@ Button.defaultProps = {
   primary: false,
   secondary: false,
   danger: false,
+  link: false,
   large: false,
   small: false,
   icon: '',

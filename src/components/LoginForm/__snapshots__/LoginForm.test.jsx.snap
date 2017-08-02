@@ -12,17 +12,21 @@ ShallowWrapper {
     centered={false}
     collapse={true}
     controls={
-        <Button
-            danger={false}
-            icon="lock"
-            large={false}
-            primary={false}
-            secondary={true}
-            small={true}
-            type="submit"
+        <FormControls
+            align="right"
         >
-            Login
-        </Button>
+            <Button
+                danger={false}
+                icon="lock"
+                large={false}
+                primary={true}
+                secondary={false}
+                small={true}
+                type="submit"
+            >
+                Login
+            </Button>
+        </FormControls>
     }
     onSubmit={[Function]}
     short={true}
@@ -58,17 +62,21 @@ ShallowWrapper {
       centered={false}
       collapse={true}
       controls={
-            <Button
-                  danger={false}
-                  icon="lock"
-                  large={false}
-                  primary={false}
-                  secondary={true}
-                  small={true}
-                  type="submit"
+            <FormControls
+                  align="right"
             >
-                  Login
-            </Button>
+                  <Button
+                        danger={false}
+                        icon="lock"
+                        large={false}
+                        primary={true}
+                        secondary={false}
+                        small={true}
+                        type="submit"
+                  >
+                        Login
+                  </Button>
+            </FormControls>
       }
       onSubmit={[Function]}
       short={true}
@@ -151,17 +159,21 @@ ShallowWrapper {
           centered={false}
           collapse={true}
           controls={
-                    <Button
-                              danger={false}
-                              icon="lock"
-                              large={false}
-                              primary={false}
-                              secondary={true}
-                              small={true}
-                              type="submit"
+                    <FormControls
+                              align="right"
                     >
-                              Login
-                    </Button>
+                              <Button
+                                        danger={false}
+                                        icon="lock"
+                                        large={false}
+                                        primary={true}
+                                        secondary={false}
+                                        small={true}
+                                        type="submit"
+                              >
+                                        Login
+                              </Button>
+                    </FormControls>
           }
           onSubmit={[Function]}
           short={true}
@@ -197,17 +209,21 @@ ShallowWrapper {
           centered={false}
           collapse={true}
           controls={
-                    <Button
-                              danger={false}
-                              icon="lock"
-                              large={false}
-                              primary={false}
-                              secondary={true}
-                              small={true}
-                              type="submit"
+                    <FormControls
+                              align="right"
                     >
-                              Login
-                    </Button>
+                              <Button
+                                        danger={false}
+                                        icon="lock"
+                                        large={false}
+                                        primary={true}
+                                        secondary={false}
+                                        small={true}
+                                        type="submit"
+                              >
+                                        Login
+                              </Button>
+                    </FormControls>
           }
           onSubmit={[Function]}
           short={true}

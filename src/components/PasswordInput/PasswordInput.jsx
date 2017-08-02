@@ -11,6 +11,7 @@ const Toggle = styled.label`
   top: 2.4rem;
   right: 0.75rem;
   z-index: 10;
+  cursor: pointer;
   
   &:hover,
   &:focus {

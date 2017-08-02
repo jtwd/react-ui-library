@@ -3,8 +3,7 @@ import { node, func } from 'prop-types'
 
 import isEmailAddress from '../../services/validation/isEmailAddress'
 import { validationMessages } from '../../config/systemMessages'
-import Wrapper from '../Wrapper'
-import Panel from '../Panel'
+import Form from '../Form'
 import TextInput from '../TextInput'
 import PasswordInput from '../PasswordInput'
 import Button from '../Button'
@@ -29,9 +28,11 @@ class LoginForm extends Component {
     this.setState({fields});
   }
 
-  handleFormSubmit () {
+  handleFormSubmit (evt) {
     const {fields} = this.state
     const formIsValid = this.validate(fields)
+
+    evt.preventDefault()
 
     if(formIsValid) {
       this.props.onSubmit(fields)
@@ -59,34 +60,33 @@ class LoginForm extends Component {
     const { email, password } = this.state.fields
     const { title } = this.props
 
-    const SubmitButton = <Button secondary small icon="lock" onClick={() => this.handleFormSubmit()}>Login</Button>
+    const SubmitButton = <Button secondary small icon="lock" type="submit">Login</Button>
 
     return (
-      <Wrapper short collapse>
-        <Panel header={title} footer={SubmitButton} footerRight>
-          <TextInput
-            htmlId="login-email"
-            name="email"
-            label="Email address"
-            type="email"
-            placeholder="user@domain.com"
-            value={email}
-            onChange={(e) => this.handleInputChange(e)}
-            required
-            error={errors.email}
-          />
+      <Form short collapse title={title} controls={SubmitButton} onSubmit={(e) => this.handleFormSubmit(e)}>
+        <TextInput
+          htmlId="login-email"
+          name="email"
+          label="Email address"
+          type="email"
+          placeholder="user@domain.com"
+          value={email}
+          onChange={(e) => this.handleInputChange(e)}
+          required
+          error={errors.email}
+        />
 
-          <PasswordInput
-            htmlId="login-password"
-            name="password"
-            label="Password"
-            value={password}
-            onChange={(e) => this.handleInputChange(e)}
-            maxLength={50}
-            required
-            error={errors.password} />
-        </Panel>
-      </Wrapper>
+        <PasswordInput
+          htmlId="login-password"
+          name="password"
+          label="Password"
+          value={password}
+          onChange={(e) => this.handleInputChange(e)}
+          maxLength={50}
+          required
+          error={errors.password} />
+
+      </Form>
     )
   }
 }

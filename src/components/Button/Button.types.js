@@ -9,19 +9,19 @@ const types = {
     }
   `,
   primary: `
-    background: ${blue};
-    color: ${yellow};
-    &:hover, &:focus {
-      background: ${darkBlue};
-      color: ${lightYellow}
-    }
-  `,
-  secondary: `
     background: ${yellow};
     color: ${blue};
     &:hover, &:focus {
       background: ${darkYellow};
       color: ${darkBlue}
+    }
+  `,
+  secondary: `
+    background: ${blue};
+    color: ${yellow};
+    &:hover, &:focus {
+      background: ${darkBlue};
+      color: ${lightYellow}
     }
   `,
   danger: `

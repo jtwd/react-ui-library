@@ -14,7 +14,8 @@ const alignToPack = {
   right: 'end',
   left: 'start',
   center: 'center',
-  ends: 'space-between'
+  ends: 'space-between',
+  spaced: 'space-around'
 }
 
 function FormControls({children, align, ...props}) {
@@ -25,7 +26,7 @@ function FormControls({children, align, ...props}) {
 
 FormControls.propTypes = {
   children: node.isRequired,
-  align: oneOf(['right', 'left', 'center', 'ends'])
+  align: oneOf(['right', 'left', 'center', 'ends', 'spaced'])
 }
 
 FormControls.defaultProps = {

@@ -5,7 +5,7 @@ import Button from '../../Button'
 import TextInput from '../../TextInput'
 
 function FormSimple() {
-  const Controls = <Button secondary small>Submit</Button>
+  const Controls = <Button primary small>Submit</Button>
   return (
     <Form title="Simple Form" controls={Controls} short centered>
       <TextInput

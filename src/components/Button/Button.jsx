@@ -29,7 +29,7 @@ const StyledButton = styled.button`
   cursor: pointer;
   display: inline-block;
   min-height: 1rem;
-  min-width: 3rem;
+  min-width: 2rem;
   vertical-align: middle;
   ${boxShadowAnimation('all')}
 

@@ -2,31 +2,18 @@ import React from 'react'
 import { node, oneOf } from 'prop-types'
 import styled from 'styled-components'
 
+import { alignToFlex, packToFlex } from "../_theme/mixins/flexbox"
+
 const StyledDiv = styled.div`
   display: flex;
   flex-direction: row;
   
-  ${props => props.align === 'top' && `
-    align-items: flex-start;
-  `}
-  ${props => props.align === 'bottom' && `
-    align-items: flex-end;
+  ${props => props.align && `
+    align-items: ${alignToFlex[props.align]};
   `}
   
-  ${props => props.pack === 'start' && `
-    justify-content: flex-start;
-  `}
-  ${props => props.pack === 'center' && `
-    justify-content: center;
-  `}
-  ${props => props.pack === 'end' && `
-    justify-content: flex-end;
-  `}
-  ${props => props.pack === 'space-between' && `
-    justify-content: space-between;
-  `}
-  ${props => props.pack === 'space-around' && `
-    justify-content: space-around;
+  ${props => props.pack && `
+    justify-content: ${packToFlex[props.pack]};
   `}
 `
 
@@ -40,8 +27,8 @@ function HBox({ children, align, pack, ...props}) {
 HBox.propTypes = {
   /** stretch, top, bottom, center */
   align: oneOf(['stretch', 'top', 'bottom', 'center']),
-  /** null, start, center, end, space-between, space-around */
-  pack: oneOf(['start', 'center', 'end', 'space-between', 'space-around', null]),
+  /** null, start, center, end, between, around */
+  pack: oneOf(['start', 'center', 'end', 'between', 'around', null]),
   children: node.isRequired
 }
 

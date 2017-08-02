@@ -61,7 +61,7 @@ describe('VBox component', () => {
   })
   it('renders packed with space between', () => {
     const component = shallow(
-      <VBox pack="space-between">
+      <VBox pack="between">
         <Wrapper>1</Wrapper>
         <Wrapper>2</Wrapper>
       </VBox>
@@ -70,7 +70,7 @@ describe('VBox component', () => {
   })
   it('renders packed with space around', () => {
     const component = shallow(
-      <VBox pack="space-around">
+      <VBox pack="around">
         <Wrapper>1</Wrapper>
         <Wrapper>2</Wrapper>
       </VBox>

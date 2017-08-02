@@ -56,7 +56,7 @@ class ForgottenPasswordForm extends Component {
     const { email, errors} = this.state
     const Controls = (
         <FormControls>
-          <Button small primary submit>Reset password</Button>
+          <Button primary submit>Reset password</Button>
         </FormControls>
       )
     return (

@@ -7,7 +7,7 @@ import Button from '../../Button'
 export default function FormControlsSimple() {
   return (
     <FormControls>
-      <Button primary small>Submit</Button>
+      <Button primary>Submit</Button>
     </FormControls>
   )
 }

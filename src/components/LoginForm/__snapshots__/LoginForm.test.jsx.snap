@@ -21,7 +21,7 @@ ShallowWrapper {
                 large={false}
                 primary={true}
                 secondary={false}
-                small={true}
+                small={false}
                 type="submit"
             >
                 Login
@@ -71,7 +71,7 @@ ShallowWrapper {
                         large={false}
                         primary={true}
                         secondary={false}
-                        small={true}
+                        small={false}
                         type="submit"
                   >
                         Login
@@ -168,7 +168,7 @@ ShallowWrapper {
                                         large={false}
                                         primary={true}
                                         secondary={false}
-                                        small={true}
+                                        small={false}
                                         type="submit"
                               >
                                         Login
@@ -218,7 +218,7 @@ ShallowWrapper {
                                         large={false}
                                         primary={true}
                                         secondary={false}
-                                        small={true}
+                                        small={false}
                                         type="submit"
                               >
                                         Login

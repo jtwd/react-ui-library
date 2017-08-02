@@ -14,8 +14,8 @@ const alignToPack = {
   right: 'end',
   left: 'start',
   center: 'center',
-  ends: 'space-between',
-  spaced: 'space-around'
+  ends: 'between',
+  spaced: 'around'
 }
 
 /** Alignment helper for form buttons and controls */

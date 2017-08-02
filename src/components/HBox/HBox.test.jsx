@@ -32,6 +32,15 @@ describe('HBox component', () => {
     )
     expect(component).toMatchSnapshot()
   })
+  it('renders center aligned', () => {
+    const component = shallow(
+      <HBox align="center">
+        <Wrapper flex={1}>1</Wrapper>
+        <Wrapper flex={1}>2</Wrapper>
+      </HBox>
+    )
+    expect(component).toMatchSnapshot()
+  })
   it('renders packed to the start', () => {
     const component = shallow(
       <HBox pack="start">
@@ -61,7 +70,7 @@ describe('HBox component', () => {
   })
   it('renders packed with space between', () => {
     const component = shallow(
-      <HBox pack="space-between">
+      <HBox pack="between">
         <Wrapper>1</Wrapper>
         <Wrapper>2</Wrapper>
       </HBox>
@@ -70,7 +79,7 @@ describe('HBox component', () => {
   })
   it('renders packed with space around', () => {
     const component = shallow(
-      <HBox pack="space-around">
+      <HBox pack="around">
         <Wrapper>1</Wrapper>
         <Wrapper>2</Wrapper>
       </HBox>

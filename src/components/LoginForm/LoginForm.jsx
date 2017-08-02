@@ -63,7 +63,7 @@ class LoginForm extends Component {
 
     const Controls = (
       <FormControls>
-        <Button primary small icon="lock" type="submit">Login</Button>
+        <Button primary icon="lock" type="submit">Login</Button>
       </FormControls>
     )
 

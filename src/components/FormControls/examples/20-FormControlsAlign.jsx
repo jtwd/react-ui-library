@@ -9,37 +9,37 @@ export default function FormControlsAlign() {
     <div>
       <div className="docs-ex-title">Right</div>
       <FormControls>
-        <Button danger small>No</Button>
-        <Button primary small>Yes</Button>
+        <Button danger>No</Button>
+        <Button primary>Yes</Button>
       </FormControls>
 
       <div className="docs-ex-title">Left</div>
       <FormControls align="left">
-        <Button danger small>No</Button>
-        <Button primary small>Yes</Button>
+        <Button danger>No</Button>
+        <Button primary>Yes</Button>
       </FormControls>
 
       <div className="docs-ex-title">Center</div>
       <FormControls align="center">
-        <Button danger small>No</Button>
-        <Button primary small>Yes</Button>
+        <Button danger>No</Button>
+        <Button primary>Yes</Button>
       </FormControls>
 
       <div className="docs-ex-title">Ends</div>
       <FormControls align="ends">
-        <Button danger small>No</Button>
-        <Button primary small>Yes</Button>
+        <Button danger>No</Button>
+        <Button primary>Yes</Button>
       </FormControls>
 
       <div className="docs-ex-title">Spaced</div>
       <FormControls align="spaced">
-        <Button>A</Button>
-        <Button>B</Button>
-        <Button>C</Button>
-        <Button>D</Button>
-        <Button>E</Button>
-        <Button>F</Button>
-        <Button>G</Button>
+        <Button small secondary>A</Button>
+        <Button small secondary>B</Button>
+        <Button small secondary>C</Button>
+        <Button small secondary>D</Button>
+        <Button small secondary>E</Button>
+        <Button small secondary>F</Button>
+        <Button small secondary>G</Button>
       </FormControls>
     </div>
   )

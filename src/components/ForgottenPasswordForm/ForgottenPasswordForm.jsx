@@ -3,8 +3,7 @@ import { func } from 'prop-types'
 
 import isEmailAddress from '../../services/validation/isEmailAddress'
 import { validationMessages } from '../../config/systemMessages'
-import Wrapper from '../Wrapper'
-import Panel from '../Panel'
+import Form from '../Form'
 import TextInput from '../TextInput'
 import Button from '../Button'
 
@@ -21,14 +20,16 @@ class ForgottenPasswordForm extends Component {
   }
 
   handleInputChange (evt) {
-    const fields = this.state.fields;
-    fields[evt.target.name] = evt.target.value;
-    this.setState({fields});
+    const fields = this.state.fields
+    fields[evt.target.name] = evt.target.value
+    this.setState({fields})
   }
 
-  handleFormSubmit () {
+  handleFormSubmit (evt) {
     const {fields} = this.state
     const formIsValid = this.validate(fields)
+
+    evt.preventDefault()
 
     if(formIsValid) {
       this.props.onSubmit(fields)
@@ -52,23 +53,22 @@ class ForgottenPasswordForm extends Component {
 
   render() {
     const { email, errors} = this.state
-    const SubmitButton = <Button small secondary onClick={() => this.handleFormSubmit()}>Reset password</Button>
+    const SubmitButton = <Button small secondary submit>Reset password</Button>
     return (
-      <Wrapper short collapse>
-        <Panel header="Forgotten Password?" footer={SubmitButton} footerRight>
-          <TextInput
-            htmlId="password-email"
-            name="email"
-            label="Email address"
-            type="email"
-            placeholder="user@domain.com"
-            value={email}
-            onChange={(e) => this.handleInputChange(e)}
-            required
-            error={errors.email}
-          />
-        </Panel>
-      </Wrapper>
+      <Form short title="Forgotten Password?" controls={SubmitButton} onSubmit={(e) => this.handleFormSubmit(e)}>
+        <TextInput
+          htmlId="password-email"
+          name="email"
+          label="Email address"
+          type="email"
+          placeholder="user@domain.com"
+          value={email}
+          onChange={(e) => this.handleInputChange(e)}
+          required
+          error={errors.email}
+        />
+
+      </Form>
     )
   }
 }

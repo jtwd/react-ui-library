@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 
+import Wrapper from '../Wrapper'
 import { md, sm, xs, xxs } from '../_theme/spacers'
 import { transWhiteLight, transBlackLight } from '../_theme/colors'
 import { radiusRound, borderLine, primaryBold } from '../_theme/units'
@@ -19,7 +20,7 @@ const headFootStyles = `
   }
 `
 
-export const PanelWrapper = styled.div`
+export const PanelWrapper = styled(Wrapper)`
   margin-bottom: ${md};
   border-radius: ${radiusRound};
   background: ${transWhiteLight};

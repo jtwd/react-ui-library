@@ -1,15 +1,15 @@
 import React from 'react'
 import { node, bool } from 'prop-types'
 
-import { PanelWrapper, Body, Header, Footer } from "./Panel.styles"
+import { PanelWrapper, Body, Header, Footer } from './Panel.styles'
 
 function Panel ({header, footer, footerRight, children,  ...props}) {
   return (
-    <PanelWrapper {...props}>
+    <PanelWrapper collapse {...props}>
       {header && (
         <Header>{header}</Header>
       )}
-      <Body>
+      <Body collapse flex={1}>
         {children}
       </Body>
       {footer && (

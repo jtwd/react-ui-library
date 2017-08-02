@@ -13,6 +13,7 @@ export default function ButtonSizes() {
       <Button secondary icon="close" />
       <Button secondary icon="close">Default button</Button>
       <Button large>Large button</Button>
+      <Button large icon="eye" />
       <Button large icon="eye">Large button</Button>
     </div>
   )

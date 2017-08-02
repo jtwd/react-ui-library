@@ -24,6 +24,11 @@ describe('Button component', () => {
     expect(component).toMatchSnapshot()
   })
 
+  it('renders a link button when passed prop', () => {
+    const component = shallow(<Button link>Link</Button>)
+    expect(component).toMatchSnapshot()
+  })
+
   it('renders a large button when passed prop', () => {
     const component = shallow(<Button large>Primary</Button>)
     expect(component).toMatchSnapshot()

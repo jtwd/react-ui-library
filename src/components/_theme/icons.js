@@ -6,6 +6,8 @@ import FaEdit from 'react-icons/lib/fa/edit'
 import FaLock from 'react-icons/lib/fa/lock'
 import FaQuestionCircle from 'react-icons/lib/fa/question-circle'
 import FaExclamation from 'react-icons/lib/fa/exclamation'
+import FaCaretRight from 'react-icons/lib/fa/caret-right'
+import FaCaretDown from 'react-icons/lib/fa/caret-down'
 
 export const IconMenu = FaBars
 export const IconClose = FaClose
@@ -15,6 +17,8 @@ export const IconEdit = FaEdit
 export const IconLock = FaLock
 export const IconQuestion = FaQuestionCircle
 export const IconExclamation = FaExclamation
+export const IconCaretRight = FaCaretRight
+export const IconCaretDown = FaCaretDown
 
 const icons = {
   menu: IconMenu,
@@ -24,7 +28,9 @@ const icons = {
   edit: IconEdit,
   lock: IconLock,
   question: IconQuestion,
-  exclamation: IconExclamation
+  exclamation: IconExclamation,
+  caretRight: IconCaretRight,
+  caretDown: IconCaretDown
 }
 
 export default icons

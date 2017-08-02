@@ -19,6 +19,7 @@ ShallowWrapper {
                 danger={false}
                 icon="lock"
                 large={false}
+                link={false}
                 primary={true}
                 secondary={false}
                 small={false}
@@ -69,6 +70,7 @@ ShallowWrapper {
                         danger={false}
                         icon="lock"
                         large={false}
+                        link={false}
                         primary={true}
                         secondary={false}
                         small={false}
@@ -166,6 +168,7 @@ ShallowWrapper {
                                         danger={false}
                                         icon="lock"
                                         large={false}
+                                        link={false}
                                         primary={true}
                                         secondary={false}
                                         small={false}
@@ -216,6 +219,7 @@ ShallowWrapper {
                                         danger={false}
                                         icon="lock"
                                         large={false}
+                                        link={false}
                                         primary={true}
                                         secondary={false}
                                         small={false}

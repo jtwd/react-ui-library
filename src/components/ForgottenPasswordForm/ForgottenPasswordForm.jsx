@@ -4,6 +4,7 @@ import { func } from 'prop-types'
 import isEmailAddress from '../../services/validation/isEmailAddress'
 import { validationMessages } from '../../config/systemMessages'
 import Form from '../Form'
+import FormControls from '../FormControls'
 import TextInput from '../TextInput'
 import Button from '../Button'
 
@@ -53,9 +54,13 @@ class ForgottenPasswordForm extends Component {
 
   render() {
     const { email, errors} = this.state
-    const SubmitButton = <Button small secondary submit>Reset password</Button>
+    const Controls = (
+        <FormControls>
+          <Button small primary submit>Reset password</Button>
+        </FormControls>
+      )
     return (
-      <Form short title="Forgotten Password?" controls={SubmitButton} onSubmit={(e) => this.handleFormSubmit(e)}>
+      <Form short title="Forgotten Password?" controls={Controls} onSubmit={(e) => this.handleFormSubmit(e)}>
         <TextInput
           htmlId="password-email"
           name="email"

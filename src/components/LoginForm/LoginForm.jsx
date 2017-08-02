@@ -7,6 +7,7 @@ import Form from '../Form'
 import TextInput from '../TextInput'
 import PasswordInput from '../PasswordInput'
 import Button from '../Button'
+import FormControls from '../FormControls'
 
 class LoginForm extends Component {
   constructor (props) {
@@ -60,10 +61,14 @@ class LoginForm extends Component {
     const { email, password } = this.state.fields
     const { title } = this.props
 
-    const SubmitButton = <Button secondary small icon="lock" type="submit">Login</Button>
+    const Controls = (
+      <FormControls>
+        <Button secondary small icon="lock" type="submit">Login</Button>
+      </FormControls>
+    )
 
     return (
-      <Form short collapse title={title} controls={SubmitButton} onSubmit={(e) => this.handleFormSubmit(e)}>
+      <Form short collapse title={title} controls={Controls} onSubmit={(e) => this.handleFormSubmit(e)}>
         <TextInput
           htmlId="login-email"
           name="email"

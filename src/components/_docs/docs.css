@@ -176,6 +176,18 @@
 
 }
 
+.docs .docs-ex-title {
+  color: rgba(255,255,255,.5);
+  margin-top: 1rem;
+  padding: 0.5rem 0;
+  border-top: 1px solid rgba(255,255,255,.05);
+  font-size: 0.85rem;
+}
+
+.docs .example .docs-ex-title:first-of-type {
+  margin-top: 0;
+}
+
 .docs .componentpage {
   padding-bottom: 5rem;
 }

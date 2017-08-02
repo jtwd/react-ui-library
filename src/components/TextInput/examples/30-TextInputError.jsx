@@ -2,6 +2,7 @@ import React from 'react'
 
 import TextInput from '../TextInput'
 
+/** Email input with error */
 export default function TextInputError() {
   return (
     <TextInput

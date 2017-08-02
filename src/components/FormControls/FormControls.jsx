@@ -18,6 +18,7 @@ const alignToPack = {
   spaced: 'space-around'
 }
 
+/** Alignment helper for form buttons and controls */
 function FormControls({children, align, ...props}) {
   return (
     <Controls pack={alignToPack[align]} {...props}>{children}</Controls>
@@ -26,6 +27,7 @@ function FormControls({children, align, ...props}) {
 
 FormControls.propTypes = {
   children: node.isRequired,
+  /** right, left, center, ends, spaced */
   align: oneOf(['right', 'left', 'center', 'ends', 'spaced'])
 }
 

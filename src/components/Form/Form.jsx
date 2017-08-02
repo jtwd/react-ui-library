@@ -9,10 +9,11 @@ const StyledForm = styled.form`
   position: relative;
 `
 
+/** Encapulates form styles with the help of Panel and Wrapper components */
 function Form ({title, controls, short, text, centered, children, ...props}) {
   return (
     <Wrapper collapse short={short} text={text} centered={centered}>
-      <StyledForm {...props}>
+      <StyledForm noValidate {...props}>
         <Panel header={title} footer={controls}>
           {children}
         </Panel>
@@ -22,11 +23,16 @@ function Form ({title, controls, short, text, centered, children, ...props}) {
 }
 
 Form.propTypes = {
+  /** Form title - goes in the Panel's header */
   title: node.isRequired,
+  /** Form controls - goes the Panel's footer */
   controls: node.isRequired,
   children: node.isRequired,
+  /** Relates to Wrapper prop */
   short: bool,
+  /** Relates to Wrapper prop */
   text: bool,
+  /** Relates to Wrapper prop */
   centered: bool
 }
 

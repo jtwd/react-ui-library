@@ -38,7 +38,9 @@ function VBox({ children, align, pack, ...props}) {
 }
 
 VBox.propTypes = {
-  align: oneOf(['stretch', 'top', 'bottom']),
+  /** stretch, top, bottom, center */
+  align: oneOf(['stretch', 'top', 'bottom', 'center']),
+  /** start, center, ends, space-between, space-around */
   pack: oneOf(['start', 'center', 'end', 'space-between', 'space-around', null]),
   children: node.isRequired
 }

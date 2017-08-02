@@ -2,6 +2,7 @@ import React from 'react'
 
 import TextInput from '../TextInput'
 
+/** Required Text Input */
 export default function TextInputRequired() {
   return (
     <TextInput

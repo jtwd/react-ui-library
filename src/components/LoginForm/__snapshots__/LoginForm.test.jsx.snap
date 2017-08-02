@@ -35,6 +35,7 @@ ShallowWrapper {
     title="Login"
 >
     <TextInput
+        autoFocus={false}
         error={null}
         htmlId="login-email"
         label="Email address"
@@ -86,6 +87,7 @@ ShallowWrapper {
       title="Login"
 >
       <TextInput
+            autoFocus={false}
             error={null}
             htmlId="login-email"
             label="Email address"
@@ -117,6 +119,7 @@ ShallowWrapper {
       "_compositeType": 0,
       "_context": Object {},
       "_currentElement": <LoginForm
+        focus={false}
         onSubmit={[Function]}
         title="Login"
 />,
@@ -127,6 +130,7 @@ ShallowWrapper {
         "_reactInternalInstance": [Circular],
         "context": Object {},
         "props": Object {
+          "focus": false,
           "onSubmit": [Function],
           "title": "Login",
         },
@@ -184,6 +188,7 @@ ShallowWrapper {
           title="Login"
 >
           <TextInput
+                    autoFocus={false}
                     error={null}
                     htmlId="login-email"
                     label="Email address"
@@ -235,6 +240,7 @@ ShallowWrapper {
           title="Login"
 >
           <TextInput
+                    autoFocus={false}
                     error={null}
                     htmlId="login-email"
                     label="Email address"
@@ -270,6 +276,7 @@ ShallowWrapper {
   },
   "root": [Circular],
   "unrendered": <LoginForm
+    focus={false}
     onSubmit={[Function]}
     title="Login"
 />,

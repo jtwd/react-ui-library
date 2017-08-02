@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { func } from 'prop-types'
+import { func, bool } from 'prop-types'
 
 import isEmailAddress from '../../services/validation/isEmailAddress'
 import { validationMessages } from '../../config/systemMessages'
@@ -54,6 +54,7 @@ class ForgottenPasswordForm extends Component {
 
   render() {
     const { email, errors} = this.state
+    const { focus } = this.props
     const Controls = (
         <FormControls>
           <Button primary submit>Reset password</Button>
@@ -71,7 +72,7 @@ class ForgottenPasswordForm extends Component {
           onChange={(e) => this.handleInputChange(e)}
           required
           error={errors.email}
-          autoFocus
+          autoFocus={focus}
         />
 
       </Form>
@@ -80,7 +81,13 @@ class ForgottenPasswordForm extends Component {
 }
 
 ForgottenPasswordForm.propTypes = {
-  onSubmit: func.isRequired
+  onSubmit: func.isRequired,
+  /** AutoFocus on first input */
+  focus: bool
+}
+
+ForgottenPasswordForm.defaultProps = {
+  focus: false
 }
 
 export default ForgottenPasswordForm

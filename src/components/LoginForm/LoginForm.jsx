@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { node, func } from 'prop-types'
+import { node, func, bool } from 'prop-types'
 
 import isEmailAddress from '../../services/validation/isEmailAddress'
 import { validationMessages } from '../../config/systemMessages'
@@ -59,7 +59,7 @@ class LoginForm extends Component {
   render () {
     const { errors } = this.state
     const { email, password } = this.state.fields
-    const { title } = this.props
+    const { title, focus } = this.props
 
     const Controls = (
       <FormControls>
@@ -79,7 +79,7 @@ class LoginForm extends Component {
           onChange={(e) => this.handleInputChange(e)}
           required
           error={errors.email}
-          autoFocus
+          autoFocus={focus}
         />
 
         <PasswordInput
@@ -100,12 +100,15 @@ class LoginForm extends Component {
 LoginForm.propTypes = {
   /** Form title - goes in the panel header */
   title: node,
+  /** Auto focus on first input */
+  focus: bool,
   /** Function to call when validation is passed */
   onSubmit: func.isRequired
 }
 
 LoginForm.defaultProps = {
-  title: 'Login'
+  title: 'Login',
+  focus: false
 }
 
 export default LoginForm

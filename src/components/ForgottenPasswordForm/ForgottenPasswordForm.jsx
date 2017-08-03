@@ -57,7 +57,7 @@ class ForgottenPasswordForm extends Component {
     const { focus } = this.props
     const Controls = (
         <FormControls>
-          <Button primary submit>Reset password</Button>
+          <Button primary type="submit">Reset password</Button>
         </FormControls>
       )
     return (

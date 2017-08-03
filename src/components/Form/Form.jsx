@@ -5,8 +5,10 @@ import styled from 'styled-components'
 import Wrapper from '../Wrapper'
 import Panel from '../Panel'
 import FormControls from '../FormControls'
+import { RequiredSymbol } from '../Label/Label.styles'
 import { fsSm } from '../_theme/fontSizes'
 import { red } from '../_theme/colors'
+import { primaryNormal } from "../_theme/units"
 
 const StyledForm = styled.form`
   position: relative;
@@ -15,6 +17,7 @@ const StyledForm = styled.form`
 const ReqKey = styled.div`
   font-size: ${fsSm};
   color: ${red};
+  font-weight: ${primaryNormal};
 `
 
 function getFormHeader (title, reqKey) {
@@ -24,7 +27,10 @@ function getFormHeader (title, reqKey) {
   return (
     <FormControls align='ends'>
       {title}
-      <ReqKey>* Required</ReqKey>
+      <ReqKey>
+        <RequiredSymbol />
+        Required
+      </ReqKey>
     </FormControls>
   )
 }
@@ -46,7 +52,7 @@ function Form ({title, reqKey, controls, short, text, centered, children, ...pro
 Form.propTypes = {
   /** Form title - goes in the Panel's header */
   title: node.isRequired,
-  /** Form title - goes in the Panel's header */
+  /** Show required field key */
   reqKey: bool,
   /** Form controls - goes the Panel's footer */
   controls: node.isRequired,

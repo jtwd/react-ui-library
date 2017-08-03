@@ -16,6 +16,7 @@ ShallowWrapper {
     primary={false}
     secondary={false}
     small={false}
+    type="button"
 >
     
     Danger
@@ -29,6 +30,7 @@ ShallowWrapper {
       primary={false}
       secondary={false}
       small={false}
+      type="button"
 >
       
       Danger
@@ -48,6 +50,7 @@ ShallowWrapper {
         primary={false}
         secondary={false}
         small={false}
+        type="button"
 >
         Danger
 </Button>,
@@ -66,6 +69,7 @@ ShallowWrapper {
           "primary": false,
           "secondary": false,
           "small": false,
+          "type": "button",
         },
         "refs": Object {},
         "state": null,
@@ -95,6 +99,7 @@ ShallowWrapper {
           primary={false}
           secondary={false}
           small={false}
+          type="button"
 >
           
           Danger
@@ -108,6 +113,7 @@ ShallowWrapper {
           primary={false}
           secondary={false}
           small={false}
+          type="button"
 >
           
           Danger
@@ -131,6 +137,7 @@ ShallowWrapper {
     primary={false}
     secondary={false}
     small={false}
+    type="button"
 >
     Danger
 </Button>,
@@ -153,6 +160,7 @@ ShallowWrapper {
     primary={false}
     secondary={false}
     small={false}
+    type="button"
 >
     
     Default
@@ -166,6 +174,7 @@ ShallowWrapper {
       primary={false}
       secondary={false}
       small={false}
+      type="button"
 >
       
       Default
@@ -185,6 +194,7 @@ ShallowWrapper {
         primary={false}
         secondary={false}
         small={false}
+        type="button"
 >
         Default
 </Button>,
@@ -203,6 +213,7 @@ ShallowWrapper {
           "primary": false,
           "secondary": false,
           "small": false,
+          "type": "button",
         },
         "refs": Object {},
         "state": null,
@@ -232,6 +243,7 @@ ShallowWrapper {
           primary={false}
           secondary={false}
           small={false}
+          type="button"
 >
           
           Default
@@ -245,6 +257,7 @@ ShallowWrapper {
           primary={false}
           secondary={false}
           small={false}
+          type="button"
 >
           
           Default
@@ -268,6 +281,7 @@ ShallowWrapper {
     primary={false}
     secondary={false}
     small={false}
+    type="button"
 >
     Default
 </Button>,
@@ -290,6 +304,7 @@ ShallowWrapper {
     primary={false}
     secondary={false}
     small={false}
+    type="button"
 >
     
     Primary
@@ -303,6 +318,7 @@ ShallowWrapper {
       primary={false}
       secondary={false}
       small={false}
+      type="button"
 >
       
       Primary
@@ -322,6 +338,7 @@ ShallowWrapper {
         primary={false}
         secondary={false}
         small={false}
+        type="button"
 >
         Primary
 </Button>,
@@ -340,6 +357,7 @@ ShallowWrapper {
           "primary": false,
           "secondary": false,
           "small": false,
+          "type": "button",
         },
         "refs": Object {},
         "state": null,
@@ -369,6 +387,7 @@ ShallowWrapper {
           primary={false}
           secondary={false}
           small={false}
+          type="button"
 >
           
           Primary
@@ -382,6 +401,7 @@ ShallowWrapper {
           primary={false}
           secondary={false}
           small={false}
+          type="button"
 >
           
           Primary
@@ -405,6 +425,7 @@ ShallowWrapper {
     primary={false}
     secondary={false}
     small={false}
+    type="button"
 >
     Primary
 </Button>,
@@ -427,6 +448,7 @@ ShallowWrapper {
     primary={true}
     secondary={false}
     small={false}
+    type="button"
 >
     
     Primary
@@ -440,6 +462,7 @@ ShallowWrapper {
       primary={true}
       secondary={false}
       small={false}
+      type="button"
 >
       
       Primary
@@ -459,6 +482,7 @@ ShallowWrapper {
         primary={true}
         secondary={false}
         small={false}
+        type="button"
 >
         Primary
 </Button>,
@@ -477,6 +501,7 @@ ShallowWrapper {
           "primary": true,
           "secondary": false,
           "small": false,
+          "type": "button",
         },
         "refs": Object {},
         "state": null,
@@ -506,6 +531,7 @@ ShallowWrapper {
           primary={true}
           secondary={false}
           small={false}
+          type="button"
 >
           
           Primary
@@ -519,6 +545,7 @@ ShallowWrapper {
           primary={true}
           secondary={false}
           small={false}
+          type="button"
 >
           
           Primary
@@ -542,6 +569,7 @@ ShallowWrapper {
     primary={true}
     secondary={false}
     small={false}
+    type="button"
 >
     Primary
 </Button>,
@@ -564,6 +592,7 @@ ShallowWrapper {
     primary={false}
     secondary={false}
     small={false}
+    type="button"
 >
     
     Link
@@ -577,6 +606,7 @@ ShallowWrapper {
       primary={false}
       secondary={false}
       small={false}
+      type="button"
 >
       
       Link
@@ -596,6 +626,7 @@ ShallowWrapper {
         primary={false}
         secondary={false}
         small={false}
+        type="button"
 >
         Link
 </Button>,
@@ -614,6 +645,7 @@ ShallowWrapper {
           "primary": false,
           "secondary": false,
           "small": false,
+          "type": "button",
         },
         "refs": Object {},
         "state": null,
@@ -643,6 +675,7 @@ ShallowWrapper {
           primary={false}
           secondary={false}
           small={false}
+          type="button"
 >
           
           Link
@@ -656,6 +689,7 @@ ShallowWrapper {
           primary={false}
           secondary={false}
           small={false}
+          type="button"
 >
           
           Link
@@ -679,6 +713,7 @@ ShallowWrapper {
     primary={false}
     secondary={false}
     small={false}
+    type="button"
 >
     Link
 </Button>,
@@ -701,6 +736,7 @@ ShallowWrapper {
     primary={true}
     secondary={false}
     small={false}
+    type="button"
 >
     
     Primary
@@ -714,6 +750,7 @@ ShallowWrapper {
       primary={true}
       secondary={false}
       small={false}
+      type="button"
 >
       
       Primary
@@ -733,6 +770,7 @@ ShallowWrapper {
         primary={true}
         secondary={false}
         small={false}
+        type="button"
 >
         Primary
 </Button>,
@@ -751,6 +789,7 @@ ShallowWrapper {
           "primary": true,
           "secondary": false,
           "small": false,
+          "type": "button",
         },
         "refs": Object {},
         "state": null,
@@ -780,6 +819,7 @@ ShallowWrapper {
           primary={true}
           secondary={false}
           small={false}
+          type="button"
 >
           
           Primary
@@ -793,6 +833,7 @@ ShallowWrapper {
           primary={true}
           secondary={false}
           small={false}
+          type="button"
 >
           
           Primary
@@ -816,6 +857,7 @@ ShallowWrapper {
     primary={true}
     secondary={false}
     small={false}
+    type="button"
 >
     Primary
 </Button>,
@@ -838,6 +880,7 @@ ShallowWrapper {
     primary={false}
     secondary={true}
     small={false}
+    type="button"
 >
     
     Primary
@@ -851,6 +894,7 @@ ShallowWrapper {
       primary={false}
       secondary={true}
       small={false}
+      type="button"
 >
       
       Primary
@@ -870,6 +914,7 @@ ShallowWrapper {
         primary={false}
         secondary={true}
         small={false}
+        type="button"
 >
         Primary
 </Button>,
@@ -888,6 +933,7 @@ ShallowWrapper {
           "primary": false,
           "secondary": true,
           "small": false,
+          "type": "button",
         },
         "refs": Object {},
         "state": null,
@@ -917,6 +963,7 @@ ShallowWrapper {
           primary={false}
           secondary={true}
           small={false}
+          type="button"
 >
           
           Primary
@@ -930,6 +977,7 @@ ShallowWrapper {
           primary={false}
           secondary={true}
           small={false}
+          type="button"
 >
           
           Primary
@@ -953,6 +1001,7 @@ ShallowWrapper {
     primary={false}
     secondary={true}
     small={false}
+    type="button"
 >
     Primary
 </Button>,
@@ -975,6 +1024,7 @@ ShallowWrapper {
     primary={false}
     secondary={false}
     small={true}
+    type="button"
 >
     
     Primary
@@ -988,6 +1038,7 @@ ShallowWrapper {
       primary={false}
       secondary={false}
       small={true}
+      type="button"
 >
       
       Primary
@@ -1007,6 +1058,7 @@ ShallowWrapper {
         primary={false}
         secondary={false}
         small={true}
+        type="button"
 >
         Primary
 </Button>,
@@ -1025,6 +1077,7 @@ ShallowWrapper {
           "primary": false,
           "secondary": false,
           "small": true,
+          "type": "button",
         },
         "refs": Object {},
         "state": null,
@@ -1054,6 +1107,7 @@ ShallowWrapper {
           primary={false}
           secondary={false}
           small={true}
+          type="button"
 >
           
           Primary
@@ -1067,6 +1121,7 @@ ShallowWrapper {
           primary={false}
           secondary={false}
           small={true}
+          type="button"
 >
           
           Primary
@@ -1090,6 +1145,7 @@ ShallowWrapper {
     primary={false}
     secondary={false}
     small={true}
+    type="button"
 >
     Primary
 </Button>,
@@ -1112,6 +1168,7 @@ ShallowWrapper {
     primary={false}
     secondary={true}
     small={true}
+    type="button"
 >
     
     Primary
@@ -1125,6 +1182,7 @@ ShallowWrapper {
       primary={false}
       secondary={true}
       small={true}
+      type="button"
 >
       
       Primary
@@ -1144,6 +1202,7 @@ ShallowWrapper {
         primary={false}
         secondary={true}
         small={true}
+        type="button"
 >
         Primary
 </Button>,
@@ -1162,6 +1221,7 @@ ShallowWrapper {
           "primary": false,
           "secondary": true,
           "small": true,
+          "type": "button",
         },
         "refs": Object {},
         "state": null,
@@ -1191,6 +1251,7 @@ ShallowWrapper {
           primary={false}
           secondary={true}
           small={true}
+          type="button"
 >
           
           Primary
@@ -1204,6 +1265,7 @@ ShallowWrapper {
           primary={false}
           secondary={true}
           small={true}
+          type="button"
 >
           
           Primary
@@ -1227,6 +1289,7 @@ ShallowWrapper {
     primary={false}
     secondary={true}
     small={true}
+    type="button"
 >
     Primary
 </Button>,
@@ -1259,6 +1322,7 @@ ShallowWrapper {
         primary={false}
         secondary={false}
         small={false}
+        type="button"
 />,
       "_debugID": 41,
       "_hostContainerInfo": null,
@@ -1275,6 +1339,7 @@ ShallowWrapper {
           "primary": false,
           "secondary": false,
           "small": false,
+          "type": "button",
         },
         "refs": Object {},
         "state": null,
@@ -1318,6 +1383,7 @@ ShallowWrapper {
     primary={false}
     secondary={false}
     small={false}
+    type="button"
 />,
 }
 `;
@@ -1338,6 +1404,7 @@ ShallowWrapper {
     primary={false}
     secondary={false}
     small={false}
+    type="button"
 >
     <ButtonIcon
         icon="close"
@@ -1355,6 +1422,7 @@ ShallowWrapper {
       primary={false}
       secondary={false}
       small={false}
+      type="button"
 >
       <ButtonIcon
             icon="close"
@@ -1378,6 +1446,7 @@ ShallowWrapper {
         primary={false}
         secondary={false}
         small={false}
+        type="button"
 />,
       "_debugID": 29,
       "_hostContainerInfo": null,
@@ -1394,6 +1463,7 @@ ShallowWrapper {
           "primary": false,
           "secondary": false,
           "small": false,
+          "type": "button",
         },
         "refs": Object {},
         "state": null,
@@ -1423,6 +1493,7 @@ ShallowWrapper {
           primary={false}
           secondary={false}
           small={false}
+          type="button"
 >
           <ButtonIcon
                     icon="close"
@@ -1440,6 +1511,7 @@ ShallowWrapper {
           primary={false}
           secondary={false}
           small={false}
+          type="button"
 >
           <ButtonIcon
                     icon="close"
@@ -1467,6 +1539,7 @@ ShallowWrapper {
     primary={false}
     secondary={false}
     small={false}
+    type="button"
 />,
 }
 `;
@@ -1487,6 +1560,7 @@ ShallowWrapper {
     primary={false}
     secondary={false}
     small={false}
+    type="button"
 >
     <ButtonIcon
         icon="close"
@@ -1504,6 +1578,7 @@ ShallowWrapper {
       primary={false}
       secondary={false}
       small={false}
+      type="button"
 >
       <ButtonIcon
             icon="close"
@@ -1527,6 +1602,7 @@ ShallowWrapper {
         primary={false}
         secondary={false}
         small={false}
+        type="button"
 />,
       "_debugID": 31,
       "_hostContainerInfo": null,
@@ -1543,6 +1619,7 @@ ShallowWrapper {
           "primary": false,
           "secondary": false,
           "small": false,
+          "type": "button",
         },
         "refs": Object {},
         "state": null,
@@ -1572,6 +1649,7 @@ ShallowWrapper {
           primary={false}
           secondary={false}
           small={false}
+          type="button"
 >
           <ButtonIcon
                     icon="close"
@@ -1589,6 +1667,7 @@ ShallowWrapper {
           primary={false}
           secondary={false}
           small={false}
+          type="button"
 >
           <ButtonIcon
                     icon="close"
@@ -1616,6 +1695,7 @@ ShallowWrapper {
     primary={false}
     secondary={false}
     small={false}
+    type="button"
 />,
 }
 `;
@@ -1636,6 +1716,7 @@ ShallowWrapper {
     primary={true}
     secondary={false}
     small={false}
+    type="button"
 >
     <ButtonIcon
         icon="close"
@@ -1653,6 +1734,7 @@ ShallowWrapper {
       primary={true}
       secondary={false}
       small={false}
+      type="button"
 >
       <ButtonIcon
             icon="close"
@@ -1676,6 +1758,7 @@ ShallowWrapper {
         primary={true}
         secondary={false}
         small={false}
+        type="button"
 />,
       "_debugID": 35,
       "_hostContainerInfo": null,
@@ -1692,6 +1775,7 @@ ShallowWrapper {
           "primary": true,
           "secondary": false,
           "small": false,
+          "type": "button",
         },
         "refs": Object {},
         "state": null,
@@ -1721,6 +1805,7 @@ ShallowWrapper {
           primary={true}
           secondary={false}
           small={false}
+          type="button"
 >
           <ButtonIcon
                     icon="close"
@@ -1738,6 +1823,7 @@ ShallowWrapper {
           primary={true}
           secondary={false}
           small={false}
+          type="button"
 >
           <ButtonIcon
                     icon="close"
@@ -1765,6 +1851,7 @@ ShallowWrapper {
     primary={true}
     secondary={false}
     small={false}
+    type="button"
 />,
 }
 `;
@@ -1785,6 +1872,7 @@ ShallowWrapper {
     primary={false}
     secondary={true}
     small={false}
+    type="button"
 >
     <ButtonIcon
         icon="close"
@@ -1802,6 +1890,7 @@ ShallowWrapper {
       primary={false}
       secondary={true}
       small={false}
+      type="button"
 >
       <ButtonIcon
             icon="close"
@@ -1825,6 +1914,7 @@ ShallowWrapper {
         primary={false}
         secondary={true}
         small={false}
+        type="button"
 />,
       "_debugID": 37,
       "_hostContainerInfo": null,
@@ -1841,6 +1931,7 @@ ShallowWrapper {
           "primary": false,
           "secondary": true,
           "small": false,
+          "type": "button",
         },
         "refs": Object {},
         "state": null,
@@ -1870,6 +1961,7 @@ ShallowWrapper {
           primary={false}
           secondary={true}
           small={false}
+          type="button"
 >
           <ButtonIcon
                     icon="close"
@@ -1887,6 +1979,7 @@ ShallowWrapper {
           primary={false}
           secondary={true}
           small={false}
+          type="button"
 >
           <ButtonIcon
                     icon="close"
@@ -1914,6 +2007,7 @@ ShallowWrapper {
     primary={false}
     secondary={true}
     small={false}
+    type="button"
 />,
 }
 `;
@@ -1934,6 +2028,7 @@ ShallowWrapper {
     primary={false}
     secondary={false}
     small={true}
+    type="button"
 >
     <ButtonIcon
         icon="close"
@@ -1951,6 +2046,7 @@ ShallowWrapper {
       primary={false}
       secondary={false}
       small={true}
+      type="button"
 >
       <ButtonIcon
             icon="close"
@@ -1974,6 +2070,7 @@ ShallowWrapper {
         primary={false}
         secondary={false}
         small={true}
+        type="button"
 />,
       "_debugID": 33,
       "_hostContainerInfo": null,
@@ -1990,6 +2087,7 @@ ShallowWrapper {
           "primary": false,
           "secondary": false,
           "small": true,
+          "type": "button",
         },
         "refs": Object {},
         "state": null,
@@ -2019,6 +2117,7 @@ ShallowWrapper {
           primary={false}
           secondary={false}
           small={true}
+          type="button"
 >
           <ButtonIcon
                     icon="close"
@@ -2036,6 +2135,7 @@ ShallowWrapper {
           primary={false}
           secondary={false}
           small={true}
+          type="button"
 >
           <ButtonIcon
                     icon="close"
@@ -2063,6 +2163,7 @@ ShallowWrapper {
     primary={false}
     secondary={false}
     small={true}
+    type="button"
 />,
 }
 `;
@@ -2083,6 +2184,7 @@ ShallowWrapper {
     primary={false}
     secondary={false}
     small={false}
+    type="button"
 >
     <ButtonIcon
         icon="close"
@@ -2101,6 +2203,7 @@ ShallowWrapper {
       primary={false}
       secondary={false}
       small={false}
+      type="button"
 >
       <ButtonIcon
             icon="close"
@@ -2125,6 +2228,7 @@ ShallowWrapper {
         primary={false}
         secondary={false}
         small={false}
+        type="button"
 >
         Icon Button
 </Button>,
@@ -2143,6 +2247,7 @@ ShallowWrapper {
           "primary": false,
           "secondary": false,
           "small": false,
+          "type": "button",
         },
         "refs": Object {},
         "state": null,
@@ -2172,6 +2277,7 @@ ShallowWrapper {
           primary={false}
           secondary={false}
           small={false}
+          type="button"
 >
           <ButtonIcon
                     icon="close"
@@ -2190,6 +2296,7 @@ ShallowWrapper {
           primary={false}
           secondary={false}
           small={false}
+          type="button"
 >
           <ButtonIcon
                     icon="close"
@@ -2218,6 +2325,7 @@ ShallowWrapper {
     primary={false}
     secondary={false}
     small={false}
+    type="button"
 >
     Icon Button
 </Button>,
@@ -2240,6 +2348,7 @@ ShallowWrapper {
     primary={true}
     secondary={false}
     small={false}
+    type="button"
 >
     <ButtonIcon
         icon="close"
@@ -2258,6 +2367,7 @@ ShallowWrapper {
       primary={true}
       secondary={false}
       small={false}
+      type="button"
 >
       <ButtonIcon
             icon="close"
@@ -2282,6 +2392,7 @@ ShallowWrapper {
         primary={true}
         secondary={false}
         small={false}
+        type="button"
 >
         Icon Button
 </Button>,
@@ -2300,6 +2411,7 @@ ShallowWrapper {
           "primary": true,
           "secondary": false,
           "small": false,
+          "type": "button",
         },
         "refs": Object {},
         "state": null,
@@ -2329,6 +2441,7 @@ ShallowWrapper {
           primary={true}
           secondary={false}
           small={false}
+          type="button"
 >
           <ButtonIcon
                     icon="close"
@@ -2347,6 +2460,7 @@ ShallowWrapper {
           primary={true}
           secondary={false}
           small={false}
+          type="button"
 >
           <ButtonIcon
                     icon="close"
@@ -2375,6 +2489,7 @@ ShallowWrapper {
     primary={true}
     secondary={false}
     small={false}
+    type="button"
 >
     Icon Button
 </Button>,
@@ -2397,6 +2512,7 @@ ShallowWrapper {
     primary={false}
     secondary={true}
     small={false}
+    type="button"
 >
     <ButtonIcon
         icon="close"
@@ -2415,6 +2531,7 @@ ShallowWrapper {
       primary={false}
       secondary={true}
       small={false}
+      type="button"
 >
       <ButtonIcon
             icon="close"
@@ -2439,6 +2556,7 @@ ShallowWrapper {
         primary={false}
         secondary={true}
         small={false}
+        type="button"
 >
         Icon Button
 </Button>,
@@ -2457,6 +2575,7 @@ ShallowWrapper {
           "primary": false,
           "secondary": true,
           "small": false,
+          "type": "button",
         },
         "refs": Object {},
         "state": null,
@@ -2486,6 +2605,7 @@ ShallowWrapper {
           primary={false}
           secondary={true}
           small={false}
+          type="button"
 >
           <ButtonIcon
                     icon="close"
@@ -2504,6 +2624,7 @@ ShallowWrapper {
           primary={false}
           secondary={true}
           small={false}
+          type="button"
 >
           <ButtonIcon
                     icon="close"
@@ -2532,6 +2653,7 @@ ShallowWrapper {
     primary={false}
     secondary={true}
     small={false}
+    type="button"
 >
     Icon Button
 </Button>,
@@ -2554,6 +2676,7 @@ ShallowWrapper {
     primary={false}
     secondary={false}
     small={true}
+    type="button"
 >
     <ButtonIcon
         icon="close"
@@ -2572,6 +2695,7 @@ ShallowWrapper {
       primary={false}
       secondary={false}
       small={true}
+      type="button"
 >
       <ButtonIcon
             icon="close"
@@ -2596,6 +2720,7 @@ ShallowWrapper {
         primary={false}
         secondary={false}
         small={true}
+        type="button"
 >
         Icon Button
 </Button>,
@@ -2614,6 +2739,7 @@ ShallowWrapper {
           "primary": false,
           "secondary": false,
           "small": true,
+          "type": "button",
         },
         "refs": Object {},
         "state": null,
@@ -2643,6 +2769,7 @@ ShallowWrapper {
           primary={false}
           secondary={false}
           small={true}
+          type="button"
 >
           <ButtonIcon
                     icon="close"
@@ -2661,6 +2788,7 @@ ShallowWrapper {
           primary={false}
           secondary={false}
           small={true}
+          type="button"
 >
           <ButtonIcon
                     icon="close"
@@ -2689,6 +2817,7 @@ ShallowWrapper {
     primary={false}
     secondary={false}
     small={true}
+    type="button"
 >
     Icon Button
 </Button>,
@@ -2711,6 +2840,7 @@ ShallowWrapper {
     primary={false}
     secondary={false}
     small={false}
+    type="button"
 >
     <ButtonIcon
         icon="close"
@@ -2729,6 +2859,7 @@ ShallowWrapper {
       primary={false}
       secondary={false}
       small={false}
+      type="button"
 >
       <ButtonIcon
             icon="close"
@@ -2753,6 +2884,7 @@ ShallowWrapper {
         primary={false}
         secondary={false}
         small={false}
+        type="button"
 >
         Icon Button
 </Button>,
@@ -2771,6 +2903,7 @@ ShallowWrapper {
           "primary": false,
           "secondary": false,
           "small": false,
+          "type": "button",
         },
         "refs": Object {},
         "state": null,
@@ -2800,6 +2933,7 @@ ShallowWrapper {
           primary={false}
           secondary={false}
           small={false}
+          type="button"
 >
           <ButtonIcon
                     icon="close"
@@ -2818,6 +2952,7 @@ ShallowWrapper {
           primary={false}
           secondary={false}
           small={false}
+          type="button"
 >
           <ButtonIcon
                     icon="close"
@@ -2846,6 +2981,7 @@ ShallowWrapper {
     primary={false}
     secondary={false}
     small={false}
+    type="button"
 >
     Icon Button
 </Button>,
@@ -2868,6 +3004,7 @@ ShallowWrapper {
     primary={false}
     secondary={false}
     small={false}
+    type="button"
 >
     <ButtonIcon
         icon="qwerty"
@@ -2886,6 +3023,7 @@ ShallowWrapper {
       primary={false}
       secondary={false}
       small={false}
+      type="button"
 >
       <ButtonIcon
             icon="qwerty"
@@ -2910,6 +3048,7 @@ ShallowWrapper {
         primary={false}
         secondary={false}
         small={false}
+        type="button"
 >
         Invalid icon
 </Button>,
@@ -2928,6 +3067,7 @@ ShallowWrapper {
           "primary": false,
           "secondary": false,
           "small": false,
+          "type": "button",
         },
         "refs": Object {},
         "state": null,
@@ -2957,6 +3097,7 @@ ShallowWrapper {
           primary={false}
           secondary={false}
           small={false}
+          type="button"
 >
           <ButtonIcon
                     icon="qwerty"
@@ -2975,6 +3116,7 @@ ShallowWrapper {
           primary={false}
           secondary={false}
           small={false}
+          type="button"
 >
           <ButtonIcon
                     icon="qwerty"
@@ -3003,6 +3145,7 @@ ShallowWrapper {
     primary={false}
     secondary={false}
     small={false}
+    type="button"
 >
     Invalid icon
 </Button>,

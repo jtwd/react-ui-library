@@ -10,10 +10,8 @@ export default function PanelHeaderFooter() {
   const SubmitBtn = <Button primary small>Submit</Button>
   return (
     <div>
-      <Panel header={title}>Panel content</Panel>
-      <Panel header="Panel header">Panel content</Panel>
-      <Panel footer="Panel footer">Panel content</Panel>
-      <Panel header={title} footer={SubmitBtn} footerRight>Panel content</Panel>
+      <Panel header="Panel header" footer="Panel footer">Panel content</Panel>
+      <Panel header={title} footer={SubmitBtn}>Panel content</Panel>
     </div>
   )
 }

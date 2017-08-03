@@ -68,7 +68,7 @@ class LoginForm extends Component {
     )
 
     return (
-      <Form short collapse title={title} controls={Controls} onSubmit={(e) => this.handleFormSubmit(e)}>
+      <Form short collapse title={title} reqKey controls={Controls} onSubmit={(e) => this.handleFormSubmit(e)}>
         <TextInput
           htmlId="login-email"
           name="email"

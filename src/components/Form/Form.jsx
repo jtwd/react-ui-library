@@ -4,17 +4,38 @@ import styled from 'styled-components'
 
 import Wrapper from '../Wrapper'
 import Panel from '../Panel'
+import FormControls from '../FormControls'
+import { fsSm } from '../_theme/fontSizes'
+import { red } from '../_theme/colors'
 
 const StyledForm = styled.form`
   position: relative;
 `
 
+const ReqKey = styled.div`
+  font-size: ${fsSm};
+  color: ${red};
+`
+
+function getFormHeader (title, reqKey) {
+  if (!reqKey) {
+    return title
+  }
+  return (
+    <FormControls align='ends'>
+      {title}
+      <ReqKey>* Required</ReqKey>
+    </FormControls>
+  )
+}
+
 /** Encapulates form styles with the help of Panel and Wrapper components */
-function Form ({title, controls, short, text, centered, children, ...props}) {
+function Form ({title, reqKey, controls, short, text, centered, children, ...props}) {
+  const Header = getFormHeader(title, reqKey)
   return (
     <Wrapper collapse short={short} text={text} centered={centered}>
       <StyledForm noValidate {...props}>
-        <Panel header={title} footer={controls}>
+        <Panel header={Header} footer={controls}>
           {children}
         </Panel>
       </StyledForm>
@@ -25,6 +46,8 @@ function Form ({title, controls, short, text, centered, children, ...props}) {
 Form.propTypes = {
   /** Form title - goes in the Panel's header */
   title: node.isRequired,
+  /** Form title - goes in the Panel's header */
+  reqKey: bool,
   /** Form controls - goes the Panel's footer */
   controls: node.isRequired,
   children: node.isRequired,
@@ -39,6 +62,7 @@ Form.propTypes = {
 Form.defaultProps = {
   short: false,
   text: false,
+  reqKey: false,
   centered: false
 }
 

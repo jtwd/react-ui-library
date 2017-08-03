@@ -8,7 +8,7 @@ export default function IconCollection () {
   return (
     <div>
       {Object.keys(icons).map(key =>
-        <div className="docs-item">
+        <div key={`icon_${key}`} className="docs-item">
           <Icon icon={key} />
           <div className="docs-item-title">{key}</div>
         </div>

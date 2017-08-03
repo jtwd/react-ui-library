@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { bool, node, string } from 'prop-types'
+import { bool, node, string, oneOf } from 'prop-types'
 
 import { radiusRound, transTextHover, primaryBold, lineHeightTight } from '../_theme/units'
 import trimChildren from '../_theme/mixins/trimChildren'
@@ -56,13 +56,13 @@ const StyledButton = styled.button`
   ${trimChildren('hor')};
 `
 
-function Button({ primary, secondary, danger, link, large, small, icon, children, ...props }) {
+function Button({ primary, secondary, danger, link, large, small, icon, type, children, ...props }) {
   const iconOnly = (children === null)
   const validIcon = (getIcon(icon) !== null)
 
   if(iconOnly && !validIcon) return null // don't show if there is no valid contents
   return (
-    <StyledButton primary={primary} secondary={secondary} danger={danger} link={link} large={large} small={small} iconOnly={iconOnly} {...props}>
+    <StyledButton type={type} primary={primary} secondary={secondary} danger={danger} link={link} large={large} small={small} iconOnly={iconOnly} {...props}>
       {icon && <ButtonIcon iconOnly={iconOnly} icon={icon} large={large} small={small} />}
       {children}
     </StyledButton>
@@ -84,6 +84,8 @@ Button.propTypes = {
   small: bool,
   /** Name of Icon */
   icon: string,
+  /** Type of button - button, submit, reset */
+  type: oneOf(['button', 'submit', 'reset']),
   /** Contents of button */
   children: node
 }
@@ -96,6 +98,7 @@ Button.defaultProps = {
   large: false,
   small: false,
   icon: '',
+  type: 'button',
   children: null
 }
 

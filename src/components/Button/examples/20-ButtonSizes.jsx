@@ -21,6 +21,11 @@ export default function ButtonSizes() {
         <Button large icon="eye" />
         <Button large icon="eye">Large button</Button>
       </div>
+      <div>
+        <Button link small>Small link button</Button><br />
+        <Button link icon="caretRight">Icon link button</Button><br />
+        <Button link large icon="menu" title="Large icon link button" />
+      </div>
     </div>
   )
 }

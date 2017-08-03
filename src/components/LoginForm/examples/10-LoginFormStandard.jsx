@@ -8,5 +8,5 @@ function loginSubmit ({email, password}) {
 }
 
 export default function LoginFormStandard() {
-  return <LoginForm onSubmit={loginSubmit} />
+  return <LoginForm onSubmit={loginSubmit} focus />
 }

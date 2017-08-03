@@ -11,6 +11,7 @@ function FormSimple() {
       <TextInput
         htmlId="simple1"
         label="Email address"
+        name="simple1"
         type="email"
         placeholder="user@domain.com"
         onChange={() => {}}

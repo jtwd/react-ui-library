@@ -41,6 +41,7 @@
     "react-error-overlay": "^1.0.9",
     "react-hot-loader": "next",
     "react-icons": "^2.2.5",
+    "react-loading": "^0.1.4",
     "react-router-dom": "^4.1.1",
     "react-test-renderer": "15.5.4",
     "style-loader": "0.18.2",

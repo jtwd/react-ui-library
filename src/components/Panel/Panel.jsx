@@ -3,17 +3,17 @@ import { node, bool } from 'prop-types'
 
 import { PanelWrapper, Body, Header, Footer } from './Panel.styles'
 
-function Panel ({header, footer, footerRight, children, primary, secondary, danger, ...props}) {
+function Panel ({header, footer, footerRight, children, primary, secondary, danger, success, ...props}) {
   return (
-    <PanelWrapper danger={danger} primary={primary} secondary={secondary} collapse {...props}>
+    <PanelWrapper danger={danger} success={success} primary={primary} secondary={secondary} collapse {...props}>
       {header && (
-        <Header danger={danger} primary={primary} secondary={secondary}>{header}</Header>
+        <Header danger={danger} success={success} primary={primary} secondary={secondary}>{header}</Header>
       )}
-      <Body collapse flex={1}>
+      <Body collapse>
         {children}
       </Body>
       {footer && (
-        <Footer danger={danger} primary={primary} secondary={secondary} right={footerRight}>{footer}</Footer>
+        <Footer danger={danger} success={success} primary={primary} secondary={secondary} right={footerRight}>{footer}</Footer>
       )}
     </PanelWrapper>
   )
@@ -23,6 +23,7 @@ Panel.propTypes = {
   primary: bool,
   secondary: bool,
   danger: bool,
+  success: bool,
   /** Header content */
   header: node,
   /** Footer content */
@@ -37,6 +38,7 @@ Panel.defaultProps = {
   primary: false,
   secondary: false,
   danger: false,
+  success: false,
   header: null,
   footer: null,
   footerRight: false,

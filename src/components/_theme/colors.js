@@ -29,10 +29,11 @@ export const siteBg = black
 export const siteColor = white
 
 export const red = 'FireBrick'
-export const lightRed = lighten(red, shadeFactor)
+export const lightRed = lighten(red, 20)
 export const darkRed = darken(red, shadeFactor)
 export const transDarkRed = rgba(darkRed, 0.5)
 
-export const green = 'DarkGreen'
-export const lightGreen = lighten(green, shadeFactor)
+export const green = 'ForestGreen'
+export const lightGreen = lighten(green, 20)
 export const darkGreen = darken(green, shadeFactor)
+export const transDarkGreen = rgba(darkGreen, 0.5)

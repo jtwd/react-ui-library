@@ -54,7 +54,7 @@ Form.propTypes = {
   title: node.isRequired,
   /** Show required field key */
   reqKey: bool,
-  /** Form controls - goes the Panel's footer */
+  /** Form controls - goes in the Panel's footer */
   controls: node.isRequired,
   children: node.isRequired,
   /** Relates to Wrapper prop */

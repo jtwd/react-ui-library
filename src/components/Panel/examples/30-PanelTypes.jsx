@@ -11,7 +11,9 @@ export default function PanelTypes() {
       <Panel secondary>Secondary panel content</Panel>
       <Panel secondary header="Panel header" footer="Panel footer">Secondary panel content</Panel>
       <Panel danger>Danger panel content</Panel>
-      <Panel danger header="Panel header" footer="Panel footer">Danger panel content</Panel>
+      <Panel danger header="Panel header" footer="Panel footer">Success panel content</Panel>
+      <Panel success>Success panel content</Panel>
+      <Panel success header="Panel header" footer="Panel footer">Success panel content</Panel>
     </div>
   )
 }

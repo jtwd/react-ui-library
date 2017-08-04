@@ -1,4 +1,4 @@
-import { transWhiteLight, transBlackLight, transDarkRed, yellow, lightBlue } from '../_theme/colors'
+import { transWhiteLight, transBlackLight, transDarkRed, transDarkGreen, yellow, lightBlue } from '../_theme/colors'
 import { borderLine } from "../_theme/units"
 
 export const panel = {
@@ -18,6 +18,10 @@ export const panel = {
     border: ${borderLine.danger};
     background: ${transDarkRed};
   `,
+  success: `
+    border: ${borderLine.success};
+    background: ${transDarkGreen};
+  `,
 }
 export const header = {
   default: `
@@ -25,35 +29,35 @@ export const header = {
     background: ${transBlackLight};
   `,
   primary: `
-    border-bottom: ${borderLine.primary};
     background: ${transBlackLight};
     color: ${yellow};
   `,
   secondary: `
-    border-bottom: ${borderLine.secondary};
     background: ${transBlackLight};
     color: ${lightBlue};
   `,
   danger: `
-    border-bottom: ${borderLine.danger};
+    background: ${transBlackLight};
+  `,
+  success: `
     background: ${transBlackLight};
   `,
 }
 export const footer = {
   default: `
-    border-top: ${borderLine.default};
     background: ${transBlackLight};
+    border-top: ${borderLine.default};
   `,
   primary: `
-    border-top: ${borderLine.primary};
     background: ${transBlackLight};
   `,
   secondary: `
-    border-top: ${borderLine.secondary};
     background: ${transBlackLight};
   `,
   danger: `
-    border-top: ${borderLine.danger};
+    background: ${transBlackLight};
+  `,
+  success: `
     background: ${transBlackLight};
   `
 }

@@ -1,5 +1,5 @@
 import { xs } from './spacers'
-import { darkRed, transDarkYellow, transDarkBlue } from './colors'
+import { darkRed, darkGreen, transDarkYellow, transDarkBlue } from './colors'
 
 export const siteMaxWidth = '100%'
 export const textMaxWidth = '750px'
@@ -18,5 +18,6 @@ export const borderLine = {
   default: `2px solid rgba(255, 255, 255, 0.05)`,
   primary: `2px solid ${transDarkYellow}`,
   secondary: `2px solid ${transDarkBlue}`,
-  danger: `2px solid ${darkRed}`
+  danger: `2px solid ${darkRed}`,
+  success: `2px solid ${darkGreen}`
 }

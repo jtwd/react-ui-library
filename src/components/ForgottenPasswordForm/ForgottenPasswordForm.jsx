@@ -8,6 +8,7 @@ import FormControls from '../FormControls'
 import TextInput from '../TextInput'
 import SubmitButton from '../SubmitButton'
 
+/** Validates and has a submitted state. Uses: Form, FormControls, TextInput, SubmitButton */
 class ForgottenPasswordForm extends Component {
   constructor (props) {
     super(props)
@@ -61,7 +62,7 @@ class ForgottenPasswordForm extends Component {
         </FormControls>
       )
     return (
-      <Form submitting={submitted} short title="Forgotten Password?" controls={Controls} onSubmit={(e) => this.handleFormSubmit(e)}>
+      <Form submitting={submitted} reqKey short title="Forgotten Password?" controls={Controls} onSubmit={(e) => this.handleFormSubmit(e)}>
         <TextInput
           htmlId="password-email"
           name="email"
@@ -81,6 +82,7 @@ class ForgottenPasswordForm extends Component {
 }
 
 ForgottenPasswordForm.propTypes = {
+  /** Function to run when form submits */
   onSubmit: func.isRequired,
   /** AutoFocus on first input */
   focus: bool

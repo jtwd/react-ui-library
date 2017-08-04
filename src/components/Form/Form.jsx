@@ -23,7 +23,7 @@ const Loading = styled(LoadingOverlay)`
   `}
 `
 
-/** Encapulates form styles with the help of Panel and Wrapper components */
+/** Encapulates form styles with the help of: Wrapper, Panel, FormHeader components */
 function Form ({submitting, title, reqKey, controls, short, text, centered, children, ...props}) {
   const Header = <FormHeader title={title} reqKey={reqKey} />
   return (
@@ -39,6 +39,7 @@ function Form ({submitting, title, reqKey, controls, short, text, centered, chil
 }
 
 Form.propTypes = {
+  /** show loading animation */
   submitting: bool,
   /** Form title - goes in the Panel's header */
   title: node.isRequired,
@@ -46,6 +47,7 @@ Form.propTypes = {
   reqKey: bool,
   /** Form controls - goes in the Panel's footer */
   controls: node.isRequired,
+  /** Contents of the form */
   children: node.isRequired,
   /** Relates to Wrapper prop */
   short: bool,

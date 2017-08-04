@@ -4,20 +4,21 @@ import Form from '../Form'
 import SubmitButton from '../../SubmitButton'
 import TextInput from '../../TextInput'
 
-function FormSimple() {
+function FormRequired() {
   const Controls = <SubmitButton>Submit</SubmitButton>
   return (
-    <Form title="Simple Form" controls={Controls} text centered>
+    <Form reqKey title="Required Form" controls={Controls} text centered>
       <TextInput
-        htmlId="simple1"
+        htmlId="required1"
         label="Email address"
-        name="simple1"
+        name="required1"
         type="email"
         placeholder="user@domain.com"
         onChange={() => {}}
+        required
       />
     </Form>
   )
 }
 
-export default FormSimple
+export default FormRequired

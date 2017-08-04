@@ -61,6 +61,7 @@ const StyledButton = styled.button`
   ${trimChildren('hor')};
 `
 
+/** UI Buttons - Uses: Icon - Choice of sizes and types and icons */
 function Button({ primary, secondary, danger, link, large, small, icon, type, children, ...props }) {
   const iconOnly = (children === null)
   const validIcon = (getIcon(icon) !== null)

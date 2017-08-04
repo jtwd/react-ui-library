@@ -14,6 +14,7 @@ const ReqKey = styled.div`
   font-weight: ${primaryNormal};
 `
 
+/** Form header component. Uses: FormControls, RequireSymbol. Gets inserted into the Panel header of the Form component. Optionally displays the Required Field key */
 function FormHeader({title, reqKey}) {
   return (
     <FormControls align='ends'>
@@ -29,7 +30,9 @@ function FormHeader({title, reqKey}) {
 }
 
 FormHeader.propTypes = {
+  /** Title of form */
   title: node.isRequired,
+  /** Show required key */
   reqKey: bool
 }
 

@@ -10,7 +10,9 @@ export const Error = styled.div`
   
   > i {
     position: relative;
-    top: 3px;
+    top: 2px;
+    left: -1px;
+    margin-right: 6px;
   }
 `
 

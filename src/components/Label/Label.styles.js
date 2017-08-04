@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 
 import { xxs } from '../_theme/spacers'
-import { red } from '../_theme/colors'
+import { lightRed } from '../_theme/colors'
 import { primaryBold } from '../_theme/units'
+import { fsLg } from "../_theme/fontSizes"
 import pseudo from '../_theme/mixins/pseudo'
 
 export const Label = styled.label`
@@ -13,7 +14,8 @@ export const Label = styled.label`
 export const RequiredSymbol = styled.span`
   &::before {
     ${pseudo('inline-block', 'relative', '*')}
-    color: ${red};
+    color: ${lightRed};
+    font-size: ${fsLg};
     font-weight: ${primaryBold};
     padding-right: ${xxs};
   }

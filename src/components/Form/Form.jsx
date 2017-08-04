@@ -7,7 +7,7 @@ import Panel from '../Panel'
 import FormControls from '../FormControls'
 import { RequiredSymbol } from '../Label/Label.styles'
 import { fsSm } from '../_theme/fontSizes'
-import { red } from '../_theme/colors'
+import { lightRed } from '../_theme/colors'
 import { primaryNormal } from "../_theme/units"
 
 const StyledForm = styled.form`
@@ -16,7 +16,7 @@ const StyledForm = styled.form`
 
 const ReqKey = styled.div`
   font-size: ${fsSm};
-  color: ${red};
+  color: ${lightRed};
   font-weight: ${primaryNormal};
 `
 

@@ -4,43 +4,32 @@ import styled from 'styled-components'
 
 import Wrapper from '../Wrapper'
 import Panel from '../Panel'
-import FormControls from '../FormControls'
-import { RequiredSymbol } from '../Label/Label.styles'
-import { fsSm } from '../_theme/fontSizes'
-import { lightRed } from '../_theme/colors'
-import { primaryNormal } from "../_theme/units"
+import LoadingOverlay from '../LoadingOverlay'
+import FormHeader from './FormHeader'
+import { radiusRound } from "../_theme/units"
 
 const StyledForm = styled.form`
   position: relative;
 `
 
-const ReqKey = styled.div`
-  font-size: ${fsSm};
-  color: ${lightRed};
-  font-weight: ${primaryNormal};
+const Loading = styled(LoadingOverlay)`
+  border-radius: ${radiusRound};
+  
+  ${props => props.active && `
+    left: 2px;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+  `}
 `
 
-function getFormHeader (title, reqKey) {
-  if (!reqKey) {
-    return title
-  }
-  return (
-    <FormControls align='ends'>
-      {title}
-      <ReqKey>
-        <RequiredSymbol />
-        Required
-      </ReqKey>
-    </FormControls>
-  )
-}
-
 /** Encapulates form styles with the help of Panel and Wrapper components */
-function Form ({title, reqKey, controls, short, text, centered, children, ...props}) {
-  const Header = getFormHeader(title, reqKey)
+function Form ({submitting, title, reqKey, controls, short, text, centered, children, ...props}) {
+  const Header = <FormHeader title={title} reqKey={reqKey} />
   return (
     <Wrapper collapse short={short} text={text} centered={centered}>
       <StyledForm noValidate {...props}>
+        <Loading active={submitting} />
         <Panel header={Header} footer={controls}>
           {children}
         </Panel>
@@ -50,6 +39,7 @@ function Form ({title, reqKey, controls, short, text, centered, children, ...pro
 }
 
 Form.propTypes = {
+  submitting: bool,
   /** Form title - goes in the Panel's header */
   title: node.isRequired,
   /** Show required field key */
@@ -66,6 +56,7 @@ Form.propTypes = {
 }
 
 Form.defaultProps = {
+  submitting: false,
   short: false,
   text: false,
   reqKey: false,

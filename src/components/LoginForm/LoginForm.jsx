@@ -6,7 +6,7 @@ import { validationMessages } from '../../config/systemMessages'
 import Form from '../Form'
 import TextInput from '../TextInput'
 import PasswordInput from '../PasswordInput'
-import Button from '../Button'
+import SubmitButton from '../SubmitButton'
 import FormControls from '../FormControls'
 
 class LoginForm extends Component {
@@ -37,7 +37,7 @@ class LoginForm extends Component {
 
     if(formIsValid) {
       this.props.onSubmit(fields)
-      this.setState({submitted: true})
+      setTimeout(() => this.setState({submitted: true}), 200)
     }
   }
 
@@ -57,18 +57,18 @@ class LoginForm extends Component {
   }
 
   render () {
-    const { errors } = this.state
+    const { errors, submitted } = this.state
     const { email, password } = this.state.fields
     const { title, focus } = this.props
 
     const Controls = (
       <FormControls>
-        <Button primary icon="lock" type="submit">Login</Button>
+        <SubmitButton submitting={submitted} icon="lock">Login</SubmitButton>
       </FormControls>
     )
 
     return (
-      <Form short collapse title={title} reqKey controls={Controls} onSubmit={(e) => this.handleFormSubmit(e)}>
+      <Form submitting={submitted} short collapse title={title} reqKey controls={Controls} onSubmit={(e) => this.handleFormSubmit(e)}>
         <TextInput
           htmlId="login-email"
           name="email"

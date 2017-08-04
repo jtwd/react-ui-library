@@ -1,11 +1,11 @@
 import React from 'react'
 
 import Form from '../Form'
-import Button from '../../Button'
+import SubmitButton from '../../SubmitButton'
 import TextInput from '../../TextInput'
 
 function FormSimple() {
-  const Controls = <Button primary>Submit</Button>
+  const Controls = <SubmitButton>Submit</SubmitButton>
   return (
     <Form title="Simple Form" controls={Controls} short centered>
       <TextInput

@@ -52,6 +52,11 @@ const StyledButton = styled.button`
   ${props => props.danger && getPropStylesFromTheme(tm, 'types', 'danger')}
   
   ${props => props.link && getPropStylesFromTheme(tm, 'types', 'link')}
+  
+  ${props => props.disabled && `
+    opacity: .5;
+    cursor: not-allowed;
+  `}
     
   ${trimChildren('hor')};
 `

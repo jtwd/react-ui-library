@@ -1,4 +1,4 @@
-import { transWhiteLight, transBlackLight, transDarkRed, transDarkGreen, yellow, lightBlue } from '../_theme/colors'
+import { transWhiteLight, transBlackLight, transDarkRed, transDarkGreen, yellow, lightYellow, lightBlue } from '../_theme/colors'
 import { borderLine } from "../_theme/units"
 
 export const panel = {
@@ -9,10 +9,12 @@ export const panel = {
   primary: `
     border: ${borderLine.primary};
     background: ${transWhiteLight};
+    color: ${lightYellow};
   `,
   secondary: `
     border: ${borderLine.secondary};
     background: ${transWhiteLight};
+    color: ${lightBlue};
   `,
   danger: `
     border: ${borderLine.danger};

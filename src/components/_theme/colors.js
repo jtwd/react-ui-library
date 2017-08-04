@@ -36,4 +36,4 @@ export const transDarkRed = rgba(darkRed, 0.5)
 export const green = 'ForestGreen'
 export const lightGreen = lighten(green, 20)
 export const darkGreen = darken(green, shadeFactor)
-export const transDarkGreen = rgba(darkGreen, 0.5)
+export const transDarkGreen = rgba(lightGreen, 0.5)

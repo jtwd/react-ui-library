@@ -2,7 +2,7 @@ import React from 'react'
 
 import Panel from '../Panel'
 
-/** Panel types - primary, secondary, danger */
+/** Panel types - primary, secondary, danger, success */
 export default function PanelTypes() {
   return (
     <div>

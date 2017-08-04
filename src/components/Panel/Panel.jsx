@@ -9,7 +9,7 @@ function Panel ({header, footer, footerRight, children, primary, secondary, dang
       {header && (
         <Header danger={danger} success={success} primary={primary} secondary={secondary}>{header}</Header>
       )}
-      <Body collapse>
+      <Body className="Panel-body" collapse>
         {children}
       </Body>
       {footer && (

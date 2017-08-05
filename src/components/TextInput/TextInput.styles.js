@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 
-import { red, lightRed, yellow, white, transBlackDark, transBlackLight, transWhite } from '../_theme/colors'
+import { red, lightRed, darkRed, yellow, white, transBlackDark, transBlackLight, transWhite } from '../_theme/colors'
 import { transitions, radiusRound } from '../_theme/units'
 import { xxs, xs, md } from '../_theme/spacers'
 import Message from '../Message'
@@ -45,22 +45,19 @@ export const Input = styled.input`
   border-radius: ${radiusRound};
   display: block;
   width: 100%;
-  
-  &:hover {
-    border-color: ${white};
-  }
-  &:focus {
-    outline-color: ${yellow}
-  }
 
   ${props =>
     props.error &&
     css`
-    border-color: ${red};
+    border-color: ${lightRed};
   `} 
   
+  &:hover {
+    border-color: ${props => (props.error ? red : white)};
+  }
+  
   &:focus {
-    border-color: ${props => (props.error ? red : yellow)};
+    border-color: ${props => (props.error ? darkRed : yellow)};
     background: ${transBlackDark};
     outline: 0;
   }

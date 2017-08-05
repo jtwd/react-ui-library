@@ -18,7 +18,7 @@ const alignToPack = {
   spaced: 'around'
 }
 
-/** Alignment helper for form buttons and controls */
+/** Alignment helper for form buttons and controls - Uses: HBox */
 function FormControls({children, align, ...props}) {
   return (
     <Controls pack={alignToPack[align]} {...props}>{children}</Controls>

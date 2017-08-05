@@ -13,14 +13,17 @@
   text-align: center;
   line-height: 1.8;
 }
-
-.docs .docs-eg1 {
+.docs [class^=docs-ele] {
+  border: 1px solid rgba(255,255,255, .15);
+  padding: 0.5rem;
+}
+.docs .docs-ele1 {
   background: rgba(0,0,0,.2);
 }
-.docs .docs-eg2 {
+.docs .docs-ele2 {
   background: rgba(0,0,0,.4);
 }
-.docs .docs-eg3 {
+.docs .docs-ele3 {
   background: rgba(0,0,0,.6);
 }
 

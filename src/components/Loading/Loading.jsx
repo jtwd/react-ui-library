@@ -15,6 +15,7 @@ const sizes = {
   large: '80px'
 }
 
+/** Uses React Loading, with the bars animation */
 function Loading ({size, color, alt, ...props}) {
   return (
     <StyledLoading width={sizes[size]} color={color} type="bars" title={alt} delay={250} {...props} />

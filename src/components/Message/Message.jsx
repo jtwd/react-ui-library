@@ -6,18 +6,24 @@ import Panel from '../Panel'
 import Button from '../Button'
 import Icon from '../Icon'
 import {xxs} from "../_theme/spacers"
+import {transitions} from "../_theme/units"
+
+const { drawOut, drawIn } = transitions
 
 const MessagePanel = styled(Panel)`
   position: relative;
-  transition: all .5s ease-out;
-  max-height: 500px;
-  overflow-y: auto;
+  transition: ${drawOut};
+  max-height: 0;
+  overflow-y: hidden;
+  opacity: 0;
+  border-width: 0;
   
-  ${props => props.closed && `
-    overflow-y: hidden;
-    max-height: 0;
-    border: 0 solid rgba(255,255,255,0);
-    opacity: .2
+  ${props => props.active && `
+    overflow-y: auto;
+    max-height: 500px;
+    transition: ${drawIn};
+    opacity: 1;
+    border-width: 2px;
   `}
   
   ${props => props.onClose && `
@@ -44,11 +50,13 @@ class Message extends Component {
   constructor (props) {
     super(props)
 
+    // mapping panel props to message props
     this.primary = (props.type === 'default')
     this.secondary = (props.type === 'info')
     this.danger = (props.type === 'error')
     this.success = (props.type === 'success')
 
+    // mapping message props to icons
     this.icons = {
       default: '',
       info: 'info',
@@ -57,18 +65,31 @@ class Message extends Component {
     }
 
     this.state = {
+      active: false,
       closed: false
     }
   }
 
+  componentWillMount () {
+    const newState = {active: true}
+    setTimeout(() => {
+      this.setState((prevState) => Object.assign({}, prevState, newState))
+    }, 200)
+
+  }
+
   handleCloseClick () {
-    this.setState({closed: true})
+    const newState = {
+      active: false,
+      closed: true
+    }
+    this.setState((prevState) => Object.assign({}, prevState, newState))
     this.props.onClose();
   }
 
   render () {
     const { onClose, children, header, type, ...props} = this.props
-    const { closed } = this.state
+    const { active } = this.state
 
     const IconHeader = (header) ? (
       <div>
@@ -79,7 +100,6 @@ class Message extends Component {
 
     const IconBody = (!header) ? type !== 'default' && <MessageIcon><Icon icon={this.icons[type]} small /></MessageIcon> : null
 
-
     return (
       <MessagePanel
         header={IconHeader}
@@ -87,7 +107,7 @@ class Message extends Component {
         secondary={this.secondary}
         danger={this.danger}
         success={this.success}
-        closed={closed}
+        active={active}
         onClose={onClose}
         {...props}
       >

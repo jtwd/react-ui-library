@@ -1,25 +1,25 @@
 import React from 'react'
-import { node, bool } from 'prop-types'
+import { node, number } from 'prop-types'
 import styled from 'styled-components'
 
 const StyledContainer = styled.div`
-  flex: ${props => (props.fixed) ? 'none' : 1};
+  flex: ${props => (props.flex > 0) ? props.flex : 'none'};
 `
 
 /** Flexbox layout helper for alignment */
-function AlignerItem({ children, fixed, ...props}) {
+function AlignerItem({ children, flex, ...props}) {
   return (
-    <StyledContainer fixed={fixed} {...props}>{children}</StyledContainer>
+    <StyledContainer flex={flex} {...props}>{children}</StyledContainer>
   )
 }
 
 AlignerItem.propTypes = {
   children: node.isRequired,
-  fixed: bool
+  flex: number
 }
 
 AlignerItem.defaultProps = {
-  fixed: false
+  flex: 'none'
 }
 
 export default AlignerItem

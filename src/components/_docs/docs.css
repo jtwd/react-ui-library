@@ -13,9 +13,13 @@
   text-align: center;
   line-height: 1.8;
 }
+.docs-stretch {
+  height: 100%;
+}
 .docs [class^=docs-ele] {
   border: 1px solid rgba(255,255,255, .15);
   padding: 0.5rem;
+  text-align: center;
 }
 .docs .docs-ele1 {
   background: rgba(0,0,0,.2);
@@ -31,18 +35,21 @@
   height: 80px;
   border: 1px solid rgba(255,255,255,.2);
   margin-bottom: 15px;
+  position: relative;
 }
 
 .docs .docs-eg-height2 {
   height: 120px;
   border: 1px solid rgba(255,255,255,.2);
   margin-bottom: 15px;
+  position: relative;
 }
 
 .docs .docs-eg-height3 {
   height: 250px;
   border: 1px solid rgba(255,255,255,.2);
   margin-bottom: 15px;
+  position: relative;
 }
 
 .docs .componentpage > h2 {

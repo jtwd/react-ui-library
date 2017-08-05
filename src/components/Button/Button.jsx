@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { bool, node, string, oneOf } from 'prop-types'
 
-import { radiusRound, transTextHover, primaryBold, lineHeightTight } from '../_theme/units'
+import { radiusRound, transitions, primaryBold, lineHeightTight } from '../_theme/units'
 import trimChildren from '../_theme/mixins/trimChildren'
 import getPropStylesFromTheme from '../_theme/utils/getPropStylesFromTheme'
 import getIcon from '../_theme/utils/utils.icons'
@@ -12,7 +12,7 @@ import ButtonIcon from './ButtonIcon'
 
 const tm = {
   borderRadius: radiusRound,
-  transition: transTextHover,
+  transition: transitions.hover,
   weight: primaryBold,
   lineHeight: lineHeightTight,
   types,

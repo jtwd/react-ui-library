@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 
 import { red, lightRed, yellow, white, transBlackDark, transBlackLight } from '../_theme/colors'
-import { transTextHover, radiusRound } from '../_theme/units'
+import { transitions, radiusRound } from '../_theme/units'
 import { xxs, xs, md } from '../_theme/spacers'
 
 export const Error = styled.div`
@@ -26,7 +26,7 @@ export const Input = styled.input`
   background: ${transBlackLight};
   color: ${white};
   padding: ${xs};
-  transition: ${transTextHover};
+  transition: ${transitions.hover};
   border-radius: ${radiusRound};
   display: block;
   width: 100%;

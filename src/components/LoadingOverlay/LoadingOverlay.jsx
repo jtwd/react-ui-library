@@ -3,9 +3,11 @@ import {string, bool} from 'prop-types'
 import styled from 'styled-components'
 
 import Loading from '../Loading'
+import Aligner from '../Aligner'
 import {transBlack, yellow} from "../_theme/colors"
+import {transitions} from "../_theme/units"
 
-const Overlay = styled.div`
+const Overlay = styled(Aligner)`
   position: absolute;
   top: 0;
   left: 0;
@@ -14,7 +16,7 @@ const Overlay = styled.div`
   background: ${transBlack};
   z-index: -1;
   overflow: hidden;
-  transition: opacity 0.33s ease-in;
+  transition: opacity ${transitions.fadeIn};
   opacity: 0;
   
   ${props => props.active && `
@@ -23,17 +25,10 @@ const Overlay = styled.div`
   `}
 `
 
-const Animation = styled(Loading)`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-`
-
 function LoadingOverlay({active, color, ...props}) {
   return (
     <Overlay active={active} {...props}>
-      <Animation color={color} size="large" />
+      <Loading color={color} size="large" />
     </Overlay>
   )
 }

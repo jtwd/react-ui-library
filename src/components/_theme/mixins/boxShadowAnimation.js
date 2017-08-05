@@ -1,9 +1,9 @@
-import { borderShadow, borderShadowRaised, transTextHover } from "../units"
+import { borderShadow, borderShadowRaised, transitions } from "../units"
 
 function boxShadowAnimation(action) {
   return `
     box-shadow: ${borderShadow};
-    transition: ${transTextHover};
+    transition: ${transitions.hover};
     ${action === 'hover' && `
       &:hover {
         box-shadow: ${borderShadowRaised};

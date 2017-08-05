@@ -16,6 +16,7 @@ export const RequiredSymbol = styled.span`
     ${pseudo('inline-block', 'relative', '*')}
     color: ${lightRed};
     font-size: ${fsLg};
+    line-height: 1;
     font-weight: ${primaryBold};
     padding-right: ${xxs};
   }

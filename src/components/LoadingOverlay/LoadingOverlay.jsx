@@ -6,6 +6,7 @@ import Loading from '../Loading'
 import Aligner from '../Aligner'
 import {transBlack, yellow} from "../_theme/colors"
 import {transitions} from "../_theme/units"
+import {md} from "../_theme/spacers"
 
 const Overlay = styled(Aligner)`
   position: absolute;
@@ -25,10 +26,14 @@ const Overlay = styled(Aligner)`
   `}
 `
 
+const Animation = styled(Loading)`
+  margin-bottom: ${md};
+`
+
 function LoadingOverlay({active, color, ...props}) {
   return (
     <Overlay active={active} {...props}>
-      <Loading color={color} size="large" />
+      <Animation color={color} size="large" />
     </Overlay>
   )
 }

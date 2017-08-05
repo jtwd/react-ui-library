@@ -20,11 +20,10 @@ function TextInput({ htmlId, name, label, type, required, onChange, placeholder,
         {...props}
       />
       {children}
-      {error &&
-        <Error>
-          <Icon icon="exclamation" small />
-          {error}
-        </Error>}
+      <Error active={(error)}>
+        <Icon icon="exclamation" small />
+        {error}
+      </Error>
     </Field>
   )
 }

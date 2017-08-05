@@ -1,18 +1,33 @@
 import styled, { css } from 'styled-components'
 
-import { red, lightRed, yellow, white, transBlackDark, transBlackLight } from '../_theme/colors'
+import { red, lightRed, yellow, white, transBlackDark, transBlackLight, transWhite } from '../_theme/colors'
 import { transitions, radiusRound } from '../_theme/units'
 import { xxs, xs, md } from '../_theme/spacers'
+import Message from '../Message'
 
-export const Error = styled.div`
+export const Error = styled(Message)`
   color: ${lightRed};
-  padding-top: ${xxs};
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  &:hover {
+    box-shadow: none;
+  }
   
-  > i {
-    position: relative;
-    top: 2px;
-    left: -1px;
-    margin-right: 6px;
+  ${props => props.active && `
+    max-height: 100px;
+  `}
+  
+  > div {
+    padding: ${xxs} 0 0;
+    
+    > i {
+      margin-right: ${xxs};
+      position: relative;
+      top: 2px;
+    }
   }
 `
 
@@ -22,7 +37,7 @@ export const Field = styled.div`
 `
 
 export const Input = styled.input`
-  border: 2px solid ${white};
+  border: 2px solid ${transWhite};
   background: ${transBlackLight};
   color: ${white};
   padding: ${xs};
@@ -31,6 +46,9 @@ export const Input = styled.input`
   display: block;
   width: 100%;
   
+  &:hover {
+    border-color: ${white};
+  }
   &:focus {
     outline-color: ${yellow}
   }

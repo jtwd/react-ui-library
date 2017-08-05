@@ -20,6 +20,7 @@ const Loading = styled(LoadingOverlay)`
     top: 2px;
     right: 2px;
     bottom: 2px;
+    height: auto;
   `}
 `
 

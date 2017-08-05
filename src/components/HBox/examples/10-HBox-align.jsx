@@ -3,7 +3,7 @@ import React from 'react'
 import HBox from '../HBox'
 import Wrapper from '../../Wrapper'
 
-/** Align (stretch, top, bottom) */
+/** Align (stretch, top, bottom, center) */
 function HBoxAlign () {
   return (
     <div>

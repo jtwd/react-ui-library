@@ -8,7 +8,7 @@ import Icon from '../Icon'
 
 const Toggle = styled.label`
   position: absolute;
-  top: 2.6rem;
+  top: 2.35rem;
   right: 0.75rem;
   z-index: 10;
   cursor: pointer;

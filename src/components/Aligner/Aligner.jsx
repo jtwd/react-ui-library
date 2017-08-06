@@ -1,5 +1,5 @@
 import React from 'react'
-import { node, bool, arrayOf, number, string } from 'prop-types'
+import { node, bool, arrayOf, number, string, oneOf } from 'prop-types'
 import styled from 'styled-components'
 import shortid from 'shortid'
 
@@ -25,7 +25,7 @@ const StyledContainer = styled.div`
   
 `
 
-function getAlignerContents (items, fixed, ratio, alignChildren) {
+function getAlignerContents (items, fixed, ratio, alignChildren, breakpoint) {
   let flexRatio = false
   if (ratio && items && (ratio.length === items.length)) {
     flexRatio = ratio
@@ -36,20 +36,22 @@ function getAlignerContents (items, fixed, ratio, alignChildren) {
     const alignSelf = alignChildren ? alignChildren[i] : null
 
     return (
-      <AlignerItem key={`aitem_${shortid.generate()}`} flex={flex} alignSelf={alignSelf}>{item}</AlignerItem>
+      <AlignerItem breakpoint={breakpoint} key={`aitem_${shortid.generate()}`} flex={flex} alignSelf={alignSelf}>{item}</AlignerItem>
     )
   })
 }
 
 /** Flexbox layout helper for alignment */
-function Aligner({children, fixed, stretch, ratio, alignChildren, gutter, ...props}) {
-  const contents = (children.length) ? getAlignerContents(children, fixed, ratio, alignChildren) : children
+function Aligner({children, breakpoint, fixed, stretch, ratio, alignChildren, gutter, ...props}) {
+  const contents = (children.length) ? getAlignerContents(children, fixed, ratio, alignChildren, breakpoint) : children
   return (
     <StyledContainer stretch={stretch} gutter={gutter} {...props}>{contents}</StyledContainer>
   )
 }
 
 Aligner.propTypes = {
+  /** Point at which to break to single column (default: xxs} */
+  breakpoint: oneOf(['xxs', 'xs', 'sm', 'md', 'lg', 'xl', 'xxl']),
   /** Content to be aligned */
   children: node.isRequired,
   /** Align individual children, 1 value for every child */
@@ -65,6 +67,7 @@ Aligner.propTypes = {
 }
 
 Aligner.defaultProps = {
+  breakpoint: 'xxs',
   fixed: false,
   alignChildren: null,
   gutter: false,

@@ -19,6 +19,7 @@ const Overlay = styled(Aligner)`
   overflow: hidden;
   transition: opacity ${transitions.fadeIn};
   opacity: 0;
+  cursor: wait;
   
   ${props => props.active && `
     opacity: 1;

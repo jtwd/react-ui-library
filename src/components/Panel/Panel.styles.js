@@ -6,6 +6,7 @@ import { radiusRound, primaryBold } from '../_theme/units'
 import boxShadowAnimation from '../_theme/mixins/boxShadowAnimation'
 import getPropStylesFromTheme from '../_theme/utils/getPropStylesFromTheme'
 import {panel, header, footer} from './Panel.types'
+import trimChildren from '../_theme/mixins/trimChildren'
 
 const tm = {
   panel,
@@ -17,12 +18,7 @@ const headFootStyles = `
   padding: ${xs} ${md};
   
   > * {
-    &:first-child {
-      margin-top: 0;
-    }
-    &:last-child {
-      margin-bottom: 0;
-    }
+    ${trimChildren('ver')}
   }
 `
 

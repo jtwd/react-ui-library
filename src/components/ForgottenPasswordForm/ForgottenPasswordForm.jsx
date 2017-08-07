@@ -58,7 +58,7 @@ class ForgottenPasswordForm extends Component {
     const { email, errors, submitted} = this.state
     const { focus, successMessage, errorMessage } = this.props
     const Controls = (
-        <FormControls>
+        <FormControls pack={(successMessage)? 'start' : 'end'}>
           {(!successMessage)
             ? <SubmitButton submitting={submitted}>Reset password</SubmitButton>
             : <Button link icon="caretRight">Login</Button>

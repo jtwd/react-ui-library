@@ -19,11 +19,14 @@ const MessagePanel = styled(Panel)`
   border-width: 0;
   
   ${props => props.active && `
-    overflow-y: auto;
     max-height: 500px;
     transition: ${drawIn};
     opacity: 1;
     border-width: 2px;
+  `}
+  
+  ${props => props.opened && `
+    overflow-y: auto;
   `}
   
   ${props => props.onClose && `
@@ -66,16 +69,33 @@ class Message extends Component {
 
     this.state = {
       active: false,
+      opened: false,
       closed: false
     }
   }
 
-  componentWillMount () {
-    const newState = {active: true}
-    setTimeout(() => {
-      this.setState((prevState) => Object.assign({}, prevState, newState))
-    }, 200)
+  componentDidMount () {
+    const aniDelay = 100
+    const aniDuration = 1200
 
+    // Open message delay (set to active to trigger entry animation)
+    this.enterTimeout = setTimeout(() => {
+      this.setState((prevState) => Object.assign({}, prevState, {active: true}))
+    }, aniDelay)
+
+    // Delay for the duration of animation to set to open (overflow-y is set back to auto)
+    this.enterAnimationTimeout = setTimeout(() => {
+      this.setState((prevState) => Object.assign({}, prevState, {opened: true}))
+    }, aniDuration)
+
+  }
+
+  componentWillUnmount () {
+    // Clear entry timeouts
+    if (this.enterTimeout) clearTimeout(this.enterTimeout)
+    this.enterTimeout = false
+    if(this.enterAnimationTimeout) clearTimeout(this.enterAnimationTimeout)
+    this.enterAnimationTimeout = false
   }
 
   handleCloseClick () {

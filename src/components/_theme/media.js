@@ -12,12 +12,12 @@ const sizes = {
 }
 
 /* eslint-disable */
-const media = Object.keys(sizes).reduce((finalMedia, size, minMax = 'min') => {
+const media = Object.keys(sizes).reduce((finalMedia, size) => {
   return {
     ...finalMedia,
     [size]: function(...args) {
       return css`
-        @media(${minMax}-width: ${sizes[size]}px) {
+        @media(min-width: ${sizes[size]}px) {
           ${css(...args)}
         }
       `

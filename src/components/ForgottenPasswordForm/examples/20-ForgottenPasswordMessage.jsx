@@ -18,7 +18,9 @@ const ErrorMessage = (
 function ForgottenPasswordMessage() {
   return (
     <div>
+      <div className="docs-ex-title">Success message</div>
       <ForgottenPasswordForm successMessage={ConfirmMessage} focus onSubmit={() => {}} />
+      <div className="docs-ex-title">Error message</div>
       <ForgottenPasswordForm errorMessage={ErrorMessage} focus onSubmit={() => {}} />
     </div>
   )

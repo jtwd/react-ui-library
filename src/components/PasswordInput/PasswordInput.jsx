@@ -19,6 +19,7 @@ const Toggle = styled.label`
   }
 `
 
+/** Password input - Same as TextInput but with toggle functionality (type Text and Password on the Input) Uses: TextInput, Icon */
 class PasswordInput extends Component {
   constructor(props) {
     super(props)
@@ -66,33 +67,24 @@ class PasswordInput extends Component {
 PasswordInput.propTypes = {
   /** Unique HTML ID. Used for tying label to HTML input. Handy hook for automated testing. */
   htmlId: string.isRequired,
-
   /** Input name. Recommend setting this to match object's property so a single change handler can be used by convention.*/
   name: string.isRequired,
-
   /** Password value */
   // eslint-disable-next-line react/require-default-props
   value: string,
-
   /** Input label */
   label: string,
-
   /** Function called when password input value changes */
   onChange: func.isRequired,
-
   /** Max password length accepted */
   // eslint-disable-next-line react/require-default-props
   maxLength: number,
-
   /** Required field */
   required: bool,
-
   /** Placeholder displayed when no password is entered */
   placeholder: string,
-
   /** Set to true to show the toggle for displaying the currently entered password */
   showVisibilityToggle: bool,
-
   /** Validation error to display */
   error: string
 }

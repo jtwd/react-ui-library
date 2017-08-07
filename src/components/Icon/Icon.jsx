@@ -26,6 +26,7 @@ const StyledIcon = styled.i`
   ${props => props.large && getPropStylesFromTheme(tm, 'sizes', 'lg')}
 `
 
+/** Icon component - icons are from 'React icons' and are defined in the theme - icons.js */
 function Icon({icon, large, small}) {
   const myIcon = getIcon(icon)
   return <StyledIcon large={large} small={small}>{myIcon}</StyledIcon>

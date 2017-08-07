@@ -18,7 +18,7 @@ exports[`Label renders required field when passed required prop 1`] = `
   test
    
   <span
-    className="sc-bwzfXH dYARQs"
+    className="sc-bwzfXH dEIIn"
     title="Required field"
   />
 </label>

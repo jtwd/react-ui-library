@@ -19,8 +19,9 @@ function Heading({level, children}) {
 }
 
 Heading.propTypes = {
-  /** Level of heading (1-4) */
+  /** Level of heading (1-4 = h2-h5) */
   level: oneOf([1, 2, 3, 4]),
+  /** Content of heading */
   children: node
 }
 

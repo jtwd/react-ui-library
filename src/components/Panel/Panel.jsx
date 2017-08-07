@@ -3,6 +3,7 @@ import { node, bool } from 'prop-types'
 
 import { PanelWrapper, Body, Header, Footer } from './Panel.styles'
 
+/** Reusable Panel with optional Header and Footer and Types of Primary, Secondary, Danger and Success */
 function Panel ({header, footer, footerRight, children, primary, secondary, danger, success, ...props}) {
   return (
     <PanelWrapper danger={danger} success={success} primary={primary} secondary={secondary} collapse {...props}>
@@ -20,9 +21,13 @@ function Panel ({header, footer, footerRight, children, primary, secondary, dang
 }
 
 Panel.propTypes = {
+  /** Type of panel */
   primary: bool,
+  /** Type of panel */
   secondary: bool,
+  /** Type of panel */
   danger: bool,
+  /** Type of panel */
   success: bool,
   /** Header content */
   header: node,

@@ -9,6 +9,7 @@ import PasswordInput from '../PasswordInput'
 import SubmitButton from '../SubmitButton'
 import FormControls from '../FormControls'
 
+/** Login form for authentication. Use: Form, TextInput, PasswordInput, SubmitButton, Button */
 class LoginForm extends Component {
   constructor (props) {
     super(props)

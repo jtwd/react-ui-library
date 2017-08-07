@@ -15,22 +15,18 @@ ShallowWrapper {
         <FormControls
             align="right"
         >
-            <Button
-                danger={false}
+            <SubmitButton
                 icon="lock"
-                large={false}
-                link={false}
-                primary={true}
-                secondary={false}
-                small={false}
-                type="submit"
+                submitting={false}
             >
                 Login
-            </Button>
+            </SubmitButton>
         </FormControls>
     }
     onSubmit={[Function]}
+    reqKey={true}
     short={true}
+    submitting={false}
     text={false}
     title="Login"
 >
@@ -67,22 +63,18 @@ ShallowWrapper {
             <FormControls
                   align="right"
             >
-                  <Button
-                        danger={false}
+                  <SubmitButton
                         icon="lock"
-                        large={false}
-                        link={false}
-                        primary={true}
-                        secondary={false}
-                        small={false}
-                        type="submit"
+                        submitting={false}
                   >
                         Login
-                  </Button>
+                  </SubmitButton>
             </FormControls>
       }
       onSubmit={[Function]}
+      reqKey={true}
       short={true}
+      submitting={false}
       text={false}
       title="Login"
 >
@@ -168,22 +160,18 @@ ShallowWrapper {
                     <FormControls
                               align="right"
                     >
-                              <Button
-                                        danger={false}
+                              <SubmitButton
                                         icon="lock"
-                                        large={false}
-                                        link={false}
-                                        primary={true}
-                                        secondary={false}
-                                        small={false}
-                                        type="submit"
+                                        submitting={false}
                               >
                                         Login
-                              </Button>
+                              </SubmitButton>
                     </FormControls>
           }
           onSubmit={[Function]}
+          reqKey={true}
           short={true}
+          submitting={false}
           text={false}
           title="Login"
 >
@@ -220,22 +208,18 @@ ShallowWrapper {
                     <FormControls
                               align="right"
                     >
-                              <Button
-                                        danger={false}
+                              <SubmitButton
                                         icon="lock"
-                                        large={false}
-                                        link={false}
-                                        primary={true}
-                                        secondary={false}
-                                        small={false}
-                                        type="submit"
+                                        submitting={false}
                               >
                                         Login
-                              </Button>
+                              </SubmitButton>
                     </FormControls>
           }
           onSubmit={[Function]}
+          reqKey={true}
           short={true}
+          submitting={false}
           text={false}
           title="Login"
 >

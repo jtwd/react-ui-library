@@ -5,6 +5,7 @@ import Label from '../Label'
 import Icon from '../Icon'
 import { Field, Input, Error } from './TextInput.styles'
 
+/** TextInput field - Can be required, in error. Uses: Label, Icon, Message */
 function TextInput({ htmlId, name, label, type, required, onChange, placeholder, value, error, children, ...props }) {
   return (
     <Field>
@@ -48,6 +49,7 @@ TextInput.propTypes = {
   value: string,
   /** Error message */
   error: string,
+  /** TextInput contents */
   children: node
 }
 

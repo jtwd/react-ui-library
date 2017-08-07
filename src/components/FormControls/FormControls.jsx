@@ -26,6 +26,7 @@ function FormControls({children, align, ...props}) {
 }
 
 FormControls.propTypes = {
+  /** Contents on the component */
   children: node.isRequired,
   /** right, left, center, ends, spaced */
   align: oneOf(['right', 'left', 'center', 'ends', 'spaced'])

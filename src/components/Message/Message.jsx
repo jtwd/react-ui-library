@@ -49,6 +49,7 @@ const MessageIcon = styled.span`
   top: 3px;
 `
 
+/** Message component for system messaging - Animates in and out. Can be closable. Uses: Panel, Button, Icon */
 class Message extends Component {
   constructor (props) {
     super(props)
@@ -140,9 +141,13 @@ class Message extends Component {
 }
 
 Message.propTypes = {
+  /** Type of message (default, info, error, success) */
   type: oneOf(['default', 'info', 'error', 'success']),
+  /** Header - to go in Panels header */
   header: node,
+  /** Function to call onClose - if not present, message is not closable */
   onClose: func,
+  /** Message body of message */
   children: node.isRequired
 }
 

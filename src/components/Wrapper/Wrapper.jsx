@@ -39,6 +39,7 @@ const StyledDiv = styled.div`
   `}
 `
 
+/** Wrapper element - can be set to Sizes: App, Text, Short. Collapse is no padding. Flex should be used in conjunction with HBox VBox */
 function Wrapper({ app, text, centered, middle, short, collapse, flex, children, ...props }) {
   return (
     <StyledDiv text={text} centered={centered} middle={middle} short={short} collapse={collapse} app={app} flex={flex} {...props}>

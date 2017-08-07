@@ -3,6 +3,7 @@ import { node } from 'prop-types'
 
 import { Header, Title } from './PageHeader.styles'
 
+/** Page Header component - For consistant styling of Page Titles (H1). Should only be used once per page */
 function PageHeader({title, children}) {
   return (
     <Header>

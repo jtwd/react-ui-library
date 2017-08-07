@@ -9,7 +9,7 @@ import TextInput from '../TextInput'
 import SubmitButton from '../SubmitButton'
 import Button from '../Button'
 
-/** Validates and has a submitted state. Uses: Form, FormControls, TextInput, SubmitButton */
+/** Validates and has a submitted state. Uses: Form, FormControls, TextInput, SubmitButton, Button */
 class ForgottenPasswordForm extends Component {
   constructor (props) {
     super(props)

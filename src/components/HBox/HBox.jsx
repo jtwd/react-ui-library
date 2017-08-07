@@ -29,6 +29,7 @@ HBox.propTypes = {
   align: oneOf(['stretch', 'top', 'bottom', 'center']),
   /** null, start, center, end, between, around */
   pack: oneOf(['start', 'center', 'end', 'between', 'around', null]),
+  /** Contents of the component */
   children: node.isRequired
 }
 

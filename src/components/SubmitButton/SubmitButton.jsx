@@ -20,6 +20,7 @@ const StyledLoading = styled(Loading)`
   opacity: 1;
 `
 
+/** Button with Submitting state - show a loading animation. Uses: Button, Loading */
 function SubmitButton ({submitting, icon, children, ...props}) {
   let buttonIcon = icon
   const buttonLoading = submitting ? <StyledLoading size="small" height={25} color={darkBlue} /> : null
@@ -33,8 +34,11 @@ function SubmitButton ({submitting, icon, children, ...props}) {
 }
 
 SubmitButton.propTypes = {
+  /** Submitting state (shows loading animation) */
   submitting: bool,
+  /** Icon (initial) for button - if replaced with loading */
   icon: string,
+  /** Contents of button */
   children: node.isRequired
 }
 

@@ -31,6 +31,7 @@ const Animation = styled(Loading)`
   margin-bottom: ${md};
 `
 
+/** Overlay with loading indication. Animates in and out. Uses: Loading, Aligner */
 function LoadingOverlay({active, color, ...props}) {
   return (
     <Overlay active={active} {...props}>
@@ -40,7 +41,9 @@ function LoadingOverlay({active, color, ...props}) {
 }
 
 LoadingOverlay.propTypes = {
+  /** Active state */
   active: bool,
+  /** Color of the loading component (yellow) */
   color: string
 }
 

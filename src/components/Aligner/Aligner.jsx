@@ -1,5 +1,5 @@
 import React from 'react'
-import { node, bool, arrayOf, number, string, oneOf } from 'prop-types'
+import { node, bool, arrayOf, number, string } from 'prop-types'
 import styled from 'styled-components'
 import shortid from 'shortid'
 
@@ -25,33 +25,34 @@ const StyledContainer = styled.div`
   
 `
 
-function getAlignerContents (items, fixed, ratio, alignChildren, breakpoint) {
+function getAlignerContents (items, fixed, ratio, alignChildren) {
   let flexRatio = false
-  if (ratio && items && (ratio.length === items.length)) {
-    flexRatio = ratio
-  }
+  // if ratio has the same amount of arguments as children then it can be used
+  flexRatio = ratio && items && (ratio.length === items.length) && ratio
+
   return items.map((item, i) => {
     let flex = flexRatio ? flexRatio[i] : 1
     if (fixed) flex = 0
-    const alignSelf = alignChildren ? alignChildren[i] : null
+
+    let alignSelf = null
+    // if alignChildren contains the same amount or arguments than there are children then assign the relevant one
+    alignSelf = alignChildren && alignChildren.length >= items.length && alignChildren[i]
 
     return (
-      <AlignerItem breakpoint={breakpoint} key={`aitem_${shortid.generate()}`} flex={flex} alignSelf={alignSelf}>{item}</AlignerItem>
+      <AlignerItem key={`aitem_${shortid.generate()}`} flex={flex} alignSelf={alignSelf}>{item}</AlignerItem>
     )
   })
 }
 
 /** Flexbox layout helper for alignment */
-function Aligner({children, breakpoint, fixed, stretch, ratio, alignChildren, gutter, ...props}) {
-  const contents = (children.length) ? getAlignerContents(children, fixed, ratio, alignChildren, breakpoint) : children
+function Aligner({children, fixed, stretch, ratio, alignChildren, gutter, ...props}) {
+  const contents = (children.length) ? getAlignerContents(children, fixed, ratio, alignChildren) : children
   return (
     <StyledContainer stretch={stretch} gutter={gutter} {...props}>{contents}</StyledContainer>
   )
 }
 
 Aligner.propTypes = {
-  /** Point at which to break to single column (default: xxs} */
-  breakpoint: oneOf(['xxs', 'xs', 'sm', 'md', 'lg', 'xl', 'xxl']),
   /** Content to be aligned */
   children: node.isRequired,
   /** Align individual children, 1 value for every child */
@@ -67,7 +68,6 @@ Aligner.propTypes = {
 }
 
 Aligner.defaultProps = {
-  breakpoint: 'xxs',
   fixed: false,
   alignChildren: null,
   gutter: false,

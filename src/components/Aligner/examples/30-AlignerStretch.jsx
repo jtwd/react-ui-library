@@ -9,6 +9,11 @@ export default function AlignerStretch () {
       <div className="docs-eg-height2">
         <Aligner stretch>
           <div className="docs-ele1 docs-stretch">Child 1</div>
+        </Aligner>
+      </div>
+      <div className="docs-eg-height2">
+        <Aligner stretch>
+          <div className="docs-ele1 docs-stretch">Child 1</div>
           <div className="docs-ele2 docs-stretch">Child 2</div>
         </Aligner>
       </div>

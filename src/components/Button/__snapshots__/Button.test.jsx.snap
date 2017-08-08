@@ -1,3153 +1,364 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Button component renders a danger button when passed prop 1`] = `
-ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
-  "length": 1,
-  "node": <styled.button
-    danger={true}
-    iconOnly={false}
-    large={false}
-    link={false}
-    primary={false}
-    secondary={false}
-    small={false}
-    type="button"
+<styled.button
+  danger={true}
+  iconOnly={false}
+  large={false}
+  link={false}
+  primary={false}
+  secondary={false}
+  small={false}
+  type="button"
 >
-    
-    Danger
-</styled.button>,
-  "nodes": Array [
-    <styled.button
-      danger={true}
-      iconOnly={false}
-      large={false}
-      link={false}
-      primary={false}
-      secondary={false}
-      small={false}
-      type="button"
->
-      
-      Danger
-</styled.button>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 2,
-      "_context": Object {},
-      "_currentElement": <Button
-        danger={true}
-        icon=""
-        large={false}
-        link={false}
-        primary={false}
-        secondary={false}
-        small={false}
-        type="button"
->
-        Danger
-</Button>,
-      "_debugID": 7,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": StatelessComponent {
-        "_reactInternalInstance": [Circular],
-        "context": Object {},
-        "props": Object {
-          "children": "Danger",
-          "danger": true,
-          "icon": "",
-          "large": false,
-          "link": false,
-          "primary": false,
-          "secondary": false,
-          "small": false,
-          "type": "button",
-        },
-        "refs": Object {},
-        "state": null,
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 4,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <styled.button
-          danger={true}
-          iconOnly={false}
-          large={false}
-          link={false}
-          primary={false}
-          secondary={false}
-          small={false}
-          type="button"
->
-          
-          Danger
-</styled.button>,
-        "_debugID": 8,
-        "_renderedOutput": <styled.button
-          danger={true}
-          iconOnly={false}
-          large={false}
-          link={false}
-          primary={false}
-          secondary={false}
-          small={false}
-          type="button"
->
-          
-          Danger
-</styled.button>,
-      },
-      "_renderedNodeType": 1,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
-    "render": [Function],
-  },
-  "root": [Circular],
-  "unrendered": <Button
-    danger={true}
-    icon=""
-    large={false}
-    link={false}
-    primary={false}
-    secondary={false}
-    small={false}
-    type="button"
->
-    Danger
-</Button>,
-}
+  Danger
+</styled.button>
 `;
 
 exports[`Button component renders a default button by default 1`] = `
-ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
-  "length": 1,
-  "node": <styled.button
-    danger={false}
-    iconOnly={false}
-    large={false}
-    link={false}
-    primary={false}
-    secondary={false}
-    small={false}
-    type="button"
+<styled.button
+  danger={false}
+  iconOnly={false}
+  large={false}
+  link={false}
+  primary={false}
+  secondary={false}
+  small={false}
+  type="button"
 >
-    
-    Default
-</styled.button>,
-  "nodes": Array [
-    <styled.button
-      danger={false}
-      iconOnly={false}
-      large={false}
-      link={false}
-      primary={false}
-      secondary={false}
-      small={false}
-      type="button"
->
-      
-      Default
-</styled.button>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 2,
-      "_context": Object {},
-      "_currentElement": <Button
-        danger={false}
-        icon=""
-        large={false}
-        link={false}
-        primary={false}
-        secondary={false}
-        small={false}
-        type="button"
->
-        Default
-</Button>,
-      "_debugID": 1,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": StatelessComponent {
-        "_reactInternalInstance": [Circular],
-        "context": Object {},
-        "props": Object {
-          "children": "Default",
-          "danger": false,
-          "icon": "",
-          "large": false,
-          "link": false,
-          "primary": false,
-          "secondary": false,
-          "small": false,
-          "type": "button",
-        },
-        "refs": Object {},
-        "state": null,
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 1,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <styled.button
-          danger={false}
-          iconOnly={false}
-          large={false}
-          link={false}
-          primary={false}
-          secondary={false}
-          small={false}
-          type="button"
->
-          
-          Default
-</styled.button>,
-        "_debugID": 2,
-        "_renderedOutput": <styled.button
-          danger={false}
-          iconOnly={false}
-          large={false}
-          link={false}
-          primary={false}
-          secondary={false}
-          small={false}
-          type="button"
->
-          
-          Default
-</styled.button>,
-      },
-      "_renderedNodeType": 1,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
-    "render": [Function],
-  },
-  "root": [Circular],
-  "unrendered": <Button
-    danger={false}
-    icon=""
-    large={false}
-    link={false}
-    primary={false}
-    secondary={false}
-    small={false}
-    type="button"
->
-    Default
-</Button>,
-}
+  Default
+</styled.button>
 `;
 
 exports[`Button component renders a large button when passed prop 1`] = `
-ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
-  "length": 1,
-  "node": <styled.button
-    danger={false}
-    iconOnly={false}
-    large={true}
-    link={false}
-    primary={false}
-    secondary={false}
-    small={false}
-    type="button"
+<styled.button
+  danger={false}
+  iconOnly={false}
+  large={true}
+  link={false}
+  primary={false}
+  secondary={false}
+  small={false}
+  type="button"
 >
-    
-    Primary
-</styled.button>,
-  "nodes": Array [
-    <styled.button
-      danger={false}
-      iconOnly={false}
-      large={true}
-      link={false}
-      primary={false}
-      secondary={false}
-      small={false}
-      type="button"
->
-      
-      Primary
-</styled.button>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 2,
-      "_context": Object {},
-      "_currentElement": <Button
-        danger={false}
-        icon=""
-        large={true}
-        link={false}
-        primary={false}
-        secondary={false}
-        small={false}
-        type="button"
->
-        Primary
-</Button>,
-      "_debugID": 11,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": StatelessComponent {
-        "_reactInternalInstance": [Circular],
-        "context": Object {},
-        "props": Object {
-          "children": "Primary",
-          "danger": false,
-          "icon": "",
-          "large": true,
-          "link": false,
-          "primary": false,
-          "secondary": false,
-          "small": false,
-          "type": "button",
-        },
-        "refs": Object {},
-        "state": null,
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 6,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <styled.button
-          danger={false}
-          iconOnly={false}
-          large={true}
-          link={false}
-          primary={false}
-          secondary={false}
-          small={false}
-          type="button"
->
-          
-          Primary
-</styled.button>,
-        "_debugID": 12,
-        "_renderedOutput": <styled.button
-          danger={false}
-          iconOnly={false}
-          large={true}
-          link={false}
-          primary={false}
-          secondary={false}
-          small={false}
-          type="button"
->
-          
-          Primary
-</styled.button>,
-      },
-      "_renderedNodeType": 1,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
-    "render": [Function],
-  },
-  "root": [Circular],
-  "unrendered": <Button
-    danger={false}
-    icon=""
-    large={true}
-    link={false}
-    primary={false}
-    secondary={false}
-    small={false}
-    type="button"
->
-    Primary
-</Button>,
-}
+  Primary
+</styled.button>
 `;
 
 exports[`Button component renders a large, primary button when passed prop 1`] = `
-ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
-  "length": 1,
-  "node": <styled.button
-    danger={false}
-    iconOnly={false}
-    large={true}
-    link={false}
-    primary={true}
-    secondary={false}
-    small={false}
-    type="button"
+<styled.button
+  danger={false}
+  iconOnly={false}
+  large={true}
+  link={false}
+  primary={true}
+  secondary={false}
+  small={false}
+  type="button"
 >
-    
-    Primary
-</styled.button>,
-  "nodes": Array [
-    <styled.button
-      danger={false}
-      iconOnly={false}
-      large={true}
-      link={false}
-      primary={true}
-      secondary={false}
-      small={false}
-      type="button"
->
-      
-      Primary
-</styled.button>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 2,
-      "_context": Object {},
-      "_currentElement": <Button
-        danger={false}
-        icon=""
-        large={true}
-        link={false}
-        primary={true}
-        secondary={false}
-        small={false}
-        type="button"
->
-        Primary
-</Button>,
-      "_debugID": 15,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": StatelessComponent {
-        "_reactInternalInstance": [Circular],
-        "context": Object {},
-        "props": Object {
-          "children": "Primary",
-          "danger": false,
-          "icon": "",
-          "large": true,
-          "link": false,
-          "primary": true,
-          "secondary": false,
-          "small": false,
-          "type": "button",
-        },
-        "refs": Object {},
-        "state": null,
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 8,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <styled.button
-          danger={false}
-          iconOnly={false}
-          large={true}
-          link={false}
-          primary={true}
-          secondary={false}
-          small={false}
-          type="button"
->
-          
-          Primary
-</styled.button>,
-        "_debugID": 16,
-        "_renderedOutput": <styled.button
-          danger={false}
-          iconOnly={false}
-          large={true}
-          link={false}
-          primary={true}
-          secondary={false}
-          small={false}
-          type="button"
->
-          
-          Primary
-</styled.button>,
-      },
-      "_renderedNodeType": 1,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
-    "render": [Function],
-  },
-  "root": [Circular],
-  "unrendered": <Button
-    danger={false}
-    icon=""
-    large={true}
-    link={false}
-    primary={true}
-    secondary={false}
-    small={false}
-    type="button"
->
-    Primary
-</Button>,
-}
+  Primary
+</styled.button>
 `;
 
 exports[`Button component renders a link button when passed prop 1`] = `
-ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
-  "length": 1,
-  "node": <styled.button
-    danger={false}
-    iconOnly={false}
-    large={false}
-    link={true}
-    primary={false}
-    secondary={false}
-    small={false}
-    type="button"
+<styled.button
+  danger={false}
+  iconOnly={false}
+  large={false}
+  link={true}
+  primary={false}
+  secondary={false}
+  small={false}
+  type="button"
 >
-    
-    Link
-</styled.button>,
-  "nodes": Array [
-    <styled.button
-      danger={false}
-      iconOnly={false}
-      large={false}
-      link={true}
-      primary={false}
-      secondary={false}
-      small={false}
-      type="button"
->
-      
-      Link
-</styled.button>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 2,
-      "_context": Object {},
-      "_currentElement": <Button
-        danger={false}
-        icon=""
-        large={false}
-        link={true}
-        primary={false}
-        secondary={false}
-        small={false}
-        type="button"
->
-        Link
-</Button>,
-      "_debugID": 9,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": StatelessComponent {
-        "_reactInternalInstance": [Circular],
-        "context": Object {},
-        "props": Object {
-          "children": "Link",
-          "danger": false,
-          "icon": "",
-          "large": false,
-          "link": true,
-          "primary": false,
-          "secondary": false,
-          "small": false,
-          "type": "button",
-        },
-        "refs": Object {},
-        "state": null,
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 5,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <styled.button
-          danger={false}
-          iconOnly={false}
-          large={false}
-          link={true}
-          primary={false}
-          secondary={false}
-          small={false}
-          type="button"
->
-          
-          Link
-</styled.button>,
-        "_debugID": 10,
-        "_renderedOutput": <styled.button
-          danger={false}
-          iconOnly={false}
-          large={false}
-          link={true}
-          primary={false}
-          secondary={false}
-          small={false}
-          type="button"
->
-          
-          Link
-</styled.button>,
-      },
-      "_renderedNodeType": 1,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
-    "render": [Function],
-  },
-  "root": [Circular],
-  "unrendered": <Button
-    danger={false}
-    icon=""
-    large={false}
-    link={true}
-    primary={false}
-    secondary={false}
-    small={false}
-    type="button"
->
-    Link
-</Button>,
-}
+  Link
+</styled.button>
 `;
 
 exports[`Button component renders a primary button when passed prop 1`] = `
-ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
-  "length": 1,
-  "node": <styled.button
-    danger={false}
-    iconOnly={false}
-    large={false}
-    link={false}
-    primary={true}
-    secondary={false}
-    small={false}
-    type="button"
+<styled.button
+  danger={false}
+  iconOnly={false}
+  large={false}
+  link={false}
+  primary={true}
+  secondary={false}
+  small={false}
+  type="button"
 >
-    
-    Primary
-</styled.button>,
-  "nodes": Array [
-    <styled.button
-      danger={false}
-      iconOnly={false}
-      large={false}
-      link={false}
-      primary={true}
-      secondary={false}
-      small={false}
-      type="button"
->
-      
-      Primary
-</styled.button>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 2,
-      "_context": Object {},
-      "_currentElement": <Button
-        danger={false}
-        icon=""
-        large={false}
-        link={false}
-        primary={true}
-        secondary={false}
-        small={false}
-        type="button"
->
-        Primary
-</Button>,
-      "_debugID": 3,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": StatelessComponent {
-        "_reactInternalInstance": [Circular],
-        "context": Object {},
-        "props": Object {
-          "children": "Primary",
-          "danger": false,
-          "icon": "",
-          "large": false,
-          "link": false,
-          "primary": true,
-          "secondary": false,
-          "small": false,
-          "type": "button",
-        },
-        "refs": Object {},
-        "state": null,
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 2,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <styled.button
-          danger={false}
-          iconOnly={false}
-          large={false}
-          link={false}
-          primary={true}
-          secondary={false}
-          small={false}
-          type="button"
->
-          
-          Primary
-</styled.button>,
-        "_debugID": 4,
-        "_renderedOutput": <styled.button
-          danger={false}
-          iconOnly={false}
-          large={false}
-          link={false}
-          primary={true}
-          secondary={false}
-          small={false}
-          type="button"
->
-          
-          Primary
-</styled.button>,
-      },
-      "_renderedNodeType": 1,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
-    "render": [Function],
-  },
-  "root": [Circular],
-  "unrendered": <Button
-    danger={false}
-    icon=""
-    large={false}
-    link={false}
-    primary={true}
-    secondary={false}
-    small={false}
-    type="button"
->
-    Primary
-</Button>,
-}
+  Primary
+</styled.button>
 `;
 
 exports[`Button component renders a secondary button when passed prop 1`] = `
-ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
-  "length": 1,
-  "node": <styled.button
-    danger={false}
-    iconOnly={false}
-    large={false}
-    link={false}
-    primary={false}
-    secondary={true}
-    small={false}
-    type="button"
+<styled.button
+  danger={false}
+  iconOnly={false}
+  large={false}
+  link={false}
+  primary={false}
+  secondary={true}
+  small={false}
+  type="button"
 >
-    
-    Primary
-</styled.button>,
-  "nodes": Array [
-    <styled.button
-      danger={false}
-      iconOnly={false}
-      large={false}
-      link={false}
-      primary={false}
-      secondary={true}
-      small={false}
-      type="button"
->
-      
-      Primary
-</styled.button>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 2,
-      "_context": Object {},
-      "_currentElement": <Button
-        danger={false}
-        icon=""
-        large={false}
-        link={false}
-        primary={false}
-        secondary={true}
-        small={false}
-        type="button"
->
-        Primary
-</Button>,
-      "_debugID": 5,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": StatelessComponent {
-        "_reactInternalInstance": [Circular],
-        "context": Object {},
-        "props": Object {
-          "children": "Primary",
-          "danger": false,
-          "icon": "",
-          "large": false,
-          "link": false,
-          "primary": false,
-          "secondary": true,
-          "small": false,
-          "type": "button",
-        },
-        "refs": Object {},
-        "state": null,
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 3,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <styled.button
-          danger={false}
-          iconOnly={false}
-          large={false}
-          link={false}
-          primary={false}
-          secondary={true}
-          small={false}
-          type="button"
->
-          
-          Primary
-</styled.button>,
-        "_debugID": 6,
-        "_renderedOutput": <styled.button
-          danger={false}
-          iconOnly={false}
-          large={false}
-          link={false}
-          primary={false}
-          secondary={true}
-          small={false}
-          type="button"
->
-          
-          Primary
-</styled.button>,
-      },
-      "_renderedNodeType": 1,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
-    "render": [Function],
-  },
-  "root": [Circular],
-  "unrendered": <Button
-    danger={false}
-    icon=""
-    large={false}
-    link={false}
-    primary={false}
-    secondary={true}
-    small={false}
-    type="button"
->
-    Primary
-</Button>,
-}
+  Primary
+</styled.button>
 `;
 
 exports[`Button component renders a small button when passed prop 1`] = `
-ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
-  "length": 1,
-  "node": <styled.button
-    danger={false}
-    iconOnly={false}
-    large={false}
-    link={false}
-    primary={false}
-    secondary={false}
-    small={true}
-    type="button"
+<styled.button
+  danger={false}
+  iconOnly={false}
+  large={false}
+  link={false}
+  primary={false}
+  secondary={false}
+  small={true}
+  type="button"
 >
-    
-    Primary
-</styled.button>,
-  "nodes": Array [
-    <styled.button
-      danger={false}
-      iconOnly={false}
-      large={false}
-      link={false}
-      primary={false}
-      secondary={false}
-      small={true}
-      type="button"
->
-      
-      Primary
-</styled.button>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 2,
-      "_context": Object {},
-      "_currentElement": <Button
-        danger={false}
-        icon=""
-        large={false}
-        link={false}
-        primary={false}
-        secondary={false}
-        small={true}
-        type="button"
->
-        Primary
-</Button>,
-      "_debugID": 13,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": StatelessComponent {
-        "_reactInternalInstance": [Circular],
-        "context": Object {},
-        "props": Object {
-          "children": "Primary",
-          "danger": false,
-          "icon": "",
-          "large": false,
-          "link": false,
-          "primary": false,
-          "secondary": false,
-          "small": true,
-          "type": "button",
-        },
-        "refs": Object {},
-        "state": null,
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 7,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <styled.button
-          danger={false}
-          iconOnly={false}
-          large={false}
-          link={false}
-          primary={false}
-          secondary={false}
-          small={true}
-          type="button"
->
-          
-          Primary
-</styled.button>,
-        "_debugID": 14,
-        "_renderedOutput": <styled.button
-          danger={false}
-          iconOnly={false}
-          large={false}
-          link={false}
-          primary={false}
-          secondary={false}
-          small={true}
-          type="button"
->
-          
-          Primary
-</styled.button>,
-      },
-      "_renderedNodeType": 1,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
-    "render": [Function],
-  },
-  "root": [Circular],
-  "unrendered": <Button
-    danger={false}
-    icon=""
-    large={false}
-    link={false}
-    primary={false}
-    secondary={false}
-    small={true}
-    type="button"
->
-    Primary
-</Button>,
-}
+  Primary
+</styled.button>
 `;
 
 exports[`Button component renders a small, secondary button when passed prop 1`] = `
-ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
-  "length": 1,
-  "node": <styled.button
-    danger={false}
-    iconOnly={false}
-    large={false}
-    link={false}
-    primary={false}
-    secondary={true}
-    small={true}
-    type="button"
+<styled.button
+  danger={false}
+  iconOnly={false}
+  large={false}
+  link={false}
+  primary={false}
+  secondary={true}
+  small={true}
+  type="button"
 >
-    
-    Primary
-</styled.button>,
-  "nodes": Array [
-    <styled.button
-      danger={false}
-      iconOnly={false}
-      large={false}
-      link={false}
-      primary={false}
-      secondary={true}
-      small={true}
-      type="button"
->
-      
-      Primary
-</styled.button>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 2,
-      "_context": Object {},
-      "_currentElement": <Button
-        danger={false}
-        icon=""
-        large={false}
-        link={false}
-        primary={false}
-        secondary={true}
-        small={true}
-        type="button"
->
-        Primary
-</Button>,
-      "_debugID": 17,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": StatelessComponent {
-        "_reactInternalInstance": [Circular],
-        "context": Object {},
-        "props": Object {
-          "children": "Primary",
-          "danger": false,
-          "icon": "",
-          "large": false,
-          "link": false,
-          "primary": false,
-          "secondary": true,
-          "small": true,
-          "type": "button",
-        },
-        "refs": Object {},
-        "state": null,
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 9,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <styled.button
-          danger={false}
-          iconOnly={false}
-          large={false}
-          link={false}
-          primary={false}
-          secondary={true}
-          small={true}
-          type="button"
->
-          
-          Primary
-</styled.button>,
-        "_debugID": 18,
-        "_renderedOutput": <styled.button
-          danger={false}
-          iconOnly={false}
-          large={false}
-          link={false}
-          primary={false}
-          secondary={true}
-          small={true}
-          type="button"
->
-          
-          Primary
-</styled.button>,
-      },
-      "_renderedNodeType": 1,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
-    "render": [Function],
-  },
-  "root": [Circular],
-  "unrendered": <Button
-    danger={false}
-    icon=""
-    large={false}
-    link={false}
-    primary={false}
-    secondary={true}
-    small={true}
-    type="button"
->
-    Primary
-</Button>,
-}
+  Primary
+</styled.button>
 `;
 
-exports[`Button component should not render if icon prop is not valid and no children are supplied 1`] = `
-ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
-  "length": 1,
-  "node": null,
-  "nodes": Array [
-    null,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 2,
-      "_context": Object {},
-      "_currentElement": <Button
-        danger={false}
-        icon="qwerty"
-        large={false}
-        link={false}
-        primary={false}
-        secondary={false}
-        small={false}
-        type="button"
-/>,
-      "_debugID": 41,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": StatelessComponent {
-        "_reactInternalInstance": [Circular],
-        "context": Object {},
-        "props": Object {
-          "children": null,
-          "danger": false,
-          "icon": "qwerty",
-          "large": false,
-          "link": false,
-          "primary": false,
-          "secondary": false,
-          "small": false,
-          "type": "button",
-        },
-        "refs": Object {},
-        "state": null,
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 21,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": null,
-        "_debugID": 42,
-        "_renderedOutput": null,
-      },
-      "_renderedNodeType": 2,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
-    "render": [Function],
-  },
-  "root": [Circular],
-  "unrendered": <Button
-    danger={false}
-    icon="qwerty"
-    large={false}
-    link={false}
-    primary={false}
-    secondary={false}
-    small={false}
-    type="button"
-/>,
-}
-`;
+exports[`Button component should not render if icon prop is not valid and no children are supplied 1`] = `null`;
 
 exports[`Button component should render a correct icon only button if no children are passed with an icon 1`] = `
-ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
-  "length": 1,
-  "node": <styled.button
-    danger={false}
+<styled.button
+  danger={false}
+  iconOnly={true}
+  large={false}
+  link={false}
+  primary={false}
+  secondary={false}
+  small={false}
+  type="button"
+>
+  <ButtonIcon
+    icon="close"
     iconOnly={true}
     large={false}
-    link={false}
-    primary={false}
-    secondary={false}
     small={false}
-    type="button"
->
-    <ButtonIcon
-        icon="close"
-        iconOnly={true}
-        large={false}
-        small={false}
-    />
-</styled.button>,
-  "nodes": Array [
-    <styled.button
-      danger={false}
-      iconOnly={true}
-      large={false}
-      link={false}
-      primary={false}
-      secondary={false}
-      small={false}
-      type="button"
->
-      <ButtonIcon
-            icon="close"
-            iconOnly={true}
-            large={false}
-            small={false}
-      />
-</styled.button>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 2,
-      "_context": Object {},
-      "_currentElement": <Button
-        danger={false}
-        icon="close"
-        large={false}
-        link={false}
-        primary={false}
-        secondary={false}
-        small={false}
-        type="button"
-/>,
-      "_debugID": 29,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": StatelessComponent {
-        "_reactInternalInstance": [Circular],
-        "context": Object {},
-        "props": Object {
-          "children": null,
-          "danger": false,
-          "icon": "close",
-          "large": false,
-          "link": false,
-          "primary": false,
-          "secondary": false,
-          "small": false,
-          "type": "button",
-        },
-        "refs": Object {},
-        "state": null,
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 15,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <styled.button
-          danger={false}
-          iconOnly={true}
-          large={false}
-          link={false}
-          primary={false}
-          secondary={false}
-          small={false}
-          type="button"
->
-          <ButtonIcon
-                    icon="close"
-                    iconOnly={true}
-                    large={false}
-                    small={false}
-          />
-</styled.button>,
-        "_debugID": 30,
-        "_renderedOutput": <styled.button
-          danger={false}
-          iconOnly={true}
-          large={false}
-          link={false}
-          primary={false}
-          secondary={false}
-          small={false}
-          type="button"
->
-          <ButtonIcon
-                    icon="close"
-                    iconOnly={true}
-                    large={false}
-                    small={false}
-          />
-</styled.button>,
-      },
-      "_renderedNodeType": 1,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
-    "render": [Function],
-  },
-  "root": [Circular],
-  "unrendered": <Button
-    danger={false}
-    icon="close"
-    large={false}
-    link={false}
-    primary={false}
-    secondary={false}
-    small={false}
-    type="button"
-/>,
-}
+  />
+</styled.button>
 `;
 
 exports[`Button component should render a correct icon only large button if no children are passed with an icon and large prop 1`] = `
-ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
-  "length": 1,
-  "node": <styled.button
-    danger={false}
+<styled.button
+  danger={false}
+  iconOnly={true}
+  large={true}
+  link={false}
+  primary={false}
+  secondary={false}
+  small={false}
+  type="button"
+>
+  <ButtonIcon
+    icon="close"
     iconOnly={true}
     large={true}
-    link={false}
-    primary={false}
-    secondary={false}
     small={false}
-    type="button"
->
-    <ButtonIcon
-        icon="close"
-        iconOnly={true}
-        large={true}
-        small={false}
-    />
-</styled.button>,
-  "nodes": Array [
-    <styled.button
-      danger={false}
-      iconOnly={true}
-      large={true}
-      link={false}
-      primary={false}
-      secondary={false}
-      small={false}
-      type="button"
->
-      <ButtonIcon
-            icon="close"
-            iconOnly={true}
-            large={true}
-            small={false}
-      />
-</styled.button>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 2,
-      "_context": Object {},
-      "_currentElement": <Button
-        danger={false}
-        icon="close"
-        large={true}
-        link={false}
-        primary={false}
-        secondary={false}
-        small={false}
-        type="button"
-/>,
-      "_debugID": 31,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": StatelessComponent {
-        "_reactInternalInstance": [Circular],
-        "context": Object {},
-        "props": Object {
-          "children": null,
-          "danger": false,
-          "icon": "close",
-          "large": true,
-          "link": false,
-          "primary": false,
-          "secondary": false,
-          "small": false,
-          "type": "button",
-        },
-        "refs": Object {},
-        "state": null,
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 16,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <styled.button
-          danger={false}
-          iconOnly={true}
-          large={true}
-          link={false}
-          primary={false}
-          secondary={false}
-          small={false}
-          type="button"
->
-          <ButtonIcon
-                    icon="close"
-                    iconOnly={true}
-                    large={true}
-                    small={false}
-          />
-</styled.button>,
-        "_debugID": 32,
-        "_renderedOutput": <styled.button
-          danger={false}
-          iconOnly={true}
-          large={true}
-          link={false}
-          primary={false}
-          secondary={false}
-          small={false}
-          type="button"
->
-          <ButtonIcon
-                    icon="close"
-                    iconOnly={true}
-                    large={true}
-                    small={false}
-          />
-</styled.button>,
-      },
-      "_renderedNodeType": 1,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
-    "render": [Function],
-  },
-  "root": [Circular],
-  "unrendered": <Button
-    danger={false}
-    icon="close"
-    large={true}
-    link={false}
-    primary={false}
-    secondary={false}
-    small={false}
-    type="button"
-/>,
-}
+  />
+</styled.button>
 `;
 
 exports[`Button component should render a correct icon only primary button if no children are passed with an icon and primary prop 1`] = `
-ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
-  "length": 1,
-  "node": <styled.button
-    danger={false}
+<styled.button
+  danger={false}
+  iconOnly={true}
+  large={false}
+  link={false}
+  primary={true}
+  secondary={false}
+  small={false}
+  type="button"
+>
+  <ButtonIcon
+    icon="close"
     iconOnly={true}
     large={false}
-    link={false}
-    primary={true}
-    secondary={false}
     small={false}
-    type="button"
->
-    <ButtonIcon
-        icon="close"
-        iconOnly={true}
-        large={false}
-        small={false}
-    />
-</styled.button>,
-  "nodes": Array [
-    <styled.button
-      danger={false}
-      iconOnly={true}
-      large={false}
-      link={false}
-      primary={true}
-      secondary={false}
-      small={false}
-      type="button"
->
-      <ButtonIcon
-            icon="close"
-            iconOnly={true}
-            large={false}
-            small={false}
-      />
-</styled.button>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 2,
-      "_context": Object {},
-      "_currentElement": <Button
-        danger={false}
-        icon="close"
-        large={false}
-        link={false}
-        primary={true}
-        secondary={false}
-        small={false}
-        type="button"
-/>,
-      "_debugID": 35,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": StatelessComponent {
-        "_reactInternalInstance": [Circular],
-        "context": Object {},
-        "props": Object {
-          "children": null,
-          "danger": false,
-          "icon": "close",
-          "large": false,
-          "link": false,
-          "primary": true,
-          "secondary": false,
-          "small": false,
-          "type": "button",
-        },
-        "refs": Object {},
-        "state": null,
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 18,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <styled.button
-          danger={false}
-          iconOnly={true}
-          large={false}
-          link={false}
-          primary={true}
-          secondary={false}
-          small={false}
-          type="button"
->
-          <ButtonIcon
-                    icon="close"
-                    iconOnly={true}
-                    large={false}
-                    small={false}
-          />
-</styled.button>,
-        "_debugID": 36,
-        "_renderedOutput": <styled.button
-          danger={false}
-          iconOnly={true}
-          large={false}
-          link={false}
-          primary={true}
-          secondary={false}
-          small={false}
-          type="button"
->
-          <ButtonIcon
-                    icon="close"
-                    iconOnly={true}
-                    large={false}
-                    small={false}
-          />
-</styled.button>,
-      },
-      "_renderedNodeType": 1,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
-    "render": [Function],
-  },
-  "root": [Circular],
-  "unrendered": <Button
-    danger={false}
-    icon="close"
-    large={false}
-    link={false}
-    primary={true}
-    secondary={false}
-    small={false}
-    type="button"
-/>,
-}
+  />
+</styled.button>
 `;
 
 exports[`Button component should render a correct icon only secondary button if no children are passed with an icon and secondary prop 1`] = `
-ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
-  "length": 1,
-  "node": <styled.button
-    danger={false}
+<styled.button
+  danger={false}
+  iconOnly={true}
+  large={false}
+  link={false}
+  primary={false}
+  secondary={true}
+  small={false}
+  type="button"
+>
+  <ButtonIcon
+    icon="close"
     iconOnly={true}
     large={false}
-    link={false}
-    primary={false}
-    secondary={true}
     small={false}
-    type="button"
->
-    <ButtonIcon
-        icon="close"
-        iconOnly={true}
-        large={false}
-        small={false}
-    />
-</styled.button>,
-  "nodes": Array [
-    <styled.button
-      danger={false}
-      iconOnly={true}
-      large={false}
-      link={false}
-      primary={false}
-      secondary={true}
-      small={false}
-      type="button"
->
-      <ButtonIcon
-            icon="close"
-            iconOnly={true}
-            large={false}
-            small={false}
-      />
-</styled.button>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 2,
-      "_context": Object {},
-      "_currentElement": <Button
-        danger={false}
-        icon="close"
-        large={false}
-        link={false}
-        primary={false}
-        secondary={true}
-        small={false}
-        type="button"
-/>,
-      "_debugID": 37,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": StatelessComponent {
-        "_reactInternalInstance": [Circular],
-        "context": Object {},
-        "props": Object {
-          "children": null,
-          "danger": false,
-          "icon": "close",
-          "large": false,
-          "link": false,
-          "primary": false,
-          "secondary": true,
-          "small": false,
-          "type": "button",
-        },
-        "refs": Object {},
-        "state": null,
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 19,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <styled.button
-          danger={false}
-          iconOnly={true}
-          large={false}
-          link={false}
-          primary={false}
-          secondary={true}
-          small={false}
-          type="button"
->
-          <ButtonIcon
-                    icon="close"
-                    iconOnly={true}
-                    large={false}
-                    small={false}
-          />
-</styled.button>,
-        "_debugID": 38,
-        "_renderedOutput": <styled.button
-          danger={false}
-          iconOnly={true}
-          large={false}
-          link={false}
-          primary={false}
-          secondary={true}
-          small={false}
-          type="button"
->
-          <ButtonIcon
-                    icon="close"
-                    iconOnly={true}
-                    large={false}
-                    small={false}
-          />
-</styled.button>,
-      },
-      "_renderedNodeType": 1,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
-    "render": [Function],
-  },
-  "root": [Circular],
-  "unrendered": <Button
-    danger={false}
-    icon="close"
-    large={false}
-    link={false}
-    primary={false}
-    secondary={true}
-    small={false}
-    type="button"
-/>,
-}
+  />
+</styled.button>
 `;
 
 exports[`Button component should render a correct icon only small button if no children are passed with an icon and small prop 1`] = `
-ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
-  "length": 1,
-  "node": <styled.button
-    danger={false}
+<styled.button
+  danger={false}
+  iconOnly={true}
+  large={false}
+  link={false}
+  primary={false}
+  secondary={false}
+  small={true}
+  type="button"
+>
+  <ButtonIcon
+    icon="close"
     iconOnly={true}
     large={false}
-    link={false}
-    primary={false}
-    secondary={false}
     small={true}
-    type="button"
->
-    <ButtonIcon
-        icon="close"
-        iconOnly={true}
-        large={false}
-        small={true}
-    />
-</styled.button>,
-  "nodes": Array [
-    <styled.button
-      danger={false}
-      iconOnly={true}
-      large={false}
-      link={false}
-      primary={false}
-      secondary={false}
-      small={true}
-      type="button"
->
-      <ButtonIcon
-            icon="close"
-            iconOnly={true}
-            large={false}
-            small={true}
-      />
-</styled.button>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 2,
-      "_context": Object {},
-      "_currentElement": <Button
-        danger={false}
-        icon="close"
-        large={false}
-        link={false}
-        primary={false}
-        secondary={false}
-        small={true}
-        type="button"
-/>,
-      "_debugID": 33,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": StatelessComponent {
-        "_reactInternalInstance": [Circular],
-        "context": Object {},
-        "props": Object {
-          "children": null,
-          "danger": false,
-          "icon": "close",
-          "large": false,
-          "link": false,
-          "primary": false,
-          "secondary": false,
-          "small": true,
-          "type": "button",
-        },
-        "refs": Object {},
-        "state": null,
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 17,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <styled.button
-          danger={false}
-          iconOnly={true}
-          large={false}
-          link={false}
-          primary={false}
-          secondary={false}
-          small={true}
-          type="button"
->
-          <ButtonIcon
-                    icon="close"
-                    iconOnly={true}
-                    large={false}
-                    small={true}
-          />
-</styled.button>,
-        "_debugID": 34,
-        "_renderedOutput": <styled.button
-          danger={false}
-          iconOnly={true}
-          large={false}
-          link={false}
-          primary={false}
-          secondary={false}
-          small={true}
-          type="button"
->
-          <ButtonIcon
-                    icon="close"
-                    iconOnly={true}
-                    large={false}
-                    small={true}
-          />
-</styled.button>,
-      },
-      "_renderedNodeType": 1,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
-    "render": [Function],
-  },
-  "root": [Circular],
-  "unrendered": <Button
-    danger={false}
-    icon="close"
-    large={false}
-    link={false}
-    primary={false}
-    secondary={false}
-    small={true}
-    type="button"
-/>,
-}
+  />
+</styled.button>
 `;
 
 exports[`Button component should render a large button with an icon 1`] = `
-ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
-  "length": 1,
-  "node": <styled.button
-    danger={false}
+<styled.button
+  danger={false}
+  iconOnly={false}
+  large={true}
+  link={false}
+  primary={false}
+  secondary={false}
+  small={false}
+  type="button"
+>
+  <ButtonIcon
+    icon="close"
     iconOnly={false}
     large={true}
-    link={false}
-    primary={false}
-    secondary={false}
     small={false}
-    type="button"
->
-    <ButtonIcon
-        icon="close"
-        iconOnly={false}
-        large={true}
-        small={false}
-    />
-    Icon Button
-</styled.button>,
-  "nodes": Array [
-    <styled.button
-      danger={false}
-      iconOnly={false}
-      large={true}
-      link={false}
-      primary={false}
-      secondary={false}
-      small={false}
-      type="button"
->
-      <ButtonIcon
-            icon="close"
-            iconOnly={false}
-            large={true}
-            small={false}
-      />
-      Icon Button
-</styled.button>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 2,
-      "_context": Object {},
-      "_currentElement": <Button
-        danger={false}
-        icon="close"
-        large={true}
-        link={false}
-        primary={false}
-        secondary={false}
-        small={false}
-        type="button"
->
-        Icon Button
-</Button>,
-      "_debugID": 25,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": StatelessComponent {
-        "_reactInternalInstance": [Circular],
-        "context": Object {},
-        "props": Object {
-          "children": "Icon Button",
-          "danger": false,
-          "icon": "close",
-          "large": true,
-          "link": false,
-          "primary": false,
-          "secondary": false,
-          "small": false,
-          "type": "button",
-        },
-        "refs": Object {},
-        "state": null,
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 13,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <styled.button
-          danger={false}
-          iconOnly={false}
-          large={true}
-          link={false}
-          primary={false}
-          secondary={false}
-          small={false}
-          type="button"
->
-          <ButtonIcon
-                    icon="close"
-                    iconOnly={false}
-                    large={true}
-                    small={false}
-          />
-          Icon Button
-</styled.button>,
-        "_debugID": 26,
-        "_renderedOutput": <styled.button
-          danger={false}
-          iconOnly={false}
-          large={true}
-          link={false}
-          primary={false}
-          secondary={false}
-          small={false}
-          type="button"
->
-          <ButtonIcon
-                    icon="close"
-                    iconOnly={false}
-                    large={true}
-                    small={false}
-          />
-          Icon Button
-</styled.button>,
-      },
-      "_renderedNodeType": 1,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
-    "render": [Function],
-  },
-  "root": [Circular],
-  "unrendered": <Button
-    danger={false}
-    icon="close"
-    large={true}
-    link={false}
-    primary={false}
-    secondary={false}
-    small={false}
-    type="button"
->
-    Icon Button
-</Button>,
-}
+  />
+  Icon Button
+</styled.button>
 `;
 
 exports[`Button component should render a primary button with an icon 1`] = `
-ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
-  "length": 1,
-  "node": <styled.button
-    danger={false}
+<styled.button
+  danger={false}
+  iconOnly={false}
+  large={false}
+  link={false}
+  primary={true}
+  secondary={false}
+  small={false}
+  type="button"
+>
+  <ButtonIcon
+    icon="close"
     iconOnly={false}
     large={false}
-    link={false}
-    primary={true}
-    secondary={false}
     small={false}
-    type="button"
->
-    <ButtonIcon
-        icon="close"
-        iconOnly={false}
-        large={false}
-        small={false}
-    />
-    Icon Button
-</styled.button>,
-  "nodes": Array [
-    <styled.button
-      danger={false}
-      iconOnly={false}
-      large={false}
-      link={false}
-      primary={true}
-      secondary={false}
-      small={false}
-      type="button"
->
-      <ButtonIcon
-            icon="close"
-            iconOnly={false}
-            large={false}
-            small={false}
-      />
-      Icon Button
-</styled.button>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 2,
-      "_context": Object {},
-      "_currentElement": <Button
-        danger={false}
-        icon="close"
-        large={false}
-        link={false}
-        primary={true}
-        secondary={false}
-        small={false}
-        type="button"
->
-        Icon Button
-</Button>,
-      "_debugID": 21,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": StatelessComponent {
-        "_reactInternalInstance": [Circular],
-        "context": Object {},
-        "props": Object {
-          "children": "Icon Button",
-          "danger": false,
-          "icon": "close",
-          "large": false,
-          "link": false,
-          "primary": true,
-          "secondary": false,
-          "small": false,
-          "type": "button",
-        },
-        "refs": Object {},
-        "state": null,
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 11,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <styled.button
-          danger={false}
-          iconOnly={false}
-          large={false}
-          link={false}
-          primary={true}
-          secondary={false}
-          small={false}
-          type="button"
->
-          <ButtonIcon
-                    icon="close"
-                    iconOnly={false}
-                    large={false}
-                    small={false}
-          />
-          Icon Button
-</styled.button>,
-        "_debugID": 22,
-        "_renderedOutput": <styled.button
-          danger={false}
-          iconOnly={false}
-          large={false}
-          link={false}
-          primary={true}
-          secondary={false}
-          small={false}
-          type="button"
->
-          <ButtonIcon
-                    icon="close"
-                    iconOnly={false}
-                    large={false}
-                    small={false}
-          />
-          Icon Button
-</styled.button>,
-      },
-      "_renderedNodeType": 1,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
-    "render": [Function],
-  },
-  "root": [Circular],
-  "unrendered": <Button
-    danger={false}
-    icon="close"
-    large={false}
-    link={false}
-    primary={true}
-    secondary={false}
-    small={false}
-    type="button"
->
-    Icon Button
-</Button>,
-}
+  />
+  Icon Button
+</styled.button>
 `;
 
 exports[`Button component should render a secondary button with an icon 1`] = `
-ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
-  "length": 1,
-  "node": <styled.button
-    danger={false}
+<styled.button
+  danger={false}
+  iconOnly={false}
+  large={false}
+  link={false}
+  primary={false}
+  secondary={true}
+  small={false}
+  type="button"
+>
+  <ButtonIcon
+    icon="close"
     iconOnly={false}
     large={false}
-    link={false}
-    primary={false}
-    secondary={true}
     small={false}
-    type="button"
->
-    <ButtonIcon
-        icon="close"
-        iconOnly={false}
-        large={false}
-        small={false}
-    />
-    Icon Button
-</styled.button>,
-  "nodes": Array [
-    <styled.button
-      danger={false}
-      iconOnly={false}
-      large={false}
-      link={false}
-      primary={false}
-      secondary={true}
-      small={false}
-      type="button"
->
-      <ButtonIcon
-            icon="close"
-            iconOnly={false}
-            large={false}
-            small={false}
-      />
-      Icon Button
-</styled.button>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 2,
-      "_context": Object {},
-      "_currentElement": <Button
-        danger={false}
-        icon="close"
-        large={false}
-        link={false}
-        primary={false}
-        secondary={true}
-        small={false}
-        type="button"
->
-        Icon Button
-</Button>,
-      "_debugID": 23,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": StatelessComponent {
-        "_reactInternalInstance": [Circular],
-        "context": Object {},
-        "props": Object {
-          "children": "Icon Button",
-          "danger": false,
-          "icon": "close",
-          "large": false,
-          "link": false,
-          "primary": false,
-          "secondary": true,
-          "small": false,
-          "type": "button",
-        },
-        "refs": Object {},
-        "state": null,
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 12,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <styled.button
-          danger={false}
-          iconOnly={false}
-          large={false}
-          link={false}
-          primary={false}
-          secondary={true}
-          small={false}
-          type="button"
->
-          <ButtonIcon
-                    icon="close"
-                    iconOnly={false}
-                    large={false}
-                    small={false}
-          />
-          Icon Button
-</styled.button>,
-        "_debugID": 24,
-        "_renderedOutput": <styled.button
-          danger={false}
-          iconOnly={false}
-          large={false}
-          link={false}
-          primary={false}
-          secondary={true}
-          small={false}
-          type="button"
->
-          <ButtonIcon
-                    icon="close"
-                    iconOnly={false}
-                    large={false}
-                    small={false}
-          />
-          Icon Button
-</styled.button>,
-      },
-      "_renderedNodeType": 1,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
-    "render": [Function],
-  },
-  "root": [Circular],
-  "unrendered": <Button
-    danger={false}
-    icon="close"
-    large={false}
-    link={false}
-    primary={false}
-    secondary={true}
-    small={false}
-    type="button"
->
-    Icon Button
-</Button>,
-}
+  />
+  Icon Button
+</styled.button>
 `;
 
 exports[`Button component should render a small button with an icon 1`] = `
-ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
-  "length": 1,
-  "node": <styled.button
-    danger={false}
+<styled.button
+  danger={false}
+  iconOnly={false}
+  large={false}
+  link={false}
+  primary={false}
+  secondary={false}
+  small={true}
+  type="button"
+>
+  <ButtonIcon
+    icon="close"
     iconOnly={false}
     large={false}
-    link={false}
-    primary={false}
-    secondary={false}
     small={true}
-    type="button"
->
-    <ButtonIcon
-        icon="close"
-        iconOnly={false}
-        large={false}
-        small={true}
-    />
-    Icon Button
-</styled.button>,
-  "nodes": Array [
-    <styled.button
-      danger={false}
-      iconOnly={false}
-      large={false}
-      link={false}
-      primary={false}
-      secondary={false}
-      small={true}
-      type="button"
->
-      <ButtonIcon
-            icon="close"
-            iconOnly={false}
-            large={false}
-            small={true}
-      />
-      Icon Button
-</styled.button>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 2,
-      "_context": Object {},
-      "_currentElement": <Button
-        danger={false}
-        icon="close"
-        large={false}
-        link={false}
-        primary={false}
-        secondary={false}
-        small={true}
-        type="button"
->
-        Icon Button
-</Button>,
-      "_debugID": 27,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": StatelessComponent {
-        "_reactInternalInstance": [Circular],
-        "context": Object {},
-        "props": Object {
-          "children": "Icon Button",
-          "danger": false,
-          "icon": "close",
-          "large": false,
-          "link": false,
-          "primary": false,
-          "secondary": false,
-          "small": true,
-          "type": "button",
-        },
-        "refs": Object {},
-        "state": null,
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 14,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <styled.button
-          danger={false}
-          iconOnly={false}
-          large={false}
-          link={false}
-          primary={false}
-          secondary={false}
-          small={true}
-          type="button"
->
-          <ButtonIcon
-                    icon="close"
-                    iconOnly={false}
-                    large={false}
-                    small={true}
-          />
-          Icon Button
-</styled.button>,
-        "_debugID": 28,
-        "_renderedOutput": <styled.button
-          danger={false}
-          iconOnly={false}
-          large={false}
-          link={false}
-          primary={false}
-          secondary={false}
-          small={true}
-          type="button"
->
-          <ButtonIcon
-                    icon="close"
-                    iconOnly={false}
-                    large={false}
-                    small={true}
-          />
-          Icon Button
-</styled.button>,
-      },
-      "_renderedNodeType": 1,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
-    "render": [Function],
-  },
-  "root": [Circular],
-  "unrendered": <Button
-    danger={false}
-    icon="close"
-    large={false}
-    link={false}
-    primary={false}
-    secondary={false}
-    small={true}
-    type="button"
->
-    Icon Button
-</Button>,
-}
+  />
+  Icon Button
+</styled.button>
 `;
 
 exports[`Button component should render an icon if a valid icon is passed 1`] = `
-ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
-  "length": 1,
-  "node": <styled.button
-    danger={false}
+<styled.button
+  danger={false}
+  iconOnly={false}
+  large={false}
+  link={false}
+  primary={false}
+  secondary={false}
+  small={false}
+  type="button"
+>
+  <ButtonIcon
+    icon="close"
     iconOnly={false}
     large={false}
-    link={false}
-    primary={false}
-    secondary={false}
     small={false}
-    type="button"
->
-    <ButtonIcon
-        icon="close"
-        iconOnly={false}
-        large={false}
-        small={false}
-    />
-    Icon Button
-</styled.button>,
-  "nodes": Array [
-    <styled.button
-      danger={false}
-      iconOnly={false}
-      large={false}
-      link={false}
-      primary={false}
-      secondary={false}
-      small={false}
-      type="button"
->
-      <ButtonIcon
-            icon="close"
-            iconOnly={false}
-            large={false}
-            small={false}
-      />
-      Icon Button
-</styled.button>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 2,
-      "_context": Object {},
-      "_currentElement": <Button
-        danger={false}
-        icon="close"
-        large={false}
-        link={false}
-        primary={false}
-        secondary={false}
-        small={false}
-        type="button"
->
-        Icon Button
-</Button>,
-      "_debugID": 19,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": StatelessComponent {
-        "_reactInternalInstance": [Circular],
-        "context": Object {},
-        "props": Object {
-          "children": "Icon Button",
-          "danger": false,
-          "icon": "close",
-          "large": false,
-          "link": false,
-          "primary": false,
-          "secondary": false,
-          "small": false,
-          "type": "button",
-        },
-        "refs": Object {},
-        "state": null,
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 10,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <styled.button
-          danger={false}
-          iconOnly={false}
-          large={false}
-          link={false}
-          primary={false}
-          secondary={false}
-          small={false}
-          type="button"
->
-          <ButtonIcon
-                    icon="close"
-                    iconOnly={false}
-                    large={false}
-                    small={false}
-          />
-          Icon Button
-</styled.button>,
-        "_debugID": 20,
-        "_renderedOutput": <styled.button
-          danger={false}
-          iconOnly={false}
-          large={false}
-          link={false}
-          primary={false}
-          secondary={false}
-          small={false}
-          type="button"
->
-          <ButtonIcon
-                    icon="close"
-                    iconOnly={false}
-                    large={false}
-                    small={false}
-          />
-          Icon Button
-</styled.button>,
-      },
-      "_renderedNodeType": 1,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
-    "render": [Function],
-  },
-  "root": [Circular],
-  "unrendered": <Button
-    danger={false}
-    icon="close"
-    large={false}
-    link={false}
-    primary={false}
-    secondary={false}
-    small={false}
-    type="button"
->
-    Icon Button
-</Button>,
-}
+  />
+  Icon Button
+</styled.button>
 `;
 
 exports[`Button component should still render a normal button if icon prop is not valid and children is supplied 1`] = `
-ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
-  "length": 1,
-  "node": <styled.button
-    danger={false}
+<styled.button
+  danger={false}
+  iconOnly={false}
+  large={false}
+  link={false}
+  primary={false}
+  secondary={false}
+  small={false}
+  type="button"
+>
+  <ButtonIcon
+    icon="qwerty"
     iconOnly={false}
     large={false}
-    link={false}
-    primary={false}
-    secondary={false}
     small={false}
-    type="button"
->
-    <ButtonIcon
-        icon="qwerty"
-        iconOnly={false}
-        large={false}
-        small={false}
-    />
-    Invalid icon
-</styled.button>,
-  "nodes": Array [
-    <styled.button
-      danger={false}
-      iconOnly={false}
-      large={false}
-      link={false}
-      primary={false}
-      secondary={false}
-      small={false}
-      type="button"
->
-      <ButtonIcon
-            icon="qwerty"
-            iconOnly={false}
-            large={false}
-            small={false}
-      />
-      Invalid icon
-</styled.button>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 2,
-      "_context": Object {},
-      "_currentElement": <Button
-        danger={false}
-        icon="qwerty"
-        large={false}
-        link={false}
-        primary={false}
-        secondary={false}
-        small={false}
-        type="button"
->
-        Invalid icon
-</Button>,
-      "_debugID": 39,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": StatelessComponent {
-        "_reactInternalInstance": [Circular],
-        "context": Object {},
-        "props": Object {
-          "children": "Invalid icon",
-          "danger": false,
-          "icon": "qwerty",
-          "large": false,
-          "link": false,
-          "primary": false,
-          "secondary": false,
-          "small": false,
-          "type": "button",
-        },
-        "refs": Object {},
-        "state": null,
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 20,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <styled.button
-          danger={false}
-          iconOnly={false}
-          large={false}
-          link={false}
-          primary={false}
-          secondary={false}
-          small={false}
-          type="button"
->
-          <ButtonIcon
-                    icon="qwerty"
-                    iconOnly={false}
-                    large={false}
-                    small={false}
-          />
-          Invalid icon
-</styled.button>,
-        "_debugID": 40,
-        "_renderedOutput": <styled.button
-          danger={false}
-          iconOnly={false}
-          large={false}
-          link={false}
-          primary={false}
-          secondary={false}
-          small={false}
-          type="button"
->
-          <ButtonIcon
-                    icon="qwerty"
-                    iconOnly={false}
-                    large={false}
-                    small={false}
-          />
-          Invalid icon
-</styled.button>,
-      },
-      "_renderedNodeType": 1,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
-    "render": [Function],
-  },
-  "root": [Circular],
-  "unrendered": <Button
-    danger={false}
-    icon="qwerty"
-    large={false}
-    link={false}
-    primary={false}
-    secondary={false}
-    small={false}
-    type="button"
->
-    Invalid icon
-</Button>,
-}
+  />
+  Invalid icon
+</styled.button>
 `;

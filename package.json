@@ -29,6 +29,7 @@
     "highlight.js": "9.10.0",
     "html-webpack-plugin": "2.29.0",
     "jest": "20.0.4",
+    "jest-styled-components": "^4.3.0",
     "object-assign": "4.1.1",
     "postcss-flexbugs-fixes": "3.0.0",
     "postcss-loader": "2.0.6",
@@ -68,6 +69,7 @@
   },
   "devDependencies": {
     "chokidar": "1.6.1",
+    "enzyme-to-json": "^1.5.1",
     "eslint-config-airbnb": "^15.0.2",
     "eslint-config-prettier": "^2.3.0",
     "node-sass": "^4.5.3",
@@ -86,6 +88,9 @@
     ],
     "setupFiles": [
       "<rootDir>/config/polyfills.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
     ],
     "testMatch": [
       "<rootDir>/src/**/__tests__/**/*.js?(x)",

@@ -1,5 +1,7 @@
 import React from 'react'
 import {shallow} from 'enzyme'
+import renderer from 'react-test-renderer'
+import 'jest-styled-components'
 
 import Aligner from './Aligner'
 import AlignerItem from './AlignerItem'
@@ -32,38 +34,43 @@ describe('Aligner component', () => {
         <div>Child 2</div>
       </Aligner>
     )
-    expect(component.childAt(0).props().flex).toEqual(1)
-    expect(component.childAt(1).props().flex).toEqual(1)
+    expect(component.childAt(0).props().flex).toEqual('1')
+    expect(component.childAt(1).props().flex).toEqual('1')
   })
 
-  it('renders a stretch on a single child when passed the stretch prop', () => {
-    const component = shallow(
-      <Aligner stretch>
-        <div>Child 1</div>
-      </Aligner>
-    )
-    expect(component).toMatchSnapshot()
-  })
-
-  it('renders a stretch on a multiple children when passed the stretch prop', () => {
-    const component = shallow(
+  it('renders stretch when passed the stretch prop', () => {
+    const Component = (
       <Aligner stretch>
         <div>Child 1</div>
         <div>Child 2</div>
       </Aligner>
     )
-    expect(component).toMatchSnapshot()
+    const wrapper = renderer.create(Component).toJSON()
+    expect(wrapper).toMatchSnapshot()
+    expect(wrapper).toHaveStyleRule('display', 'flex')
   })
-/*
-    it('renders a center aligns multiple children without flex when passed the fixed prop', () => {
-      const component = shallow(
-        <Aligner fixed>
-          <div>Child 1</div>
-          <div>Child 2</div>
-        </Aligner>
-      )
-      expect(component).toMatchSnapshot()
-    })
+
+  it('renders flex of 0 on multiple children when passed prop of fixed', () => {
+    const component = shallow(
+      <Aligner fixed>
+        <div>Child 1</div>
+        <div>Child 2</div>
+      </Aligner>
+    )
+    expect(component.childAt(0).props().flex).toEqual('0')
+    expect(component.childAt(1).props().flex).toEqual('0')
+  })
+
+  it('renders flex of 1 and 2 on multiple children when passed prop ratio of [1,2]', () => {
+    const component = shallow(
+      <Aligner ratio={[1,2]}>
+        <div>Child 1</div>
+        <div>Child 2</div>
+      </Aligner>
+    )
+    expect(component.childAt(0).props().flex).toEqual('1')
+    expect(component.childAt(1).props().flex).toEqual('2')
+  })
 
   it('renders a flex values on multiple children when passed a valid ratio prop', () => {
     const component = shallow(
@@ -109,7 +116,7 @@ describe('Aligner component', () => {
 
   it('still renders no align-self on children when passed an align-children prop with less values than children', () => {
     const component = shallow(
-      <Aligner alignChildrenu={['top', 'center']}>
+      <Aligner alignChildren={['top', 'center']}>
         <div>Child 1</div>
         <div>Child 2</div>
         <div>Child 3</div>
@@ -118,15 +125,4 @@ describe('Aligner component', () => {
     expect(component).toMatchSnapshot()
   })
 
-  it('renders a gutter between children when passed multiple children and the gutter prop', () => {
-    const component = shallow(
-      <Aligner gutter>
-        <div>Child 1</div>
-        <div>Child 2</div>
-        <div>Child 3</div>
-      </Aligner>
-    )
-    expect(component).toMatchSnapshot()
-  })
-*/
 })

@@ -1,5 +1,5 @@
 import React from 'react'
-import { node, number, oneOf } from 'prop-types'
+import { node, string, oneOf } from 'prop-types'
 import styled from 'styled-components'
 
 import { alignToFlex } from "../_theme/mixins/flexbox"
@@ -12,15 +12,15 @@ const StyledContainer = styled.div`
 `
 
 /** Flexbox layout helper for alignment */
-function AlignerItem({ children, flex, alignSelf, ...props}) {
+function AlignerItem({ children, flex, alignSelf}) {
   return (
-    <StyledContainer flex={flex} alignSelf={alignSelf} {...props}>{children}</StyledContainer>
+    <StyledContainer flex={flex} alignSelf={alignSelf}>{children}</StyledContainer>
   )
 }
 
 AlignerItem.propTypes = {
   children: node.isRequired,
-  flex: number,
+  flex: string,
   alignSelf: oneOf(['top', 'center', 'bottom'])
 }
 

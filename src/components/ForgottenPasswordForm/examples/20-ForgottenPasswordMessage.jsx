@@ -19,9 +19,9 @@ function ForgottenPasswordMessage() {
   return (
     <div>
       <div className="docs-ex-title">Success message</div>
-      <ForgottenPasswordForm successMessage={ConfirmMessage} focus onSubmit={() => {}} />
+      <ForgottenPasswordForm successMessage={ConfirmMessage} onSubmit={() => {}} />
       <div className="docs-ex-title">Error message</div>
-      <ForgottenPasswordForm errorMessage={ErrorMessage} focus onSubmit={() => {}} />
+      <ForgottenPasswordForm errorMessage={ErrorMessage} onSubmit={() => {}} />
     </div>
   )
 }

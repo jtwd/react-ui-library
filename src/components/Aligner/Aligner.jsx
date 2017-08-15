@@ -36,7 +36,7 @@ function getAlignerContents (items, fixed, ratio, alignChildren) {
 
     let alignSelf = null
     // if alignChildren contains the same amount or arguments than there are children then assign the relevant one
-    alignSelf = alignChildren && alignChildren.length >= items.length && alignChildren[i]
+    if (alignChildren && alignChildren.length >= items.length) alignSelf = alignChildren[i]
 
     return (
       <AlignerItem key={`aitem_${shortid.generate()}`} flex={`${flex}`} alignSelf={alignSelf}>{item}</AlignerItem>

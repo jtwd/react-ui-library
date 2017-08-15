@@ -55,7 +55,7 @@ const StyledButton = styled.button`
   
   ${props => props.disabled && `
     opacity: .5;
-    cursor: not-allowed;
+    pointer-events: none;
   `}
     
   ${trimChildren('hor')};

@@ -6,9 +6,9 @@ import Icon from '../Icon'
 import { Field, Input, Error } from './TextInput.styles'
 
 /** TextInput field - Can be required, in error. Uses: Label, Icon, Message */
-function TextInput({ htmlId, name, label, type, required, onChange, placeholder, value, error, children, ...props }) {
+function TextInput({ htmlId, size, name, label, type, required, onChange, placeholder, value, error, children, ...props }) {
   return (
-    <Field>
+    <Field size={size}>
       <Label htmlFor={htmlId} label={label} required={required} />
       <Input
         id={htmlId}
@@ -38,6 +38,8 @@ TextInput.propTypes = {
   label: string.isRequired,
   /** Input type (text, email, number, password, tel) */
   type: oneOf(['text', 'email', 'number', 'password', 'tel']),
+  /** Size (default, xs, sm, md, lg) */
+  size: oneOf(['default', 'xs', 'sm', 'md', 'lg']),
   /** Required field */
   required: bool,
   /** Function to run when input is being typed in */
@@ -55,6 +57,7 @@ TextInput.propTypes = {
 
 TextInput.defaultProps = {
   type: 'text',
+  size: 'default',
   required: false,
   placeholder: '',
   error: null,

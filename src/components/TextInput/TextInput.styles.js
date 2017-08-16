@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 
 import { red, lightRed, darkRed, yellow, white, transBlackDark, transBlackLight, transWhite } from '../_theme/colors'
-import { transitions, radiusRound } from '../_theme/units'
+import { transitions, radiusRound, formSizes } from '../_theme/units'
 import { xxs, xs, md } from '../_theme/spacers'
 import Message from '../Message'
 
@@ -34,6 +34,10 @@ export const Error = styled(Message)`
 export const Field = styled.div`
   position: relative;
   margin-bottom: ${md};
+  
+  ${props => props.size !== 'default' && `
+    max-width: ${formSizes[props.size]};
+  `}
 `
 
 export const Input = styled.input`

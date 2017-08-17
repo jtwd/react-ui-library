@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components'
 
 import { red, lightRed, darkRed, yellow, white, transBlackDark, transBlackLight, transWhite } from '../_theme/colors'
 import { transitions, radiusRound, formSizes } from '../_theme/units'
-import { xxs, xs, md } from '../_theme/spacers'
+import { xxs, xs, md, lg } from '../_theme/spacers'
 import Message from '../Message'
 import Icon from '../Icon'
 
@@ -24,12 +24,13 @@ const Error = styled(Message)`
   `}
   
   > div {
-    padding: ${xxs} 0 0;
+    padding: ${xxs} 0 ${xxs} ${lg};
     
     > i {
       margin-right: ${xxs};
-      position: relative;
-      top: 2px;
+      position: absolute;
+      top: ${xs};
+      left: ${xxs};
     }
   }
 `

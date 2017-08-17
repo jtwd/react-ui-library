@@ -1,9 +1,14 @@
 import styled from 'styled-components'
 
-import { transBlack, transBlackLight, transWhiteDark, yellow, white, darkYellow } from "../_theme/colors"
+import { transBlack, transBlackLight, transBlackDark, transWhiteDark, yellow, white, darkYellow } from "../_theme/colors"
 import { radiusRound, transitions } from "../_theme/units"
 import { xxs, xs } from "../_theme/spacers"
 import trimChildren from '../_theme/mixins/trimChildren'
+
+const hoverFocusStyles = `
+  background: ${transBlack};
+  color: ${white};
+`
 
 export const StyledLabel = styled.label`
   position: relative;
@@ -17,10 +22,13 @@ export const StyledLabel = styled.label`
   margin-bottom: ${xxs};
   ${trimChildren('ver')}
   
-  &:hover, &:focus {
-    background: ${transBlack};
-    color: ${white};
+  &:hover {
+    ${hoverFocusStyles}
   }
+  
+  ${props => props.focus && `
+    ${hoverFocusStyles}
+  `}
   
   ${props => props.checked && `
     color: ${yellow};
@@ -28,6 +36,10 @@ export const StyledLabel = styled.label`
     &:hover, &:focus {
       color: ${darkYellow};
     }
+  `}
+  ${props => props.checked && props.focus && `
+    color: ${darkYellow};
+    background: ${transBlackDark};
   `}
 `
 
@@ -40,6 +52,7 @@ export const IconWrapper = styled.span`
 `
 
 export const StyledCheckbox = styled.input`
-  visibility: hidden;
   position: absolute;
+  z-index: -1;
+  opacity: 0;
 `

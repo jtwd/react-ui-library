@@ -8,7 +8,8 @@ class Checkbox extends Component {
     super(props)
 
     this.state = {
-      isChecked: false
+      isChecked: false,
+      hasFocus: false
     }
   }
 
@@ -24,14 +25,26 @@ class Checkbox extends Component {
     handleCheckboxChange(label)
   }
 
+  toggleFocus () {
+    this.setState(({hasFocus}) => ({ hasFocus: !hasFocus }))
+  }
+
   render () {
     const { label, htmlId } = this.props
-    const { isChecked } = this.state
+    const { isChecked, hasFocus } = this.state
     const checkboxIconName = isChecked ? 'checkboxOn' : 'checkboxOff'
 
     return (
-      <StyledLabel htmlFor={htmlId} checked={isChecked}>
-        <StyledCheckbox type="checkbox" id={htmlId} value={label} checked={isChecked} onChange={() => this.toggleCheckboxChange()} />
+      <StyledLabel htmlFor={htmlId} checked={isChecked} focus={hasFocus}>
+        <StyledCheckbox
+          type="checkbox"
+          id={htmlId}
+          value={label}
+          checked={isChecked}
+          onChange={() => this.toggleCheckboxChange()}
+          onFocus={() => this.toggleFocus()}
+          onBlur={() => this.toggleFocus()}
+        />
         <IconWrapper>
           <Icon icon={checkboxIconName} />
         </IconWrapper>

@@ -2,8 +2,8 @@ import React from 'react'
 
 import SelectBox from '../SelectBox'
 
-/** Standard SelectBox */
-export default function SelectBoxStandard() {
+/** SelectBox with error */
+export default function SelectBoxError() {
   const options = [
     { id: 1, label: 'Option number 1' },
     { id: 2, label: 'Secondary option' },
@@ -12,10 +12,12 @@ export default function SelectBoxStandard() {
 
   return (
     <SelectBox
-      htmlId="standard"
-      label="SelectBox"
-      name="standard"
+      htmlId="error"
+      label="SelectBox error"
+      name="error"
       options={options}
+      error="This is a required field"
+      required
       onChange={() => {}}
     />
   )

@@ -1,11 +1,14 @@
+import React from 'react'
+import { string } from 'prop-types'
 import styled, { css } from 'styled-components'
 
 import { red, lightRed, darkRed, yellow, white, transBlackDark, transBlackLight, transWhite } from '../_theme/colors'
 import { transitions, radiusRound, formSizes } from '../_theme/units'
 import { xxs, xs, md } from '../_theme/spacers'
 import Message from '../Message'
+import Icon from '../Icon'
 
-export const Error = styled(Message)`
+const Error = styled(Message)`
   color: ${lightRed};
   padding: 0;
   margin: 0;
@@ -31,6 +34,23 @@ export const Error = styled(Message)`
   }
 `
 
+export function ErrorMsg({message}) {
+  return (
+    <Error active={(message)}>
+      <Icon icon="exclamation" small />
+      {message}
+    </Error>
+  )
+}
+
+ErrorMsg.propTypes = {
+  message: string
+}
+
+ErrorMsg.defaultProps = {
+  message: null
+}
+
 export const Field = styled.div`
   position: relative;
   margin-bottom: ${md};
@@ -51,8 +71,8 @@ export const Input = styled.input`
   width: 100%;
 
   ${props =>
-    props.error &&
-    css`
+  props.error &&
+  css`
     border-color: ${lightRed};
   `} 
   

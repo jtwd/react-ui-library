@@ -2,13 +2,12 @@ import React from 'react'
 import { string, oneOf, bool, func, node, arrayOf, object } from 'prop-types'
 
 import Label from '../Label'
-import Icon from '../Icon'
 import { StyledSelectBox, Option } from './SelectBox.styles'
-import { Field, Error } from '../TextInput/TextInput.styles'
+import { Field, ErrorMsg } from "../TextInput/TextInputStyles"
 
-/** SelectBox field - Can be required, in error. Uses: Label, Icon */
-function SelectBox({ htmlId, size, name, label, required, onChange, options, value, error, children, ...props }) {
-  console.log(options)
+/** SelectBox field - Can be required, in error. Uses: Label, Icon. Options are passed in as an array of objects. Each option contains: id, label, value (optional). If value is not supplied, label is used as the value */
+function SelectBox({ htmlId, size, name, label, required, defaultOptionLabel, onChange, options, defaultValue, error, children, ...props }) {
+  if (options.length < 2) return null // there needs to be more than 1 option
   return (
     <Field size={size}>
       <Label htmlFor={htmlId} label={label} required={required} />
@@ -17,16 +16,23 @@ function SelectBox({ htmlId, size, name, label, required, onChange, options, val
         name={name}
         onChange={onChange}
         error={error}
-        value={value}
+        value={defaultValue}
         {...props}
       >
-        {options && options.map((option) => <Option key={option.id} value={option.value ? options.value : option.label}>{option.label}</Option>)}
+        {defaultOptionLabel && <Option>{defaultOptionLabel}</Option>}
+        {options && options.map((option) => {
+          let optionVal = option.label
+          if (option.value) optionVal = option.value
+          return(
+            <Option
+              key={`${htmlId}-${option.id}`}
+              value={optionVal}
+            >{option.label}</Option>
+          )
+        })}
       </StyledSelectBox>
       {children}
-      <Error active={(error)}>
-        <Icon icon="exclamation" small />
-        {error}
-      </Error>
+      <ErrorMsg message={(error)} />
     </Field>
   )
 }
@@ -39,16 +45,18 @@ SelectBox.propTypes = {
   /** To go in label */
   label: string.isRequired,
   /** Size (default, xs, sm, md, lg) */
-  size: oneOf(['default', 'xs', 'sm', 'md', 'lg']),
+  size: oneOf(['default', 'xs', 'sm', 'md', 'lg', 'xl']),
   /** Required field */
   required: bool,
   /** Function to run when input is being typed in */
   onChange: func.isRequired,
   /** Value of select */
   // eslint-disable-next-line react/require-default-props
-  value: string,
+  defaultValue: string,
+  /** Text to be shown in the first (default) option */
+  defaultOptionLabel: string,
   /** Options for selectbox */
-  options: arrayOf(object).isRequired,
+  options: arrayOf(object),
   /** Error message */
   error: string,
   /** TextInput contents */
@@ -56,11 +64,12 @@ SelectBox.propTypes = {
 }
 
 SelectBox.defaultProps = {
-  type: 'text',
   size: 'default',
   required: false,
-  placeholder: '',
+  defaultValue: null,
+  defaultOptionLabel: 'Please select an option',
   error: null,
+  options: [],
   children: null
 }
 

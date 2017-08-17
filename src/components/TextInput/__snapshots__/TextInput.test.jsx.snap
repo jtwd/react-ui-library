@@ -2,7 +2,8 @@
 
 exports[`TextInput renders correctly 1`] = `
 <div
-  className="sc-jTzLTM ctYSHm"
+  className="sc-jTzLTM dqQczG"
+  size="default"
 >
   <label
     className="sc-bdVaJa etThJd"
@@ -21,13 +22,13 @@ exports[`TextInput renders correctly 1`] = `
     value={undefined}
   />
   <div
-    className="sc-VigVT gxJVhO sc-iwsKbI cvmNkQ sc-ifAKCX gVguHa sc-bxivhb gDhDlj"
+    className="sc-VigVT gxJVhO sc-iwsKbI cvmNkQ sc-bxivhb bOooiJ sc-htpNat kJJtsW"
   >
     <div
-      className="Panel-body sc-EHOje fWXnWf"
+      className="Panel-body sc-ifAKCX jpJklP"
     >
       <i
-        className="sc-htpNat giXiHP"
+        className="sc-gzVnrw fFvwEU"
       >
         <svg
           fill="currentColor"
@@ -56,7 +57,8 @@ exports[`TextInput renders correctly 1`] = `
 
 exports[`TextInput renders correctly when passed an error prop 1`] = `
 <div
-  className="sc-jTzLTM ctYSHm"
+  className="sc-jTzLTM dqQczG"
+  size="default"
 >
   <label
     className="sc-bdVaJa etThJd"
@@ -79,13 +81,13 @@ exports[`TextInput renders correctly when passed an error prop 1`] = `
     value={undefined}
   />
   <div
-    className="sc-VigVT cqiLJY sc-iwsKbI jsHmFk sc-ifAKCX gVguHa sc-bxivhb gDhDlj"
+    className="sc-VigVT cqiLJY sc-iwsKbI jsHmFk sc-bxivhb bOooiJ sc-htpNat kJJtsW"
   >
     <div
-      className="Panel-body sc-EHOje fWXnWf"
+      className="Panel-body sc-ifAKCX jpJklP"
     >
       <i
-        className="sc-htpNat giXiHP"
+        className="sc-gzVnrw fFvwEU"
       >
         <svg
           fill="currentColor"
@@ -115,7 +117,8 @@ exports[`TextInput renders correctly when passed an error prop 1`] = `
 
 exports[`TextInput renders correctly when passed required prop 1`] = `
 <div
-  className="sc-jTzLTM ctYSHm"
+  className="sc-jTzLTM dqQczG"
+  size="default"
 >
   <label
     className="sc-bdVaJa etThJd"
@@ -138,13 +141,343 @@ exports[`TextInput renders correctly when passed required prop 1`] = `
     value={undefined}
   />
   <div
-    className="sc-VigVT gxJVhO sc-iwsKbI cvmNkQ sc-ifAKCX gVguHa sc-bxivhb gDhDlj"
+    className="sc-VigVT gxJVhO sc-iwsKbI cvmNkQ sc-bxivhb bOooiJ sc-htpNat kJJtsW"
   >
     <div
-      className="Panel-body sc-EHOje fWXnWf"
+      className="Panel-body sc-ifAKCX jpJklP"
     >
       <i
-        className="sc-htpNat giXiHP"
+        className="sc-gzVnrw fFvwEU"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          style={
+            Object {
+              "color": undefined,
+              "verticalAlign": "middle",
+            }
+          }
+          viewBox="0 0 40 40"
+          width="1em"
+        >
+          <g>
+            <path
+              d="m20.1 2.9q4.7 0 8.6 2.3t6.3 6.2 2.3 8.6-2.3 8.6-6.3 6.2-8.6 2.3-8.6-2.3-6.2-6.2-2.3-8.6 2.3-8.6 6.2-6.2 8.6-2.3z m2.9 27.8v-4.2q0-0.4-0.2-0.6t-0.5-0.2h-4.3q-0.3 0-0.5 0.2t-0.2 0.5v4.3q0 0.3 0.2 0.5t0.5 0.2h4.3q0.3 0 0.5-0.2t0.2-0.5z m0-7.7l0.4-13.8q0-0.3-0.3-0.5-0.2-0.1-0.5-0.1h-4.9q-0.3 0-0.5 0.1-0.3 0.2-0.3 0.4l0.4 13.9q0 0.2 0.2 0.4t0.6 0.2h4.1q0.3 0 0.5-0.2t0.3-0.4z"
+            />
+          </g>
+        </svg>
+      </i>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TextInput renders correctly when passed size of lg 1`] = `
+<div
+  className="sc-jTzLTM jCYhaM"
+  size="lg"
+>
+  <label
+    className="sc-bdVaJa etThJd"
+    htmlFor="test"
+  >
+    Test
+     
+  </label>
+  <input
+    className="sc-fjdhpX haAhsH"
+    id="test"
+    name="test"
+    onChange={[Function]}
+    placeholder=""
+    type="text"
+    value={undefined}
+  />
+  <div
+    className="sc-VigVT gxJVhO sc-iwsKbI cvmNkQ sc-bxivhb bOooiJ sc-htpNat kJJtsW"
+  >
+    <div
+      className="Panel-body sc-ifAKCX jpJklP"
+    >
+      <i
+        className="sc-gzVnrw fFvwEU"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          style={
+            Object {
+              "color": undefined,
+              "verticalAlign": "middle",
+            }
+          }
+          viewBox="0 0 40 40"
+          width="1em"
+        >
+          <g>
+            <path
+              d="m20.1 2.9q4.7 0 8.6 2.3t6.3 6.2 2.3 8.6-2.3 8.6-6.3 6.2-8.6 2.3-8.6-2.3-6.2-6.2-2.3-8.6 2.3-8.6 6.2-6.2 8.6-2.3z m2.9 27.8v-4.2q0-0.4-0.2-0.6t-0.5-0.2h-4.3q-0.3 0-0.5 0.2t-0.2 0.5v4.3q0 0.3 0.2 0.5t0.5 0.2h4.3q0.3 0 0.5-0.2t0.2-0.5z m0-7.7l0.4-13.8q0-0.3-0.3-0.5-0.2-0.1-0.5-0.1h-4.9q-0.3 0-0.5 0.1-0.3 0.2-0.3 0.4l0.4 13.9q0 0.2 0.2 0.4t0.6 0.2h4.1q0.3 0 0.5-0.2t0.3-0.4z"
+            />
+          </g>
+        </svg>
+      </i>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TextInput renders correctly when passed size of md 1`] = `
+<div
+  className="sc-jTzLTM lbdJDQ"
+  size="md"
+>
+  <label
+    className="sc-bdVaJa etThJd"
+    htmlFor="test"
+  >
+    Test
+     
+  </label>
+  <input
+    className="sc-fjdhpX haAhsH"
+    id="test"
+    name="test"
+    onChange={[Function]}
+    placeholder=""
+    type="text"
+    value={undefined}
+  />
+  <div
+    className="sc-VigVT gxJVhO sc-iwsKbI cvmNkQ sc-bxivhb bOooiJ sc-htpNat kJJtsW"
+  >
+    <div
+      className="Panel-body sc-ifAKCX jpJklP"
+    >
+      <i
+        className="sc-gzVnrw fFvwEU"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          style={
+            Object {
+              "color": undefined,
+              "verticalAlign": "middle",
+            }
+          }
+          viewBox="0 0 40 40"
+          width="1em"
+        >
+          <g>
+            <path
+              d="m20.1 2.9q4.7 0 8.6 2.3t6.3 6.2 2.3 8.6-2.3 8.6-6.3 6.2-8.6 2.3-8.6-2.3-6.2-6.2-2.3-8.6 2.3-8.6 6.2-6.2 8.6-2.3z m2.9 27.8v-4.2q0-0.4-0.2-0.6t-0.5-0.2h-4.3q-0.3 0-0.5 0.2t-0.2 0.5v4.3q0 0.3 0.2 0.5t0.5 0.2h4.3q0.3 0 0.5-0.2t0.2-0.5z m0-7.7l0.4-13.8q0-0.3-0.3-0.5-0.2-0.1-0.5-0.1h-4.9q-0.3 0-0.5 0.1-0.3 0.2-0.3 0.4l0.4 13.9q0 0.2 0.2 0.4t0.6 0.2h4.1q0.3 0 0.5-0.2t0.3-0.4z"
+            />
+          </g>
+        </svg>
+      </i>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TextInput renders correctly when passed size of sm 1`] = `
+<div
+  className="sc-jTzLTM ciXwPt"
+  size="sm"
+>
+  <label
+    className="sc-bdVaJa etThJd"
+    htmlFor="test"
+  >
+    Test
+     
+  </label>
+  <input
+    className="sc-fjdhpX haAhsH"
+    id="test"
+    name="test"
+    onChange={[Function]}
+    placeholder=""
+    type="text"
+    value={undefined}
+  />
+  <div
+    className="sc-VigVT gxJVhO sc-iwsKbI cvmNkQ sc-bxivhb bOooiJ sc-htpNat kJJtsW"
+  >
+    <div
+      className="Panel-body sc-ifAKCX jpJklP"
+    >
+      <i
+        className="sc-gzVnrw fFvwEU"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          style={
+            Object {
+              "color": undefined,
+              "verticalAlign": "middle",
+            }
+          }
+          viewBox="0 0 40 40"
+          width="1em"
+        >
+          <g>
+            <path
+              d="m20.1 2.9q4.7 0 8.6 2.3t6.3 6.2 2.3 8.6-2.3 8.6-6.3 6.2-8.6 2.3-8.6-2.3-6.2-6.2-2.3-8.6 2.3-8.6 6.2-6.2 8.6-2.3z m2.9 27.8v-4.2q0-0.4-0.2-0.6t-0.5-0.2h-4.3q-0.3 0-0.5 0.2t-0.2 0.5v4.3q0 0.3 0.2 0.5t0.5 0.2h4.3q0.3 0 0.5-0.2t0.2-0.5z m0-7.7l0.4-13.8q0-0.3-0.3-0.5-0.2-0.1-0.5-0.1h-4.9q-0.3 0-0.5 0.1-0.3 0.2-0.3 0.4l0.4 13.9q0 0.2 0.2 0.4t0.6 0.2h4.1q0.3 0 0.5-0.2t0.3-0.4z"
+            />
+          </g>
+        </svg>
+      </i>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TextInput renders correctly when passed size of xl 1`] = `
+<div
+  className="sc-jTzLTM jNsxtW"
+  size="xl"
+>
+  <label
+    className="sc-bdVaJa etThJd"
+    htmlFor="test"
+  >
+    Test
+     
+  </label>
+  <input
+    className="sc-fjdhpX haAhsH"
+    id="test"
+    name="test"
+    onChange={[Function]}
+    placeholder=""
+    type="text"
+    value={undefined}
+  />
+  <div
+    className="sc-VigVT gxJVhO sc-iwsKbI cvmNkQ sc-bxivhb bOooiJ sc-htpNat kJJtsW"
+  >
+    <div
+      className="Panel-body sc-ifAKCX jpJklP"
+    >
+      <i
+        className="sc-gzVnrw fFvwEU"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          style={
+            Object {
+              "color": undefined,
+              "verticalAlign": "middle",
+            }
+          }
+          viewBox="0 0 40 40"
+          width="1em"
+        >
+          <g>
+            <path
+              d="m20.1 2.9q4.7 0 8.6 2.3t6.3 6.2 2.3 8.6-2.3 8.6-6.3 6.2-8.6 2.3-8.6-2.3-6.2-6.2-2.3-8.6 2.3-8.6 6.2-6.2 8.6-2.3z m2.9 27.8v-4.2q0-0.4-0.2-0.6t-0.5-0.2h-4.3q-0.3 0-0.5 0.2t-0.2 0.5v4.3q0 0.3 0.2 0.5t0.5 0.2h4.3q0.3 0 0.5-0.2t0.2-0.5z m0-7.7l0.4-13.8q0-0.3-0.3-0.5-0.2-0.1-0.5-0.1h-4.9q-0.3 0-0.5 0.1-0.3 0.2-0.3 0.4l0.4 13.9q0 0.2 0.2 0.4t0.6 0.2h4.1q0.3 0 0.5-0.2t0.3-0.4z"
+            />
+          </g>
+        </svg>
+      </i>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TextInput renders correctly when passed size of xs 1`] = `
+<div
+  className="sc-jTzLTM flBsjv"
+  size="xs"
+>
+  <label
+    className="sc-bdVaJa etThJd"
+    htmlFor="test"
+  >
+    Test
+     
+  </label>
+  <input
+    className="sc-fjdhpX haAhsH"
+    id="test"
+    name="test"
+    onChange={[Function]}
+    placeholder=""
+    type="text"
+    value={undefined}
+  />
+  <div
+    className="sc-VigVT gxJVhO sc-iwsKbI cvmNkQ sc-bxivhb bOooiJ sc-htpNat kJJtsW"
+  >
+    <div
+      className="Panel-body sc-ifAKCX jpJklP"
+    >
+      <i
+        className="sc-gzVnrw fFvwEU"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          style={
+            Object {
+              "color": undefined,
+              "verticalAlign": "middle",
+            }
+          }
+          viewBox="0 0 40 40"
+          width="1em"
+        >
+          <g>
+            <path
+              d="m20.1 2.9q4.7 0 8.6 2.3t6.3 6.2 2.3 8.6-2.3 8.6-6.3 6.2-8.6 2.3-8.6-2.3-6.2-6.2-2.3-8.6 2.3-8.6 6.2-6.2 8.6-2.3z m2.9 27.8v-4.2q0-0.4-0.2-0.6t-0.5-0.2h-4.3q-0.3 0-0.5 0.2t-0.2 0.5v4.3q0 0.3 0.2 0.5t0.5 0.2h4.3q0.3 0 0.5-0.2t0.2-0.5z m0-7.7l0.4-13.8q0-0.3-0.3-0.5-0.2-0.1-0.5-0.1h-4.9q-0.3 0-0.5 0.1-0.3 0.2-0.3 0.4l0.4 13.9q0 0.2 0.2 0.4t0.6 0.2h4.1q0.3 0 0.5-0.2t0.3-0.4z"
+            />
+          </g>
+        </svg>
+      </i>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TextInput renders correctly when passed size of xs 2`] = `
+<div
+  className="sc-jTzLTM flBsjv"
+  size="xs"
+>
+  <label
+    className="sc-bdVaJa etThJd"
+    htmlFor="test"
+  >
+    Test
+     
+  </label>
+  <input
+    className="sc-fjdhpX haAhsH"
+    id="test"
+    name="test"
+    onChange={[Function]}
+    placeholder=""
+    type="text"
+    value={undefined}
+  />
+  <div
+    className="sc-VigVT gxJVhO sc-iwsKbI cvmNkQ sc-bxivhb bOooiJ sc-htpNat kJJtsW"
+  >
+    <div
+      className="Panel-body sc-ifAKCX jpJklP"
+    >
+      <i
+        className="sc-gzVnrw fFvwEU"
       >
         <svg
           fill="currentColor"
@@ -173,7 +506,8 @@ exports[`TextInput renders correctly when passed required prop 1`] = `
 
 exports[`TextInput renders correctly when passed type of email 1`] = `
 <div
-  className="sc-jTzLTM ctYSHm"
+  className="sc-jTzLTM dqQczG"
+  size="default"
 >
   <label
     className="sc-bdVaJa etThJd"
@@ -192,13 +526,13 @@ exports[`TextInput renders correctly when passed type of email 1`] = `
     value={undefined}
   />
   <div
-    className="sc-VigVT gxJVhO sc-iwsKbI cvmNkQ sc-ifAKCX gVguHa sc-bxivhb gDhDlj"
+    className="sc-VigVT gxJVhO sc-iwsKbI cvmNkQ sc-bxivhb bOooiJ sc-htpNat kJJtsW"
   >
     <div
-      className="Panel-body sc-EHOje fWXnWf"
+      className="Panel-body sc-ifAKCX jpJklP"
     >
       <i
-        className="sc-htpNat giXiHP"
+        className="sc-gzVnrw fFvwEU"
       >
         <svg
           fill="currentColor"
@@ -227,7 +561,8 @@ exports[`TextInput renders correctly when passed type of email 1`] = `
 
 exports[`TextInput renders correctly when passed type of number 1`] = `
 <div
-  className="sc-jTzLTM ctYSHm"
+  className="sc-jTzLTM dqQczG"
+  size="default"
 >
   <label
     className="sc-bdVaJa etThJd"
@@ -246,13 +581,13 @@ exports[`TextInput renders correctly when passed type of number 1`] = `
     value={undefined}
   />
   <div
-    className="sc-VigVT gxJVhO sc-iwsKbI cvmNkQ sc-ifAKCX gVguHa sc-bxivhb gDhDlj"
+    className="sc-VigVT gxJVhO sc-iwsKbI cvmNkQ sc-bxivhb bOooiJ sc-htpNat kJJtsW"
   >
     <div
-      className="Panel-body sc-EHOje fWXnWf"
+      className="Panel-body sc-ifAKCX jpJklP"
     >
       <i
-        className="sc-htpNat giXiHP"
+        className="sc-gzVnrw fFvwEU"
       >
         <svg
           fill="currentColor"
@@ -281,7 +616,8 @@ exports[`TextInput renders correctly when passed type of number 1`] = `
 
 exports[`TextInput renders correctly when passed type of password 1`] = `
 <div
-  className="sc-jTzLTM ctYSHm"
+  className="sc-jTzLTM dqQczG"
+  size="default"
 >
   <label
     className="sc-bdVaJa etThJd"
@@ -300,13 +636,13 @@ exports[`TextInput renders correctly when passed type of password 1`] = `
     value={undefined}
   />
   <div
-    className="sc-VigVT gxJVhO sc-iwsKbI cvmNkQ sc-ifAKCX gVguHa sc-bxivhb gDhDlj"
+    className="sc-VigVT gxJVhO sc-iwsKbI cvmNkQ sc-bxivhb bOooiJ sc-htpNat kJJtsW"
   >
     <div
-      className="Panel-body sc-EHOje fWXnWf"
+      className="Panel-body sc-ifAKCX jpJklP"
     >
       <i
-        className="sc-htpNat giXiHP"
+        className="sc-gzVnrw fFvwEU"
       >
         <svg
           fill="currentColor"
@@ -335,7 +671,8 @@ exports[`TextInput renders correctly when passed type of password 1`] = `
 
 exports[`TextInput renders correctly when passed type of tel 1`] = `
 <div
-  className="sc-jTzLTM ctYSHm"
+  className="sc-jTzLTM dqQczG"
+  size="default"
 >
   <label
     className="sc-bdVaJa etThJd"
@@ -354,13 +691,13 @@ exports[`TextInput renders correctly when passed type of tel 1`] = `
     value={undefined}
   />
   <div
-    className="sc-VigVT gxJVhO sc-iwsKbI cvmNkQ sc-ifAKCX gVguHa sc-bxivhb gDhDlj"
+    className="sc-VigVT gxJVhO sc-iwsKbI cvmNkQ sc-bxivhb bOooiJ sc-htpNat kJJtsW"
   >
     <div
-      className="Panel-body sc-EHOje fWXnWf"
+      className="Panel-body sc-ifAKCX jpJklP"
     >
       <i
-        className="sc-htpNat giXiHP"
+        className="sc-gzVnrw fFvwEU"
       >
         <svg
           fill="currentColor"

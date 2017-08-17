@@ -44,3 +44,39 @@ test('TextInput renders correctly when passed type of password', () => {
   const tree = component.toJSON()
   expect(tree).toMatchSnapshot()
 })
+
+test('TextInput renders correctly when passed size of xs', () => {
+  const component = renderer.create(<TextInput htmlId="test" name="test" label="Test" size="xs" onChange={() => {}} />)
+  const tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+})
+
+test('TextInput renders correctly when passed size of xs', () => {
+  const component = renderer.create(<TextInput htmlId="test" name="test" label="Test" size="xs" onChange={() => {}} />)
+  const tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+})
+
+test('TextInput renders correctly when passed size of sm', () => {
+  const component = renderer.create(<TextInput htmlId="test" name="test" label="Test" size="sm" onChange={() => {}} />)
+  const tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+})
+
+test('TextInput renders correctly when passed size of md', () => {
+  const component = renderer.create(<TextInput htmlId="test" name="test" label="Test" size="md" onChange={() => {}} />)
+  const tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+})
+
+test('TextInput renders correctly when passed size of lg', () => {
+  const component = renderer.create(<TextInput htmlId="test" name="test" label="Test" size="lg" onChange={() => {}} />)
+  const tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+})
+
+test('TextInput renders correctly when passed size of xl', () => {
+  const component = renderer.create(<TextInput htmlId="test" name="test" label="Test" size="xl" onChange={() => {}} />)
+  const tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+})

@@ -2,8 +2,7 @@ import React from 'react'
 import { string, oneOf, bool, func, node } from 'prop-types'
 
 import Label from '../Label'
-import Icon from '../Icon'
-import { Field, Input, Error } from './TextInput.styles'
+import { Field, Input, ErrorMsg } from "./TextInputStyles"
 
 /** TextInput field - Can be required, in error. Uses: Label, Icon, Message */
 function TextInput({ htmlId, size, name, label, type, required, onChange, placeholder, value, error, children, ...props }) {
@@ -21,10 +20,7 @@ function TextInput({ htmlId, size, name, label, type, required, onChange, placeh
         {...props}
       />
       {children}
-      <Error active={(error)}>
-        <Icon icon="exclamation" small />
-        {error}
-      </Error>
+      <ErrorMsg message={(error)} />
     </Field>
   )
 }
@@ -39,7 +35,7 @@ TextInput.propTypes = {
   /** Input type (text, email, number, password, tel) */
   type: oneOf(['text', 'email', 'number', 'password', 'tel']),
   /** Size (default, xs, sm, md, lg) */
-  size: oneOf(['default', 'xs', 'sm', 'md', 'lg']),
+  size: oneOf(['default', 'xs', 'sm', 'md', 'lg', 'xl']),
   /** Required field */
   required: bool,
   /** Function to run when input is being typed in */

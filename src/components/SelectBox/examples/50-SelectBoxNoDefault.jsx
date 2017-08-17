@@ -2,8 +2,8 @@ import React from 'react'
 
 import SelectBox from '../SelectBox'
 
-/** Standard SelectBox */
-export default function SelectBoxStandard() {
+/** SelectBox No Default Value */
+export default function SelectBoxNoDefault() {
   const options = [
     { id: 1, label: 'Option number 1' },
     { id: 2, label: 'Secondary option' },
@@ -12,10 +12,11 @@ export default function SelectBoxStandard() {
 
   return (
     <SelectBox
-      htmlId="standard"
-      label="SelectBox"
-      name="standard"
+      htmlId="no-default"
+      label="No default value"
+      name="no-default"
       options={options}
+      defaultOptionLabel={null}
       onChange={() => {}}
     />
   )

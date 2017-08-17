@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { string, func } from 'prop-types'
+import { string, func, bool } from 'prop-types'
 import { IconWrapper, StyledCheckbox, StyledLabel } from "./Checkbox.styles"
 import Icon from '../Icon'
 
@@ -10,6 +10,10 @@ class Checkbox extends Component {
     this.state = {
       isChecked: false
     }
+  }
+
+  componentWillMount () {
+    if (this.props.checked) this.toggleCheckboxChange()
   }
 
   toggleCheckboxChange() {
@@ -40,7 +44,12 @@ class Checkbox extends Component {
 Checkbox.propTypes = {
   label: string.isRequired,
   handleCheckboxChange: func.isRequired,
-  htmlId: string.isRequired
+  htmlId: string.isRequired,
+  checked: bool
+}
+
+Checkbox.defaultProps = {
+  checked: false
 }
 
 export default Checkbox

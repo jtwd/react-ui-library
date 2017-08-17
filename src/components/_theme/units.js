@@ -17,7 +17,7 @@ export const transitions = {
   drawIn: 'border-width .25s linear, max-height 1s ease-in .25s, opacity .33s ease'
 }
 export const formSizes = {
-  xs: '75px',
+  xs: '85px',
   sm: '150px',
   md: '300px',
   lg: '450px',

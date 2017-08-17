@@ -10,6 +10,8 @@ import FaCaretRight from 'react-icons/lib/fa/caret-right'
 import FaCaretDown from 'react-icons/lib/fa/caret-down'
 import FaInfoCircle from 'react-icons/lib/fa/info-circle'
 import FaCheckCircle from 'react-icons/lib/fa/check-circle'
+import MdCheckBoxOutlineBlank from 'react-icons/lib/md/check-box-outline-blank'
+import MdCheckBox from 'react-icons/lib/md/check-box'
 
 export const IconMenu = FaBars
 export const IconClose = FaClose
@@ -23,6 +25,8 @@ export const IconCaretRight = FaCaretRight
 export const IconCaretDown = FaCaretDown
 export const IconInfo = FaInfoCircle
 export const IconTick = FaCheckCircle
+export const IconCheckboxOff = MdCheckBoxOutlineBlank
+export const IconCheckboxOn = MdCheckBox
 
 const icons = {
   menu: IconMenu,
@@ -36,7 +40,9 @@ const icons = {
   caretRight: IconCaretRight,
   caretDown: IconCaretDown,
   info: IconInfo,
-  tick: IconTick
+  tick: IconTick,
+  checkboxOff: IconCheckboxOff,
+  checkboxOn: IconCheckboxOn
 }
 
 export default icons

@@ -45,7 +45,7 @@ SelectBox.propTypes = {
   /** To go in label */
   label: string.isRequired,
   /** Size (default, xs, sm, md, lg) */
-  size: oneOf(['default', 'xs', 'sm', 'md', 'lg', 'xl']),
+size: oneOf(['default', 'xs', 'sm', 'md', 'lg', 'xl']),
   /** Required field */
   required: bool,
   /** Function to run when input is being typed in */

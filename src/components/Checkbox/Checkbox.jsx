@@ -30,16 +30,18 @@ class Checkbox extends Component {
   }
 
   render () {
-    const { label, htmlId } = this.props
+    const { label, htmlId, value } = this.props
     const { isChecked, hasFocus } = this.state
     const checkboxIconName = isChecked ? 'checkboxOn' : 'checkboxOff'
+    let chkValue = label
+    if (value) chkValue = value
 
     return (
       <StyledLabel htmlFor={htmlId} checked={isChecked} focus={hasFocus}>
         <StyledCheckbox
           type="checkbox"
           id={htmlId}
-          value={label}
+          value={chkValue}
           checked={isChecked}
           onChange={() => this.toggleCheckboxChange()}
           onFocus={() => this.toggleFocus()}
@@ -58,11 +60,13 @@ Checkbox.propTypes = {
   label: string.isRequired,
   handleCheckboxChange: func.isRequired,
   htmlId: string.isRequired,
+  value: string,
   checked: bool
 }
 
 Checkbox.defaultProps = {
-  checked: false
+  checked: false,
+  value: null
 }
 
 export default Checkbox

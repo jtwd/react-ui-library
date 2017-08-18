@@ -73,15 +73,23 @@ class CheckboxList extends Component {
 }
 
 CheckboxList.propTypes = {
+  /** List of checkbox items - label, value, checked */
   list: arrayOf(shape({
     label: string.isRequired,
+    value: string,
     checked: bool
   })).isRequired,
+  /** Unique ID - used to make unique id's for each checkbox */
   htmlId: string.isRequired,
+  /** Sizes - inherits from Field component */
   size: oneOf(['default', 'md', 'lg', 'xl']),
+  /** Title of checkbox list - is added as a Label at the top of the CheckboxList */
   title: string,
+  /** Required field */
   required: bool,
+  /** Error message */
   error: string,
+  /** Function to call when any checkbox changes */
   onChange: func.isRequired
 }
 

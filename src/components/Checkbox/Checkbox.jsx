@@ -6,7 +6,6 @@ import Icon from '../Icon'
 class Checkbox extends Component {
   constructor(props) {
     super(props)
-
     this.state = {
       isChecked: false,
       hasFocus: false
@@ -19,9 +18,7 @@ class Checkbox extends Component {
 
   toggleCheckboxChange() {
     const { handleCheckboxChange, label } = this.props
-
     this.setState(({isChecked}) => ({ isChecked: !isChecked }))
-
     handleCheckboxChange(label)
   }
 
@@ -33,6 +30,7 @@ class Checkbox extends Component {
     const { label, htmlId, value } = this.props
     const { isChecked, hasFocus } = this.state
     const checkboxIconName = isChecked ? 'checkboxOn' : 'checkboxOff'
+
     let chkValue = label
     if (value) chkValue = value
 
@@ -57,10 +55,15 @@ class Checkbox extends Component {
 }
 
 Checkbox.propTypes = {
+  /** Text to be displayed in label and value (if no value prop is supplied) */
   label: string.isRequired,
+  /** to be called with checkbox changes */
   handleCheckboxChange: func.isRequired,
+  /** Unique id */
   htmlId: string.isRequired,
+  /** Value prop (label is used if this is not supplied) */
   value: string,
+  /** Checked value */
   checked: bool
 }
 

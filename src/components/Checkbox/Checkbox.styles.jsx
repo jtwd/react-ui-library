@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 import { transBlack, transBlackLight, transBlackDark, transWhiteDark, yellow, white, darkYellow } from "../_theme/colors"
 import { radiusRound, transitions } from "../_theme/units"
-import { xxs, xs, xxl } from "../_theme/spacers"
+import { xxs, xs } from "../_theme/spacers"
 import trimChildren from '../_theme/mixins/trimChildren'
 
 const hoverFocusStyles = `
@@ -46,9 +46,7 @@ export const StyledLabel = styled.label`
 export const IconWrapper = styled.span`
   display: inline-block;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  margin-top: 0.225rem;
+  top: ${xxs};
   left: ${xs};
 `
 

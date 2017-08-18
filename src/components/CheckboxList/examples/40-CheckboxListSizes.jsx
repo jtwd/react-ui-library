@@ -1,7 +1,7 @@
 import React from 'react'
 import CheckboxList from '../CheckboxList'
 // eslint-disable no-console
-/** Standard CheckboxList */
+/** CheckboxList sizes & multiline */
 export default function CheckboxListSizes () {
   const list = [
     {label: 'Checkbox option 1 with a longer label to check multiline styles'},

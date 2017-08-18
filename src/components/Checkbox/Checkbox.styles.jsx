@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 import { transBlack, transBlackLight, transBlackDark, transWhiteDark, yellow, white, darkYellow } from "../_theme/colors"
 import { radiusRound, transitions } from "../_theme/units"
-import { xxs, xs } from "../_theme/spacers"
+import { xxs, xs, xxl } from "../_theme/spacers"
 import trimChildren from '../_theme/mixins/trimChildren'
 
 const hoverFocusStyles = `
@@ -12,7 +12,7 @@ const hoverFocusStyles = `
 
 export const StyledLabel = styled.label`
   position: relative;
-  padding: 0 ${xxs} ${xxs};
+  padding: ${xxs} ${xxs} ${xxs} 2.5rem;
   display: block;
   cursor: pointer;
   border-radius: ${radiusRound};
@@ -45,10 +45,11 @@ export const StyledLabel = styled.label`
 
 export const IconWrapper = styled.span`
   display: inline-block;
-  position: relative;
-  margin-right: ${xs};
-  margin-left: ${xxs};
-  top: .33rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: 0.225rem;
+  left: ${xs};
 `
 
 export const StyledCheckbox = styled.input`

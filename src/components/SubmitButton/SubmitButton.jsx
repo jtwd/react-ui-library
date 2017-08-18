@@ -5,18 +5,21 @@ import styled from 'styled-components'
 import Button from '../Button'
 import Loading from '../Loading'
 import {darkBlue} from "../_theme/colors"
+import {xs, sm} from "../_theme/spacers"
 
 const StyledButton = styled(Button)`
-  display: flex;
+  position: relative;
   ${props => props.submitting && `
     cursor: wait;
+    padding-left: 2.5rem;
   `}
 `
 
 const StyledLoading = styled(Loading)`
-  position: relative;
-  left: -8px;
-  top: -1px;
+  position: absolute;
+  left: ${xs};
+  top: 50%;
+  transform: translateY(-50%);
   opacity: 1;
 `
 

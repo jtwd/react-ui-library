@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import Button from '../Button'
 import Loading from '../Loading'
 import {darkBlue} from "../_theme/colors"
-import {xs, sm} from "../_theme/spacers"
+import {xs} from "../_theme/spacers"
 
 const StyledButton = styled(Button)`
   position: relative;

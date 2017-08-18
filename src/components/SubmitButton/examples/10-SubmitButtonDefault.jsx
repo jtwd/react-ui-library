@@ -3,7 +3,7 @@ import React from 'react'
 import SubmitButton from '../SubmitButton'
 import HBox from '../../HBox'
 
-/** Submit button standard */
+/** Submit button standard / loading */
 export default function PasswordInputStandard() {
   return (
     <HBox>

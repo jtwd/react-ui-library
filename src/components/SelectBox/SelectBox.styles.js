@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components'
 
 import { red, lightRed, darkRed, yellow, white, transBlackDark, transBlackLight, transWhite } from '../_theme/colors'
-import { transitions } from '../_theme/units'
-import { xs, md } from '../_theme/spacers'
+import { transitions, radiusRound } from '../_theme/units'
+import { xs } from '../_theme/spacers'
 
 export const StyledSelectBox = styled.select`
   border: 2px solid ${transWhite};
@@ -10,7 +10,7 @@ export const StyledSelectBox = styled.select`
   color: ${white};
   padding: ${xs};
   transition: ${transitions.hover};
-  border-radius: ${md};
+  border-radius: ${radiusRound};
   display: block;
   width: 100%;
   height: 47px;

@@ -66,7 +66,7 @@ SelectBox.propTypes = {
 SelectBox.defaultProps = {
   size: 'default',
   required: false,
-  defaultValue: '',
+  defaultValue: undefined,
   defaultOptionLabel: 'Please select an option',
   error: null,
   options: [],

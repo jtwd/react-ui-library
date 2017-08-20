@@ -4,9 +4,24 @@ import { arrayOf, shape, string, bool, oneOf, func } from 'prop-types'
 import Checkbox from '../Checkbox'
 import { Field, ErrorMsg } from '../TextInput/TextInputStyles'
 import Label from '../Label'
+import { formSizes } from "../_theme/units"
 
 function buildKey(group, id) {
   return `${group}_${id.replace(' ', '').toLowerCase()}`
+}
+
+function getSelectedValues(list) {
+  const selected = []
+  for (let i = 0, x = list.length; i < x; i+=1) {
+    if (list[i].checked) {
+      if (list[i].value) {
+        selected.push(list[i].value)
+      } else {
+        selected.push(list[i].label)
+      }
+    }
+  }
+  return selected
 }
 
 class CheckboxList extends Component {
@@ -14,13 +29,12 @@ class CheckboxList extends Component {
     super(props)
 
     this.state = {
-      selectedValues: []
+      selectedValues: getSelectedValues(props.list)
     }
+    this.toggleCheckbox = this.toggleCheckbox.bind(this)
   }
 
-  toggleCheckbox (chkbox) {
-    let val = chkbox.label
-    if (chkbox.value) val = chkbox.value
+  toggleCheckbox (val) {
     const selectedValues = this.state.selectedValues
     const index = selectedValues.indexOf(val)
     if (index > -1) {
@@ -46,7 +60,7 @@ class CheckboxList extends Component {
           key={checkboxId}
           htmlId={checkboxId}
           label={item.label}
-          handleCheckboxChange={() => this.toggleCheckbox(item, this)}
+          handleCheckboxChange={this.toggleCheckbox}
           checked={item.checked}
           value={value}
         />
@@ -82,7 +96,7 @@ CheckboxList.propTypes = {
   /** Unique ID - used to make unique id's for each checkbox */
   htmlId: string.isRequired,
   /** Sizes - inherits from Field component */
-  size: oneOf(['default', 'md', 'lg', 'xl']),
+  size: oneOf(Object.keys(formSizes)),
   /** Title of checkbox list - is added as a Label at the top of the CheckboxList */
   title: string,
   /** Required field */

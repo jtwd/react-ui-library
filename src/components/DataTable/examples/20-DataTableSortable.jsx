@@ -41,7 +41,7 @@ const data = [
   }
 ]
 
-/** Data Table standard */
+/** Data Table sortable */
 export default function DataTableStandard() {
   return (
     <div>

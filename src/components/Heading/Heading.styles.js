@@ -7,29 +7,45 @@ import trimChildren from '../_theme/mixins/trimChildren'
 
 const commonStyles = `
   color: ${white};
-  ${trimChildren('ver')}
+  ${trimChildren('ver')} 
 `
 
 export const H2 = styled.h2`
-  ${commonStyles}
   margin: ${md} 0;
+  ${commonStyles}
   font-size: ${fsXxl};
+  ${props => props.collapse && `
+    margin-top: 0;
+    margin-bottom: 0;
+  `} 
 `
 
 export const H3 = styled.h3`
-  ${commonStyles}
   margin: ${sm} 0;
+  ${commonStyles}
   font-size: ${fsXl};
+  ${props => props.collapse && `
+    margin-top: 0;
+    margin-bottom: 0;
+  `}
 `
 
 export const H4 = styled.h4`
-  ${commonStyles}
   margin: ${sm} 0;
+  ${commonStyles}
   font-size: ${fsLg};
+  ${props => props.collapse && `
+    margin-top: 0;
+    margin-bottom: 0;
+  `} 
 `
 
 export const H5 = styled.h5`
+  margin: ${xs} 0;
   ${commonStyles}
   font-size: ${fsMd};
-  margin: ${xs} 0;
+  ${props => props.collapse && `
+    margin-top: 0;
+    margin-bottom: 0;
+  `} 
 `

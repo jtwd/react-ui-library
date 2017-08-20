@@ -13,7 +13,7 @@ class Checkbox extends Component {
   }
 
   componentWillMount () {
-    if (this.props.checked) this.toggleCheckboxChange()
+    if (this.props.checked) this.setState(({isChecked}) => ({ isChecked: !isChecked }))
   }
 
   toggleCheckboxChange() {

@@ -1,4 +1,4 @@
-import { xs } from './spacers'
+import { xxs } from './spacers'
 import { darkRed, darkGreen, transDarkYellow, transDarkBlue } from './colors'
 
 export const siteMaxWidth = '100%'
@@ -7,7 +7,7 @@ export const shortMaxWidth = '550px'
 export const baseLineHeight = 1.5
 
 export const lineHeightTight = 1.25
-export const radiusRound = xs
+export const radiusRound = xxs
 export const radiusCircle = '50%'
 export const transitions = {
   hover: 'ease-in-out .33s',
@@ -17,11 +17,12 @@ export const transitions = {
   drawIn: 'border-width .25s linear, max-height 1s ease-in .25s, opacity .33s ease'
 }
 export const formSizes = {
-  xs: '85px',
-  sm: '150px',
-  md: '300px',
-  lg: '450px',
-  xl: '600px'
+  'default': '100%',
+  'xs': '85px',
+  'sm': '150px',
+  'md': '300px',
+  'lg': '450px',
+  'xl': '600px'
 }
 export const primaryNormal = 400
 export const primaryBold = 700

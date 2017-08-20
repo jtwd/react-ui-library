@@ -4,6 +4,7 @@ import { string, oneOf, bool, func, node, arrayOf, object } from 'prop-types'
 import Label from '../Label'
 import { StyledSelectBox, Option } from './SelectBox.styles'
 import { Field, ErrorMsg } from "../TextInput/TextInputStyles"
+import { formSizes } from "../_theme/units"
 
 /** SelectBox field - Can be required, in error. Uses: Label, Icon. Options are passed in as an array of objects. Each option contains: id, label, value (optional). If value is not supplied, label is used as the value */
 function SelectBox({ htmlId, size, name, label, required, defaultOptionLabel, onChange, options, defaultValue, error, children, ...props }) {
@@ -45,7 +46,7 @@ SelectBox.propTypes = {
   /** To go in label */
   label: string.isRequired,
   /** Size (default, xs, sm, md, lg) */
-  size: oneOf(['default', 'xs', 'sm', 'md', 'lg', 'xl']),
+  size: oneOf(Object.keys(formSizes)),
   /** Required field */
   required: bool,
   /** Function to run when input is being typed in */

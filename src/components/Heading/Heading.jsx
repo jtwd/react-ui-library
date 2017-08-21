@@ -6,7 +6,8 @@ import { H2, H3, H4, H5 } from './Heading.styles'
 /** Simple shell for using headings. Level 1 is a H2, level 2 a H3 and so on. H1 is reserved for the PageHeader component */
 function Heading({level, children, collapse}) {
   if (!children) return null
-  switch(level) {
+  // Allow number strings
+  switch(parseInt(level, 10)) {
     case 2:
       return <H3 collapse={collapse}>{children}</H3>
     case 3:
@@ -20,7 +21,7 @@ function Heading({level, children, collapse}) {
 
 Heading.propTypes = {
   /** Level of heading (1-4 = h2-h5) */
-  level: oneOf([1, 2, 3, 4]),
+  level: oneOf([1, 2, 3, 4, '1', '2', '3', '4']),
   /** Remove margin from heading */
   collapse: bool,
   /** Content of heading */

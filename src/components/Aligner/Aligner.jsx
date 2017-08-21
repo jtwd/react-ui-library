@@ -1,11 +1,11 @@
 import React from 'react'
-import { node, bool, arrayOf, number, string } from 'prop-types'
+import { node, bool, arrayOf, number, string, oneOf } from 'prop-types'
 import styled from 'styled-components'
 import shortid from 'shortid'
 
 import AlignerItem from './AlignerItem'
 import trimChildren from '../_theme/mixins/trimChildren'
-import { xs } from "../_theme/spacers"
+import { gutters } from "../_theme/units"
 
 const StyledContainer = styled.div`
   display: flex;
@@ -18,7 +18,7 @@ const StyledContainer = styled.div`
   
   ${props => props.gutter && `
     > div {
-      margin: 0 ${xs};
+      margin: 0 ${gutters[props.gutter]};
       ${trimChildren('hor')
     }
   `}
@@ -58,7 +58,7 @@ Aligner.propTypes = {
   /** Align individual children, 1 value for every child */
   alignChildren: arrayOf(string),
   /** Gutter between children */
-  gutter: bool,
+  gutter: oneOf(Object.keys(gutters)),
   /** No flex on multiple items */
   fixed: bool,
   /** Stretch children to fill container */
@@ -70,7 +70,8 @@ Aligner.propTypes = {
 Aligner.defaultProps = {
   fixed: false,
   alignChildren: null,
-  gutter: false,
+  align: 'center',
+  gutter: null,
   stretch: false,
   ratio: null
 }

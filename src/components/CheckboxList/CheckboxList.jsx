@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import { arrayOf, shape, string, bool, oneOf, func } from 'prop-types'
 
 import Checkbox from '../Checkbox'
-import { Field, ErrorMsg } from '../TextInput/TextInputStyles'
+import { Field, ErrorMsg } from '../TextInput/TextInput.styles'
 import Label from '../Label'
-import { formSizes } from "../_theme/units"
+import { fieldSizes } from '../_theme/forms'
 
 function buildKey(group, id) {
   return `${group}_${id.replace(' ', '').toLowerCase()}`
@@ -96,7 +96,7 @@ CheckboxList.propTypes = {
   /** Unique ID - used to make unique id's for each checkbox */
   htmlId: string.isRequired,
   /** Sizes - inherits from Field component */
-  size: oneOf(Object.keys(formSizes)),
+  size: oneOf(Object.keys(fieldSizes)),
   /** Title of checkbox list - is added as a Label at the top of the CheckboxList */
   title: string,
   /** Required field */

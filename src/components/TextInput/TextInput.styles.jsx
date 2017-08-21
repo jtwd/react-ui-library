@@ -1,9 +1,9 @@
 import React from 'react'
 import { string } from 'prop-types'
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
-import { red, lightRed, darkRed, yellow, white, transBlackDark, transBlackLight, transWhite } from '../_theme/colors'
-import { transitions, radiusRound, formSizes } from '../_theme/units'
+import { getInputStyles, fieldSizes } from "../_theme/forms"
+import { lightRed } from '../_theme/colors'
 import { xxs, xs, md, lg } from '../_theme/spacers'
 import Message from '../Message'
 import Icon from '../Icon'
@@ -57,33 +57,10 @@ export const Field = styled.div`
   margin-bottom: ${md};
   
   ${props => props.size !== 'default' && `
-    max-width: ${formSizes[props.size]};
+    max-width: ${fieldSizes[props.size]};
   `}
 `
 
 export const Input = styled.input`
-  border: 2px solid ${transWhite};
-  background: ${transBlackLight};
-  color: ${white};
-  padding: ${xs};
-  transition: ${transitions.hover};
-  border-radius: ${radiusRound};
-  display: block;
-  width: 100%;
-
-  ${props =>
-  props.error &&
-  css`
-    border-color: ${lightRed};
-  `} 
-  
-  &:hover {
-    border-color: ${props => (props.error ? red : white)};
-  }
-  
-  &:focus {
-    border-color: ${props => (props.error ? darkRed : yellow)};
-    background: ${transBlackDark};
-    outline: 0;
-  }
+  ${props => getInputStyles(props.error)}
 `

@@ -10,6 +10,6 @@ export default function ListStandard() {
     { id: '3', 'articleTitle': 'List item number three', 'body': 'Dolorem et incidunt iusto maiores minus nam, quasi quisquam voluptate. Aliquid quod, ratione? Aperiam cum delectus deleniti ducimus illum molestiae quisquam similique?'}
   ]
   return (
-    <List collection={data} titleKey="articleTitle" textKey="body" headingLevel={3} />
+    <List collection={data} titleKey="articleTitle" textKey="body" headingLevel="4" />
   )
 }

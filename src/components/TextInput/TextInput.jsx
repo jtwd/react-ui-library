@@ -2,8 +2,8 @@ import React from 'react'
 import { string, oneOf, bool, func, node } from 'prop-types'
 
 import Label from '../Label'
-import { Field, Input, ErrorMsg } from "./TextInputStyles"
-import { formSizes } from "../_theme/units"
+import { Field, Input, ErrorMsg } from "./TextInput.styles"
+import { fieldSizes } from "../_theme/forms"
 
 /** TextInput field - Can be required, in error. Uses: Label, Icon, Message */
 function TextInput({ htmlId, size, name, label, type, required, onChange, placeholder, value, error, children, ...props }) {
@@ -36,7 +36,7 @@ TextInput.propTypes = {
   /** Input type (text, email, number, password, tel) */
   type: oneOf(['text', 'email', 'number', 'password', 'tel']),
   /** Size (default, xs, sm, md, lg) */
-  size: oneOf(Object.keys(formSizes)),
+  size: oneOf(Object.keys(fieldSizes)),
   /** Required field */
   required: bool,
   /** Function to run when input is being typed in */

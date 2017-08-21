@@ -11,6 +11,13 @@ const sizes = {
   wide: 1460
 }
 
+/*
+ * Usage:
+ * ${media.xs`
+ *   // css code here
+ * `}
+ */
+
 /* eslint-disable */
 const media = Object.keys(sizes).reduce((finalMedia, size) => {
   return {

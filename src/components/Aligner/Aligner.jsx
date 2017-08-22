@@ -70,7 +70,6 @@ Aligner.propTypes = {
 Aligner.defaultProps = {
   fixed: false,
   alignChildren: null,
-  align: 'center',
   gutter: null,
   stretch: false,
   ratio: null

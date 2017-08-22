@@ -1,5 +1,5 @@
 import React from 'react'
-import { arrayOf, object, string, number, bool } from 'prop-types'
+import { arrayOf, object, string, oneOf, bool } from 'prop-types'
 import styled from 'styled-components'
 
 import Heading from '../Heading'
@@ -50,7 +50,7 @@ List.propTypes = {
   collection: arrayOf(object),
   titleKey: string,
   textKey: string,
-  headingLevel: number,
+  headingLevel: oneOf([0, 1, 2, 3, 4 , '1', '2', '3', '4']),
   ordered: bool
 }
 

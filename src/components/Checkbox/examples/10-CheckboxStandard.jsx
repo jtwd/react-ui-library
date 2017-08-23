@@ -8,7 +8,6 @@ export default function CheckboxStandard() {
     <Checkbox
       htmlId="chk-standard"
       label="Check the box"
-      handleCheckboxChange={() => {}}
     />
   )
 }

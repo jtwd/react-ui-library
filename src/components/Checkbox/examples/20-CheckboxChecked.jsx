@@ -8,8 +8,7 @@ export default function CheckboxChecked() {
     <Checkbox
       htmlId="chk-checked"
       label="Uncheck the box"
-      checked
-      handleCheckboxChange={() => {}}
+      isChecked
     />
   )
 }

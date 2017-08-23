@@ -1,75 +1,65 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { string, func, bool } from 'prop-types'
+import { compose, withProps } from 'recompose'
+
 import { IconWrapper, StyledCheckbox, StyledLabel } from "./Checkbox.styles"
 import Icon from '../Icon'
+import withFocus from '../_enhancers/withFocus'
+import withChecked from '../_enhancers/withChecked'
 
-class Checkbox extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      isChecked: false,
-      hasFocus: false
-    }
-  }
-
-  componentWillMount () {
-    if (this.props.checked) this.setState(({isChecked}) => ({ isChecked: !isChecked }))
-  }
-
-  toggleCheckboxChange() {
-    const { handleCheckboxChange, label } = this.props
-    this.setState(({isChecked}) => ({ isChecked: !isChecked }))
-    handleCheckboxChange(label)
-  }
-
-  toggleFocus () {
-    this.setState(({hasFocus}) => ({ hasFocus: !hasFocus }))
-  }
-
-  render () {
-    const { label, htmlId, value } = this.props
-    const { isChecked, hasFocus } = this.state
-    const checkboxIconName = isChecked ? 'checkboxOn' : 'checkboxOff'
-
-    let chkValue = label
-    if (value) chkValue = value
-
-    return (
-      <StyledLabel htmlFor={htmlId} checked={isChecked} focus={hasFocus}>
-        <StyledCheckbox
-          type="checkbox"
-          id={htmlId}
-          value={chkValue}
-          checked={isChecked}
-          onChange={() => this.toggleCheckboxChange()}
-          onFocus={() => this.toggleFocus()}
-          onBlur={() => this.toggleFocus()}
-        />
-        <IconWrapper>
-          <Icon icon={checkboxIconName} />
-        </IconWrapper>
-        {label}
-      </StyledLabel>
-    )
-  }
+function Checkbox({label,htmlId, isChecked, toggleChecked, hasFocus, toggleFocus, iconName, value}) {
+  return (
+    <StyledLabel htmlFor={htmlId} checked={isChecked} focus={hasFocus}>
+      <StyledCheckbox
+        type="checkbox"
+        id={htmlId}
+        value={value}
+        checked={isChecked}
+        onChange={toggleChecked}
+        onFocus={toggleFocus}
+        onBlur={toggleFocus}
+      />
+      <IconWrapper>
+        <Icon icon={iconName} />
+      </IconWrapper>
+      {label}
+    </StyledLabel>
+  )
 }
 
 Checkbox.propTypes = {
   /** Text to be displayed in label and value (if no value prop is supplied) */
   label: string.isRequired,
   /** to be called with checkbox changes */
-  handleCheckboxChange: func.isRequired,
+  toggleChecked: func.isRequired,
   /** Unique id */
   htmlId: string.isRequired,
   /** Value prop (label is used if this is not supplied) */
-  value: string,
+  value: string.isRequired,
   /** Checked value */
-  checked: bool
+  isChecked: bool,
+  /** Focus value */
+  hasFocus: bool.isRequired,
+  /** Function to toggle focus */
+  toggleFocus: func.isRequired,
+  /** Name of icon to display */
+  iconName: string.isRequired
 }
 
 Checkbox.defaultProps = {
-  checked: false,
-  value: null
+  isChecked: false
 }
 
-export default Checkbox
+export default compose(
+  withFocus,
+  withChecked,
+  withProps(({ isChecked, value, label }) => {
+    // if value is not provided, use label
+    let newValue = label
+    if (value) newValue = value
+    return {
+      iconName: isChecked ? 'checkboxOn' : 'checkboxOff',
+      value: newValue
+    }
+  })
+)(Checkbox)

@@ -32,3 +32,5 @@ export const gutters = {
   'md': xs,
   'lg': sm
 }
+
+export const headingLevelPropType = [0, 1, 2, 3, 4, '1', '2', '3', '4']

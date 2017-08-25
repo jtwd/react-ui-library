@@ -50,7 +50,7 @@ export const IconWrapper = styled.span`
   left: ${xs};
 `
 
-export const StyledCheckbox = styled.input`
+export const StyledInput = styled.input`
   position: absolute;
   z-index: -1;
   opacity: 0;

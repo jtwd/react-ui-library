@@ -2,16 +2,16 @@ import React from 'react'
 import { string, func, bool } from 'prop-types'
 import { compose, withProps } from 'recompose'
 
-import { IconWrapper, StyledInput, StyledLabel } from "./Checkbox.styles"
+import { IconWrapper, StyledInput, StyledLabel } from "../Checkbox/Checkbox.styles"
 import Icon from '../Icon'
 import withFocus from '../_enhancers/withFocus'
 import withChecked from '../_enhancers/withChecked'
 
-function Checkbox({label,htmlId, isChecked, toggleChecked, hasFocus, toggleFocus, iconName, value}) {
+function RadioButton({label,htmlId, isChecked, toggleChecked, hasFocus, toggleFocus, iconName, value}) {
   return (
     <StyledLabel htmlFor={htmlId} checked={isChecked} focus={hasFocus}>
       <StyledInput
-        type="checkbox"
+        type="radio"
         id={htmlId}
         value={value}
         checked={isChecked}
@@ -27,10 +27,10 @@ function Checkbox({label,htmlId, isChecked, toggleChecked, hasFocus, toggleFocus
   )
 }
 
-Checkbox.propTypes = {
+RadioButton.propTypes = {
   /** Text to be displayed in label and value (if no value prop is supplied) */
   label: string.isRequired,
-  /** to be called with checkbox changes */
+  /** to be called with RadioButton changes */
   toggleChecked: func.isRequired,
   /** Unique id */
   htmlId: string.isRequired,
@@ -46,7 +46,7 @@ Checkbox.propTypes = {
   iconName: string.isRequired
 }
 
-Checkbox.defaultProps = {
+RadioButton.defaultProps = {
   isChecked: false
 }
 
@@ -58,8 +58,8 @@ export default compose(
     let newValue = label
     if (value) newValue = value
     return {
-      iconName: isChecked ? 'checkboxOn' : 'checkboxOff',
+      iconName: isChecked ? 'radioOn' : 'radioOff',
       value: newValue
     }
   })
-)(Checkbox)
+)(RadioButton)

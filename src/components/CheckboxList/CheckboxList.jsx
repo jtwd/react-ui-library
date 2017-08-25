@@ -2,34 +2,19 @@ import React, { Component } from 'react'
 import { arrayOf, shape, string, bool, oneOf, func } from 'prop-types'
 
 import Checkbox from '../Checkbox'
+import FormListTitle from './FormListTitle'
 import { Field, ErrorMsg } from '../TextInput/TextInput.styles'
-import Label from '../Label'
 import { fieldSizes } from '../_theme/forms'
-
-function buildKey(group, id) {
-  return `${group}_${id.replace(' ', '').toLowerCase()}`
-}
-
-function getSelectedValues(list) {
-  const selected = []
-  for (let i = 0, x = list.length; i < x; i+=1) {
-    if (list[i].checked) {
-      if (list[i].value) {
-        selected.push(list[i].value)
-      } else {
-        selected.push(list[i].label)
-      }
-    }
-  }
-  return selected
-}
+import getSelectedValues from '../_theme/utils/getSelectedValues'
+import buildKey from '../_theme/utils/buildKey'
 
 class CheckboxList extends Component {
   constructor (props) {
     super(props)
-
+    // are we using 'value' or 'label' as return checkbox values?
+    this.valueSelector = props.list[0].value ? 'value' : 'label'
     this.state = {
-      selectedValues: getSelectedValues(props.list)
+      selectedValues: getSelectedValues(props.list, 'checked', this.valueSelector)
     }
     this.toggleCheckbox = this.toggleCheckbox.bind(this)
   }
@@ -51,10 +36,8 @@ class CheckboxList extends Component {
     if(!list || list.lenth < 1 || !htmlId) return null
 
     return list.map(item => {
+      const value = item[this.valueSelector]
       const checkboxId = buildKey(htmlId, item.label)
-      let value = item.label
-      if (item.value) value = item.value
-
       return (
         <Checkbox
           key={checkboxId}
@@ -67,16 +50,13 @@ class CheckboxList extends Component {
       )
     })
   }
+
   render () {
     const { size, htmlId, title, required, error } = this.props
-    let ListTitle = null
-    if (title) {
-      ListTitle = <Label htmlFor={htmlId} label={title} required={required} />
-    }
 
     return (
       <Field size={size}>
-        {ListTitle}
+        {title && <FormListTitle targetId={htmlId} required={required} title={title} />}
         <ErrorMsg message={(error)} />
         <div id={htmlId}>
           {this.renderCheckboxes()}

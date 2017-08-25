@@ -1,9 +1,10 @@
 import React from 'react'
-import { arrayOf, object, string, number, bool } from 'prop-types'
+import { arrayOf, object, string, oneOf, bool } from 'prop-types'
 import styled from 'styled-components'
 
 import Heading from '../Heading'
 import P from '../P'
+import {headingLevelPropType} from "../_theme/units"
 
 const Ul = styled.ul`
   position: relative;
@@ -50,7 +51,7 @@ List.propTypes = {
   collection: arrayOf(object),
   titleKey: string,
   textKey: string,
-  headingLevel: number,
+  headingLevel: oneOf(headingLevelPropType),
   ordered: bool
 }
 

@@ -43,7 +43,8 @@ RadioButton.propTypes = {
   /** Function to toggle focus */
   toggleFocus: func.isRequired,
   /** Name of icon to display */
-  iconName: string.isRequired
+  iconName: string.isRequired,
+  onChange: func.isRequired
 }
 
 RadioButton.defaultProps = {

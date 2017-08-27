@@ -39,7 +39,7 @@ function getAlignerContents (items, fixed, ratio, alignChildren) {
     if (alignChildren && alignChildren.length >= items.length) alignSelf = alignChildren[i]
 
     return (
-      <AlignerItem key={`aitem_${shortid.generate()}`} flex={`${flex}`} alignSelf={alignSelf}>{item}</AlignerItem>
+      <AlignerItem key={shortid.generate()} flex={`${flex}`} alignSelf={alignSelf}>{item}</AlignerItem>
     )
   })
 }

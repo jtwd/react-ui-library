@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 import Heading from '../Heading'
 import P from '../P'
+import {headingLevelPropType} from "../_theme/units"
 
 const Ul = styled.ul`
   position: relative;
@@ -50,7 +51,7 @@ List.propTypes = {
   collection: arrayOf(object),
   titleKey: string,
   textKey: string,
-  headingLevel: oneOf([0, 1, 2, 3, 4 , '1', '2', '3', '4']),
+  headingLevel: oneOf(headingLevelPropType),
   ordered: bool
 }
 

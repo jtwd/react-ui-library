@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { string, func, bool } from 'prop-types'
-import { IconWrapper, StyledCheckbox, StyledLabel } from "./Checkbox.styles"
+import { IconWrapper, StyledInput, StyledLabel } from "./Checkbox.styles"
 import Icon from '../Icon'
 
 class Checkbox extends Component {
@@ -36,7 +36,7 @@ class Checkbox extends Component {
 
     return (
       <StyledLabel htmlFor={htmlId} checked={isChecked} focus={hasFocus}>
-        <StyledCheckbox
+        <StyledInput
           type="checkbox"
           id={htmlId}
           value={chkValue}

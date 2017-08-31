@@ -13,8 +13,9 @@ export default function RadioButtonListErrorTitle () {
     <RadioButtonList
       list={list}
       title="Title for Radio Button list"
+      required
       htmlId="rad-list2"
-      onChange={(val) => console.log('new value: ' + val)}
+      handleChange={(val) => console.log('new value: ' + val)}
       error="Radio Button List is a required field"
     />
   )

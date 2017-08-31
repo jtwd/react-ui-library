@@ -16,21 +16,21 @@ export default function RadioButtonListStandard () {
         list={list}
         size="md"
         htmlId="rad-list6"
-        onChange={(val) => console.log('new value: ' + val)}
+        handleChange={(val) => console.log('new value: ' + val)}
       />
       <RadioButtonList
         title="Lg"
         list={list}
         size="lg"
         htmlId="rad-list7"
-        onChange={(val) => console.log('new value: ' + val)}
+        handleChange={(val) => console.log('new value: ' + val)}
       />
       <RadioButtonList
         title="Xl"
         list={list}
         size="xl"
         htmlId="rad-list8"
-        onChange={(val) => console.log('new value: ' + val)}
+        handleChange={(val) => console.log('new value: ' + val)}
       />
     </div>
   )

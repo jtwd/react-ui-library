@@ -5,19 +5,17 @@ import { compose, withProps } from 'recompose'
 import { IconWrapper, StyledInput, StyledLabel } from "../Checkbox/Checkbox.styles"
 import Icon from '../Icon'
 import withFocus from '../_enhancers/withFocus'
-import withChecked from '../_enhancers/withChecked'
 
-function RadioButton({label,htmlId, isChecked, toggleChecked, hasFocus, toggleFocus, iconName, value}) {
+function RadioButton({label,htmlId, hasFocus, isChecked, toggleFocus, iconName, value, ...props}) {
   return (
     <StyledLabel htmlFor={htmlId} checked={isChecked} focus={hasFocus}>
       <StyledInput
         type="radio"
         id={htmlId}
         value={value}
-        checked={isChecked}
-        onChange={toggleChecked}
         onFocus={toggleFocus}
         onBlur={toggleFocus}
+        {...props}
       />
       <IconWrapper>
         <Icon icon={iconName} />
@@ -30,8 +28,6 @@ function RadioButton({label,htmlId, isChecked, toggleChecked, hasFocus, toggleFo
 RadioButton.propTypes = {
   /** Text to be displayed in label and value (if no value prop is supplied) */
   label: string.isRequired,
-  /** to be called with RadioButton changes */
-  toggleChecked: func.isRequired,
   /** Unique id */
   htmlId: string.isRequired,
   /** Value prop (label is used if this is not supplied) */
@@ -43,8 +39,7 @@ RadioButton.propTypes = {
   /** Function to toggle focus */
   toggleFocus: func.isRequired,
   /** Name of icon to display */
-  iconName: string.isRequired,
-  onChange: func.isRequired
+  iconName: string.isRequired
 }
 
 RadioButton.defaultProps = {
@@ -53,7 +48,6 @@ RadioButton.defaultProps = {
 
 export default compose(
   withFocus,
-  withChecked,
   withProps(({ isChecked, value, label }) => {
     // if value is not provided, use label
     let newValue = label

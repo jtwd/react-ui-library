@@ -1,93 +1,86 @@
 import React, { Component } from 'react'
-import { arrayOf, shape, string, bool, oneOf, func } from 'prop-types'
+import { arrayOf, shape, string, oneOf, func, bool } from 'prop-types'
 
 import RadioButton from '../RadioButton'
-import FormListTitle from '../CheckboxList/FormListTitle'
 import { Field, ErrorMsg } from '../TextInput/TextInput.styles'
-import { fieldSizes } from '../_theme/forms'
-import getSelectedValues from '../_theme/utils/getSelectedValues'
+import FormListTitle from '../CheckboxList/FormListTitle'
+import { fieldSizes } from "../_theme/forms"
 import buildKey from '../_theme/utils/buildKey'
+
+function getSelectedValue(props) {
+  if (!props.value) return null
+  return props.value
+}
 
 class RadioButtonList extends Component {
   constructor (props) {
     super(props)
-    // are we using 'value' or 'label' as return RadioButton values?
+    this.state = { selectedValue: getSelectedValue(props) }
     this.valueSelector = props.list[0].value ? 'value' : 'label'
-    const selectedValues = getSelectedValues(props.list, 'checked', this.valueSelector)
-    const selectedValue = (selectedValues.length < 1) ? null : selectedValues[0]
-    this.state = {
-      selectedValue
-    }
-    this.selectRadioButton = this.selectRadioButton.bind(this)
+    this.updateSelectedValue = this.updateSelectedValue.bind(this)
   }
 
-  selectRadioButton (val) {
-    console.log('select')
+  updateSelectedValue(val) {
     if (val !== this.state.selectedValue) {
-      this.props.onChange(val)
       this.setState({selectedValue: val})
+      this.props.onChange(val)
     }
-  }
-
-  renderRadioButton () {
-    const { list, htmlId } = this.props
-    const { selectedValue } = this.state
-    if(!list || list.lenth < 1 || !htmlId) return null
-
-    return list.map(item => {
-      const value = item[this.valueSelector]
-      const RadioButtonId = buildKey(htmlId, item.label)
-      const isChecked = (value === selectedValue)
-      return (
-        <RadioButton
-          key={RadioButtonId}
-          htmlId={RadioButtonId}
-          label={item.label}
-          onChange={this.selectRadioButton}
-          isChecked={isChecked}
-          value={value}
-        />
-      )
-    })
   }
 
   render () {
-    const { size, htmlId, title, required, error } = this.props
-
+    const { size, list, htmlId, title, required, error } = this.props
+    const titleProps = {
+      targetId: htmlId,
+      required,
+      title
+    }
     return (
-      <Field size={size}>
-        {title && <FormListTitle targetId={htmlId} required={required} title={title} />}
+      <Field id={htmlId} size={size}>
+        {title && <FormListTitle {...titleProps} />}
         <ErrorMsg message={(error)} />
-        <div id={htmlId}>
-          {this.renderRadioButton()}
-        </div>
+        {list.map(item => {
+          const radId = buildKey(htmlId, item.label)
+          const radioButtonProps = {
+            key: radId,
+            htmlId: radId,
+            name: htmlId,
+            label: item.label,
+            value: item[this.valueSelector],
+            isChecked: item[this.valueSelector] === this.state.selectedValue
+          }
+          return (
+            <RadioButton {...radioButtonProps} onClick={() => this.updateSelectedValue(item[this.valueSelector])} />
+          )
+        })}
       </Field>
     )
   }
 }
 
 RadioButtonList.propTypes = {
-  /** List of RadioButton items - label, value, checked */
+  /** List of checkbox items - label, value */
   list: arrayOf(shape({
     label: string.isRequired,
-    value: string,
-    checked: bool
+    value: string
   })).isRequired,
-  /** Unique ID - used to make unique id's for each RadioButton */
-  htmlId: string.isRequired,
-  /** Sizes - inherits from Field component */
+  /** Current selected value */
+  value: string,
+  /** Field size - inherit from field */
   size: oneOf(Object.keys(fieldSizes)),
-  /** Title of RadioButton list - is added as a Label at the top of the RadioButtonList */
+  /** Unique ID - used to make unique id's from each radio button */
+  htmlId: string.isRequired,
+  /** Function to be when selected value changes */
+  onChange: func.isRequired,
+  /** Title of RadioButtonList - is added as a label at the top of the RadioButtonList */
   title: string,
   /** Required field */
   required: bool,
   /** Error message */
-  error: string,
-  /** Function to call when any RadioButton changes */
-  onChange: func.isRequired
+  error: string
 }
 
 RadioButtonList.defaultProps = {
+  value: null,
   size: 'default',
   title: null,
   required: false,

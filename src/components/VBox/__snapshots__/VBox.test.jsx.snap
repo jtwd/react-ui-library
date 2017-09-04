@@ -1,0 +1,241 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VBox component renders bottom aligned 1`] = `
+<styled.div
+  align="bottom"
+  pack={null}
+>
+  <Wrapper
+    app={false}
+    centered={false}
+    collapse={false}
+    flex={1}
+    middle={false}
+    short={false}
+    text={false}
+  >
+    1
+  </Wrapper>
+  <Wrapper
+    app={false}
+    centered={false}
+    collapse={false}
+    flex={1}
+    middle={false}
+    short={false}
+    text={false}
+  >
+    2
+  </Wrapper>
+</styled.div>
+`;
+
+exports[`VBox component renders correctly by default (stretched) 1`] = `
+<styled.div
+  align="stretch"
+  pack={null}
+>
+  <Wrapper
+    app={false}
+    centered={false}
+    collapse={false}
+    flex={1}
+    middle={false}
+    short={false}
+    text={false}
+  >
+    1
+  </Wrapper>
+  <Wrapper
+    app={false}
+    centered={false}
+    collapse={false}
+    flex={1}
+    middle={false}
+    short={false}
+    text={false}
+  >
+    2
+  </Wrapper>
+</styled.div>
+`;
+
+exports[`VBox component renders packed in the center 1`] = `
+<styled.div
+  align="stretch"
+  pack="center"
+>
+  <Wrapper
+    app={false}
+    centered={false}
+    collapse={false}
+    flex={null}
+    middle={false}
+    short={false}
+    text={false}
+  >
+    1
+  </Wrapper>
+  <Wrapper
+    app={false}
+    centered={false}
+    collapse={false}
+    flex={null}
+    middle={false}
+    short={false}
+    text={false}
+  >
+    2
+  </Wrapper>
+</styled.div>
+`;
+
+exports[`VBox component renders packed to the end 1`] = `
+<styled.div
+  align="stretch"
+  pack="end"
+>
+  <Wrapper
+    app={false}
+    centered={false}
+    collapse={false}
+    flex={null}
+    middle={false}
+    short={false}
+    text={false}
+  >
+    1
+  </Wrapper>
+  <Wrapper
+    app={false}
+    centered={false}
+    collapse={false}
+    flex={null}
+    middle={false}
+    short={false}
+    text={false}
+  >
+    2
+  </Wrapper>
+</styled.div>
+`;
+
+exports[`VBox component renders packed to the start 1`] = `
+<styled.div
+  align="stretch"
+  pack="start"
+>
+  <Wrapper
+    app={false}
+    centered={false}
+    collapse={false}
+    flex={null}
+    middle={false}
+    short={false}
+    text={false}
+  >
+    1
+  </Wrapper>
+  <Wrapper
+    app={false}
+    centered={false}
+    collapse={false}
+    flex={null}
+    middle={false}
+    short={false}
+    text={false}
+  >
+    2
+  </Wrapper>
+</styled.div>
+`;
+
+exports[`VBox component renders packed with space around 1`] = `
+<styled.div
+  align="stretch"
+  pack="around"
+>
+  <Wrapper
+    app={false}
+    centered={false}
+    collapse={false}
+    flex={null}
+    middle={false}
+    short={false}
+    text={false}
+  >
+    1
+  </Wrapper>
+  <Wrapper
+    app={false}
+    centered={false}
+    collapse={false}
+    flex={null}
+    middle={false}
+    short={false}
+    text={false}
+  >
+    2
+  </Wrapper>
+</styled.div>
+`;
+
+exports[`VBox component renders packed with space between 1`] = `
+<styled.div
+  align="stretch"
+  pack="between"
+>
+  <Wrapper
+    app={false}
+    centered={false}
+    collapse={false}
+    flex={null}
+    middle={false}
+    short={false}
+    text={false}
+  >
+    1
+  </Wrapper>
+  <Wrapper
+    app={false}
+    centered={false}
+    collapse={false}
+    flex={null}
+    middle={false}
+    short={false}
+    text={false}
+  >
+    2
+  </Wrapper>
+</styled.div>
+`;
+
+exports[`VBox component renders top aligned 1`] = `
+<styled.div
+  align="top"
+  pack={null}
+>
+  <Wrapper
+    app={false}
+    centered={false}
+    collapse={false}
+    flex={1}
+    middle={false}
+    short={false}
+    text={false}
+  >
+    1
+  </Wrapper>
+  <Wrapper
+    app={false}
+    centered={false}
+    collapse={false}
+    flex={1}
+    middle={false}
+    short={false}
+    text={false}
+  >
+    2
+  </Wrapper>
+</styled.div>
+`;

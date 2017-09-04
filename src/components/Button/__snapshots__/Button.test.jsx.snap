@@ -237,6 +237,22 @@ exports[`Button component should render a correct icon only small button if no c
 </styled.button>
 `;
 
+exports[`Button component should render a disabled button 1`] = `
+<styled.button
+  danger={false}
+  disabled={true}
+  iconOnly={false}
+  large={false}
+  link={false}
+  primary={false}
+  secondary={false}
+  small={false}
+  type="button"
+>
+  Disabled
+</styled.button>
+`;
+
 exports[`Button component should render a large button with an icon 1`] = `
 <styled.button
   danger={false}

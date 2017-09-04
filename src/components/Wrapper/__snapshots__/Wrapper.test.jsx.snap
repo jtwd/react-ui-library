@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Wrapper component renders a centered text wrapper 1`] = `
+<styled.div
+  app={false}
+  centered={true}
+  collapse={false}
+  flex={null}
+  middle={false}
+  short={false}
+  text={true}
+>
+  Centered
+</styled.div>
+`;
+
+exports[`Wrapper component renders a centered wrapper 1`] = `
+<styled.div
+  app={false}
+  centered={true}
+  collapse={false}
+  flex={null}
+  middle={false}
+  short={false}
+  text={false}
+>
+  Centered
+</styled.div>
+`;
+
+exports[`Wrapper component renders a collapsed wrapper 1`] = `
+<styled.div
+  app={false}
+  centered={false}
+  collapse={true}
+  flex={null}
+  middle={false}
+  short={false}
+  text={false}
+>
+  Collapsed
+</styled.div>
+`;
+
+exports[`Wrapper component renders a correctly by default 1`] = `
+<styled.div
+  app={false}
+  centered={false}
+  collapse={false}
+  flex={null}
+  middle={false}
+  short={false}
+  text={false}
+>
+  Default
+</styled.div>
+`;
+
+exports[`Wrapper component renders a short wrapper 1`] = `
+<styled.div
+  app={false}
+  centered={false}
+  collapse={false}
+  flex={null}
+  middle={false}
+  short={true}
+  text={false}
+>
+  Text
+</styled.div>
+`;
+
+exports[`Wrapper component renders a text wrapper 1`] = `
+<styled.div
+  app={false}
+  centered={false}
+  collapse={false}
+  flex={null}
+  middle={false}
+  short={false}
+  text={true}
+>
+  Text
+</styled.div>
+`;
+
+exports[`Wrapper component renders an app wrapper 1`] = `
+<styled.div
+  app={true}
+  centered={false}
+  collapse={false}
+  flex={null}
+  middle={false}
+  short={false}
+  text={false}
+>
+  App
+</styled.div>
+`;

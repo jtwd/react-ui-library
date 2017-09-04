@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AlignerItem component renders correctly by default 1`] = `
+<styled.div
+  alignSelf={null}
+  flex="none"
+>
+  <div>
+    Aligned item
+  </div>
+</styled.div>
+`;
+
+exports[`AlignerItem component renders correctly with a flex prop 1`] = `
+<styled.div
+  alignSelf={null}
+  flex="1"
+>
+  <div>
+    Aligned item
+  </div>
+</styled.div>
+`;

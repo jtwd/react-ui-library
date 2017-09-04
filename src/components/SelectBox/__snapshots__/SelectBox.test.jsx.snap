@@ -1,0 +1,548 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SelectBox does not render if passed less than 2 options 1`] = `null`;
+
+exports[`SelectBox does not render if passed no options 1`] = `null`;
+
+exports[`SelectBox does not render the default option when defaultOptionValue is null 1`] = `
+<div
+  className="sc-jzJRlG kZNvDb"
+  size="default"
+>
+  <label
+    className="sc-bdVaJa etThJd"
+    htmlFor="test"
+  >
+    Test
+     
+  </label>
+  <select
+    className="sc-htpNat QxoBT"
+    id="test"
+    name="test"
+    onChange={[Function]}
+    value={undefined}
+  >
+    <option
+      className="sc-bxivhb cdiCYE"
+      value="4324324"
+    >
+      Option number 1
+    </option>
+    <option
+      className="sc-bxivhb cdiCYE"
+      value="4324344"
+    >
+      Secondary option
+    </option>
+    <option
+      className="sc-bxivhb cdiCYE"
+      value="4324366"
+    >
+      Option three
+    </option>
+  </select>
+  <div
+    className="sc-fjdhpX dEJYHl sc-gqjmRU lhmBJm sc-EHOje jfQQfx sc-ifAKCX hShZxT"
+  >
+    <div
+      className="Panel-body sc-bZQynM lfLAEX"
+    >
+      <i
+        className="sc-dnqmqq huRoGJ"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          style={
+            Object {
+              "color": undefined,
+              "verticalAlign": "middle",
+            }
+          }
+          viewBox="0 0 40 40"
+          width="1em"
+        >
+          <g>
+            <path
+              d="m20.1 2.9q4.7 0 8.6 2.3t6.3 6.2 2.3 8.6-2.3 8.6-6.3 6.2-8.6 2.3-8.6-2.3-6.2-6.2-2.3-8.6 2.3-8.6 6.2-6.2 8.6-2.3z m2.9 27.8v-4.2q0-0.4-0.2-0.6t-0.5-0.2h-4.3q-0.3 0-0.5 0.2t-0.2 0.5v4.3q0 0.3 0.2 0.5t0.5 0.2h4.3q0.3 0 0.5-0.2t0.2-0.5z m0-7.7l0.4-13.8q0-0.3-0.3-0.5-0.2-0.1-0.5-0.1h-4.9q-0.3 0-0.5 0.1-0.3 0.2-0.3 0.4l0.4 13.9q0 0.2 0.2 0.4t0.6 0.2h4.1q0.3 0 0.5-0.2t0.3-0.4z"
+            />
+          </g>
+        </svg>
+      </i>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SelectBox renders correctly 1`] = `
+<div
+  className="sc-jzJRlG kZNvDb"
+  size="default"
+>
+  <label
+    className="sc-bdVaJa etThJd"
+    htmlFor="test"
+  >
+    Test
+     
+  </label>
+  <select
+    className="sc-htpNat QxoBT"
+    id="test"
+    name="test"
+    onChange={[Function]}
+    value={undefined}
+  >
+    <option
+      className="sc-bxivhb cdiCYE"
+    >
+      Please select an option
+    </option>
+    <option
+      className="sc-bxivhb cdiCYE"
+      value="4324324"
+    >
+      Option number 1
+    </option>
+    <option
+      className="sc-bxivhb cdiCYE"
+      value="4324344"
+    >
+      Secondary option
+    </option>
+    <option
+      className="sc-bxivhb cdiCYE"
+      value="4324366"
+    >
+      Option three
+    </option>
+  </select>
+  <div
+    className="sc-fjdhpX dEJYHl sc-gqjmRU lhmBJm sc-EHOje jfQQfx sc-ifAKCX hShZxT"
+  >
+    <div
+      className="Panel-body sc-bZQynM lfLAEX"
+    >
+      <i
+        className="sc-dnqmqq huRoGJ"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          style={
+            Object {
+              "color": undefined,
+              "verticalAlign": "middle",
+            }
+          }
+          viewBox="0 0 40 40"
+          width="1em"
+        >
+          <g>
+            <path
+              d="m20.1 2.9q4.7 0 8.6 2.3t6.3 6.2 2.3 8.6-2.3 8.6-6.3 6.2-8.6 2.3-8.6-2.3-6.2-6.2-2.3-8.6 2.3-8.6 6.2-6.2 8.6-2.3z m2.9 27.8v-4.2q0-0.4-0.2-0.6t-0.5-0.2h-4.3q-0.3 0-0.5 0.2t-0.2 0.5v4.3q0 0.3 0.2 0.5t0.5 0.2h4.3q0.3 0 0.5-0.2t0.2-0.5z m0-7.7l0.4-13.8q0-0.3-0.3-0.5-0.2-0.1-0.5-0.1h-4.9q-0.3 0-0.5 0.1-0.3 0.2-0.3 0.4l0.4 13.9q0 0.2 0.2 0.4t0.6 0.2h4.1q0.3 0 0.5-0.2t0.3-0.4z"
+            />
+          </g>
+        </svg>
+      </i>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SelectBox renders correctly when passed the defaultOptionLabel prop 1`] = `
+<div
+  className="sc-jzJRlG kZNvDb"
+  size="default"
+>
+  <label
+    className="sc-bdVaJa etThJd"
+    htmlFor="test"
+  >
+    Test
+     
+  </label>
+  <select
+    className="sc-htpNat QxoBT"
+    id="test"
+    name="test"
+    onChange={[Function]}
+    value={undefined}
+  >
+    <option
+      className="sc-bxivhb cdiCYE"
+    >
+      Custom default option label
+    </option>
+    <option
+      className="sc-bxivhb cdiCYE"
+      value="4324324"
+    >
+      Option number 1
+    </option>
+    <option
+      className="sc-bxivhb cdiCYE"
+      value="4324344"
+    >
+      Secondary option
+    </option>
+    <option
+      className="sc-bxivhb cdiCYE"
+      value="4324366"
+    >
+      Option three
+    </option>
+  </select>
+  <div
+    className="sc-fjdhpX dEJYHl sc-gqjmRU lhmBJm sc-EHOje jfQQfx sc-ifAKCX hShZxT"
+  >
+    <div
+      className="Panel-body sc-bZQynM lfLAEX"
+    >
+      <i
+        className="sc-dnqmqq huRoGJ"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          style={
+            Object {
+              "color": undefined,
+              "verticalAlign": "middle",
+            }
+          }
+          viewBox="0 0 40 40"
+          width="1em"
+        >
+          <g>
+            <path
+              d="m20.1 2.9q4.7 0 8.6 2.3t6.3 6.2 2.3 8.6-2.3 8.6-6.3 6.2-8.6 2.3-8.6-2.3-6.2-6.2-2.3-8.6 2.3-8.6 6.2-6.2 8.6-2.3z m2.9 27.8v-4.2q0-0.4-0.2-0.6t-0.5-0.2h-4.3q-0.3 0-0.5 0.2t-0.2 0.5v4.3q0 0.3 0.2 0.5t0.5 0.2h4.3q0.3 0 0.5-0.2t0.2-0.5z m0-7.7l0.4-13.8q0-0.3-0.3-0.5-0.2-0.1-0.5-0.1h-4.9q-0.3 0-0.5 0.1-0.3 0.2-0.3 0.4l0.4 13.9q0 0.2 0.2 0.4t0.6 0.2h4.1q0.3 0 0.5-0.2t0.3-0.4z"
+            />
+          </g>
+        </svg>
+      </i>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SelectBox renders correctly when passed the error prop 1`] = `
+<div
+  className="sc-jzJRlG kZNvDb"
+  size="default"
+>
+  <label
+    className="sc-bdVaJa etThJd"
+    htmlFor="test"
+  >
+    Test
+     
+    <span
+      className="sc-bwzfXH dEIIn"
+      title="Required field"
+    />
+  </label>
+  <select
+    className="sc-htpNat chAfyq"
+    id="test"
+    name="test"
+    onChange={[Function]}
+    value={undefined}
+  >
+    <option
+      className="sc-bxivhb cdiCYE"
+    >
+      Please select an option
+    </option>
+    <option
+      className="sc-bxivhb cdiCYE"
+      value="4324324"
+    >
+      Option number 1
+    </option>
+    <option
+      className="sc-bxivhb cdiCYE"
+      value="4324344"
+    >
+      Secondary option
+    </option>
+    <option
+      className="sc-bxivhb cdiCYE"
+      value="4324366"
+    >
+      Option three
+    </option>
+  </select>
+  <div
+    className="sc-fjdhpX iDFqMw sc-gqjmRU hEKEbc sc-EHOje jfQQfx sc-ifAKCX hShZxT"
+  >
+    <div
+      className="Panel-body sc-bZQynM lfLAEX"
+    >
+      <i
+        className="sc-dnqmqq huRoGJ"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          style={
+            Object {
+              "color": undefined,
+              "verticalAlign": "middle",
+            }
+          }
+          viewBox="0 0 40 40"
+          width="1em"
+        >
+          <g>
+            <path
+              d="m20.1 2.9q4.7 0 8.6 2.3t6.3 6.2 2.3 8.6-2.3 8.6-6.3 6.2-8.6 2.3-8.6-2.3-6.2-6.2-2.3-8.6 2.3-8.6 6.2-6.2 8.6-2.3z m2.9 27.8v-4.2q0-0.4-0.2-0.6t-0.5-0.2h-4.3q-0.3 0-0.5 0.2t-0.2 0.5v4.3q0 0.3 0.2 0.5t0.5 0.2h4.3q0.3 0 0.5-0.2t0.2-0.5z m0-7.7l0.4-13.8q0-0.3-0.3-0.5-0.2-0.1-0.5-0.1h-4.9q-0.3 0-0.5 0.1-0.3 0.2-0.3 0.4l0.4 13.9q0 0.2 0.2 0.4t0.6 0.2h4.1q0.3 0 0.5-0.2t0.3-0.4z"
+            />
+          </g>
+        </svg>
+      </i>
+      This is required
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SelectBox renders correctly when passed the required prop 1`] = `
+<div
+  className="sc-jzJRlG kZNvDb"
+  size="default"
+>
+  <label
+    className="sc-bdVaJa etThJd"
+    htmlFor="test"
+  >
+    Test
+     
+    <span
+      className="sc-bwzfXH dEIIn"
+      title="Required field"
+    />
+  </label>
+  <select
+    className="sc-htpNat QxoBT"
+    id="test"
+    name="test"
+    onChange={[Function]}
+    value={undefined}
+  >
+    <option
+      className="sc-bxivhb cdiCYE"
+    >
+      Please select an option
+    </option>
+    <option
+      className="sc-bxivhb cdiCYE"
+      value="4324324"
+    >
+      Option number 1
+    </option>
+    <option
+      className="sc-bxivhb cdiCYE"
+      value="4324344"
+    >
+      Secondary option
+    </option>
+    <option
+      className="sc-bxivhb cdiCYE"
+      value="4324366"
+    >
+      Option three
+    </option>
+  </select>
+  <div
+    className="sc-fjdhpX dEJYHl sc-gqjmRU lhmBJm sc-EHOje jfQQfx sc-ifAKCX hShZxT"
+  >
+    <div
+      className="Panel-body sc-bZQynM lfLAEX"
+    >
+      <i
+        className="sc-dnqmqq huRoGJ"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          style={
+            Object {
+              "color": undefined,
+              "verticalAlign": "middle",
+            }
+          }
+          viewBox="0 0 40 40"
+          width="1em"
+        >
+          <g>
+            <path
+              d="m20.1 2.9q4.7 0 8.6 2.3t6.3 6.2 2.3 8.6-2.3 8.6-6.3 6.2-8.6 2.3-8.6-2.3-6.2-6.2-2.3-8.6 2.3-8.6 6.2-6.2 8.6-2.3z m2.9 27.8v-4.2q0-0.4-0.2-0.6t-0.5-0.2h-4.3q-0.3 0-0.5 0.2t-0.2 0.5v4.3q0 0.3 0.2 0.5t0.5 0.2h4.3q0.3 0 0.5-0.2t0.2-0.5z m0-7.7l0.4-13.8q0-0.3-0.3-0.5-0.2-0.1-0.5-0.1h-4.9q-0.3 0-0.5 0.1-0.3 0.2-0.3 0.4l0.4 13.9q0 0.2 0.2 0.4t0.6 0.2h4.1q0.3 0 0.5-0.2t0.3-0.4z"
+            />
+          </g>
+        </svg>
+      </i>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SelectBox renders label as the option value when value is not supplied 1`] = `
+<div
+  className="sc-jzJRlG kZNvDb"
+  size="default"
+>
+  <label
+    className="sc-bdVaJa etThJd"
+    htmlFor="test"
+  >
+    Test
+     
+  </label>
+  <select
+    className="sc-htpNat QxoBT"
+    id="test"
+    name="test"
+    onChange={[Function]}
+    value={undefined}
+  >
+    <option
+      className="sc-bxivhb cdiCYE"
+    >
+      Please select an option
+    </option>
+    <option
+      className="sc-bxivhb cdiCYE"
+      value="Option number 1"
+    >
+      Option number 1
+    </option>
+    <option
+      className="sc-bxivhb cdiCYE"
+      value="Secondary option"
+    >
+      Secondary option
+    </option>
+    <option
+      className="sc-bxivhb cdiCYE"
+      value="Option three"
+    >
+      Option three
+    </option>
+  </select>
+  <div
+    className="sc-fjdhpX dEJYHl sc-gqjmRU lhmBJm sc-EHOje jfQQfx sc-ifAKCX hShZxT"
+  >
+    <div
+      className="Panel-body sc-bZQynM lfLAEX"
+    >
+      <i
+        className="sc-dnqmqq huRoGJ"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          style={
+            Object {
+              "color": undefined,
+              "verticalAlign": "middle",
+            }
+          }
+          viewBox="0 0 40 40"
+          width="1em"
+        >
+          <g>
+            <path
+              d="m20.1 2.9q4.7 0 8.6 2.3t6.3 6.2 2.3 8.6-2.3 8.6-6.3 6.2-8.6 2.3-8.6-2.3-6.2-6.2-2.3-8.6 2.3-8.6 6.2-6.2 8.6-2.3z m2.9 27.8v-4.2q0-0.4-0.2-0.6t-0.5-0.2h-4.3q-0.3 0-0.5 0.2t-0.2 0.5v4.3q0 0.3 0.2 0.5t0.5 0.2h4.3q0.3 0 0.5-0.2t0.2-0.5z m0-7.7l0.4-13.8q0-0.3-0.3-0.5-0.2-0.1-0.5-0.1h-4.9q-0.3 0-0.5 0.1-0.3 0.2-0.3 0.4l0.4 13.9q0 0.2 0.2 0.4t0.6 0.2h4.1q0.3 0 0.5-0.2t0.3-0.4z"
+            />
+          </g>
+        </svg>
+      </i>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SelectBox renders the correct option as selected when passed the value prop 1`] = `
+<div
+  className="sc-jzJRlG kZNvDb"
+  size="default"
+>
+  <label
+    className="sc-bdVaJa etThJd"
+    htmlFor="test"
+  >
+    Test
+     
+  </label>
+  <select
+    className="sc-htpNat QxoBT"
+    id="test"
+    name="test"
+    onChange={[Function]}
+    value="4324344"
+  >
+    <option
+      className="sc-bxivhb cdiCYE"
+    >
+      Please select an option
+    </option>
+    <option
+      className="sc-bxivhb cdiCYE"
+      value="4324324"
+    >
+      Option number 1
+    </option>
+    <option
+      className="sc-bxivhb cdiCYE"
+      value="4324344"
+    >
+      Secondary option
+    </option>
+    <option
+      className="sc-bxivhb cdiCYE"
+      value="4324366"
+    >
+      Option three
+    </option>
+  </select>
+  <div
+    className="sc-fjdhpX dEJYHl sc-gqjmRU lhmBJm sc-EHOje jfQQfx sc-ifAKCX hShZxT"
+  >
+    <div
+      className="Panel-body sc-bZQynM lfLAEX"
+    >
+      <i
+        className="sc-dnqmqq huRoGJ"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          style={
+            Object {
+              "color": undefined,
+              "verticalAlign": "middle",
+            }
+          }
+          viewBox="0 0 40 40"
+          width="1em"
+        >
+          <g>
+            <path
+              d="m20.1 2.9q4.7 0 8.6 2.3t6.3 6.2 2.3 8.6-2.3 8.6-6.3 6.2-8.6 2.3-8.6-2.3-6.2-6.2-2.3-8.6 2.3-8.6 6.2-6.2 8.6-2.3z m2.9 27.8v-4.2q0-0.4-0.2-0.6t-0.5-0.2h-4.3q-0.3 0-0.5 0.2t-0.2 0.5v4.3q0 0.3 0.2 0.5t0.5 0.2h4.3q0.3 0 0.5-0.2t0.2-0.5z m0-7.7l0.4-13.8q0-0.3-0.3-0.5-0.2-0.1-0.5-0.1h-4.9q-0.3 0-0.5 0.1-0.3 0.2-0.3 0.4l0.4 13.9q0 0.2 0.2 0.4t0.6 0.2h4.1q0.3 0 0.5-0.2t0.3-0.4z"
+            />
+          </g>
+        </svg>
+      </i>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageHeader renders correctly when passed a title component 1`] = `
+<header
+  className="sc-bdVaJa fxervv"
+>
+  <h1
+    className="sc-bwzfXH icSllj"
+  >
+    <span>
+      Page title 
+      <small>
+        with sub title
+      </small>
+    </span>
+  </h1>
+</header>
+`;
+
+exports[`PageHeader renders correctly when passed a title component and extra content 1`] = `
+<header
+  className="sc-bdVaJa fxervv"
+>
+  <h1
+    className="sc-bwzfXH icSllj"
+  >
+    Page title
+  </h1>
+  <p>
+    Extra content
+  </p>
+</header>
+`;
+
+exports[`PageHeader renders correctly when passed a title string 1`] = `
+<header
+  className="sc-bdVaJa fxervv"
+>
+  <h1
+    className="sc-bwzfXH icSllj"
+  >
+    Page title
+  </h1>
+</header>
+`;

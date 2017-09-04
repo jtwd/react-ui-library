@@ -1,9 +1,10 @@
 import { injectGlobal } from 'styled-components'
 import normalize from './normalize'
 import fonts from './fonts'
-import { siteBg, siteColor } from './colors'
+import { siteBg, siteColor, yellow } from './colors'
 import { baseLineHeight, primaryNormal } from './units'
 import media from './media'
+import { rgba } from './utils/utils.colors'
 
 const baseFontSizes = {
   base: '15px',
@@ -11,6 +12,8 @@ const baseFontSizes = {
   lg: '18px',
   wide: '20px'
 }
+
+
 
 /* eslint-disable */
 injectGlobal`
@@ -41,5 +44,33 @@ injectGlobal`
   
   *, *::before, *::after {
     box-sizing: border-box;
+  }
+
+  /* Let's get this party started */
+  ::-webkit-scrollbar {
+      width: 12px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      background: rgba(0,0,0,.25);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      background: ${rgba(yellow, .66)};
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+      opacity: .3;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: ${rgba(yellow, .85)};
+  }
+  ::-webkit-scrollbar-thumb:window-inactive {
+    background: ${rgba(yellow, .33)};
   }
 `

@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading does not render when not passed any children 1`] = `null`;
+
+exports[`Heading renders forth level correctly 1`] = `
+<h5
+  className="sc-bxivhb bKnpar"
+>
+  Forth level heading
+</h5>
+`;
+
+exports[`Heading renders second level correctly 1`] = `
+<h3
+  className="sc-bwzfXH gNUacx"
+>
+  Second level heading
+</h3>
+`;
+
+exports[`Heading renders third level correctly 1`] = `
+<h4
+  className="sc-htpNat klDYeK"
+>
+  Third level heading
+</h4>
+`;
+
+exports[`Heading renders top level correctly 1`] = `
+<h2
+  className="sc-bdVaJa cXeRcu"
+>
+  Top level heading
+</h2>
+`;
+
+exports[`Heading renders top level when not passed a level prop 1`] = `
+<h2
+  className="sc-bdVaJa cXeRcu"
+>
+  Top level heading
+</h2>
+`;

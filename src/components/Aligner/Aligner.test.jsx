@@ -125,4 +125,37 @@ describe('Aligner component', () => {
     expect(component).toMatchSnapshot()
   })
 
+  it('renders children with a small gutter', () => {
+    const component = shallow(
+      <Aligner gutters="sm">
+        <div>Child 1</div>
+        <div>Child 2</div>
+        <div>Child 3</div>
+      </Aligner>
+    )
+    expect(component).toMatchSnapshot()
+  })
+
+  it('renders children with a medium gutter', () => {
+    const component = shallow(
+      <Aligner gutters="md">
+        <div>Child 1</div>
+        <div>Child 2</div>
+        <div>Child 3</div>
+      </Aligner>
+    )
+    expect(component).toMatchSnapshot()
+  })
+
+  it('renders children with a large gutter', () => {
+    const component = shallow(
+      <Aligner gutters="lg">
+        <div>Child 1</div>
+        <div>Child 2</div>
+        <div>Child 3</div>
+      </Aligner>
+    )
+    expect(component).toMatchSnapshot()
+  })
+
 })

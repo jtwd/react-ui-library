@@ -13,7 +13,7 @@ exports[`TextInput renders correctly 1`] = `
      
   </label>
   <input
-    className="sc-fjdhpX haAhsH"
+    className="sc-fjdhpX hJInRm"
     id="test"
     name="test"
     onChange={[Function]}
@@ -22,7 +22,7 @@ exports[`TextInput renders correctly 1`] = `
     value={undefined}
   />
   <div
-    className="sc-VigVT gxJVhO sc-iwsKbI cvmNkQ sc-bxivhb bOooiJ sc-htpNat kJJtsW"
+    className="sc-VigVT dRmSPC sc-iwsKbI cvmNkQ sc-bxivhb gbjEOC sc-htpNat kJJtsW"
   >
     <div
       className="Panel-body sc-ifAKCX jpJklP"
@@ -72,7 +72,7 @@ exports[`TextInput renders correctly when passed an error prop 1`] = `
     />
   </label>
   <input
-    className="sc-fjdhpX eQtnFX"
+    className="sc-fjdhpX iirSZS"
     id="test"
     name="test"
     onChange={[Function]}
@@ -81,7 +81,7 @@ exports[`TextInput renders correctly when passed an error prop 1`] = `
     value={undefined}
   />
   <div
-    className="sc-VigVT cqiLJY sc-iwsKbI jsHmFk sc-bxivhb bOooiJ sc-htpNat kJJtsW"
+    className="sc-VigVT fWdvvx sc-iwsKbI jsHmFk sc-bxivhb gbjEOC sc-htpNat kJJtsW"
   >
     <div
       className="Panel-body sc-ifAKCX jpJklP"
@@ -132,7 +132,7 @@ exports[`TextInput renders correctly when passed required prop 1`] = `
     />
   </label>
   <input
-    className="sc-fjdhpX haAhsH"
+    className="sc-fjdhpX hJInRm"
     id="test"
     name="test"
     onChange={[Function]}
@@ -141,7 +141,7 @@ exports[`TextInput renders correctly when passed required prop 1`] = `
     value={undefined}
   />
   <div
-    className="sc-VigVT gxJVhO sc-iwsKbI cvmNkQ sc-bxivhb bOooiJ sc-htpNat kJJtsW"
+    className="sc-VigVT dRmSPC sc-iwsKbI cvmNkQ sc-bxivhb gbjEOC sc-htpNat kJJtsW"
   >
     <div
       className="Panel-body sc-ifAKCX jpJklP"
@@ -187,7 +187,7 @@ exports[`TextInput renders correctly when passed size of lg 1`] = `
      
   </label>
   <input
-    className="sc-fjdhpX haAhsH"
+    className="sc-fjdhpX hJInRm"
     id="test"
     name="test"
     onChange={[Function]}
@@ -196,7 +196,7 @@ exports[`TextInput renders correctly when passed size of lg 1`] = `
     value={undefined}
   />
   <div
-    className="sc-VigVT gxJVhO sc-iwsKbI cvmNkQ sc-bxivhb bOooiJ sc-htpNat kJJtsW"
+    className="sc-VigVT dRmSPC sc-iwsKbI cvmNkQ sc-bxivhb gbjEOC sc-htpNat kJJtsW"
   >
     <div
       className="Panel-body sc-ifAKCX jpJklP"
@@ -242,7 +242,7 @@ exports[`TextInput renders correctly when passed size of md 1`] = `
      
   </label>
   <input
-    className="sc-fjdhpX haAhsH"
+    className="sc-fjdhpX hJInRm"
     id="test"
     name="test"
     onChange={[Function]}
@@ -251,7 +251,7 @@ exports[`TextInput renders correctly when passed size of md 1`] = `
     value={undefined}
   />
   <div
-    className="sc-VigVT gxJVhO sc-iwsKbI cvmNkQ sc-bxivhb bOooiJ sc-htpNat kJJtsW"
+    className="sc-VigVT dRmSPC sc-iwsKbI cvmNkQ sc-bxivhb gbjEOC sc-htpNat kJJtsW"
   >
     <div
       className="Panel-body sc-ifAKCX jpJklP"
@@ -297,7 +297,7 @@ exports[`TextInput renders correctly when passed size of sm 1`] = `
      
   </label>
   <input
-    className="sc-fjdhpX haAhsH"
+    className="sc-fjdhpX hJInRm"
     id="test"
     name="test"
     onChange={[Function]}
@@ -306,7 +306,7 @@ exports[`TextInput renders correctly when passed size of sm 1`] = `
     value={undefined}
   />
   <div
-    className="sc-VigVT gxJVhO sc-iwsKbI cvmNkQ sc-bxivhb bOooiJ sc-htpNat kJJtsW"
+    className="sc-VigVT dRmSPC sc-iwsKbI cvmNkQ sc-bxivhb gbjEOC sc-htpNat kJJtsW"
   >
     <div
       className="Panel-body sc-ifAKCX jpJklP"
@@ -352,7 +352,7 @@ exports[`TextInput renders correctly when passed size of xl 1`] = `
      
   </label>
   <input
-    className="sc-fjdhpX haAhsH"
+    className="sc-fjdhpX hJInRm"
     id="test"
     name="test"
     onChange={[Function]}
@@ -361,7 +361,7 @@ exports[`TextInput renders correctly when passed size of xl 1`] = `
     value={undefined}
   />
   <div
-    className="sc-VigVT gxJVhO sc-iwsKbI cvmNkQ sc-bxivhb bOooiJ sc-htpNat kJJtsW"
+    className="sc-VigVT dRmSPC sc-iwsKbI cvmNkQ sc-bxivhb gbjEOC sc-htpNat kJJtsW"
   >
     <div
       className="Panel-body sc-ifAKCX jpJklP"
@@ -396,7 +396,7 @@ exports[`TextInput renders correctly when passed size of xl 1`] = `
 
 exports[`TextInput renders correctly when passed size of xs 1`] = `
 <div
-  className="sc-jTzLTM flBsjv"
+  className="sc-jTzLTM khSvad"
   size="xs"
 >
   <label
@@ -407,7 +407,7 @@ exports[`TextInput renders correctly when passed size of xs 1`] = `
      
   </label>
   <input
-    className="sc-fjdhpX haAhsH"
+    className="sc-fjdhpX hJInRm"
     id="test"
     name="test"
     onChange={[Function]}
@@ -416,7 +416,7 @@ exports[`TextInput renders correctly when passed size of xs 1`] = `
     value={undefined}
   />
   <div
-    className="sc-VigVT gxJVhO sc-iwsKbI cvmNkQ sc-bxivhb bOooiJ sc-htpNat kJJtsW"
+    className="sc-VigVT dRmSPC sc-iwsKbI cvmNkQ sc-bxivhb gbjEOC sc-htpNat kJJtsW"
   >
     <div
       className="Panel-body sc-ifAKCX jpJklP"
@@ -451,7 +451,7 @@ exports[`TextInput renders correctly when passed size of xs 1`] = `
 
 exports[`TextInput renders correctly when passed size of xs 2`] = `
 <div
-  className="sc-jTzLTM flBsjv"
+  className="sc-jTzLTM khSvad"
   size="xs"
 >
   <label
@@ -462,7 +462,7 @@ exports[`TextInput renders correctly when passed size of xs 2`] = `
      
   </label>
   <input
-    className="sc-fjdhpX haAhsH"
+    className="sc-fjdhpX hJInRm"
     id="test"
     name="test"
     onChange={[Function]}
@@ -471,7 +471,7 @@ exports[`TextInput renders correctly when passed size of xs 2`] = `
     value={undefined}
   />
   <div
-    className="sc-VigVT gxJVhO sc-iwsKbI cvmNkQ sc-bxivhb bOooiJ sc-htpNat kJJtsW"
+    className="sc-VigVT dRmSPC sc-iwsKbI cvmNkQ sc-bxivhb gbjEOC sc-htpNat kJJtsW"
   >
     <div
       className="Panel-body sc-ifAKCX jpJklP"
@@ -517,7 +517,7 @@ exports[`TextInput renders correctly when passed type of email 1`] = `
      
   </label>
   <input
-    className="sc-fjdhpX haAhsH"
+    className="sc-fjdhpX hJInRm"
     id="test"
     name="test"
     onChange={[Function]}
@@ -526,7 +526,7 @@ exports[`TextInput renders correctly when passed type of email 1`] = `
     value={undefined}
   />
   <div
-    className="sc-VigVT gxJVhO sc-iwsKbI cvmNkQ sc-bxivhb bOooiJ sc-htpNat kJJtsW"
+    className="sc-VigVT dRmSPC sc-iwsKbI cvmNkQ sc-bxivhb gbjEOC sc-htpNat kJJtsW"
   >
     <div
       className="Panel-body sc-ifAKCX jpJklP"
@@ -572,7 +572,7 @@ exports[`TextInput renders correctly when passed type of number 1`] = `
      
   </label>
   <input
-    className="sc-fjdhpX haAhsH"
+    className="sc-fjdhpX hJInRm"
     id="test"
     name="test"
     onChange={[Function]}
@@ -581,7 +581,7 @@ exports[`TextInput renders correctly when passed type of number 1`] = `
     value={undefined}
   />
   <div
-    className="sc-VigVT gxJVhO sc-iwsKbI cvmNkQ sc-bxivhb bOooiJ sc-htpNat kJJtsW"
+    className="sc-VigVT dRmSPC sc-iwsKbI cvmNkQ sc-bxivhb gbjEOC sc-htpNat kJJtsW"
   >
     <div
       className="Panel-body sc-ifAKCX jpJklP"
@@ -627,7 +627,7 @@ exports[`TextInput renders correctly when passed type of password 1`] = `
      
   </label>
   <input
-    className="sc-fjdhpX haAhsH"
+    className="sc-fjdhpX hJInRm"
     id="test"
     name="test"
     onChange={[Function]}
@@ -636,7 +636,7 @@ exports[`TextInput renders correctly when passed type of password 1`] = `
     value={undefined}
   />
   <div
-    className="sc-VigVT gxJVhO sc-iwsKbI cvmNkQ sc-bxivhb bOooiJ sc-htpNat kJJtsW"
+    className="sc-VigVT dRmSPC sc-iwsKbI cvmNkQ sc-bxivhb gbjEOC sc-htpNat kJJtsW"
   >
     <div
       className="Panel-body sc-ifAKCX jpJklP"
@@ -682,7 +682,7 @@ exports[`TextInput renders correctly when passed type of tel 1`] = `
      
   </label>
   <input
-    className="sc-fjdhpX haAhsH"
+    className="sc-fjdhpX hJInRm"
     id="test"
     name="test"
     onChange={[Function]}
@@ -691,7 +691,7 @@ exports[`TextInput renders correctly when passed type of tel 1`] = `
     value={undefined}
   />
   <div
-    className="sc-VigVT gxJVhO sc-iwsKbI cvmNkQ sc-bxivhb bOooiJ sc-htpNat kJJtsW"
+    className="sc-VigVT dRmSPC sc-iwsKbI cvmNkQ sc-bxivhb gbjEOC sc-htpNat kJJtsW"
   >
     <div
       className="Panel-body sc-ifAKCX jpJklP"

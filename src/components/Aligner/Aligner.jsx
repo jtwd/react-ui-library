@@ -22,7 +22,6 @@ const StyledContainer = styled.div`
       ${trimChildren('hor')
     }
   `}
-  
 `
 
 function getAlignerContents (items, fixed, ratio, alignChildren) {

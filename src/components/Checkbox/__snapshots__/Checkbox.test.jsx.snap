@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox component renders a checkbox by default 1`] = `
+<withHandlers(withState(withHandlers(withProps(Checkbox))))
+  hasFocus={false}
+  htmlId="chkbox1"
+  label="Default checkbox"
+  toggleFoc={[Function]}
+  value="yes"
+/>
+`;
+
+exports[`Checkbox component renders a checked checkbox when given the isChecked prop 1`] = `
+<withHandlers(withState(withHandlers(withProps(Checkbox))))
+  hasFocus={false}
+  htmlId="chkbox1"
+  isChecked={true}
+  label="Default checkbox"
+  toggleFoc={[Function]}
+  value="yes"
+/>
+`;

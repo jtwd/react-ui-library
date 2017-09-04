@@ -108,4 +108,9 @@ describe('Button component', () => {
     const component = shallow(<Button icon="qwerty" />)
     expect(component).toMatchSnapshot()
   })
+
+  it('should render a disabled button', () => {
+    const component = shallow(<Button disabled>Disabled</Button>)
+    expect(component).toMatchSnapshot()
+  })
 })

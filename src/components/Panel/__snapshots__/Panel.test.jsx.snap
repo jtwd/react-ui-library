@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Panel aligns footer content to the right 1`] = `
+<div
+  className="sc-bwzfXH bVxRpy sc-bdVaJa igwadd"
+>
+  <div
+    className="Panel-body sc-htpNat hKzHqg"
+  >
+    Panel content
+  </div>
+  <div
+    className="sc-ifAKCX eVdxlc"
+  >
+    Panel footer
+  </div>
+</div>
+`;
+
+exports[`Panel renders a header and footer 1`] = `
+<div
+  className="sc-bwzfXH bVxRpy sc-bdVaJa igwadd"
+>
+  <div
+    className="sc-bxivhb dZLVUl"
+  >
+    Panel header
+  </div>
+  <div
+    className="Panel-body sc-htpNat hKzHqg"
+  >
+    Panel content
+  </div>
+  <div
+    className="sc-ifAKCX AMMvi"
+  >
+    Panel footer
+  </div>
+</div>
+`;
+
+exports[`Panel renders correctly by default 1`] = `
+<div
+  className="sc-bwzfXH bVxRpy sc-bdVaJa igwadd"
+>
+  <div
+    className="Panel-body sc-htpNat hKzHqg"
+  >
+    Panel content
+  </div>
+</div>
+`;
+
+exports[`Panel renders footer 1`] = `
+<div
+  className="sc-bwzfXH bVxRpy sc-bdVaJa igwadd"
+>
+  <div
+    className="Panel-body sc-htpNat hKzHqg"
+  >
+    Panel content
+  </div>
+  <div
+    className="sc-ifAKCX AMMvi"
+  >
+    Panel footer
+  </div>
+</div>
+`;
+
+exports[`Panel renders footer when passed a component 1`] = `
+<div
+  className="sc-bwzfXH bVxRpy sc-bdVaJa igwadd"
+>
+  <div
+    className="Panel-body sc-htpNat hKzHqg"
+  >
+    Panel content
+  </div>
+  <div
+    className="sc-ifAKCX AMMvi"
+  >
+    <span>
+      Panel footer 
+      <strong>
+        component
+      </strong>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Panel renders header 1`] = `
+<div
+  className="sc-bwzfXH bVxRpy sc-bdVaJa igwadd"
+>
+  <div
+    className="sc-bxivhb dZLVUl"
+  >
+    Panel header
+  </div>
+  <div
+    className="Panel-body sc-htpNat hKzHqg"
+  >
+    Panel content
+  </div>
+</div>
+`;
+
+exports[`Panel renders header when passed a component 1`] = `
+<div
+  className="sc-bwzfXH bVxRpy sc-bdVaJa igwadd"
+>
+  <div
+    className="sc-bxivhb dZLVUl"
+  >
+    <span>
+      Panel header 
+      <strong>
+        component
+      </strong>
+    </span>
+  </div>
+  <div
+    className="Panel-body sc-htpNat hKzHqg"
+  >
+    Panel content
+  </div>
+</div>
+`;

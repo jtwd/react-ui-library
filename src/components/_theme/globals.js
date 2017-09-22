@@ -13,8 +13,6 @@ const baseFontSizes = {
   wide: '20px'
 }
 
-
-
 /* eslint-disable */
 injectGlobal`
   ${normalize} /* reset browser presets */
@@ -53,7 +51,7 @@ injectGlobal`
   
   /* Track */
   ::-webkit-scrollbar-track {
-      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.6); 
       -webkit-border-radius: 10px;
       border-radius: 10px;
       background: rgba(0,0,0,.25);
@@ -64,11 +62,11 @@ injectGlobal`
       -webkit-border-radius: 10px;
       border-radius: 10px;
       background: ${rgba(yellow, .66)};
-      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-      opacity: .3;
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.6);
   }
   ::-webkit-scrollbar-thumb:hover {
     background: ${rgba(yellow, .85)};
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
   }
   ::-webkit-scrollbar-thumb:window-inactive {
     background: ${rgba(yellow, .33)};

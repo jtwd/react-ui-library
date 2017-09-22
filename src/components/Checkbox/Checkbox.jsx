@@ -50,6 +50,23 @@ Checkbox.defaultProps = {
   isChecked: false
 }
 
+const enhance = compose(
+  withFocus,
+  withChecked,
+  withProps(({ isChecked, value, label }) => {
+    // if value is not provided, use label
+    let newValue = label
+    if (value) newValue = value
+    return {
+      iconName: isChecked ? 'checkboxOn' : 'checkboxOff',
+      value: newValue
+    }
+  })
+)
+
+export default enhance(Checkbox)
+
+/*
 export default compose(
   withFocus,
   withChecked,
@@ -63,3 +80,4 @@ export default compose(
     }
   })
 )(Checkbox)
+*/

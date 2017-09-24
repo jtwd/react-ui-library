@@ -4096,6 +4096,10 @@ loader-utils@^1.0.1, loader-utils@^1.0.2, loader-utils@^1.1.0:
     emojis-list "^2.0.0"
     json5 "^0.5.0"
 
+loadjs@^3.3.1:
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/loadjs/-/loadjs-3.5.1.tgz#01ce858f841d4f424a018214642e03f2f9a9dfde"
+
 locate-path@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/locate-path/-/locate-path-2.0.0.tgz#2b568b265eec944c6d9c0de9c3dbbbca0354cd8e"
@@ -5337,7 +5341,7 @@ prop-types@15.5.8:
   dependencies:
     fbjs "^0.8.9"
 
-prop-types@^15.5.10, prop-types@^15.5.4:
+prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.8:
   version "15.5.10"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.5.10.tgz#2797dfc3126182e3a95e3dfbb2e893ddd7456154"
   dependencies:
@@ -5486,7 +5490,7 @@ react-docgen@2.14.0:
     node-dir "^0.1.10"
     recast "^0.11.5"
 
-react-dom@^15.6.1:
+react-dom@^15.3.2, react-dom@^15.6.1:
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.6.1.tgz#2cb0ed4191038e53c209eb3a79a23e2a4cf99470"
   dependencies:
@@ -5505,6 +5509,16 @@ react-error-overlay@^1.0.9:
     react-dev-utils "^3.0.2"
     settle-promise "1.0.0"
     source-map "0.5.6"
+
+react-google-charts@^1.5.5:
+  version "1.5.5"
+  resolved "https://registry.yarnpkg.com/react-google-charts/-/react-google-charts-1.5.5.tgz#ffeaeca752a820a05029bd6a23516be2432d7df5"
+  dependencies:
+    debug "^2.2.0"
+    loadjs "^3.3.1"
+    prop-types "^15.5.8"
+    react "^15.3.2"
+    react-dom "^15.3.2"
 
 react-hot-loader@next:
   version "3.0.0-beta.7"
@@ -5573,7 +5587,7 @@ react-test-renderer@15.5.4:
     fbjs "^0.8.9"
     object-assign "^4.1.0"
 
-react@^15.6.1:
+react@^15.3.2, react@^15.6.1:
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/react/-/react-15.6.1.tgz#baa8434ec6780bde997cdc380b79cd33b96393df"
   dependencies:

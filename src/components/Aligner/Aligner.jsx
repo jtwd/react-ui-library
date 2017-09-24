@@ -19,12 +19,15 @@ const StyledContainer = styled.div`
       height: 100%;
       ${props.stretch && `
         align-items: stretch;
+        > div > div {
+          height: 100%;
+        }
       `}
       
       ${props.gutter && `
         > div {
           margin: 0 ${gutters[props.gutter]};
-          ${trimChildren('hor')
+          ${trimChildren('hor')}
         }
       `}
     }

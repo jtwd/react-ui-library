@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { string, arrayOf, shape, number } from 'prop-types'
 
 import Panel from '../Panel'
-import { fsMega, fsLg } from '../_theme/fontSizes'
+import { fsMega, fsLg, fsSm } from '../_theme/fontSizes'
 import { md } from '../_theme/spacers'
 import { yellow } from '../_theme/colors'
 
@@ -27,6 +27,7 @@ const StatRow = styled.div`
 
 const StatDesc = styled.span`
   padding: .5rem .75rem .5rem 0;
+  font-size: ${fsSm};
 `
 
 const StatValue = styled.strong`

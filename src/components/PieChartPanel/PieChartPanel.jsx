@@ -9,8 +9,7 @@ import { darkBlue, darkYellow, darkGreen, darkRed } from '../_theme/colors'
 
 const StyledPanel = styled(Panel)`
   .Panel-body {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0;
     min-height: 300px;
   }
 `

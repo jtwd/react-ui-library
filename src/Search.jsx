@@ -41,10 +41,10 @@ const Search = () =>
   <div>
     <h1>Search</h1>
 
-    <Aligner breakpoint="lg" gutter="sm" stretch ratio={[2,3,4]}>
+    <Aligner breakpoint="lg" gutter="md" stretch ratio={[4,6,7]}>
       <StatsPanel stats={statsData1} />
       <StatsPanel title="Set of statistics" stats={statsData2} />
-      <PieChartPanel is3D data={pieData} height="350px" title="Hours worked on project by Front end team" />
+      <PieChartPanel is3D data={pieData} height="300px" title="Hours worked on project by Front end team" />
     </Aligner>
   </div>
 

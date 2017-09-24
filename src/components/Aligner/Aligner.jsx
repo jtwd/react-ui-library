@@ -6,20 +6,27 @@ import shortid from 'shortid'
 import AlignerItem from './AlignerItem'
 import trimChildren from '../_theme/mixins/trimChildren'
 import { gutters } from "../_theme/units"
+import { sizes } from '../_theme/media'
+
+const baseSizes = Object.assign({}, sizes, { base: 0 })
 
 const StyledContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  ${props => props.stretch && `
-    align-items: stretch;
-  `}
-  
-  ${props => props.gutter && `
-    > div {
-      margin: 0 ${gutters[props.gutter]};
-      ${trimChildren('hor')
+  ${props => props.breakpoint && `
+    @media screen and (min-width: ${baseSizes[props.breakpoint]}px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      ${props.stretch && `
+        align-items: stretch;
+      `}
+      
+      ${props.gutter && `
+        > div {
+          margin: 0 ${gutters[props.gutter]};
+          ${trimChildren('hor')
+        }
+      `}
     }
   `}
 `
@@ -44,10 +51,10 @@ function getAlignerContents (items, fixed, ratio, alignChildren) {
 }
 
 /** Flexbox layout helper for alignment */
-function Aligner({children, fixed, stretch, ratio, alignChildren, gutter, ...props}) {
+function Aligner({children, fixed, stretch, ratio, alignChildren, gutter, breakpoint, ...props}) {
   const contents = (children.length) ? getAlignerContents(children, fixed, ratio, alignChildren) : children
   return (
-    <StyledContainer stretch={stretch} gutter={gutter} {...props}>{contents}</StyledContainer>
+    <StyledContainer stretch={stretch} gutter={gutter} breakpoint={breakpoint} {...props}>{contents}</StyledContainer>
   )
 }
 
@@ -63,7 +70,9 @@ Aligner.propTypes = {
   /** Stretch children to fill container */
   stretch: bool,
   /** Ratio of children widths */
-  ratio: arrayOf(number)
+  ratio: arrayOf(number),
+  /** Point at which it switches away from 1 col layout */
+  breakpoint: oneOf(Object.keys(baseSizes))
 }
 
 Aligner.defaultProps = {
@@ -71,7 +80,8 @@ Aligner.defaultProps = {
   alignChildren: null,
   gutter: null,
   stretch: false,
-  ratio: null
+  ratio: null,
+  breakpoint: 'base'
 }
 
 export default Aligner

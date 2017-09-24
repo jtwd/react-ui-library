@@ -21,12 +21,12 @@ const StatRow = styled.div`
   justify-content: space-between;
   align-items: center;
   ${props => props.alt && `
-    background: rgba(0,0,0,.3);
+    background: rgba(0,0,0,.15);
   `}
 `
 
 const StatDesc = styled.span`
-  padding: .5rem 0;
+  padding: .5rem .75rem .5rem 0;
 `
 
 const StatValue = styled.strong`

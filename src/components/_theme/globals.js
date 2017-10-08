@@ -1,10 +1,10 @@
 import { injectGlobal } from 'styled-components'
+import { rgba } from 'polished'
 import normalize from './normalize'
 import fonts from './fonts'
 import { primary, light, dark, trans } from './palette'
 import { baseLineHeight, primaryNormal } from './units'
 import media from './media'
-import { rgba } from './utils/utils.colors'
 import { baseFontSizes } from './fontSizes'
 
 /* eslint-disable */

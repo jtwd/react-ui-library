@@ -1,11 +1,11 @@
-import {transWhite, transBlackLight, transBlackDark, white, lightRed, red, darkRed, yellow, darkYellow } from "./colors"
+import { trans, light, alert, primary } from "./palette"
 import {xs} from "./spacers"
 import {transitions, radiusRound} from "./units"
 
 const inputStyles = `
   border: 2px solid;
-  background: ${transBlackLight};
-  color: ${white};
+  background: ${trans(1)};
+  color: ${light()};
   padding: ${xs};
   transition: ${transitions.hover};
   border-radius: ${radiusRound};
@@ -16,16 +16,16 @@ const inputStyles = `
 export function getInputStyles(error) {
   return `
     ${inputStyles}
-    border-color: ${error ? lightRed : transWhite};
+    border-color: ${error ? alert('light') : light('trans')};
     &:hover {
-      border-color: ${(error ? red : white)};
+      border-color: ${(error ? alert() : light())};
     }
     &:focus {
-      border-color: ${(error ? darkRed : yellow)};
-      background: ${transBlackDark};
+      border-color: ${(error ? alert('dark') : primary())};
+      background: ${trans(4)};
       outline: 0;
       &:hover {
-        border-color: ${(error ? darkRed : darkYellow)};
+        border-color: ${(error ? alert('dark') : primary('dark'))};
       }
     }
   `

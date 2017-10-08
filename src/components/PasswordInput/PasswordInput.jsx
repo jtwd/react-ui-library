@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import { string, bool, func, number } from 'prop-types'
 
-import { yellow } from '../_theme/colors'
+import { primary } from '../_theme/palette'
 import TextInput from '../TextInput'
 import Icon from '../Icon'
 
@@ -15,7 +15,7 @@ const Toggle = styled.label`
   
   &:hover,
   &:focus {
-    color: ${yellow};
+    color: ${primary()};
   }
 `
 

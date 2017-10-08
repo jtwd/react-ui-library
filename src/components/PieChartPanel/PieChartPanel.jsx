@@ -5,7 +5,7 @@ import {Chart} from 'react-google-charts'
 import shortid from 'shortid'
 
 import Panel from '../Panel'
-import { darkBlue, darkYellow, darkGreen, darkRed } from '../_theme/colors'
+import { primary, secondary, confirm, alert, light } from '../_theme/palette'
 
 const StyledPanel = styled(Panel)`
   .Panel-body {
@@ -23,11 +23,11 @@ function PieChartPanel({data, title, is3D, height, ...props}) {
     height,
     options: {
       backgroundColor: 'transparent',
-      colors: [darkBlue, darkYellow, darkGreen, darkRed],
+      colors: [secondary('dark'), primary('dark'), confirm('dark'), alert('dark')],
       fontSize: 16,
       fontName: 'Raleway',
       legend: {
-        textStyle: { color: 'white', fontSize: 16}
+        textStyle: { color: light(), fontSize: 16}
       },
       is3D,
       height,

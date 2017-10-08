@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 import Loading from '../Loading'
 import Aligner from '../Aligner'
-import {transBlack, yellow} from "../_theme/colors"
+import {trans, primary} from "../_theme/palette"
 import {transitions} from "../_theme/units"
 import {md} from "../_theme/spacers"
 
@@ -14,7 +14,7 @@ const Overlay = styled(Aligner)`
   left: 0;
   bottom: 0;
   right: 0;
-  background: ${transBlack};
+  background: ${trans()};
   z-index: -1;
   overflow: hidden;
   transition: opacity ${transitions.fadeIn};
@@ -49,7 +49,7 @@ LoadingOverlay.propTypes = {
 
 LoadingOverlay.defaultProps = {
   active: false,
-  color: yellow
+  color: primary()
 }
 
 export default LoadingOverlay

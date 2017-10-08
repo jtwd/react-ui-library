@@ -1,36 +1,21 @@
-import { lighten, darken, rgba } from "polished";
+import { rgba } from 'polished'
+import colors from "./colors";
+import generateColorVariations from './utils/generateColorVariations'
 
-import colors from "./colors2";
-
-function generateVariations(color, variations) {
-  const colorRange = variations.map(variant => {
-    const type = Object.keys(variant)[0];
-    switch (type) {
-      case "l":
-        return lighten(variant[type], color.toString());
-      case "d":
-        return darken(variant[type], color.toString());
-      case "a":
-        return rgba(color.toString(), variant[type]);
-      default:
-        return color;
-    }
-  });
-  return colorRange;
-}
-
-const variations = [{ o: null }, { d: 0.08 }, { l: 0.08 }, { a: 0.5 }];
+const variations = [{ 'o': null }, { 'dark': 0.08 }, { 'light': 0.08 }, { 'trans': 0.5 }];
 
 const palette = {
-  primary: generateVariations(colors.yellow, variations),
-  secondary: generateVariations(colors.blue, variations),
-  tertiary: generateVariations(colors.grey, variations),
-  dark: generateVariations(colors.black, variations),
-  light: generateVariations(colors.white, variations)
+  primary: generateColorVariations(colors.yellow, variations),
+  secondary: generateColorVariations(colors.blue, variations),
+  tertiary: generateColorVariations(colors.grey, variations),
+  dark: generateColorVariations(colors.black, variations),
+  light: generateColorVariations(colors.white, variations),
+  alert: generateColorVariations(colors.red, variations),
+  confirm: generateColorVariations(colors.green, variations)
 };
 
 function getColor(color, variant) {
-  const variationsKey = { o: 0, d: 1, l: 2, a: 3 };
+  const variationsKey = { 'o': 0, 'dark': 1, 'light': 2, 'trans': 3 };
   return palette[color][variationsKey[variant]];
 }
 
@@ -42,7 +27,7 @@ export function secondary(variant = "o") {
   return getColor("secondary", variant);
 }
 
-export function teriary(variant = "o") {
+export function tertiary(variant = "o") {
   return getColor("tertiary", variant);
 }
 
@@ -52,4 +37,28 @@ export function dark(variant = "o") {
 
 export function light(variant = "o") {
   return getColor("light", variant);
+}
+
+export function alert(variant = "o") {
+  return getColor("alert", variant);
+}
+
+export function confirm(variant = "o") {
+  return getColor("confirm", variant);
+}
+
+export function trans(amount, black = true) {
+  const color = black ? '#000000' : '#ffffff'
+  switch (amount) {
+    case 1:
+      return rgba(color, 0.2)
+    case 2:
+      return rgba(color, 0.4)
+    case 3:
+      return rgba(color, 0.6)
+    case 4:
+      return rgba(color, 0.8)
+    default:
+      return rgba(color, 0.5)
+  }
 }

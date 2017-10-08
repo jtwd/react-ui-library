@@ -1,65 +1,65 @@
-import { transWhiteLight, transBlackLight, transDarkRed, transDarkGreen, yellow, lightYellow, lightBlue } from '../_theme/colors'
+import { trans, alert, confirm, primary, secondary } from '../_theme/palette'
 import { borderLine } from "../_theme/units"
 
 export const panel = {
   default: `
     border: ${borderLine.default};
-    background: ${transWhiteLight};
+    background: ${trans(1, false)};
   `,
   primary: `
     border: ${borderLine.primary};
-    background: ${transWhiteLight};
-    color: ${lightYellow};
+    background: ${trans(1, false)};
+    color: ${primary('light')};
   `,
   secondary: `
     border: ${borderLine.secondary};
-    background: ${transWhiteLight};
-    color: ${lightBlue};
+    background: ${trans(1, false)};
+    color: ${secondary('light')};
   `,
   danger: `
     border: ${borderLine.danger};
-    background: ${transDarkRed};
+    background: ${alert('dark')};
   `,
   success: `
     border: ${borderLine.success};
-    background: ${transDarkGreen};
+    background: ${confirm('dark')};
   `,
 }
 export const header = {
   default: `
     border-bottom: ${borderLine.default};
-    background: ${transBlackLight};
+    background: ${trans(1)};
   `,
   primary: `
-    background: ${transBlackLight};
-    color: ${yellow};
+    background: ${trans(1)};
+    color: ${primary()};
   `,
   secondary: `
-    background: ${transBlackLight};
-    color: ${lightBlue};
+    background: ${trans(1)};
+    color: ${secondary('light')};
   `,
   danger: `
-    background: ${transBlackLight};
+    background: ${trans(1)};
   `,
   success: `
-    background: ${transBlackLight};
+    background: ${trans(1)};
   `,
 }
 export const footer = {
   default: `
-    background: ${transBlackLight};
+    background: ${trans(1)};
     border-top: ${borderLine.default};
   `,
   primary: `
-    background: ${transBlackLight};
+    background: ${trans(1)};
   `,
   secondary: `
-    background: ${transBlackLight};
+    background: ${trans(1)};
   `,
   danger: `
-    background: ${transBlackLight};
+    background: ${trans(1)};
   `,
   success: `
-    background: ${transBlackLight};
+    background: ${trans(1)};
   `
 }

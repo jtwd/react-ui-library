@@ -1,20 +1,13 @@
 import styled from "styled-components";
 
-import {
-  transBlack,
-  transBlackLight,
-  transBlackDark,
-  transWhiteDark,
-  white
-} from "../_theme/colors";
 import { radiusRound, transitions } from "../_theme/units";
 import { xxs, xs } from "../_theme/spacers";
 import trimChildren from "../_theme/mixins/trimChildren";
-import { primary } from "../_theme/palette";
+import { primary, trans, light } from "../_theme/palette";
 
 const hoverFocusStyles = `
-  background: ${transBlack};
-  color: ${white};
+  background: ${trans()};
+  color: ${light()};
 `;
 
 export const StyledLabel = styled.label`
@@ -23,11 +16,12 @@ export const StyledLabel = styled.label`
   display: block;
   cursor: pointer;
   border-radius: ${radiusRound};
-  background: ${transBlackLight};
+  background: ${trans(1)};
   transition: ${transitions.hover};
-  color: ${transWhiteDark};
+  color: ${trans(4, false)};
   margin-bottom: ${xxs};
-  ${trimChildren("ver")} &:hover {
+  ${trimChildren("ver")} 
+  &:hover {
     ${hoverFocusStyles};
   }
 
@@ -39,16 +33,16 @@ export const StyledLabel = styled.label`
       props.checked &&
       `
     color: ${primary()};
-    background: ${transBlack};
+    background: ${trans()};
     &:hover, &:focus {
-      color: ${primary("d")};
+      color: ${primary("dark")};
     }
   `} ${props =>
       props.checked &&
       props.focus &&
       `
-    color: ${primary("d")};
-    background: ${transBlackDark};
+    color: ${primary("dark")};
+    background: ${trans(4)};
   `};
 `;
 

@@ -3,13 +3,13 @@ import { string } from 'prop-types'
 import styled from 'styled-components'
 
 import { getInputStyles, fieldSizes } from "../_theme/forms"
-import { lightRed } from '../_theme/colors'
+import { alert } from '../_theme/palette'
 import { xxs, xs, md, lg } from '../_theme/spacers'
 import Message from '../Message'
 import Icon from '../Icon'
 
 const Error = styled(Message)`
-  color: ${lightRed};
+  color: ${alert('light')};
   padding: 0;
   margin: 0;
   border: 0;

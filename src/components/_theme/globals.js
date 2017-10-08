@@ -1,7 +1,7 @@
 import { injectGlobal } from 'styled-components'
 import normalize from './normalize'
 import fonts from './fonts'
-import { siteBg, siteColor, yellow } from './colors'
+import { primary, light, dark, trans } from './palette'
 import { baseLineHeight, primaryNormal } from './units'
 import media from './media'
 import { rgba } from './utils/utils.colors'
@@ -29,8 +29,8 @@ injectGlobal`
   }
   
   body {
-    background: ${siteBg};
-    color: ${siteColor};
+    background: ${dark()};
+    color: ${light()};
     font-family: '${fonts.primary.name}', ${fonts.primary.stack};
   }
   
@@ -61,14 +61,14 @@ injectGlobal`
   ::-webkit-scrollbar-thumb {
       -webkit-border-radius: 10px;
       border-radius: 10px;
-      background: ${rgba(yellow, .66)};
-      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.6);
+      background: ${primary('trans')};
+      -webkit-box-shadow: inset 0 0 6px ${trans(3)};
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: ${rgba(yellow, .85)};
+    background: ${rgba(primary(), .85)};
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
   }
   ::-webkit-scrollbar-thumb:window-inactive {
-    background: ${rgba(yellow, .33)};
+    background: ${rgba(primary(), .33)};
   }
 `

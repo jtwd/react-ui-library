@@ -5,14 +5,14 @@ import { string, arrayOf, shape, number } from 'prop-types'
 import Panel from '../Panel'
 import { fsMega, fsLg, fsSm } from '../_theme/fontSizes'
 import { md } from '../_theme/spacers'
-import { yellow } from '../_theme/colors'
+import { primary } from '../_theme/palette'
 
 const SingleStat = styled.div`
   font-weight: bold;
   font-size: ${fsMega};
   text-align: center;
   padding: ${md};
-  color: ${yellow};
+  color: ${primary()};
 `
 const StatRow = styled.div`
   margin: 0 -1rem;
@@ -32,7 +32,7 @@ const StatDesc = styled.span`
 
 const StatValue = styled.strong`
   text-align: right;
-  color: ${yellow};
+  color: ${primary()};
   font-weight: bold;
   font-size: ${fsLg};
 `

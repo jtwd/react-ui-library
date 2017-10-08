@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { arrayOf, object } from 'prop-types'
 import Reactable from 'reactable'
 
-import { yellow, darkYellow } from '../_theme/colors'
+import { primary } from '../_theme/palette'
 import { xxs, xs, md } from '../_theme/spacers'
 
 const Table = styled(Reactable.Table)`
@@ -18,12 +18,12 @@ const Table = styled(Reactable.Table)`
   }
   
   .reactable-header-sortable {
-    color: ${yellow};
+    color: ${primary()};
     position: relative;
     padding-right: ${md};
     
     &:hover, &:focus {
-      color: ${darkYellow};
+      color: ${primary('dark')};
       cursor: pointer;
     }
   }

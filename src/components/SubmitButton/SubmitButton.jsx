@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 import Button from '../Button'
 import Loading from '../Loading'
-import {darkBlue} from "../_theme/colors"
+import {secondary} from "../_theme/palette"
 import {xs} from "../_theme/spacers"
 
 const StyledButton = styled(Button)`
@@ -26,7 +26,7 @@ const StyledLoading = styled(Loading)`
 /** Button with Submitting state - show a loading animation. Uses: Button, Loading */
 function SubmitButton ({submitting, icon, children, ...props}) {
   let buttonIcon = icon
-  const buttonLoading = submitting ? <StyledLoading size="small" height={25} color={darkBlue} /> : null
+  const buttonLoading = submitting ? <StyledLoading size="small" height={25} color={secondary('dark')} /> : null
   if (submitting && icon) buttonIcon =  null
   return (
     <StyledButton type="submit" disabled={submitting} submitting={submitting} primary icon={buttonIcon} {...props}>

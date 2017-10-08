@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { string, oneOf } from 'prop-types'
 import ReactLoading from 'react-loading'
 
-import { white } from "../_theme/colors"
+import { light } from "../_theme/palette"
 
 const StyledLoading = styled(ReactLoading)`
   opacity: .8;
@@ -32,7 +32,7 @@ Loading.propTypes = {
 }
 
 Loading.defaultProps = {
-  color: white,
+  color: light(),
   size: 'default',
   alt: 'Loading...'
 }

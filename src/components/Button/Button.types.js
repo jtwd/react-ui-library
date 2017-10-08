@@ -1,52 +1,52 @@
-import { white, black, grey, darkGrey, blue, darkBlue, yellow, lightYellow, darkYellow, red, darkRed } from '../_theme/colors'
 import boxShadowAnimation from '../_theme/mixins/boxShadowAnimation'
+import { light, trans, tertiary, secondary, primary, alert } from '../_theme/palette'
 
 const types = {
   default: `
-    color: ${white};
-    background: ${grey};
+    color: ${light()};
+    background: ${tertiary()};
     &:hover, &:focus {
-      background: ${darkGrey};
+      background: ${tertiary('dark')};
     }
     ${boxShadowAnimation('all')}
   `,
   primary: `
-    background: ${yellow};
-    color: ${blue};
+    background: ${primary()};
+    color: ${secondary()};
     &:hover, &:focus {
-      background: ${darkYellow};
-      color: ${darkBlue}
+      background: ${primary('dark')};
+      color: ${secondary('dark')}
     }
     ${boxShadowAnimation('all')}
   `,
   secondary: `
-    background: ${blue};
-    color: ${yellow};
+    background: ${secondary()};
+    color: ${primary()};
     &:hover, &:focus {
-      background: ${darkBlue};
-      color: ${lightYellow}
+      background: ${secondary('dark')};
+      color: ${primary('dark')}
     }
     ${boxShadowAnimation('all')}
   `,
   danger: `
-    background: ${red};
-    color: ${white};
+    background: ${alert()};
+    color: ${light()};
     &:hover, &:focus {
-      background: ${darkRed};
-      color: ${white}
+      background: ${alert('dark')};
+      color: ${light()}
     }
     ${boxShadowAnimation('all')}
   `,
   link: `
     background: transparent;
-    color: ${yellow};
+    color: ${primary()};
     padding-left: 0;
     padding-right: 0;
     box-shadow: none;
     &:hover, &:focus {
       background: transparent;
-      color: ${white};
-      text-shadow: 2px 2px 2px ${black};
+      color: ${light()};
+      text-shadow: 2px 2px 2px ${trans(4)};
     }
   `
 }

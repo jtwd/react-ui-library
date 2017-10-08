@@ -5,13 +5,7 @@ import { primary, light, dark, trans } from './palette'
 import { baseLineHeight, primaryNormal } from './units'
 import media from './media'
 import { rgba } from './utils/utils.colors'
-
-const baseFontSizes = {
-  base: '15px',
-  xs: '16px',
-  lg: '18px',
-  wide: '20px'
-}
+import { baseFontSizes } from './fontSizes'
 
 /* eslint-disable */
 injectGlobal`

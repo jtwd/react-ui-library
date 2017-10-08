@@ -1,8 +1,17 @@
-export const fsXs = '.8rem'
-export const fsSm = '.9rem'
-export const fsMd = '1rem'
-export const fsLg = '1.2rem'
-export const fsXl = '1.3rem'
-export const fsXxl = '1.5rem'
-export const fsHuge = '2rem'
-export const fsMega = '3rem'
+export const baseFontSizes = {
+  base: '15px',
+  xs: '16px',
+  lg: '18px',
+  wide: '20px'
+}
+
+export default {
+  'xs': '.8rem',
+  'sm': '.9rem',
+  'md': '1rem',
+  'lg': '1.2rem',
+  'xl': '1.3rem',
+  'xxl': '1.5rem',
+  'huge': '2rem',
+  'mega': '3.5rem'    
+}

@@ -3,13 +3,13 @@ import styled from 'styled-components'
 import { string, arrayOf, shape, number } from 'prop-types'
 
 import Panel from '../Panel'
-import { fsMega, fsLg, fsSm } from '../_theme/fontSizes'
+import fontSizes from '../_theme/fontSizes'
 import { md } from '../_theme/spacers'
 import { primary } from '../_theme/palette'
 
 const SingleStat = styled.div`
   font-weight: bold;
-  font-size: ${fsMega};
+  font-size: ${fontSizes.mega};
   text-align: center;
   padding: ${md};
   color: ${primary()};
@@ -27,14 +27,14 @@ const StatRow = styled.div`
 
 const StatDesc = styled.span`
   padding: .5rem .75rem .5rem 0;
-  font-size: ${fsSm};
+  font-size: ${fontSizes.sm};
 `
 
 const StatValue = styled.strong`
   text-align: right;
   color: ${primary()};
   font-weight: bold;
-  font-size: ${fsLg};
+  font-size: ${fontSizes.lg};
 `
 
 function StatItem({desc, value, index}) {

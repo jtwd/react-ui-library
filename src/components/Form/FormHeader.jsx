@@ -4,12 +4,12 @@ import styled from 'styled-components'
 
 import FormControls from '../FormControls'
 import { RequiredSymbol } from '../Label/Label.styles'
-import {fsSm} from "../_theme/fontSizes"
+import fontSizes from "../_theme/fontSizes"
 import {confirm} from "../_theme/palette"
 import {primaryNormal} from "../_theme/units"
 
 const ReqKey = styled.div`
-  font-size: ${fsSm};
+  font-size: ${fontSizes.sm};
   color: ${confirm('light')};
   font-weight: ${primaryNormal};
 `

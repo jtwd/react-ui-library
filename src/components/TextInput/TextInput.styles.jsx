@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 import { getInputStyles, fieldSizes } from "../_theme/forms"
 import { alert } from '../_theme/palette'
-import { xxs, xs, md, lg } from '../_theme/spacers'
+import spacers from '../_theme/spacers'
 import Message from '../Message'
 import Icon from '../Icon'
 
@@ -24,13 +24,13 @@ const Error = styled(Message)`
   `}
   
   > div {
-    padding: ${xxs} 0 ${xxs} ${lg};
+    padding: ${spacers.xxs} 0 ${spacers.xxs} ${spacers.lg};
     
     > i {
-      margin-right: ${xxs};
+      margin-right: ${spacers.xxs};
       position: absolute;
-      top: ${xs};
-      left: ${xxs};
+      top: ${spacers.xs};
+      left: ${spacers.xxs};
     }
   }
 `
@@ -54,7 +54,7 @@ ErrorMsg.defaultProps = {
 
 export const Field = styled.div`
   position: relative;
-  margin-bottom: ${md};
+  margin-bottom: ${spacers.md};
   
   ${props => props.size !== 'default' && `
     max-width: ${fieldSizes[props.size]};

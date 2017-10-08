@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 import Wrapper from '../Wrapper'
-import { md, sm, xs, } from '../_theme/spacers'
+import spacers from '../_theme/spacers'
 import { radiusRound, primaryBold } from '../_theme/units'
 import boxShadowAnimation from '../_theme/mixins/boxShadowAnimation'
 import getPropStylesFromTheme from '../_theme/utils/getPropStylesFromTheme'
@@ -15,7 +15,7 @@ const tm = {
 }
 
 const headFootStyles = `
-  padding: ${xs} ${md};
+  padding: ${spacers.xs} ${spacers.md};
   
   > * {
     ${trimChildren('ver')}
@@ -28,14 +28,14 @@ export const PanelWrapper = styled(Wrapper)`
   ${props => props.success && getPropStylesFromTheme(tm, 'panel', 'success')}
   ${props => props.primary && getPropStylesFromTheme(tm, 'panel', 'primary')}
   ${props => props.secondary && getPropStylesFromTheme(tm, 'panel', 'secondary')}
-  margin-bottom: ${md};
+  margin-bottom: ${spacers.md};
   border-radius: ${radiusRound};
   position: relative;
   ${boxShadowAnimation('hover')}
 `
 
 export const Body = styled.div`
-  padding: ${sm} ${md};
+  padding: ${spacers.sm} ${spacers.md};
 `
 
 export const Header = styled.div`

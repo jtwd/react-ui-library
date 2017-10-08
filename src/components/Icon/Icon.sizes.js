@@ -1,9 +1,9 @@
-import { md, lg, xl } from '../_theme/spacers'
+import spacers from '../_theme/spacers'
 
 const sizes = {
-  default: `width: ${lg};`,
-  sm: `width: ${md};`,
-  lg: `width: ${xl};`
+  default: `width: ${spacers.lg};`,
+  sm: `width: ${spacers.md};`,
+  lg: `width: ${spacers.xl};`
 }
 
 export default sizes

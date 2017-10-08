@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import Panel from '../Panel'
 import Button from '../Button'
 import Icon from '../Icon'
-import {xxs} from "../_theme/spacers"
+import spacers from "../_theme/spacers"
 import {transitions} from "../_theme/units"
 
 const { drawOut, drawIn } = transitions
@@ -39,7 +39,7 @@ const MessagePanel = styled(Panel)`
 const CloseButton = styled(Button)`
   position: absolute;
   top: .33rem;
-  right: ${xxs};
+  right: ${spacers.xxs};
   z-index: 10;
 `
 

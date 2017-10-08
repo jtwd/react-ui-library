@@ -6,7 +6,7 @@ import Loading from '../Loading'
 import Aligner from '../Aligner'
 import {trans, primary} from "../_theme/palette"
 import {transitions} from "../_theme/units"
-import {md} from "../_theme/spacers"
+import spacers from "../_theme/spacers"
 
 const Overlay = styled(Aligner)`
   position: absolute;
@@ -28,7 +28,7 @@ const Overlay = styled(Aligner)`
 `
 
 const Animation = styled(Loading)`
-  margin-bottom: ${md};
+  margin-bottom: ${spacers.md};
 `
 
 /** Overlay with loading indication. Animates in and out. Uses: Loading, Aligner */

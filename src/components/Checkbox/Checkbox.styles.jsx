@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 import { radiusRound, transitions } from "../_theme/units";
-import { xxs, xs } from "../_theme/spacers";
+import spacers from "../_theme/spacers";
 import trimChildren from "../_theme/mixins/trimChildren";
 import { primary, trans, light } from "../_theme/palette";
 
@@ -12,14 +12,14 @@ const hoverFocusStyles = `
 
 export const StyledLabel = styled.label`
   position: relative;
-  padding: ${xxs} ${xxs} ${xxs} 2.5rem;
+  padding: ${spacers.xxs} ${spacers.xxs} ${spacers.xxs} 2.5rem;
   display: block;
   cursor: pointer;
   border-radius: ${radiusRound};
   background: ${trans(1)};
   transition: ${transitions.hover};
   color: ${trans(4, false)};
-  margin-bottom: ${xxs};
+  margin-bottom: ${spacers.xxs};
   ${trimChildren("ver")} 
   &:hover {
     ${hoverFocusStyles};
@@ -49,8 +49,8 @@ export const StyledLabel = styled.label`
 export const IconWrapper = styled.span`
   display: inline-block;
   position: absolute;
-  top: ${xxs};
-  left: ${xs};
+  top: ${spacers.xxs};
+  left: ${spacers.xs};
 `;
 
 export const StyledInput = styled.input`

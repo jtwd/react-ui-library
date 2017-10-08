@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import Button from '../Button'
 import Loading from '../Loading'
 import {secondary} from "../_theme/palette"
-import {xs} from "../_theme/spacers"
+import spacers from "../_theme/spacers"
 
 const StyledButton = styled(Button)`
   position: relative;
@@ -17,7 +17,7 @@ const StyledButton = styled(Button)`
 
 const StyledLoading = styled(Loading)`
   position: absolute;
-  left: ${xs};
+  left: ${spacers.xs};
   top: 50%;
   transform: translateY(-50%);
   opacity: 1;

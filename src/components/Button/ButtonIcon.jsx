@@ -2,7 +2,7 @@ import React from 'react'
 import { string, bool } from 'prop-types'
 import styled from 'styled-components'
 
-import { sm } from '../_theme/spacers'
+import spacers from '../_theme/spacers'
 import getPropStylesFromTheme from '../_theme/utils/getPropStylesFromTheme'
 import Icon from '../Icon'
 
@@ -25,9 +25,9 @@ const tm = {
       margin-bottom: -0.2rem;
     `,
     lg: `
-      left: -${sm};
+      left: -${spacers.sm};
       top: -0.45rem;
-      margin-bottom: -1rem;
+      margin-bottom: -${spacers.md};
     `
   }
 }

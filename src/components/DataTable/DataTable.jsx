@@ -3,8 +3,9 @@ import styled from 'styled-components'
 import { arrayOf, object } from 'prop-types'
 import Reactable from 'reactable'
 
-import { primary } from '../_theme/palette'
-import { xxs, xs, md } from '../_theme/spacers'
+import { primary, trans } from '../_theme/palette'
+import spacers from '../_theme/spacers'
+import fontSizes from '../_theme/fontSizes'
 
 const Table = styled(Reactable.Table)`
   border-collapse: separate;
@@ -13,14 +14,14 @@ const Table = styled(Reactable.Table)`
   thead {
     th {
       text-align: left;
-      padding: 0 ${xs};
+      padding: 0 ${spacers.xs};
     }
   }
   
   .reactable-header-sortable {
     color: ${primary()};
     position: relative;
-    padding-right: ${md};
+    padding-right: ${spacers.md};
     
     &:hover, &:focus {
       color: ${primary('dark')};
@@ -32,9 +33,9 @@ const Table = styled(Reactable.Table)`
   .reactable-header-sort-desc {
     &::after {
       position: absolute;
-      right: ${xxs};
+      right: ${spacers.xxs};
       top: 0;
-      font-size: 0.9rem;
+      font-size: ${fontSizes.sm};
     }
   }
   
@@ -48,8 +49,8 @@ const Table = styled(Reactable.Table)`
   
   tbody {
     td, th {
-      padding: ${xxs} ${xs};
-      background: rgba(0,0,0,.5);
+      padding: ${spacers.xxs} ${spacers.xs};
+      background: ${trans()};
     }
   }
 `

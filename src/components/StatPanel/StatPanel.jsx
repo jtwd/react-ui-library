@@ -4,29 +4,29 @@ import { string, arrayOf, shape, number } from 'prop-types'
 
 import Panel from '../Panel'
 import fontSizes from '../_theme/fontSizes'
-import { md } from '../_theme/spacers'
-import { primary } from '../_theme/palette'
+import spacers from '../_theme/spacers'
+import { primary, trans } from '../_theme/palette'
 
 const SingleStat = styled.div`
   font-weight: bold;
   font-size: ${fontSizes.mega};
   text-align: center;
-  padding: ${md};
+  padding: ${spacers.md};
   color: ${primary()};
 `
 const StatRow = styled.div`
-  margin: 0 -1rem;
-  padding: 0 1rem;
+  margin: 0 -${spacers.md};
+  padding: 0 ${spacers.md};
   display: flex;
   justify-content: space-between;
   align-items: center;
   ${props => props.alt && `
-    background: rgba(0,0,0,.15);
+    background: ${trans(1)};
   `}
 `
 
 const StatDesc = styled.span`
-  padding: .5rem .75rem .5rem 0;
+  padding: ${spacers.xs} ${spacers.sm} ${spacers.xs} 0;
   font-size: ${fontSizes.sm};
 `
 

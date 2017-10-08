@@ -1,12 +1,12 @@
 import { trans, light, alert, primary } from "./palette"
-import {xs} from "./spacers"
+import spacers from "./spacers"
 import {transitions, radiusRound} from "./units"
 
 const inputStyles = `
   border: 2px solid;
   background: ${trans(1)};
   color: ${light()};
-  padding: ${xs};
+  padding: ${spacers.xs};
   transition: ${transitions.hover};
   border-radius: ${radiusRound};
   display: block;

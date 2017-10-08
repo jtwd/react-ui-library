@@ -1,4 +1,4 @@
-import { xxs, xs, sm } from './spacers'
+import spacers from './spacers'
 import { trans, alert, confirm, primary, secondary } from './palette'
 
 export const siteMaxWidth = '100%'
@@ -6,7 +6,7 @@ export const textMaxWidth = '750px'
 export const shortMaxWidth = '550px'
 export const baseLineHeight = 1.5
 export const lineHeightTight = 1.25
-export const radiusRound = xxs
+export const radiusRound = spacers.xxs
 export const radiusCircle = '50%'
 export const textShadow = `2px 2px 2px ${trans(4)}`
 export const transitions = {
@@ -28,8 +28,8 @@ export const borderLine = {
   success: `2px solid ${confirm('dark')}`
 }
 export const gutters = {
-  'sm': xxs,
-  'md': xs,
-  'lg': sm
+  'sm': spacers.xxs,
+  'md': spacers.xs,
+  'lg': spacers.sm
 }
 export const headingLevelPropType = [0, 1, 2, 3, 4, '1', '2', '3', '4']

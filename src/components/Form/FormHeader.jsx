@@ -5,12 +5,12 @@ import styled from 'styled-components'
 import FormControls from '../FormControls'
 import { RequiredSymbol } from '../Label/Label.styles'
 import fontSizes from "../_theme/fontSizes"
-import {confirm} from "../_theme/palette"
+import {alert} from "../_theme/palette"
 import {primaryNormal} from "../_theme/units"
 
 const ReqKey = styled.div`
   font-size: ${fontSizes.sm};
-  color: ${confirm('light')};
+  color: ${alert('light')};
   font-weight: ${primaryNormal};
 `
 

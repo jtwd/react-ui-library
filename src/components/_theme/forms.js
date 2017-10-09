@@ -16,7 +16,7 @@ const inputStyles = `
 export function getInputStyles(error) {
   return `
     ${inputStyles}
-    border-color: ${error ? alert('light') : light('trans')};
+    border-color: ${error ? alert('light') : trans(3, false)};
     &:hover {
       border-color: ${(error ? alert() : light())};
     }

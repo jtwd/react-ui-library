@@ -33,7 +33,7 @@ class CheckboxList extends Component {
 
   renderCheckboxes () {
     const { list, htmlId } = this.props
-    if(!list || list.lenth < 1 || !htmlId) return null
+    if (!list || list.lenth < 1 || !htmlId) return null
 
     return list.map(item => {
       const value = item[this.valueSelector]

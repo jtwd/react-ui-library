@@ -43,7 +43,7 @@ const StyledButton = styled.button`
    
   ${props => props.large && props.iconOnly && getPropStylesFromTheme(tm, 'sizes', 'iconOnlyLg')}
    
-  ${props => !props.primary && !props.secondary && !props.danger &&!props.link && getPropStylesFromTheme(tm, 'types', 'default')}
+  ${props => !props.primary && !props.secondary && !props.danger && !props.link && getPropStylesFromTheme(tm, 'types', 'default')}
    
   ${props => props.primary && getPropStylesFromTheme(tm, 'types', 'primary')}
    
@@ -62,11 +62,11 @@ const StyledButton = styled.button`
 `
 
 /** UI Buttons - Uses: Icon - Choice of sizes and types and icons */
-function Button({ primary, secondary, danger, link, large, small, icon, type, children, ...props }) {
+function Button ({ primary, secondary, danger, link, large, small, icon, type, children, ...props }) {
   const iconOnly = (children === null)
   const validIcon = (getIcon(icon) !== null)
 
-  if(iconOnly && !validIcon) return null // don't show if there is no valid contents
+  if (iconOnly && !validIcon) return null // don't show if there is no valid contents
   return (
     <StyledButton type={type} primary={primary} secondary={secondary} danger={danger} link={link} large={large} small={small} iconOnly={iconOnly} {...props}>
       {icon && <ButtonIcon iconOnly={iconOnly} icon={icon} large={large} small={small} />}

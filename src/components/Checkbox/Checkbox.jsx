@@ -5,13 +5,12 @@ import { compose, withProps } from 'recompose'
 import { IconWrapper, StyledInput, StyledLabel } from "./Checkbox.styles"
 import Icon from '../Icon'
 import withFocus from '../_enhancers/withFocus'
-import withChecked from '../_enhancers/withChecked'
 
-function Checkbox({label,htmlId, isChecked, toggleChecked, hasFocus, toggleFocus, iconName, value}) {
+function Checkbox ({label, htmlId, isChecked, toggleChecked, hasFocus, toggleFocus, iconName, value}) {
   return (
     <StyledLabel htmlFor={htmlId} checked={isChecked} focus={hasFocus}>
       <StyledInput
-        type="checkbox"
+        type='checkbox'
         id={htmlId}
         value={value}
         checked={isChecked}
@@ -52,32 +51,14 @@ Checkbox.defaultProps = {
 
 const enhance = compose(
   withFocus,
-  withChecked,
   withProps(({ isChecked, value, label }) => {
     // if value is not provided, use label
-    let newValue = label
-    if (value) newValue = value
+    const val = (!value) ? label : value
     return {
       iconName: isChecked ? 'checkboxOn' : 'checkboxOff',
-      value: newValue
+      value: val
     }
   })
 )
 
 export default enhance(Checkbox)
-
-/*
-export default compose(
-  withFocus,
-  withChecked,
-  withProps(({ isChecked, value, label }) => {
-    // if value is not provided, use label
-    let newValue = label
-    if (value) newValue = value
-    return {
-      iconName: isChecked ? 'checkboxOn' : 'checkboxOff',
-      value: newValue
-    }
-  })
-)(Checkbox)
-*/

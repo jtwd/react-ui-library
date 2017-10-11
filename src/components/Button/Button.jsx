@@ -62,13 +62,13 @@ const StyledButton = styled.button`
 `
 
 /** UI Buttons - Uses: Icon - Choice of sizes and types and icons */
-function Button ({ primary, secondary, danger, link, large, small, icon, type, children, ...props }) {
+function Button ({ primary, secondary, danger, link, large, small, icon, type, children, to, url, ...props }) {
   const iconOnly = (children === null)
   const validIcon = (getIcon(icon) !== null)
 
   if (iconOnly && !validIcon) return null // don't show if there is no valid contents
   return (
-    <StyledButton type={type} primary={primary} secondary={secondary} danger={danger} link={link} large={large} small={small} iconOnly={iconOnly} {...props}>
+    <StyledButton type={type} primary={primary} secondary={secondary} danger={danger} link={link} large={large} small={small} iconOnly={iconOnly} to={to} url={url} {...props}>
       {icon && <ButtonIcon iconOnly={iconOnly} icon={icon} large={large} small={small} />}
       {children}
     </StyledButton>
@@ -93,7 +93,11 @@ Button.propTypes = {
   /** Type of button - button, submit, reset */
   type: oneOf(['button', 'submit', 'reset']),
   /** Contents of button */
-  children: node
+  children: node,
+  /** URL is supplied if you want the button to act as an A tag */
+  url: string,
+  /** to is supplied if you want the button to act as a Router Link component */
+  to: string
 }
 
 Button.defaultProps = {
@@ -105,7 +109,9 @@ Button.defaultProps = {
   small: false,
   icon: '',
   type: 'button',
-  children: null
+  children: null,
+  to: null,
+  url: null
 }
 
 export default Button

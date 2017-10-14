@@ -2,7 +2,7 @@ import { injectGlobal } from 'styled-components'
 import { rgba } from 'polished'
 import normalize from './normalize'
 import fonts from './fonts'
-import { primary, light, dark, trans } from './palette'
+import { primary, fore, bg, trans } from './palette'
 import { baseLineHeight, primaryNormal } from './units'
 import media from './media'
 import { baseFontSizes } from './fontSizes'
@@ -23,8 +23,8 @@ injectGlobal`
   }
   
   body {
-    background: ${dark()};
-    color: ${light()};
+    background: ${bg()};
+    color: ${fore()};
     font-family: '${fonts.primary.name}', ${fonts.primary.stack};
   }
   

@@ -1,9 +1,9 @@
 import boxShadowAnimation from '../_theme/mixins/boxShadowAnimation'
-import { light, trans, tertiary, secondary, primary, alert } from '../_theme/palette'
+import { fore, trans, tertiary, secondary, primary, alert } from '../_theme/palette'
 
 const types = {
   default: `
-    color: ${light()};
+    color: ${fore()};
     background: ${tertiary()};
     &:hover, &:focus {
       background: ${tertiary('dark')};
@@ -30,10 +30,10 @@ const types = {
   `,
   danger: `
     background: ${alert()};
-    color: ${light()};
+    color: ${fore()};
     &:hover, &:focus {
       background: ${alert('dark')};
-      color: ${light()}
+      color: ${fore()}
     }
     ${boxShadowAnimation('all')}
   `,
@@ -45,7 +45,7 @@ const types = {
     box-shadow: none;
     &:hover, &:focus {
       background: transparent;
-      color: ${light()};
+      color: ${fore()};
       text-shadow: 2px 2px 2px ${trans(4)};
     }
   `

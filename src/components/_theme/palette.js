@@ -1,26 +1,23 @@
 import { rgba } from 'polished'
-import colors from "./colors";
-import generateColorVariations from './utils/generateColorVariations'
+
+import generateColorPalette, { variationsKey } from './utils/generateColorPalette'
+import getTheme from './utils/getTheme'
+import { THEME_CONTRAST_DARK } from './themes'
+import config from './config'
 
 const variations = [{ 'o': null }, { 'dark': 0.08 }, { 'light': 0.08 }, { 'trans': 0.5 }];
 
-const palette = {
-  primary: generateColorVariations(colors.yellow, variations),
-  secondary: generateColorVariations(colors.blue, variations),
-  tertiary: generateColorVariations(colors.grey, variations),
-  dark: generateColorVariations(colors.black, variations),
-  light: generateColorVariations(colors.white, variations),
-  alert: generateColorVariations(colors.red, variations),
-  confirm: generateColorVariations(colors.green, variations)
-};
+const themeColors = getTheme('colors', config.theme)
+const themeContrast = getTheme('contrast', config.theme)
+const palette = generateColorPalette(themeColors, variations)
 
-function getColor(color, variant) {
-  const variationsKey = { 'o': 0, 'dark': 1, 'light': 2, 'trans': 3 };
-  return palette[color][variationsKey[variant]];
+function getColor(color, variant, colorPalette = palette, colorVariations = variations) {
+  const key = variationsKey(colorVariations)
+  return colorPalette[color][key[variant]]
 }
 
 export function primary(variant = "o") {
-  return getColor("primary", variant);
+  return getColor("primary", variant)
 }
 
 export function secondary(variant = "o") {
@@ -31,12 +28,12 @@ export function tertiary(variant = "o") {
   return getColor("tertiary", variant);
 }
 
-export function dark(variant = "o") {
-  return getColor("dark", variant);
+export function bg(variant = "o") {
+  return getColor("bg", variant);
 }
 
-export function light(variant = "o") {
-  return getColor("light", variant);
+export function fore(variant = "o") {
+  return getColor("fore", variant);
 }
 
 export function alert(variant = "o") {
@@ -47,17 +44,17 @@ export function confirm(variant = "o") {
   return getColor("confirm", variant);
 }
 
-export function trans(amount, black = true) {
-  const color = black ? '#000000' : '#ffffff'
+export function trans(amount, invert = true, contrast = themeContrast) {
+  const color = invert ? 'black' : 'white'
   switch (amount) {
     case 1:
-      return rgba(color, 0.2)
+      return (contrast === THEME_CONTRAST_DARK) ? rgba(color, 0.2) : rgba(color, 0.1)
     case 2:
-      return rgba(color, 0.4)
+      return (contrast === THEME_CONTRAST_DARK) ? rgba(color, 0.4) : rgba(color, 0.2)
     case 3:
-      return rgba(color, 0.6)
+      return (contrast === THEME_CONTRAST_DARK) ? rgba(color, 0.6) : rgba(color, 0.3)
     case 4:
-      return rgba(color, 0.8)
+      return (contrast === THEME_CONTRAST_DARK) ? rgba(color, 0.8) : rgba(color, 0.4)
     default:
       return rgba(color, 0.5)
   }

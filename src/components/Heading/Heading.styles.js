@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
-import { light } from '../_theme/palette'
+import { fore } from '../_theme/palette'
 import fontSizes from '../_theme/fontSizes'
 import spacers from '../_theme/spacers'
 import trimChildren from '../_theme/mixins/trimChildren'
 
 const commonStyles = `
-  color: ${light()};
+  color: ${fore()};
   ${trimChildren('ver')} 
 `
 

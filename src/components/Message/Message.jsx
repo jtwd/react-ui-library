@@ -6,7 +6,7 @@ import Panel from '../Panel'
 import Button from '../Button'
 import Icon from '../Icon'
 import spacers from "../_theme/spacers"
-import {transitions} from "../_theme/units"
+import { transitions } from "../_theme/units"
 
 const { drawOut, drawIn } = transitions
 

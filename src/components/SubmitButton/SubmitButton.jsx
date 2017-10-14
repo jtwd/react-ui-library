@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 import Button from '../Button'
 import Loading from '../Loading'
-import {secondary} from "../_theme/palette"
+import { secondary } from "../_theme/palette"
 import spacers from "../_theme/spacers"
 
 const StyledButton = styled(Button)`

@@ -1,4 +1,4 @@
-import getIcon from './utils.icons'
+import getIcon from './getIcon'
 import { IconMenu } from '../icons'
 
 describe('getIcon - icon utility', () => {

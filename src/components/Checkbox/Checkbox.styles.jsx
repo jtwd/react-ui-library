@@ -3,11 +3,11 @@ import styled from "styled-components";
 import { radiusRound, transitions } from "../_theme/units";
 import spacers from "../_theme/spacers";
 import trimChildren from "../_theme/mixins/trimChildren";
-import { primary, trans, fore } from "../_theme/palette";
+import { primary, trans, light } from "../_theme/palette";
 
 const hoverFocusStyles = `
   background: ${trans()};
-  color: ${fore()};
+  color: ${light()};
 `;
 
 export const StyledLabel = styled.label`

@@ -2,8 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import {string, bool } from 'prop-types'
 
-import getIcon from '../_theme/utils/utils.icons'
-import getPropStylesFromTheme from '../_theme/utils/getPropStylesFromTheme'
+import { getIcon, getPropStylesFromTheme } from '../_theme/utils'
 import sizes from './Icon.sizes'
 
 const tm = {

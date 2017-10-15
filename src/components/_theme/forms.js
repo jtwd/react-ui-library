@@ -1,11 +1,11 @@
-import { trans, fore, alert, primary } from "./palette"
+import { trans, light, alert, primary } from "./palette"
 import spacers from "./spacers"
 import {transitions, radiusRound} from "./units"
 
 const inputStyles = `
   border: 2px solid;
   background: ${trans(1)};
-  color: ${fore()};
+  color: ${light()};
   padding: ${spacers.xs};
   transition: ${transitions.hover};
   border-radius: ${radiusRound};
@@ -18,7 +18,7 @@ export function getInputStyles(error) {
     ${inputStyles}
     border-color: ${error ? alert('light') : trans(3, false)};
     &:hover {
-      border-color: ${(error ? alert() : fore())};
+      border-color: ${(error ? alert() : light())};
     }
     &:focus {
       border-color: ${(error ? alert('dark') : primary())};

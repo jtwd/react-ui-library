@@ -1,4 +1,4 @@
-import { THEME_NIGHT } from './themes'
+import { THEME_NIGHT } from './themes/constants'
 
 export default {
   theme: THEME_NIGHT

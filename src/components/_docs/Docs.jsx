@@ -4,6 +4,7 @@ import ComponentPage from './ComponentPage'
 import componentData from '../../../config/componentData'
 
 import './docs.css'
+import '../../../node_modules/highlight.js/styles/paraiso-dark.css'
 
 export default class Docs extends Component {
   constructor(props) {

@@ -1,5 +1,6 @@
 import colors from "./colors"
 import fonts from "./fonts";
+import fontSizes from './fontSizes'
 import screenSizes from './screenSizes'
 import spacing from './spacing'
 import { THEME_CONTRAST_DARK } from '../constants'
@@ -25,7 +26,14 @@ const night = {
     tight: 1.25,
     spaced: 2
   },
-  spacing
+  spacing,
+  fontSizes,
+  maxWidths: {
+    site: '1600px',
+    full: '100%',
+    text: '76rem',
+    short: '33rem'
+  }
 }
 
 export default night

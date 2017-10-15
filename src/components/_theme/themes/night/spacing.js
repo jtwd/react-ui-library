@@ -1,4 +1,5 @@
 export default {
+  tiny: '.1rem',
   xxs: '.25rem',
   xs: '.5rem',
   sm: '.75rem',

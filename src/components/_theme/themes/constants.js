@@ -14,3 +14,9 @@ export const THEME_FONT_TYPE_SYSTEM = 'system'
 // Font styles
 export const THEME_FONT_STYLE_NORMAL = 'normal'
 export const THEME_FONT_STYLE_ITALIC = 'italic'
+
+// Color palette variation
+export const THEME_COLOR_VARIATION_LIGHT = 'light'
+export const THEME_COLOR_VARIATION_DARK = 'dark'
+export const THEME_COLOR_VARIATION_TRANS = 'trans'
+export const THEME_COLOR_VARIATION_GRAYSCALE = 'grayscale'

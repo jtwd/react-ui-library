@@ -4,8 +4,7 @@ import { getTheme, generateColorPalette, variationsKey } from './utils'
 import * as c from './themes/constants'
 import config from './config'
 
-const variations = [{ 'o': null }, { 'dark': 0.08 }, { 'light': 0.08 }, { 'trans': 0.5 }];
-
+const variations = getTheme('colorVariations')
 const themeColors = getTheme('colors', config.theme)
 const themeContrast = getTheme('contrast', config.theme)
 const palette = generateColorPalette(themeColors, variations)

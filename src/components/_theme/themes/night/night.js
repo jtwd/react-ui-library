@@ -16,6 +16,13 @@ const night = {
     alert: colors.red,
     confirm: colors.green
   },
+  colorVariations: [
+    { 'o': null }, 
+    { 'dark': 0.08 }, 
+    { 'light': 0.08 }, 
+    { 'trans': 0.5 }, 
+    { 'grayscale': true }
+  ],
   fonts: {
     primary: fonts.aaargh,
     secondary: fonts.raleway

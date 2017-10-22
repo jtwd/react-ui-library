@@ -6,7 +6,7 @@ import theme from './globals.theme'
 
 loadFonts(getTheme('fonts'))
 
-const tp = themeProps(theme)
+const th = themeProps(theme)
 /* eslint-disable */
 injectGlobal`
   ${normalize()} /* reset browser presets */
@@ -15,13 +15,17 @@ injectGlobal`
     box-sizing: border-box;
   }
 
+  *:focus {
+    outline: ${th.outline};
+  }
+
   html {
-    ${baseFontSizes(tp.baseFontSizes)}
-    font-weight: ${tp.siteFontWeight};
-    line-height: ${tp.baseLineHeight};
-    background: ${tp.siteBg};
-    color: ${tp.siteColor};
-    font-family: ${tp.siteFontFamily};
+    ${baseFontSizes(th.fontSizes)}
+    font-weight: ${th.fontWeight};
+    line-height: ${th.lineHeight};
+    background: ${th.backgroundColor};
+    color: ${th.color};
+    font-family: ${th.fontFamily};
   }
   
   html, body {

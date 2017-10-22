@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 
 import { light } from '../_theme/palette'
-import fontSizes from '../_theme/fontSizes'
-import spacers from '../_theme/spacers'
 import trimChildren from '../_theme/mixins/trimChildren'
+import { getTheme } from '../_theme/utils'
+
+const { fontSizes, spacing } = getTheme()
 
 const commonStyles = `
   color: ${light()};
@@ -11,7 +12,7 @@ const commonStyles = `
 `
 
 export const H2 = styled.h2`
-  margin: ${spacers.md} 0;
+  margin: ${spacing.md} 0;
   ${commonStyles}
   font-size: ${fontSizes.xxl};
   ${props => props.collapse && `
@@ -21,7 +22,7 @@ export const H2 = styled.h2`
 `
 
 export const H3 = styled.h3`
-  margin: ${spacers.sm} 0;
+  margin: ${spacing.sm} 0;
   ${commonStyles}
   font-size: ${fontSizes.xl};
   ${props => props.collapse && `
@@ -31,7 +32,7 @@ export const H3 = styled.h3`
 `
 
 export const H4 = styled.h4`
-  margin: ${spacers.sm} 0;
+  margin: ${spacing.sm} 0;
   ${commonStyles}
   font-size: ${fontSizes.lg};
   ${props => props.collapse && `
@@ -41,7 +42,7 @@ export const H4 = styled.h4`
 `
 
 export const H5 = styled.h5`
-  margin: ${spacers.xs} 0;
+  margin: ${spacing.xs} 0;
   ${commonStyles}
   font-size: ${fontSizes.md};
   ${props => props.collapse && `

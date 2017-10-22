@@ -4,9 +4,11 @@ import styled from 'styled-components'
 
 import FormControls from '../FormControls'
 import { RequiredSymbol } from '../Label/Label.styles'
-import fontSizes from "../_theme/fontSizes"
 import {alert} from "../_theme/palette"
 import {primaryNormal} from "../_theme/units"
+import { getTheme } from '../_theme/utils'
+
+const fontSizes = getTheme('fontSizes')
 
 const ReqKey = styled.div`
   font-size: ${fontSizes.sm};

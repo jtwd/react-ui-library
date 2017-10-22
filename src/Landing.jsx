@@ -13,42 +13,42 @@ const Landing = () =>
     <PageHeader title="Landing Page" />
     <div>
       <Button>Default Button</Button>
-      <Button primary>Primary Button</Button>
-      <Button secondary>Secondary Button</Button>
+      <Button to='/docs' uiStyle='primary'>Primary Button</Button>
+      <Button uiStyle='secondary'>Secondary Button</Button>
     </div>
     <div>
-      <Button small>Small Button</Button>
-      <Button primary small>
+      <Button uiSize='small'>Small Button</Button>
+      <Button uiStyle='primary' uiSize='small'>
         Small Button
       </Button>
-      <Button secondary small>
+      <Button uiStyle='secondary' uiSize='small'>
         Small Button
       </Button>
     </div>
     <div>
-      <Button large>Large Button</Button>
-      <Button primary large>
+      <Button uiSize='large'>Large Button</Button>
+      <Button uiStyle='primary' uiSize='large'>
         Large Button
       </Button>
-      <Button secondary large>
+      <Button uiStyle='secondary' uiSize='large'>
         Large Button
       </Button>
     </div>
     <div>
-      <Button icon="lock" small>
-        Login
+      <Button href="https://www.google.com" icon="caretRight" uiSize='small'>
+        Google
       </Button>
-      <Button icon="lock" primary>
-        Login
+      <Button to='/docs' icon="info" uiStyle='primary'>
+        Docs
       </Button>
-      <Button icon="lock" secondary large>
+      <Button type="submit" icon="lock" uiStyle='secondary' uiSize='large'>
         Login
       </Button>
     </div>
     <div>
-      <Button icon="menu" small />
-      <Button icon="close" primary />
-      <Button icon="edit" secondary large />
+      <Button icon="menu" uiSize='small' />
+      <Button icon="close" uiStyle='primary' />
+      <Button icon="edit" uiStyle='secondary' uiSize='large' />
     </div>
     <div>
       <IconMenu />

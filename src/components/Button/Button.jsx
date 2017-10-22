@@ -10,6 +10,7 @@ function Button ({ uiStyle, uiSize, icon, type, children, to, href, ...props }) 
   const iconOnly = (children === null)
   const validIcon = (getIcon(icon) !== null)
   const btnProps = { uiStyle, uiSize, icon, iconOnly, ...props }
+  const iconProps = {}
 
   if (iconOnly && !validIcon) return null // don't show if there is no valid contents
 
@@ -24,11 +25,19 @@ function Button ({ uiStyle, uiSize, icon, type, children, to, href, ...props }) 
     btnProps.type = type
   }
 
+  if (uiSize === 'small') {
+    iconProps.small = true
+  }
+
+  if (uiSize === 'large') {
+    iconProps.large = true
+  }
+
   return (
     <Component {...btnProps}>
       {validIcon && (
         <IconWrap icon={icon} iconOnly={iconOnly} uiSize={uiSize} uiStyle={uiStyle}>
-          <Icon icon={icon} />
+          <Icon icon={icon} {...iconProps} />
         </IconWrap>
       )}
       {children}

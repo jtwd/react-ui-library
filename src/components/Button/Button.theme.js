@@ -20,26 +20,26 @@ export default {
         iconOnlyLeft: '0',
         iconOnlyTop: '2px',
         iconLeft: '-.33rem',
-        iconTop: '-.33rem',
+        iconTop: '-.25rem',
         iconMargin: '0 0 -.66rem'
       },
       small: {
         fontSize: fontSizes.sm,
         margin: `0 ${spacing.xxs} ${spacing.sm}`,
         padding: `${spacing.xs} ${spacing.sm}`,
-        iconOnlyPadding: `${spacing.xxs} ${spacing.xxs}`,
+        iconOnlyPadding: `0.42rem ${spacing.sm}`,
         iconLeft: '-.25rem',
-        iconTop: '-.04rem',
-        iconMargin: '0 -.2rem 0'
+        iconTop: '0.06rem',
+        iconMargin: '-.2rem 0'
       },
       large: {
         fontSize: fontSizes.xl,
         margin: `0 ${spacing.xs} ${spacing.md}`,
         padding: `${spacing.md} ${spacing.lg}`,
-        iconOnlyPadding: `.85rem ${spacing.md}`,
-        iconLeft: `-${spacing.sm}`,
-        iconTop: '-.45rem',
-        iconMargin: `0 0 -${spacing.md}`
+        iconOnlyPadding: `.65rem ${spacing.md}`,
+        iconLeft: `-${spacing.xs}`,
+        iconTop: '0rem',
+        iconMargin: `-.48rem 0`
       }
     },
     uiStyle: {

@@ -1,26 +1,27 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-import { radiusRound, transitions } from "../_theme/units";
-import spacers from "../_theme/spacers";
-import trimChildren from "../_theme/mixins/trimChildren";
-import { primary, trans, light } from "../_theme/palette";
+import theme from './Checkbox.theme'
+import { themeProps } from '../_theme/utils'
+import trimChildren from '../_theme/mixins/trimChildren'
+
+const t = themeProps(theme)
 
 const hoverFocusStyles = `
-  background: ${trans()};
-  color: ${light()};
+  background: ${t.hoverBackgroundColor};
+  color: ${t.hoverColor};
 `;
 
 export const StyledLabel = styled.label`
   position: relative;
-  padding: ${spacers.xxs} ${spacers.xxs} ${spacers.xxs} 2.5rem;
+  padding: ${t.padding};
   display: block;
   cursor: pointer;
-  border-radius: ${radiusRound};
-  background: ${trans(1)};
-  transition: ${transitions.hover};
-  color: ${trans(4, false)};
-  margin-bottom: ${spacers.xxs};
-  ${trimChildren("ver")} 
+  border-radius: ${t.borderRadius};
+  background: ${t.backgroundColor};
+  transition: ${t.transition};
+  color: ${t.color};
+  margin: ${t.margin};
+  ${trimChildren('ver')} 
   &:hover {
     ${hoverFocusStyles};
   }
@@ -32,29 +33,29 @@ export const StyledLabel = styled.label`
   `} ${props =>
       props.checked &&
       `
-    color: ${primary()};
-    background: ${trans()};
+    color: ${t.checkedColor};
+    background: ${t.checkedBackgroundColor};
     &:hover, &:focus {
-      color: ${primary("dark")};
+      color: ${t.checkedHoverColor};
     }
   `} ${props =>
       props.checked &&
       props.focus &&
       `
-    color: ${primary("dark")};
-    background: ${trans(4)};
+    color: ${t.checkedHoverColor};
+    background: ${t.checkedHoverBackgroundColor};
   `};
-`;
+`
 
 export const IconWrapper = styled.span`
   display: inline-block;
   position: absolute;
-  top: ${spacers.xxs};
-  left: ${spacers.xs};
-`;
+  top: ${t.iconTop};
+  left: ${t.iconLeft};
+`
 
 export const StyledInput = styled.input`
   position: absolute;
   z-index: -1;
   opacity: 0;
-`;
+`

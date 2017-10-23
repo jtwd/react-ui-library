@@ -52,11 +52,11 @@ export function trans(amount, invert = true, contrast = themeContrast) {
     case 1:
       return (contrast === c.THEME_CONTRAST_DARK) ? rgba(color, 0.2) : rgba(color, 0.1)
     case 2:
-      return (contrast === c.THEME_CONTRAST_DARK) ? rgba(color, 0.4) : rgba(color, 0.2)
+      return (contrast === c.THEME_CONTRAST_DARK) ? rgba(color, 0.4) : rgba(color, 0.25)
     case 3:
-      return (contrast === c.THEME_CONTRAST_DARK) ? rgba(color, 0.6) : rgba(color, 0.3)
+      return (contrast === c.THEME_CONTRAST_DARK) ? rgba(color, 0.6) : rgba(color, 0.5)
     case 4:
-      return (contrast === c.THEME_CONTRAST_DARK) ? rgba(color, 0.8) : rgba(color, 0.4)
+      return (contrast === c.THEME_CONTRAST_DARK) ? rgba(color, 0.8) : rgba(color, 0.75)
     default:
       return rgba(color, 0.5)
   }

@@ -5,7 +5,9 @@ import Reactable from 'reactable'
 
 import { primary, trans } from '../_theme/palette'
 import spacers from '../_theme/spacers'
-import fontSizes from '../_theme/fontSizes'
+import { getTheme } from '../_theme/utils'
+
+const fontSizes = getTheme('fontSizes')
 
 const Table = styled(Reactable.Table)`
   border-collapse: separate;

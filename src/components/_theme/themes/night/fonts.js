@@ -13,8 +13,9 @@ export default {
       {
         weight: 700,
         styles: [c.THEME_FONT_STYLE_NORMAL, c.THEME_FONT_STYLE_ITALIC]
-      }
+      },
     ],
+    bold: 700
   },
   aaargh: {
     name: 'Aaargh',
@@ -27,7 +28,8 @@ export default {
         weight: 400,
         styles: [c.THEME_FONT_STYLE_NORMAL, c.THEME_FONT_STYLE_ITALIC]
       }
-    ]
+    ],
+    bold: 'bold'
   },
   crimson: {
     name: 'Crimson',
@@ -40,6 +42,7 @@ export default {
         weight: 400,
         styles: [c.THEME_FONT_STYLE_NORMAL]
       }
-    ]
+    ],
+    bold: 'bold'
   }
 }

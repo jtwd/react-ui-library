@@ -2,7 +2,9 @@ import styled from 'styled-components'
 
 import spacers from '../_theme/spacers'
 import { trans } from '../_theme/palette'
-import fontSize from "../_theme/fontSizes"
+import { getTheme } from '../_theme/utils'
+
+const fontSizes = getTheme('fontSizes')
 
 export const Header = styled.header`
   margin-bottom: ${spacers.xl};
@@ -10,7 +12,7 @@ export const Header = styled.header`
 `
 
 export const Title = styled.h1`
-  font-size: ${fontSize.huge};
+  font-size: ${fontSizes.huge};
   margin: 0 0 ${spacers.md};
   small {
     font-size: 75%;

@@ -1,15 +1,17 @@
 import styled from 'styled-components'
 
-import spacers from '../_theme/spacers'
 import { alert } from '../_theme/palette'
-import { primaryBold } from '../_theme/units'
-import fontSizes from "../_theme/fontSizes"
 import pseudo from '../_theme/mixins/pseudo'
+import { getTheme } from '../_theme/utils'
+
+const { fontSizes, spacing, fonts } = getTheme()
 
 export const Label = styled.label`
-  padding: ${spacers.xxs};
+  padding: ${spacing.xxs};
   display: block;
 `
+
+console.log(fontSizes)
 
 export const RequiredSymbol = styled.span`
   &::before {
@@ -17,7 +19,7 @@ export const RequiredSymbol = styled.span`
     color: ${alert('light')};
     font-size: ${fontSizes.lg};
     line-height: 1;
-    font-weight: ${primaryBold};
-    padding-right: ${spacers.xxs};
+    font-weight: ${fonts.primary.bold};
+    padding-right: ${spacing.xxs};
   }
 `

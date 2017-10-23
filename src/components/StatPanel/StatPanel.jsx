@@ -3,9 +3,11 @@ import styled from 'styled-components'
 import { string, arrayOf, shape, number } from 'prop-types'
 
 import Panel from '../Panel'
-import fontSizes from '../_theme/fontSizes'
 import spacers from '../_theme/spacers'
 import { primary, trans } from '../_theme/palette'
+import { getTheme } from '../_theme/utils'
+
+const fontSizes = getTheme('fontSizes')
 
 const SingleStat = styled.div`
   font-weight: bold;

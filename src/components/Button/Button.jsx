@@ -1,92 +1,55 @@
 import React from 'react'
-import styled from 'styled-components'
-import { bool, node, string, oneOf } from 'prop-types'
+import { node, string, oneOf } from 'prop-types'
 
-import { radiusRound, transitions, primaryBold, lineHeightTight } from '../_theme/units'
-import trimChildren from '../_theme/mixins/trimChildren'
-import { getIcon, getPropStylesFromTheme } from '../_theme/utils'
-import types from './Button.types'
-import sizes from './Button.sizes'
-import ButtonIcon from './ButtonIcon'
-
-const tm = {
-  borderRadius: radiusRound,
-  transition: transitions.hover,
-  weight: primaryBold,
-  lineHeight: lineHeightTight,
-  types,
-  sizes
-}
-
-const StyledButton = styled.button`
-  border-radius: ${tm.borderRadius};
-  transition: ${tm.transition};
-  font-weight: ${tm.weight};
-  line-height: ${tm.lineHeight};
-  border: 0;
-  cursor: pointer;
-  display: inline-block;
-  min-height: 1rem;
-  min-width: 2rem;
-  vertical-align: middle;
-
-  ${props => !props.large && !props.small && getPropStylesFromTheme(tm, 'sizes')}
-  
-  ${props => props.small && getPropStylesFromTheme(tm, 'sizes', 'sm')}
-   
-  ${props => props.large && getPropStylesFromTheme(tm, 'sizes', 'lg')}
-  
-  ${props => !props.large && !props.small && props.iconOnly && getPropStylesFromTheme(tm, 'sizes', 'iconOnly')}
-  
-  ${props => props.small && props.iconOnly && getPropStylesFromTheme(tm, 'sizes', 'iconOnlySm')}
-   
-  ${props => props.large && props.iconOnly && getPropStylesFromTheme(tm, 'sizes', 'iconOnlyLg')}
-   
-  ${props => !props.primary && !props.secondary && !props.danger && !props.link && getPropStylesFromTheme(tm, 'types', 'default')}
-   
-  ${props => props.primary && getPropStylesFromTheme(tm, 'types', 'primary')}
-   
-  ${props => props.secondary && getPropStylesFromTheme(tm, 'types', 'secondary')}
-  
-  ${props => props.danger && getPropStylesFromTheme(tm, 'types', 'danger')}
-  
-  ${props => props.link && getPropStylesFromTheme(tm, 'types', 'link')}
-  
-  ${props => props.disabled && `
-    opacity: .5;
-    pointer-events: none;
-  `}
-    
-  ${trimChildren('hor')};
-`
+import Icon from '../Icon'
+import { StyledButton, IconWrap, LinkButton, AButton } from './Button.styles'
+import { getIcon } from '../_theme/utils'
 
 /** UI Buttons - Uses: Icon - Choice of sizes and types and icons */
-function Button ({ primary, secondary, danger, link, large, small, icon, type, children, to, url, ...props }) {
+function Button ({ uiStyle, uiSize, icon, type, children, to, href, ...props }) {
   const iconOnly = (children === null)
   const validIcon = (getIcon(icon) !== null)
+  const btnProps = { uiStyle, uiSize, icon, iconOnly, ...props }
+  const iconProps = {}
 
   if (iconOnly && !validIcon) return null // don't show if there is no valid contents
+
+  let Component = StyledButton  
+  if (href) {
+    Component = StyledButton.withComponent(AButton)
+    btnProps.href = href
+  } else if (to) {
+    Component = StyledButton.withComponent(LinkButton)
+    btnProps.to = to
+  } else {
+    btnProps.type = type
+  }
+
+  if (uiSize === 'small') {
+    iconProps.small = true
+  }
+
+  if (uiSize === 'large') {
+    iconProps.large = true
+  }
+
   return (
-    <StyledButton type={type} primary={primary} secondary={secondary} danger={danger} link={link} large={large} small={small} iconOnly={iconOnly} to={to} url={url} {...props}>
-      {icon && <ButtonIcon iconOnly={iconOnly} icon={icon} large={large} small={small} />}
+    <Component {...btnProps}>
+      {validIcon && (
+        <IconWrap icon={icon} iconOnly={iconOnly} uiSize={uiSize} uiStyle={uiStyle}>
+          <Icon icon={icon} {...iconProps} />
+        </IconWrap>
+      )}
       {children}
-    </StyledButton>
+    </Component>
   )
 }
 
 Button.propTypes = {
-  /** Type of button */
-  primary: bool,
-  /** Type of button */
-  secondary: bool,
-  /** Type of button */
-  danger: bool,
-  /** Type of button */
-  link: bool,
-  /** Size of button */
-  large: bool,
-  /** Size of button */
-  small: bool,
+  /** Button style (primary, secondary, danger, default) */
+  uiStyle: oneOf(['primary', 'secondary', 'danger', 'link', 'default']),
+  /** Button size (lg, sm, default) */
+  uiSize: oneOf(['large', 'small', 'default']),
   /** Name of Icon */
   icon: string,
   /** Type of button - button, submit, reset */
@@ -94,23 +57,19 @@ Button.propTypes = {
   /** Contents of button */
   children: node,
   /** URL is supplied if you want the button to act as an A tag */
-  url: string,
+  href: string,
   /** to is supplied if you want the button to act as a Router Link component */
   to: string
 }
 
 Button.defaultProps = {
-  primary: false,
-  secondary: false,
-  danger: false,
-  link: false,
-  large: false,
-  small: false,
-  icon: '',
+  uiStyle: 'default',
+  uiSize: 'default',
+  icon: null,
   type: 'button',
   children: null,
   to: null,
-  url: null
+  href: null
 }
 
 export default Button

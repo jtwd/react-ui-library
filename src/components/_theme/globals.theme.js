@@ -1,26 +1,33 @@
-import * as palette from './palette'
+import * as c from './palette'
 import { getTheme } from './utils'
 
-const fonts = getTheme('fonts')
-const lineHeights = getTheme('lineHeights')
+const {fonts, lineHeights } = getTheme()
 
 export default {
   default: {
-    siteBg: palette.dark(),
-    siteColor: palette.light(),
-    siteFontFamily: `${fonts.primary.name}, ${fonts.primary.fallbacks}`,
-    siteFontWeight: fonts.primary.versions[0].weight,
-    baseFontSizes: {
+    backgroundColor: c.dark(),
+    color: c.light(),
+    fontFamily: `${fonts.primary.name}, ${fonts.primary.fallbacks}`,
+    fontWeight: fonts.primary.versions[0].weight,
+    fontSizes: {
       base: '15px',
       xs: '16px',
       lg: '18px',
       xxl: '20px',
       wide: '22px'
     },
-    baseLineHeight: lineHeights.base
+    outline: `2px dotted ${c.trans(4, false)}`,
+    lineHeight: lineHeights.base,
+    link: {
+      color: c.primary(),
+      textDecoration: 'none',
+      hover: {
+        color: c.primary('dark'),
+        textDecoration: 'none'
+      }
+    }
   },
   night: {
-    siteColor: palette.light('dark'),
-    siteFontFamily: `${fonts.secondary.name}, ${fonts.secondary.fallbacks}`,
+    color: c.light()
   }
 }

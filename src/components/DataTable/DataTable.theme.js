@@ -9,8 +9,6 @@ export default {
     thTextAlign: 'left',
     thPadding: `0 ${spacing.xs}`,
     sortableColor: c.primary(),
-    sortSymbolAsc: 'asc',
-    sortSymbolDesc: 'desc',
     sortablePadding: `0 ${spacing.md} 0 ${spacing.xs}`,
     sortSymbolRight: spacing.xxs,
     sortSymbolTop: '0',

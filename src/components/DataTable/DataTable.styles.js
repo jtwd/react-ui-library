@@ -39,11 +39,11 @@ const Table = styled(Reactable.Table)`
   }
   
   .reactable-header-sort-asc::after {
-    content: ${t.sortSymbolAsc};
+    content: '↑';
   }
   
   .reactable-header-sort-desc::after {
-    content: ${t.sortSymbolDesc};
+    content: '↓';
   }
   
   tbody {

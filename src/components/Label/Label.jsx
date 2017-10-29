@@ -1,8 +1,17 @@
 import React from 'react'
 import { string, bool } from 'prop-types'
+import styled from 'styled-components'
 
-import { Label as StyledLabel  } from './Label.styles'
 import Required from '../FormRequired'
+import theme from './Label.theme'
+import { themeProps } from '../_theme/utils'
+
+const th = themeProps(theme)
+
+const StyledLabel = styled.label`
+  padding: ${th.padding};
+  display: block;
+`
 
 /** Field label - can be required */
 function Label({ htmlFor, label, required }) {

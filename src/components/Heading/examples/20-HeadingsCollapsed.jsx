@@ -9,6 +9,7 @@ export default function Headings() {
       <Heading collapse level="2">Second level heading</Heading>
       <Heading collapse level="3">Third level heading</Heading>
       <Heading collapse level="4">Forth level heading</Heading>
+      <Heading collapse level='5'>Fifth level heading</Heading>
     </div>
   )
 };

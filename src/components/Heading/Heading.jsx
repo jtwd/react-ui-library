@@ -1,7 +1,7 @@
 import React from 'react'
 import { oneOf, node, bool } from 'prop-types'
 
-import { H2, H3, H4, H5 } from './Heading.styles'
+import { H2, H3, H4, H5, H6 } from './Heading.styles'
 import { headingLevelPropType } from "../_theme/units"
 
 /** Simple shell for using headings. Level 1 is a H2, level 2 a H3 and so on. H1 is reserved for the PageHeader component */
@@ -15,6 +15,8 @@ function Heading({level, children, collapse}) {
       return <H4 collapse={collapse}>{children}</H4>
     case 4:
       return <H5 collapse={collapse}>{children}</H5>
+    case 5:
+      return <H6 collapse={collapse}>{children}</H6>
     default:
       return <H2 collapse={collapse}>{children}</H2>
   }

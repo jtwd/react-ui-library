@@ -16,9 +16,9 @@ const sizes = {
 }
 
 /** Uses 'React Loading', with the bars animation */
-function Loading ({size, color, alt, ...props}) {
+function Loading ({size, color, alt, type, ...props}) {
   return (
-    <StyledLoading width={sizes[size]} color={color} type="bars" title={alt} delay={250} {...props} />
+    <StyledLoading width={sizes[size]} color={color} type={type} title={alt} delay={250} {...props} />
   )
 }
 
@@ -28,13 +28,16 @@ Loading.propTypes = {
   /** Size - (default, small, large) */
   size: oneOf(['default', 'small', 'large']),
   /** Alt - text to be shown in the title (Loading...) */
-  alt: string
+  alt: string,
+  /** Type of loading animation */
+  type: oneOf(['balls', 'bars', 'bubbles', 'cubes', 'cylon', 'spin', 'spinningBubbles', 'spokes'])
 }
 
 Loading.defaultProps = {
   color: light(),
   size: 'default',
-  alt: 'Loading...'
+  alt: 'Loading...',
+  type: 'bars'
 }
 
 export default Loading

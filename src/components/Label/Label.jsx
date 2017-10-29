@@ -1,13 +1,14 @@
 import React from 'react'
 import { string, bool } from 'prop-types'
 
-import { Label as StyledLabel, RequiredSymbol } from './Label.styles'
+import { Label as StyledLabel  } from './Label.styles'
+import Required from '../FormRequired'
 
 /** Field label - can be required */
 function Label({ htmlFor, label, required }) {
   return (
     <StyledLabel htmlFor={htmlFor}>
-      {label} {required && <RequiredSymbol title="Required field" />}
+      {label} {required && <Required />}
     </StyledLabel>
   )
 }

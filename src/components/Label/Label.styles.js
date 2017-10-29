@@ -11,8 +11,6 @@ export const Label = styled.label`
   display: block;
 `
 
-console.log(fontSizes)
-
 export const RequiredSymbol = styled.span`
   &::before {
     ${pseudo('inline-block', 'relative', '*')}

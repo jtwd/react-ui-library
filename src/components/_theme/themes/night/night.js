@@ -54,7 +54,8 @@ const night = {
   },
   shadows: {
     close: '0 2px 2px',
-    raised: '0 6px 6px'
+    raised: '0 6px 6px',
+    text: '1px 1px 1px rgba(0, 0, 0, .6)'
   }
 }
 

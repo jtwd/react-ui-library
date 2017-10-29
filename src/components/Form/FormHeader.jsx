@@ -1,20 +1,8 @@
 import React from 'react'
-import {node, bool} from 'prop-types'
-import styled from 'styled-components'
+import { node, bool } from 'prop-types'
 
 import FormControls from '../FormControls'
-import { RequiredSymbol } from '../Label/Label.styles'
-import {alert} from "../_theme/palette"
-import {primaryNormal} from "../_theme/units"
-import { getTheme } from '../_theme/utils'
-
-const fontSizes = getTheme('fontSizes')
-
-const ReqKey = styled.div`
-  font-size: ${fontSizes.sm};
-  color: ${alert('light')};
-  font-weight: ${primaryNormal};
-`
+import Required from '../FormRequired'
 
 /** Form header component. Uses: FormControls, RequireSymbol. Gets inserted into the Panel header of the Form component. Optionally displays the Required Field key */
 function FormHeader({title, reqKey}) {
@@ -22,10 +10,7 @@ function FormHeader({title, reqKey}) {
     <FormControls align='ends'>
       {title}
       {reqKey && (
-        <ReqKey>
-          <RequiredSymbol />
-          Required
-        </ReqKey>
+        <Required isKey />
       )}
     </FormControls>
   )

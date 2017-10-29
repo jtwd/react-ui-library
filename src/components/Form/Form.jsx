@@ -6,22 +6,9 @@ import Wrapper from '../Wrapper'
 import Panel from '../Panel'
 import LoadingOverlay from '../LoadingOverlay'
 import FormHeader from './FormHeader'
-import { radiusRound } from "../_theme/units"
 
 const StyledForm = styled.form`
   position: relative;
-`
-
-const Loading = styled(LoadingOverlay)`
-  border-radius: ${radiusRound};
-  
-  ${props => props.active && `
-    left: 2px;
-    top: 2px;
-    right: 2px;
-    bottom: 2px;
-    height: auto;
-  `}
 `
 
 /** Encapulates form styles with the help of: Wrapper, Panel, FormHeader components */
@@ -30,7 +17,7 @@ function Form ({submitting, title, reqKey, controls, short, text, centered, chil
   return (
     <Wrapper collapse short={short} text={text} centered={centered}>
       <StyledForm noValidate {...props}>
-        <Loading active={submitting} />
+        <LoadingOverlay panel active={submitting} />
         <Panel header={Header} footer={controls}>
           {children}
         </Panel>

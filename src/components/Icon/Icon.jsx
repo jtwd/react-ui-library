@@ -1,15 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
-import {string, bool } from 'prop-types'
+import { switchProp } from 'styled-tools'
+import {string, oneOf } from 'prop-types'
 
-import { getIcon, getPropStylesFromTheme } from '../_theme/utils'
-import sizes from './Icon.sizes'
+import { getIcon, themeProps, mapProp } from '../_theme/utils'
+import theme from './Icon.theme'
 
-const tm = {
-  sizes
-}
+const t = themeProps(theme)
 
 const StyledIcon = styled.i`
+  width: ${switchProp('uiSize', mapProp('width', t.uiSize))};
   display: inline-block;
   
   > svg {
@@ -17,33 +17,24 @@ const StyledIcon = styled.i`
     width: 100%;
     height: auto;
   }
-  
-  ${props => !props.large && !props.small && getPropStylesFromTheme(tm, 'sizes', 'default')}
-
-  ${props => props.small && getPropStylesFromTheme(tm, 'sizes', 'sm')}
-
-  ${props => props.large && getPropStylesFromTheme(tm, 'sizes', 'lg')}
 `
 
 /** Icon component - icons are from 'React icons' and are defined in the theme - icons.js */
-function Icon({icon, large, small}) {
+function Icon({icon, uiSize}) {
   const myIcon = getIcon(icon)
-  return <StyledIcon large={large} small={small}>{myIcon}</StyledIcon>
+  return <StyledIcon uiSize={uiSize}>{myIcon}</StyledIcon>
 }
 
 Icon.propTypes = {
   /** Name of icon to be displayed */
   icon: string.isRequired,
   /** Icon size */
-  large: bool,
-  /** Icon size */
-  small: bool
+  uiSize: oneOf(['small', 'large', 'default'])
 }
 
 Icon.defaultProps = {
   icon: '',
-  large: false,
-  small: false
+  uiSize: 'default'
 }
 
 export default Icon

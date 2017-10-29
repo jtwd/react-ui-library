@@ -6,11 +6,11 @@ import Icon from '../Icon'
 export default function IconSizes() {
   return (
     <div>
-      <Icon icon="eye" small />
+      <Icon icon="eye" uiSize='small' />
       &nbsp;
       <Icon icon="lock" />
       &nbsp;
-      <Icon icon="menu" large />
+      <Icon icon="menu" uiSize='large' />
     </div>
   )
 }

@@ -13,7 +13,7 @@ export const defaultColor = t.color
 export const Overlay = styled(Aligner)`
   background-color: ${t.backgroundColor};
   transition: opacity ${t.transition};
-  color: ${props => props.color ? props.color : t.color }
+  color: ${props => props.color ? props.color : t.color };
   position: absolute;
   top: 0;
   left: 0;

@@ -1,31 +1,8 @@
 import React from 'react'
 import { arrayOf, object, string, oneOf, bool } from 'prop-types'
-import styled from 'styled-components'
-
+import {headingLevelPropType} from '../_theme/units'
+import { StyledP, Li, Ol, Ul } from './List.styles'
 import Heading from '../Heading'
-import P from '../P'
-import {headingLevelPropType} from "../_theme/units"
-
-const Ul = styled.ul`
-  position: relative;
-`
-
-const Ol = styled.ol`
-  position: relative;
-`
-
-const Li = styled.li`
-  position: relative;
-  &.has-text {
-    padding-bottom: 1rem;
-  }
-`
-
-const StyledP = styled(P)`
-  &:first-of-type {
-    margin-top: 0;
-  }
-`
 
 function List ({collection, titleKey, textKey, headingLevel, ordered}) {
   const StyledList = ordered ? Ol : Ul

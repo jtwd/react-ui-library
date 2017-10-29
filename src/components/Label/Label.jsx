@@ -17,7 +17,8 @@ const StyledLabel = styled.label`
 function Label({ htmlFor, label, required }) {
   return (
     <StyledLabel htmlFor={htmlFor}>
-      {label} {required && <Required />}
+      {label} 
+      {required && <Required />}
     </StyledLabel>
   )
 }

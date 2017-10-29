@@ -2,23 +2,19 @@ import React from 'react'
 import styled from 'styled-components'
 import { string, oneOf } from 'prop-types'
 import ReactLoading from 'react-loading'
+import theme from './Loading.theme'
+import { themeProps } from '../_theme/utils'
 
-import { light } from "../_theme/palette"
+const t = themeProps(theme)
 
 const StyledLoading = styled(ReactLoading)`
-  opacity: .8;
+  opacity: ${t.opacity};
 `
-
-const sizes = {
-  default: '50px',
-  small: '25px',
-  large: '80px'
-}
 
 /** Uses 'React Loading', with the bars animation */
 function Loading ({size, color, alt, type, ...props}) {
   return (
-    <StyledLoading width={sizes[size]} color={color} type={type} title={alt} delay={250} {...props} />
+    <StyledLoading width={t.sizes[size].width} color={color} type={type} title={alt} delay={250} {...props} />
   )
 }
 
@@ -34,7 +30,7 @@ Loading.propTypes = {
 }
 
 Loading.defaultProps = {
-  color: light(),
+  color: t.color,
   size: 'default',
   alt: 'Loading...',
   type: 'bars'

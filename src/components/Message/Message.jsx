@@ -1,53 +1,8 @@
 import React, { Component } from 'react'
 import { oneOf, node, func } from 'prop-types'
-import styled from 'styled-components'
 
-import Panel from '../Panel'
-import Button from '../Button'
 import Icon from '../Icon'
-import spacers from "../_theme/spacers"
-import { transitions } from "../_theme/units"
-
-const { drawOut, drawIn } = transitions
-
-const MessagePanel = styled(Panel)`
-  position: relative;
-  transition: ${drawOut};
-  max-height: 0;
-  overflow-y: hidden;
-  opacity: 0;
-  border-width: 0;
-  
-  ${props => props.active && `
-    max-height: 500px;
-    transition: ${drawIn};
-    opacity: 1;
-    border-width: 2px;
-  `}
-  
-  ${props => props.opened && `
-    overflow-y: auto;
-  `}
-  
-  ${props => props.onClose && `
-    > div:first-child {
-      padding-right: 45px;
-    }
-  `}
-`
-
-const CloseButton = styled(Button)`
-  position: absolute;
-  top: .33rem;
-  right: ${spacers.xxs};
-  z-index: 10;
-`
-
-const MessageIcon = styled.span`
-  position: relative;
-  left: -6px;
-  top: 3px;
-`
+import { MessagePanel, CloseButton, MessageIcon } from './Message.styles'
 
 /** Message component for system messaging - Animates in and out. Can be closable. Uses: Panel, Button, Icon */
 class Message extends Component {

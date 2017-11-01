@@ -1,23 +1,22 @@
 import styled from 'styled-components'
 
-import spacers from '../_theme/spacers'
-import { trans } from '../_theme/palette'
-import { getTheme } from '../_theme/utils'
+import { themeProps } from '../_theme/utils'
+import theme from './PageHeader.theme'
 
-const fontSizes = getTheme('fontSizes')
+const t = themeProps(theme)
 
 export const Header = styled.header`
-  margin-bottom: ${spacers.xl};
-  border-bottom: 1px solid ${trans(null, false)};
+  margin: ${t.headerMargin};
+  border-bottom: ${t.borderBottom};
 `
 
 export const Title = styled.h1`
-  font-size: ${fontSizes.huge};
-  margin: 0 0 ${spacers.md};
+  font-size: ${t.fontSize};
+  margin: ${t.h1Margin};
   small {
-    font-size: 75%;
-    color: ${trans(null, false)};
+    font-size: ${t.smallFontSize};
+    color: ${t.smallColor};
     display: inline-block;
-    padding-left: ${spacers.sm};
+    padding: ${t.smallPadding};
   }
 `

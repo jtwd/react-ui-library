@@ -4,29 +4,29 @@ import styled from 'styled-components'
 
 import pseudo from '../_theme/mixins/pseudo'
 import { themeProps } from '../_theme/utils'
-import theme from './Required.theme'
+import theme from './FormRequired.theme'
 
 const th = themeProps(theme)
 
 const Symbol = styled.span`
-color: ${th.color};
-font-size: ${th.keyFontSize};
-font-weight: ${th.keyFontWeight};
-text-shadow: ${th.textShadow};
+  color: ${th.color};
+  font-size: ${th.keyFontSize};
+  font-weight: ${th.keyFontWeight};
+  text-shadow: ${th.textShadow};
 
-&::before {
-  ${props => pseudo('inline-block', 'relative', `${props.symbol}`)}
-  font-size: ${th.symbolFontSize};
-  line-height: 1;
-  font-weight: ${th.symbolFontWeight};
-  padding-right: ${th.symbolPaddingRight};
+  &::before {
+    ${props => pseudo('inline-block', 'relative', `${props.symbol}`)}
+    font-size: ${th.symbolFontSize};
+    line-height: 1;
+    font-weight: ${th.symbolFontWeight};
+    padding-right: ${th.symbolPaddingRight};
+  }
 `
 
-
 function Required ({ isKey, symbol, copy }) {
-  const props = { 
-    isKey, 
-    symbol, 
+  const props = {
+    isKey,
+    symbol,
     copy,
     title: !isKey ? copy : null
   }

@@ -10,7 +10,7 @@ import PageHeader from './components/PageHeader'
 
 const Landing = () =>
   <div>
-    <PageHeader title="Landing Page" />
+    <PageHeader title='Landing Page' />
     <div>
       <Button>Default Button</Button>
       <Button to='/docs' uiStyle='primary'>Primary Button</Button>
@@ -35,20 +35,20 @@ const Landing = () =>
       </Button>
     </div>
     <div>
-      <Button href="https://www.google.com" icon="caretRight" uiSize='small'>
+      <Button href='https://www.google.com' icon='caretRight' uiSize='small'>
         Google
       </Button>
-      <Button to='/docs' icon="info" uiStyle='primary'>
+      <Button to='/docs' icon='info' uiStyle='primary'>
         Docs
       </Button>
-      <Button type="submit" icon="lock" uiStyle='secondary' uiSize='large'>
+      <Button type='submit' icon='lock' uiStyle='secondary' uiSize='large'>
         Login
       </Button>
     </div>
     <div>
-      <Button icon="menu" uiSize='small' />
-      <Button icon="close" uiStyle='primary' />
-      <Button icon="edit" uiStyle='secondary' uiSize='large' />
+      <Button icon='menu' uiSize='small' />
+      <Button icon='close' uiStyle='primary' />
+      <Button icon='edit' uiStyle='secondary' uiSize='large' />
     </div>
     <div>
       <IconMenu />
@@ -57,10 +57,10 @@ const Landing = () =>
       <IconEdit />
       <IconLock />
     </div>
-    <Label htmlFor="an-input" required label="A required field" />
-    <TextInput htmlId="firstName" label="First name" name="firstName" onChange={() => {}} />
-    <TextInput htmlId="lastName" label="Last name" name="lastName" required onChange={() => {}} />
-    <TextInput htmlId="email" label="Email address" name="email" type="email" required placeholder="joe@bloggs.com" error="Email is required" onChange={() => {}} />
+    <Label htmlFor='an-input' required label='A required field' />
+    <TextInput htmlId='firstName' label='First name' name='firstName' onChange={() => {}} />
+    <TextInput htmlId='lastName' label='Last name' name='lastName' required onChange={() => {}} />
+    <TextInput htmlId='email' label='Email address' name='email' type='email' required placeholder='joe@bloggs.com' error='Email is required' onChange={() => {}} />
     <Wrapper text collapse>
       <Heading>Top level heading</Heading>
       <p>

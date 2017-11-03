@@ -14,7 +14,7 @@ function Button ({ uiStyle, uiSize, icon, type, children, to, href, ...props }) 
 
   if (iconOnly && !validIcon) return null // don't show if there is no valid contents
 
-  let Component = StyledButton  
+  let Component = StyledButton
   if (href) {
     Component = StyledButton.withComponent(AButton)
     btnProps.href = href

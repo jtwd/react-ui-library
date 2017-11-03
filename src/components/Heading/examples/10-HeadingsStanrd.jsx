@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 
-import Heading from '../Heading';
+import Heading from '../Heading'
 
-export default function Headings() {
+export default function Headings () {
   return (
     <div>
       <Heading>Top level heading</Heading>

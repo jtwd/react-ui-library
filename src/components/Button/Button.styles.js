@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { switchProp, ifProp } from 'styled-tools'
 import { Link } from 'react-router-dom'
 
@@ -14,12 +14,12 @@ export const StyledButton = styled.button`
   font-family: ${t.fontFamily};
   font-weight: ${t.fontWeight};
   line-height: ${t.lineHeight};
-  ${t.boxShadow && boxShadowAnimation('all')}
+  ${props => t.uiStyle[props.uiStyle].boxShadow && boxShadowAnimation('all')}
   
   font-size: ${switchProp('uiSize', mapProp('fontSize', t.uiSize))};
   margin: ${switchProp('uiSize', mapProp('margin', t.uiSize))};
-  padding: ${ifProp({iconOnly: true},   
-              switchProp('uiSize', mapProp('iconOnlyPadding', t.uiSize)), 
+  padding: ${ifProp({iconOnly: true},
+              switchProp('uiSize', mapProp('iconOnlyPadding', t.uiSize)),
               switchProp('uiSize', mapProp('padding', t.uiSize))
           )};
 
@@ -32,7 +32,7 @@ export const StyledButton = styled.button`
     background-color: ${switchProp('uiStyle', mapProp('hoverBackgroundColor', t.uiStyle))};
     color: ${switchProp('uiStyle', mapProp('hoverColor', t.uiStyle))};
     border: ${switchProp('uiStyle', mapProp('hoverBorder', t.uiStyle))};
-    box-shadow: ${t.hoverBoxShadow} ${t.boxShadowColor};
+    ${props => props.uiStyle !== 'link' && css`box-shadow: ${t.hoverBoxShadow} ${t.boxShadowColor};`}
     text-decoration: none;
   }
 
@@ -47,16 +47,16 @@ export const StyledButton = styled.button`
 `
 
 export const IconWrap = styled.span`
-  left: ${ifProp({ iconOnly: true }, 
-          switchProp('uiSize', mapProp('iconOnlyLeft', t.uiSize)), 
+  left: ${ifProp({ iconOnly: true },
+          switchProp('uiSize', mapProp('iconOnlyLeft', t.uiSize)),
           switchProp('uiSize', mapProp('iconLeft', t.uiSize))
         )};
-  top: ${ifProp({ iconOnly: true }, 
-          switchProp('uiSize', mapProp('iconOnlyTop', t.uiSize)), 
+  top: ${ifProp({ iconOnly: true },
+          switchProp('uiSize', mapProp('iconOnlyTop', t.uiSize)),
           switchProp('uiSize', mapProp('iconTop', t.uiSize))
         )};
-  margin: ${ifProp({ iconOnly: true }, 
-            '0', 
+  margin: ${ifProp({ iconOnly: true },
+            '0',
             switchProp('uiSize', mapProp('iconMargin', t.uiSize))
           )};
           

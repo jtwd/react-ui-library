@@ -11,8 +11,8 @@ export default {
     fontWeight: fonts.primary.versions[0].weight,
     fontSizes: {
       base: '14px',
-      xs: '15px',
-      lg: '16px',
+      xxs: '15px',
+      md: '16px',
       xxl: '18px',
       wide: '20px'
     },

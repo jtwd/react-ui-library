@@ -1,4 +1,4 @@
-function mapConditionalProp(prop, theme) {
+function mapConditionalProp (prop, theme) {
   const objProp = {}
 
   Object.keys(theme).forEach((type) => {

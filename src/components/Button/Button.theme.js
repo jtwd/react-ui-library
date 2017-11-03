@@ -10,7 +10,6 @@ export default {
     fontFamily: fonts.primary.name,
     fontWeight: fonts.primary.bold,
     lineHeight: lineHeights.tight,
-    boxShadow: true,
     uiSize: {
       default: {
         fontSize: fontSizes.md,
@@ -49,7 +48,8 @@ export default {
         backgroundColor: c.tertiary(),
         hoverColor: c.light(),
         hoverBackgroundColor: c.tertiary('dark'),
-        hoverBorder: '0'
+        hoverBorder: '0',
+        boxShadow: true
       },
       primary: {
         border: '0',
@@ -57,7 +57,8 @@ export default {
         backgroundColor: c.primary(),
         hoverColor: c.secondary('dark'),
         hoverBackgroundColor: c.primary('dark'),
-        hoverBorder: '0'
+        hoverBorder: '0',
+        boxShadow: true
       },
       secondary: {
         border: '0',
@@ -65,7 +66,8 @@ export default {
         backgroundColor: c.secondary(),
         hoverColor: c.primary('dark'),
         hoverBackgroundColor: c.secondary('dark'),
-        hoverBorder: '0'
+        hoverBorder: '0',
+        boxShadow: true
       },
       danger: {
         border: '0',
@@ -73,7 +75,17 @@ export default {
         backgroundColor: c.alert(),
         hoverColor: c.light(),
         hoverBackgroundColor: c.alert('dark'),
-        hoverBorder: '0'
+        hoverBorder: '0',
+        boxShadow: true
+      },
+      link: {
+        backgroundColor: 'transparent',
+        color: c.primary(),
+        hoverBackgroundColor: 'transparent',
+        hoverColor: c.light(),
+        border: '0',
+        hoverBorder: '0',
+        boxShadow: false
       }
     }
   }

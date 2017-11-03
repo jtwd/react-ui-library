@@ -1,6 +1,6 @@
-import colors from "./colors"
-import fonts from "./fonts"
-import fontSizes from "./fontSizes";
+import colors from './colors'
+import fonts from './fonts'
+import fontSizes from './fontSizes'
 import screenSizes from './screenSizes'
 import spacing from './spacing'
 import { THEME_CONTRAST_DARK } from '../constants'
@@ -17,10 +17,10 @@ const night = {
     confirm: colors.green
   },
   colorVariations: [
-    { 'o': null }, 
-    { 'dark': 0.08 }, 
-    { 'light': 0.08 }, 
-    { 'trans': 0.5 }, 
+    { 'o': null },
+    { 'dark': 0.08 },
+    { 'light': 0.08 },
+    { 'trans': 0.5 },
     { 'grayscale': true }
   ],
   fonts: {

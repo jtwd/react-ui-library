@@ -6,5 +6,5 @@ export default {
   'xl': '1.3rem',
   'xxl': '1.5rem',
   'huge': '2rem',
-  'mega': '3.5rem'    
+  'mega': '3.5rem'
 }

@@ -1,7 +1,7 @@
 import * as c from './palette'
 import { getTheme } from './utils'
 
-const {fonts, lineHeights } = getTheme()
+const { fonts, lineHeights } = getTheme()
 
 export default {
   default: {
@@ -10,11 +10,11 @@ export default {
     fontFamily: `${fonts.primary.name}, ${fonts.primary.fallbacks}`,
     fontWeight: fonts.primary.versions[0].weight,
     fontSizes: {
-      base: '15px',
-      xs: '16px',
-      lg: '18px',
-      xxl: '20px',
-      wide: '22px'
+      base: '14px',
+      xs: '15px',
+      lg: '16px',
+      xxl: '18px',
+      wide: '20px'
     },
     outline: `2px dotted ${c.trans(4, false)}`,
     lineHeight: lineHeights.base,

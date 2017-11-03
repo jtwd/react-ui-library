@@ -3,18 +3,18 @@ import React from 'react'
 import Button from '../Button'
 
 /** Icons */
-export default function ButtonIconText() {
+export default function ButtonIconText () {
   return (
     <div>
       <div>
-        <Button icon="close" small>Small button</Button>
-        <Button icon="lock" primary>Default button</Button>
-        <Button icon="menu" secondary large>Large button</Button>
+        <Button icon='close' uiSize='small'>Small button</Button>
+        <Button icon='lock' uiStyle='primary'>Default button</Button>
+        <Button icon='menu' uiStyle='secondary' uiSize='large'>Large button</Button>
       </div>
       <div>
-        <Button icon="close" small />
-        <Button icon="lock" primary />
-        <Button icon="menu" large secondary />
+        <Button icon='close' uiSize='small' />
+        <Button icon='lock' uiSize='primary' />
+        <Button icon='menu' uiSize='large' uiStyle='secondary' />
       </div>
     </div>
   )

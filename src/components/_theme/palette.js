@@ -9,44 +9,44 @@ const themeColors = getTheme('colors', config.theme)
 const themeContrast = getTheme('contrast', config.theme)
 const palette = generateColorPalette(themeColors, variations)
 
-function getColor(color, variant, colorPalette = palette, colorVariations = variations) {
+function getColor (color, variant, colorPalette = palette, colorVariations = variations) {
   const key = variationsKey(colorVariations)
   return colorPalette[color][key[variant]]
 }
 
-export function primary(variant = "o") {
-  return getColor("primary", variant)
+export function primary (variant = 'o') {
+  return getColor('primary', variant)
 }
 
-export function secondary(variant = "o") {
-  return getColor("secondary", variant);
+export function secondary (variant = 'o') {
+  return getColor('secondary', variant)
 }
 
-export function tertiary(variant = "o") {
-  return getColor("tertiary", variant);
+export function tertiary (variant = 'o') {
+  return getColor('tertiary', variant)
 }
 
-export function quarternary(variant = "o") {
-  return getColor("quarternary", variant);
+export function quarternary (variant = 'o') {
+  return getColor('quarternary', variant)
 }
 
-export function dark(variant = "o") {
-  return getColor("dark", variant);
+export function dark (variant = 'o') {
+  return getColor('dark', variant)
 }
 
-export function light(variant = "o") {
-  return getColor("light", variant);
+export function light (variant = 'o') {
+  return getColor('light', variant)
 }
 
-export function alert(variant = "o") {
-  return getColor("alert", variant);
+export function alert (variant = 'o') {
+  return getColor('alert', variant)
 }
 
-export function confirm(variant = "o") {
-  return getColor("confirm", variant);
+export function confirm (variant = 'o') {
+  return getColor('confirm', variant)
 }
 
-export function trans(amount, invert = true, contrast = themeContrast) {
+export function trans (amount, invert = true, contrast = themeContrast) {
   const color = invert ? 'black' : 'white'
   switch (amount) {
     case 1:

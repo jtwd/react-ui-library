@@ -1,11 +1,13 @@
 export default {
-  tiny: '.1rem',
-  xxs: '.25rem',
-  xs: '.5rem',
-  sm: '.75rem',
-  md: '1rem',
-  lg: '1.5rem',
-  xl: '2rem',
-  xxl: '3rem',
-  huge: '5rem'
+  minute: '.025',
+  tiny: '.05rem',
+  xxs: '.1rem',
+  xs: '.25rem',
+  sm: '.5rem',
+  md: '.75rem',
+  lg: '1rem',
+  xl: '1.5rem',
+  xxl: '2rem',
+  huge: '3rem',
+  mega: '5rem'
 }

@@ -6,7 +6,7 @@ const { spacing, fontSizes } = getTheme()
 export default {
   default: {
     headerMargin: `0 0 ${spacing.xl}`,
-    borderBottom: `1px solid ${c.trans(false)}`,
+    borderBottom: `1px solid ${c.trans(0, false)}`,
     fontSize: fontSizes.huge,
     h1Margin: `0 0 ${spacing.md}`,
     color: c.light(),

@@ -25,19 +25,11 @@ function Button ({ uiStyle, uiSize, icon, type, children, to, href, ...props }) 
     btnProps.type = type
   }
 
-  if (uiSize === 'small') {
-    iconProps.small = true
-  }
-
-  if (uiSize === 'large') {
-    iconProps.large = true
-  }
-
   return (
     <Component {...btnProps}>
       {validIcon && (
         <IconWrap icon={icon} iconOnly={iconOnly} uiSize={uiSize} uiStyle={uiStyle}>
-          <Icon icon={icon} {...iconProps} />
+          <Icon icon={icon} uiSize={uiSize} {...iconProps} />
         </IconWrap>
       )}
       {children}

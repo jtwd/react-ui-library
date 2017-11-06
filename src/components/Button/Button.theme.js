@@ -15,7 +15,7 @@ export default {
         fontSize: fontSizes.md,
         margin: `0 ${spacing.xxs} ${spacing.md}`,
         padding: `${spacing.sm} ${spacing.md}`,
-        iconOnlyPadding: `0.38rem ${spacing.sm}`,
+        iconOnlyPadding: `0.45rem ${spacing.md}`,
         iconOnlyLeft: '0',
         iconOnlyTop: '2px',
         iconLeft: '-.33rem',
@@ -32,10 +32,10 @@ export default {
         iconMargin: '-.2rem 0'
       },
       large: {
-        fontSize: fontSizes.xl,
+        fontSize: fontSizes.lg,
         margin: `0 ${spacing.xs} ${spacing.md}`,
         padding: `${spacing.md} ${spacing.lg}`,
-        iconOnlyPadding: `.65rem ${spacing.md}`,
+        iconOnlyPadding: `.72rem ${spacing.lg}`,
         iconLeft: `-${spacing.xs}`,
         iconTop: '0rem',
         iconMargin: `-.48rem 0`

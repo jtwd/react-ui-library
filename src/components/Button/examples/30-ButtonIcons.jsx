@@ -13,7 +13,7 @@ export default function ButtonIconText () {
       </div>
       <div>
         <Button icon='close' uiSize='small' />
-        <Button icon='lock' uiSize='primary' />
+        <Button icon='lock' uiStyle='primary' />
         <Button icon='menu' uiSize='large' uiStyle='secondary' />
       </div>
     </div>

@@ -7,9 +7,9 @@ export default function ButtonSizes () {
   return (
     <div>
       <div>
-        <Button uiStyle='primary' small>Small button</Button>
-        <Button uiStyle='primary' small icon='lock' />
-        <Button uiStyle='primary' small icon='lock'>Small button</Button>
+        <Button uiStyle='primary' uiSize='small'>Small button</Button>
+        <Button uiStyle='primary' uiSize='small' icon='lock' />
+        <Button uiStyle='primary' uiSize='small' icon='lock'>Small button</Button>
       </div>
       <div>
         <Button uiStyle='secondary'>Default button</Button>
